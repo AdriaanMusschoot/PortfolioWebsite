@@ -1,67 +1,49 @@
-/* Add these styles to style.css */
-
-/* Container for the profile picture and intro */
-.profile-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0;
-    padding: 20px;
-    flex-wrap: wrap; /* Ensures the content wraps on smaller screens */
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-/* Profile picture styling */
-.profile-pic {
-    border-radius: 15px; /* Adjust the radius for the corner roundness */
-    width: 150px;
-    height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Ensures the image scales down for small screens */
-    margin-right: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a nice shadow effect */
-}
-
-/* Styling for the intro text next to the profile picture */
-.intro-text {
-    text-align: left;
-    max-width: 500px; /* Optional: limits text width for better readability */
-}
-
-/* Mobile responsiveness */
-@media screen and (max-width: 768px) {
-    .profile-container {
-        flex-direction: column; /* Stacks the image and text vertically on smaller screens */
-        text-align: center;
-    }
-
-    .profile-pic {
-        margin-right: 0;
-        margin-bottom: 20px; /* Adds space between image and text on small screens */
-    }
-
-    .intro-text {
-        text-align: center;
-    }
-}
-
-/* Container for the sidebar and main content */
+/* Container for the sidebar */
 .container {
     display: flex;
+    height: 100vh; /* Full viewport height */
 }
 
 /* Sidebar styling */
 .sidebar {
-    flex: 1; /* Sidebar takes up one part of the flex container */
-    max-width: 250px; /* Adjust width as needed */
+    flex: 0 0 250px; /* Fixed width for the sidebar */
+    height: 100vh; /* Full height of the viewport */
     padding: 20px;
-    background-color: #f4f4f4; /* Light background color for sidebar */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow to the sidebar */
+    background-color: #333; /* Background color for sidebar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
+/* Profile picture styling */
 .profile-pic {
     border-radius: 15px; /* Rounded corners */
-    width: 100%; /* Ensure image fills the sidebar width */
+    width: 100%; /* Ensures the image fits within the sidebar width */
     height: auto; /* Maintain aspect ratio */
+    max-width: 200px; /* Limits the maximum size of the image */
     margin-bottom: 20px;
+    border: 3px solid #fff; /* Light border */
+}
+
+/* Name styling */
+.name {
+    margin-bottom: 20px; /* Space between name and navigation */
+}
+
+.name h1 {
+    color: #fff; /* Light text color */
+    font-size: 1.5rem; /* Adjust size as needed */
+    text-align: center; /* Center align the text */
+    margin: 0; /* Remove default margin */
 }
 
 /* Navigation styling */
@@ -76,52 +58,11 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333; /* Text color */
+    color: #fff; /* Light text color */
     font-size: 1.1rem;
+    padding: 5px;
 }
 
 nav ul li a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-
-/* Main content styling */
-.content {
-    flex: 3; /* Main content takes up three parts of the flex container */
-    padding: 20px;
-}
-
-/* Header styling */
-header {
-    margin-bottom: 20px;
-}
-
-.intro-text h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
-.intro-text p {
-    margin-top: 10px;
-    font-size: 1.2rem;
-}
-
-/* Mobile responsiveness */
-@media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        max-width: none; /* Remove the width constraint on small screens */
-        padding: 10px;
-        box-shadow: none; /* Remove shadow for smaller screens */
-    }
-
-    .profile-pic {
-        margin-bottom: 15px;
-    }
-
-    .content {
-        padding: 10px;
-    }
+    text-decoration: underline;
 }
