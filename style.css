@@ -1,0 +1,127 @@
+/* Add these styles to style.css */
+
+/* Container for the profile picture and intro */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 20px;
+    flex-wrap: wrap; /* Ensures the content wraps on smaller screens */
+}
+
+/* Profile picture styling */
+.profile-pic {
+    border-radius: 15px; /* Adjust the radius for the corner roundness */
+    width: 150px;
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensures the image scales down for small screens */
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a nice shadow effect */
+}
+
+/* Styling for the intro text next to the profile picture */
+.intro-text {
+    text-align: left;
+    max-width: 500px; /* Optional: limits text width for better readability */
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .profile-container {
+        flex-direction: column; /* Stacks the image and text vertically on smaller screens */
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-right: 0;
+        margin-bottom: 20px; /* Adds space between image and text on small screens */
+    }
+
+    .intro-text {
+        text-align: center;
+    }
+}
+
+/* Container for the sidebar and main content */
+.container {
+    display: flex;
+}
+
+/* Sidebar styling */
+.sidebar {
+    flex: 1; /* Sidebar takes up one part of the flex container */
+    max-width: 250px; /* Adjust width as needed */
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background color for sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow to the sidebar */
+}
+
+.profile-pic {
+    border-radius: 15px; /* Rounded corners */
+    width: 100%; /* Ensure image fills the sidebar width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 15px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Text color */
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Main content styling */
+.content {
+    flex: 3; /* Main content takes up three parts of the flex container */
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    margin-bottom: 20px;
+}
+
+.intro-text h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.intro-text p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        max-width: none; /* Remove the width constraint on small screens */
+        padding: 10px;
+        box-shadow: none; /* Remove shadow for smaller screens */
+    }
+
+    .profile-pic {
+        margin-bottom: 15px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}
