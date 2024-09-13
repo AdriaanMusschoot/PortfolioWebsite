@@ -1,0 +1,216 @@
+@import 'fonts.css';
+
+body {
+  margin: 1rem 8rem;
+  background-color: hsl(312, 22%, 5%);
+  color: hsl(0, 45%, 90%);
+  font-family: suse;
+
+  & a {
+    text-decoration: none;
+    color: hsl(0, 45%, 90%);
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+hr {
+  margin: 0 -6rem;
+  padding: 0;
+  color: hsl(0, 45%, 90%);
+}
+
+/* == HEADER == */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+
+  & .header--logo {
+    width: 10%;
+    & img {
+      width: 100%;
+    }
+  }
+
+  & .header--navbar {
+    display: flex;
+    gap: 5rem;
+  }
+}
+
+/* == ABOUT SECTION == */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 1rem;
+
+  & .about-top {
+    text-align: center;
+    line-height: .5rem;
+
+    & h2 {
+      font-weight: normal;
+      text-decoration: none;
+      text-transform: none;
+    }
+  }
+
+  & .about-img {
+    & img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      border-radius:45%;
+      padding: 2rem;
+    }
+  }
+
+  & .about-lower {
+    font-style: italic;
+  }
+}
+
+/* == PROJECTS SECTION == */
+
+#projects {
+  padding: 2rem;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 1rem;
+}
+
+.projectCard-container {
+  width: 35%;
+  background: linear-gradient(145deg, hsl(312, 22%, 25%), hsl(312, 22%, 15%));
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  
+  & .projectCard-container_image img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem 0.5rem 0 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  & .projectCard-container_title {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.05rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.projectCard-description {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 30%;
+  height: 100vh;
+  background-color: hsl(312, 22%, 20%);
+  padding: 2rem;
+  box-shadow: -0.5rem 0 1rem rgba(0, 0, 0, 0.2);
+  transition: right 0.5s ease;
+  font-size: 1.2rem;
+  color: #fff;
+  z-index: 999;
+  overflow-y: auto;
+}
+
+.projectCard-container.active .projectCard-description {
+  right: 0;
+}
+
+/* == SKILLS SECTION == */
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+  padding: 0 1rem;
+
+  & .skills-container {
+    background: linear-gradient(145deg, hsl(312, 22%, 25%), hsl(312, 22%, 15%));
+    padding: 1rem;
+    border-radius: 10%;
+    width: 28%;
+    color: #fff;
+    box-shadow: 0.8rem -0.4rem 1.5rem hsla(349, 96%, 63%, 0.7), inset 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* == CONTACT SECTION == */
+
+.contact {
+  border: 1px solid hsl(312, 22%, 15%);
+  border-radius: 5rem;
+  height: 90vh;
+  margin-top: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  & p {
+    font-style: italic;
+    font-size: 1.3rem;
+  }
+
+  & .contact-mail {
+    font-size: 4.5rem;
+    padding-bottom: 2rem;
+
+    &:hover {
+      color: hsla(349, 96%, 63%, 1);
+    }
+  }
+
+  & .contact-socials {
+    display: flex;
+    gap: 2rem;
+
+    & .svg {
+      color: white;
+      width: 3rem;
+      color: hsl(0, 45%, 90%);
+      
+      &:hover {
+        color: hsla(349, 96%, 63%, 1);
+      }
+    }
+  }
+}

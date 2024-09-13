@@ -1,0 +1,27 @@
+[
+    {
+        "image" : "./assets/projectImages/testImage.jpg",
+        "title" : "Test",
+        "description" : "Lorem Ipsum"
+    },
+    {
+        "image" : "./assets/projectImages/testImage.jpg",
+        "title" : "Test",
+        "description" : "Test"
+    },
+    {
+        "image" : "./assets/projectImages/testImage.jpg",
+        "title" : "Test",
+        "description" : "Test"
+    },
+    {
+        "image" : "./assets/projectImages/testImage.jpg",
+        "title" : "Test",
+        "description" : "Test"
+    },
+    {
+        "image" : "./assets/projectImages/testImage.jpg",
+        "title" : "Test",
+        "description" : "Test"
+    }
+]

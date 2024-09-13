@@ -1,0 +1,45 @@
+[
+    {
+        "title" : "Programming languages",
+        "contents": [
+            "C++",
+            "C#",
+            "Python",
+            "Html",
+            "Css"
+        ]
+    },
+    {
+        "title" : "Game engines",
+        "contents" : [
+            "Unreal Engine 5",
+            "Unity"
+        ]
+    },
+    {
+        "title" : "Source control",
+        "contents" : [
+            "Git",
+            "Perforce"
+        ]
+    },
+    {
+        "title" : "IDE",
+        "contents" : [
+            "Visual Studio",
+            "VS Code",
+            "Qt"
+        ]
+    },
+    {
+        "title" : "API / Framework",
+        "contents" : [
+            "SDL",
+            "GLM",
+            "Vulkan",
+            "WPF",
+            "DirectX11",
+            "Dear IMGui"
+        ]
+    }
+]
