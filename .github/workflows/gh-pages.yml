@@ -22,8 +22,8 @@ jobs:
       - name: Upload NPM Logs
         uses: actions/upload-artifact@v2
         with:
-        name: npm-logs
-        path: /home/runner/.npm/_logs
+          name: npm-logs
+          path: /home/runner/.npm/_logs
       #- name: Cache dependencies
       # uses: actions/cache@v2
       # with:
