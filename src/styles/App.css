@@ -1,15 +1,30 @@
 @import 'fonts.css';
 
+:root {
+  --main-border-radius: 30px;
+  --main-border-style: solid;
+  --main-border-color: hsla(0, 23%, 64%, 1);
+  --main-border-width: 0.3rem;
+  --text-color:  hsl(0, 45%, 90%);
+  --background-color:  hsl(312, 22%, 5%);
+  --box-shadow-tiles: 0 0 15px hsla(349, 96%, 63%, 0.7), inset 0 0 10px rgba(0, 0, 0, 0.3);
+  --hovered-color-links: hsla(349, 96%, 63%, 1);
+  --linear-gradient-background: linear-gradient(145deg, hsl(312, 22%, 25%), hsl(312, 22%, 15%));
+  --quote-size: 1.5rem;
+  --quote-font-style: italic;
+  --quote-alignment: center;
+}
+
 body {
   margin: 1rem 8rem;
-  background-color: hsl(312, 22%, 5%);
-  color: hsl(0, 45%, 90%);
+  background-color: var(--background-color);
+  color: var(--text-color);
   font-family: suse;
 
   & a {
     text-decoration: none;
-    color: hsl(0, 45%, 90%);
-    font-size: 1.6rem;
+    color: var(--text-color);
+    font-size: 3rem;
     font-weight: bold;
   }
 }
@@ -32,7 +47,7 @@ h2 {
 hr {
   margin: 0 -6rem;
   padding: 0;
-  color: hsl(0, 45%, 90%);
+  color: var(--text-color);
 }
 
 /* == HEADER == */
@@ -46,7 +61,8 @@ header {
   & .header--logo {
     width: 10%;
     & img {
-      width: 100%;
+      width: 400px;
+      height: auto;
     }
   }
 
@@ -81,13 +97,18 @@ header {
       margin-left: auto;
       margin-right: auto;
       width: 50%;
-      border-radius:45%;
-      padding: 2rem;
+      border-style: var(--main-border-style);
+      border-color: var(--main-border-color);
+      border-radius: var(--main-border-radius);
+      border-width: var(--main-border-width);
+      box-shadow: var(--box-shadow-tiles);
     }
   }
 
   & .about-lower {
-    font-style: italic;
+    font-style: var(--quote-font-style);
+    font-size: var(--quote-size);
+    text-align: var(--quote-alignment);
   }
 }
 
@@ -107,27 +128,32 @@ header {
 
 .projectCard-container {
   width: 35%;
-  background: linear-gradient(145deg, hsl(312, 22%, 25%), hsl(312, 22%, 15%));
-  border-radius: 1rem;
-  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  background: var(--linear-gradient-background);
+  box-shadow: var(--box-shadow-tiles);
   overflow: hidden;
   position: relative;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   cursor: pointer;
-  
+  border-style: var(--main-border-style);
+  border-color: var(--main-border-color);
+  border-radius: var(--main-border-radius);
+  border-width: var(--main-border-width);
+
   & .projectCard-container_image img {
     width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 0.5rem 0.5rem 0 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+    border-color: var(--main-border-color);
+    border-width: var(--main-border-width);
+    
   }
 
   & .projectCard-container_title {
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-    color: #fff;
+    padding: 0rem 1rem;
+    font-size: 2rem;
+    color: var(--text-color);
     text-align: center;
     letter-spacing: 0.05rem;
     margin-bottom: 1rem;
@@ -140,12 +166,12 @@ header {
   right: -100%;
   width: 30%;
   height: 100vh;
-  background-color: hsl(312, 22%, 20%);
+  background-color: var(--background-color);
   padding: 2rem;
   box-shadow: -0.5rem 0 1rem rgba(0, 0, 0, 0.2);
   transition: right 0.5s ease;
   font-size: 1.2rem;
-  color: #fff;
+  color: var(--text-color);
   z-index: 999;
   overflow-y: auto;
 }
@@ -159,25 +185,32 @@ header {
 .skills {
   display: flex;
   justify-content: space-around;
-  gap: 3rem;
+  gap: 5rem;
   padding: 0 1rem;
 
   & .skills-container {
-    background: linear-gradient(145deg, hsl(312, 22%, 25%), hsl(312, 22%, 15%));
+    background: var(--linear-gradient-background);
     padding: 1rem;
-    border-radius: 10%;
-    width: 28%;
-    color: #fff;
-    box-shadow: 0.8rem -0.4rem 1.5rem hsla(349, 96%, 63%, 0.7), inset 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    color: var(--text-color);
+    
+    border-style: var(--main-border-style);
+    border-color: var(--main-border-color);
+    border-radius: var(--main-border-radius);
+    border-width: var(--main-border-width) - 0.1rem;
+    box-shadow: var(--box-shadow-tiles);
   }
 }
 
 /* == CONTACT SECTION == */
 
 .contact {
-  border: 1px solid hsl(312, 22%, 15%);
-  border-radius: 5rem;
-  height: 90vh;
+  border-style: var(--main-border-style);
+  border-color: var(--main-border-color);
+  border-radius: var(--main-border-radius);
+  border-width: var(--main-border-width);
+  box-shadow: var(--box-shadow-tiles);
+  height: 40vh;
   margin-top: 5rem;
 
   display: flex;
@@ -186,16 +219,18 @@ header {
   flex-direction: column;
 
   & p {
-    font-style: italic;
-    font-size: 1.3rem;
+    font-style: var(--quote-font-style);
+    font-size: var(--quote-size);
+    text-align: var(--quote-alignment);
   }
 
   & .contact-mail {
+    color: var(--text-color);
     font-size: 4.5rem;
     padding-bottom: 2rem;
 
     &:hover {
-      color: hsla(349, 96%, 63%, 1);
+      color: var(--hovered-color-links);
     }
   }
 
@@ -204,12 +239,11 @@ header {
     gap: 2rem;
 
     & .svg {
-      color: white;
       width: 3rem;
-      color: hsl(0, 45%, 90%);
+      color: var(--text-color);
       
       &:hover {
-        color: hsla(349, 96%, 63%, 1);
+        color: var(--hovered-color-links);
       }
     }
   }
