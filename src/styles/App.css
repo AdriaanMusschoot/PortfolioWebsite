@@ -16,7 +16,7 @@
 }
 
 body {
-  margin: 1rem 8rem;
+  margin: 0rem 5rem;
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: suse;
@@ -32,21 +32,20 @@ body {
 }
 
 #about, #projects, #skills, #contact {
-  scroll-margin-top: 10rem; /* Adjust based on your header height */
+  scroll-margin-top: 12rem; /* Adjust based on your header height */
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-h1 {
-  font-size: 5rem;
-}
-
 h2 {
-  font-size: 3rem;
+  font-size: 4rem;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
   text-align: center;
-  text-transform: uppercase;
+
 }
 
 hr {
@@ -92,25 +91,25 @@ header {
   }
 }
 
+/* == WHITE SECTION == */
+.whitespace {
+  margin: 8rem;
+}
 /* == ABOUT SECTION == */
 
 .about {
-  scroll-margin-top: 20rem;
-  margin:5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
 
   & .about-top {
     text-align: center;
     line-height: .5rem;
 
-    & h2 {
-      font-weight: normal;
-      text-decoration: none;
-      text-transform: none;
+    & h1 {
+      font-size: 5rem;
     }
+
   }
 
   & .about-img {
@@ -223,7 +222,7 @@ header {
   border-radius: var(--main-border-radius);
   border-width: var(--main-border-width);
   box-shadow: var(--box-shadow-tiles);
-  height: 90vh;
+  height: 65vh;
 
   display: flex;
   justify-content: center;
