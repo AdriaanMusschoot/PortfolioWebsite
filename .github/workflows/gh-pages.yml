@@ -28,7 +28,7 @@ jobs:
            ${{ runner.os }}-node-
 
       - run: |
-          sed -i '5i\  "homepage": "/PortfolioWebsite",' ./package.json
+          sed -i '5i\  "homepage": ".",' ./package.json
       - run: npm ci
       - run: npm run build
       - run: cp build/index.html build/404.html
