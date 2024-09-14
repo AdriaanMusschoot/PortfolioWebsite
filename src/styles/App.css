@@ -7,7 +7,8 @@
   --main-border-width: 0.3rem;
   --text-color:  hsl(0, 45%, 90%);
   --background-color:  hsl(312, 22%, 5%);
-  --box-shadow-tiles: 0 0 15px hsla(349, 96%, 63%, 0.7), inset 0 0 10px rgba(0, 0, 0, 0.3);
+  --box-shadow-default: 0 0 1rem hsla(349, 96%, 63%, 0.7), inset 0 0 1rem rgba(0, 0, 0, 0.3);
+  --box-shadow-hovered: 0 0 3rem hsla(349, 96%, 63%, 0.7), inset 0 0 3rem rgba(0, 0, 0, 0.3);
   --hovered-color-links: hsla(349, 96%, 63%, 1);
   --linear-gradient-background: linear-gradient(145deg, hsl(312, 22%, 25%), hsl(312, 22%, 15%));
   --quote-size: 1.5rem;
@@ -122,7 +123,7 @@ header {
       border-color: var(--main-border-color);
       border-radius: var(--main-border-radius);
       border-width: var(--main-border-width);
-      box-shadow: var(--box-shadow-tiles);
+      box-shadow: var(--box-shadow-default);
     }
   }
 
@@ -144,16 +145,22 @@ header {
 .projectCard-container {
   width: 35%;
   background: var(--linear-gradient-background);
-  box-shadow: var(--box-shadow-tiles);
+  box-shadow: var(--box-shadow-default);
   overflow: hidden;
   position: relative;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   cursor: pointer;
   border-style: var(--main-border-style);
   border-color: var(--main-border-color);
   border-radius: var(--main-border-radius); 
   border-width: var(--main-border-width);
+  &:hover{
+    border-color: var(--hovered-color-links);
+    box-shadow: var(--box-shadow-hovered);
 
+    .projectCard-container_title {
+      color: var(--hovered-color-links); 
+    }
+  }
   & .projectCard-container_image img {
     width: 100%;
     display: block;
@@ -210,7 +217,7 @@ header {
     border-color: var(--main-border-color);
     border-radius: var(--main-border-radius);
     border-width: var(--main-border-width) - 0.1rem;
-    box-shadow: var(--box-shadow-tiles);
+    box-shadow: var(--box-shadow-default);
   }
 }
 
@@ -221,7 +228,7 @@ header {
   border-color: var(--main-border-color);
   border-radius: var(--main-border-radius);
   border-width: var(--main-border-width);
-  box-shadow: var(--box-shadow-tiles);
+  box-shadow: var(--box-shadow-default);
   height: 65vh;
 
   display: flex;
