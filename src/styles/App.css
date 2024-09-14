@@ -136,7 +136,7 @@ header {
   cursor: pointer;
   border-style: var(--main-border-style);
   border-color: var(--main-border-color);
-  border-radius: var(--main-border-radius);
+  border-radius: var(--main-border-radius); 
   border-width: var(--main-border-width);
 
   & .projectCard-container_image img {
