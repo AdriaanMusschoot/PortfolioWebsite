@@ -13,7 +13,7 @@
     "453.9657b1c0.chunk.js.map": "/PortfolioWebsite/static/js/453.9657b1c0.chunk.js.map"
   },
   "entrypoints": [
-    "/PortfolioWebsite/static/css/main.ca4bf23c.css",
-    "/PortfolioWebsite/static/js/main.8c719dc2.js"
+    "static/css/main.ca4bf23c.css",
+    "static/js/main.8c719dc2.js"
   ]
 }
