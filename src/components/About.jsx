@@ -5,7 +5,7 @@ export default function About() {
     <>
       <div className='about-top'>
         <h1>Adriaan Musschoot</h1>
-        <h2>Games Software developer</h2>
+        <h2>Games Software Developer</h2>
       </div>
       <div className='about-img'>
         <img src='./assets/pfp.png' alt='Adriaan Musschoot' />

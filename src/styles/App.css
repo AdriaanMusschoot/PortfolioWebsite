@@ -20,13 +20,19 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: suse;
-
   & a {
     text-decoration: none;
     color: var(--text-color);
     font-size: 3rem;
     font-weight: bold;
+    &:hover{
+      color:var(--hovered-color-links);
+    }
   }
+}
+
+#about, #projects, #skills, #contact {
+  scroll-margin-top: 10rem; /* Adjust based on your header height */
 }
 
 html {
@@ -41,44 +47,60 @@ h2 {
   font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
-  text-decoration: underline;
 }
 
 hr {
-  margin: 0 -6rem;
-  padding: 0;
-  color: var(--text-color);
+  border:none;
+  background-color: var(--main-border-color);
+  height: 0.2rem;
+  border-radius: var(--main-border-radius);
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 /* == HEADER == */
 
 header {
+  z-index: 998;
+  top: 0;
+  position: fixed;
+  left: 0rem; /* Align with body margin */
+  right: 0rem; /* Align with body margin */
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 2rem;
+  justify-content: center;
+  background-color: var(--background-color);
+
 
   & .header--logo {
-    width: 10%;
-    & img {
-      width: 400px;
-      height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex: 0 1 auto; /* Allow the logo to be flexible but not grow excessively */
+      & img {  
+        max-width: 20rem; /* Set a maximum width for the logo */
+        height: auto;
     }
   }
 
   & .header--navbar {
     display: flex;
-    gap: 5rem;
+    align-items: center;
+    gap: 4rem; /* Space between items */
+
+    a {
+      font-size: 3rem;
+    }
   }
 }
 
 /* == ABOUT SECTION == */
 
 .about {
+  scroll-margin-top: 20rem;
+  margin:5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem 1rem;
+  padding: 1rem;
 
   & .about-top {
     text-align: center;
@@ -92,10 +114,10 @@ header {
   }
 
   & .about-img {
+    display: flex;
+    justify-content: center;
     & img {
       display: block;
-      margin-left: auto;
-      margin-right: auto;
       width: 50%;
       border-style: var(--main-border-style);
       border-color: var(--main-border-color);
@@ -111,19 +133,13 @@ header {
     text-align: var(--quote-alignment);
   }
 }
-
 /* == PROJECTS SECTION == */
-
-#projects {
-  padding: 2rem;
-}
 
 .projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 3rem;
-  padding-top: 1rem;
 }
 
 .projectCard-container {
@@ -151,12 +167,10 @@ header {
   }
 
   & .projectCard-container_title {
-    padding: 0rem 1rem;
     font-size: 2rem;
     color: var(--text-color);
     text-align: center;
     letter-spacing: 0.05rem;
-    margin-bottom: 1rem;
   }
 }
 
@@ -186,7 +200,6 @@ header {
   display: flex;
   justify-content: space-around;
   gap: 5rem;
-  padding: 0 1rem;
 
   & .skills-container {
     background: var(--linear-gradient-background);
@@ -210,8 +223,7 @@ header {
   border-radius: var(--main-border-radius);
   border-width: var(--main-border-width);
   box-shadow: var(--box-shadow-tiles);
-  height: 40vh;
-  margin-top: 5rem;
+  height: 90vh;
 
   display: flex;
   justify-content: center;

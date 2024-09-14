@@ -17,7 +17,6 @@ function App() {
         <Header />
       </header>
       <main>
-        <hr></hr>
         <section id='about' className='about'>
           <About />
         </section>
@@ -26,10 +25,12 @@ function App() {
           <h2>My projects</h2>
           <ProjectCard />
         </section>
+        <hr></hr>
         <section id='skills'>
           <h2>My skills</h2>
           <Skills />
         </section>
+        <hr></hr>
         <section id='contact'>
           <Contact />
         </section>
