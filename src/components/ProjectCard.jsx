@@ -1,8 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import projects from '../data/projects.json';
+import '../styles/App.css';
 
 export default function ProjectCard() {
   const [activeIndex, setActiveIndex] = useState(null);
+
+  useEffect(() => {
+    // Toggle body scrolling when a card is active
+    document.body.classList.toggle('no-scroll', activeIndex !== null);
+
+    // Cleanup function to ensure scrolling is re-enabled if the component is unmounted
+    return () => {
+      document.body.classList.remove('no-scroll');
+    };
+  }, [activeIndex]);
 
   const handleCardClick = (index) => {
     if (activeIndex === index) {
@@ -28,13 +39,17 @@ export default function ProjectCard() {
               <h3>{project.title}</h3>
             </div>
 
-            {/* Description section that slides in from the side */}
+            {/* Description section that slides up from the bottom */}
             <div className={`projectCard-description ${activeIndex === index ? 'active' : ''}`}>
               <p>{project.description}</p>
+              <button onClick={() => setActiveIndex(null)}>Close</button>
             </div>
           </div>
         ))
       }
+
+      {/* Backdrop for the card */}
+      {activeIndex !== null && <div className='backdrop' onClick={() => setActiveIndex(null)}></div>}
     </div>
   );
 }

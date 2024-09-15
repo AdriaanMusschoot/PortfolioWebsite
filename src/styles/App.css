@@ -1,30 +1,31 @@
 @import 'fonts.css';
 
 :root {
-  --main-border-radius: 30px;
+  --main-border-radius: 2vw;
   --main-border-style: solid;
   --main-border-color: hsla(0, 23%, 64%, 1);
-  --main-border-width: 0.3rem;
+  --main-border-width: 0.2vw;
   --text-color:  hsl(0, 45%, 90%);
   --background-color:  hsl(312, 22%, 5%);
-  --box-shadow-default: 0 0 1rem hsla(349, 96%, 63%, 0.7), inset 0 0 1rem rgba(0, 0, 0, 0.3);
-  --box-shadow-hovered: 0 0 3rem hsla(349, 96%, 63%, 0.7), inset 0 0 3rem rgba(0, 0, 0, 0.3);
+  --description-background-color: hsl(0, 24%, 35%);
+  --box-shadow-default: 0 0 1vw hsla(349, 96%, 63%, 0.7), inset 0 0 1vw rgba(0, 0, 0, 0.3);
+  --box-shadow-hovered: 0 0 2vw hsla(349, 96%, 63%, 0.7), inset 0 0 2vw rgba(0, 0, 0, 0.3);
   --hovered-color-links: hsla(349, 96%, 63%, 1);
   --linear-gradient-background: linear-gradient(145deg, hsl(312, 22%, 25%), hsl(312, 22%, 15%));
-  --quote-size: 1.5rem;
+  --quote-size: 1.5vw;
   --quote-font-style: italic;
   --quote-alignment: center;
 }
 
 body {
-  margin: 0rem 5rem;
+  margin: 0vh 4vw;
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: suse;
   & a {
     text-decoration: none;
     color: var(--text-color);
-    font-size: 3rem;
+    font-size: 2vw;
     font-weight: bold;
     &:hover{
       color:var(--hovered-color-links);
@@ -33,7 +34,7 @@ body {
 }
 
 #about, #projects, #skills, #contact {
-  scroll-margin-top: 12rem; /* Adjust based on your header height */
+  scroll-margin-top: 9vw; /* Adjust based on your header height */
 }
 
 html {
@@ -41,21 +42,18 @@ html {
 }
 
 h2 {
-  font-size: 4rem;
-  font-weight: normal;
-  text-decoration: none;
-  text-transform: none;
+  font-size: 2vw;
   text-align: center;
-
+  color: var(--text-color);
 }
 
 hr {
   border:none;
   background-color: var(--main-border-color);
-  height: 0.2rem;
+  height: 0.2vw;
   border-radius: var(--main-border-radius);
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top: 3vw;
+  margin-bottom: 0vw;
 }
 
 /* == HEADER == */
@@ -64,19 +62,19 @@ header {
   z-index: 998;
   top: 0;
   position: fixed;
-  left: 0rem; /* Align with body margin */
-  right: 0rem; /* Align with body margin */
+  left: 0vw; /* Align with body margin */
+  right: 0vw; /* Align with body margin */
   display: flex;
   justify-content: center;
   background-color: var(--background-color);
 
 
   & .header--logo {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
     flex: 0 1 auto; /* Allow the logo to be flexible but not grow excessively */
       & img {  
-        max-width: 20rem; /* Set a maximum width for the logo */
+        max-width: 10vw; /* Set a maximum width for the logo */
         height: auto;
     }
   }
@@ -84,17 +82,17 @@ header {
   & .header--navbar {
     display: flex;
     align-items: center;
-    gap: 4rem; /* Space between items */
+    gap: 4vw; /* Space between items */
 
     a {
-      font-size: 3rem;
+      font-size: 2vw;
     }
   }
 }
 
 /* == WHITE SECTION == */
 .whitespace {
-  margin: 8rem;
+  margin: 7vw;
 }
 /* == ABOUT SECTION == */
 
@@ -105,10 +103,10 @@ header {
 
   & .about-top {
     text-align: center;
-    line-height: .5rem;
+    line-height: .5vw;
 
     & h1 {
-      font-size: 5rem;
+      font-size: 3vw;
     }
 
   }
@@ -139,11 +137,11 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem;
+  gap: 4vw;
 }
 
 .projectCard-container {
-  width: 35%;
+  width: 40%;
   background: var(--linear-gradient-background);
   box-shadow: var(--box-shadow-default);
   overflow: hidden;
@@ -173,7 +171,7 @@ header {
   }
 
   & .projectCard-container_title {
-    font-size: 2rem;
+    font-size: 1.5vw;
     color: var(--text-color);
     text-align: center;
     letter-spacing: 0.05rem;
@@ -181,43 +179,63 @@ header {
 }
 
 .projectCard-description {
+  border-style: var(--main-border-style);
+  border-color: var(--main-border-color);
+  border-radius: var(--main-border-radius);
+  border-width: var(--main-border-width);
+  box-shadow: var(--box-shadow-default);
   position: fixed;
-  top: 0;
-  right: -100%;
-  width: 30%;
-  height: 100vh;
-  background-color: var(--background-color);
+  left: 50%;
+  bottom: -100%;
+  width: 80%;
+  height: 80vh;
+  background-color: var(--description-background-color);
   padding: 2rem;
-  box-shadow: -0.5rem 0 1rem rgba(0, 0, 0, 0.2);
-  transition: right 0.5s ease;
-  font-size: 1.2rem;
+  box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.2); /* Adjusted for bottom position */
+  transition: bottom 0.3s ease;
+  font-size: 2vh;
   color: var(--text-color);
-  z-index: 999;
+  z-index: 1000;
   overflow-y: auto;
+  transform: translateX(-50%); /* Center horizontally */
 }
 
 .projectCard-container.active .projectCard-description {
-  right: 0;
+  bottom: 0;
 }
 
 /* == SKILLS SECTION == */
 
 .skills {
   display: flex;
-  justify-content: space-around;
-  gap: 5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2vw;
+  line-height: 2vw;
 
   & .skills-container {
     background: var(--linear-gradient-background);
-    padding: 1rem;
-    width: 100%;
+    width: 40%;
     color: var(--text-color);
-    
+    padding: 1vw;
     border-style: var(--main-border-style);
     border-color: var(--main-border-color);
     border-radius: var(--main-border-radius);
-    border-width: var(--main-border-width) - 0.1rem;
+    border-width: var(--main-border-width);
     box-shadow: var(--box-shadow-default);
+  }
+  & h3 {
+    padding-left: 1vw;
+    font-size: 2vw;
+  }
+
+  & li {
+    padding-left: 1vw;
+    font-size: 1.5vw;
+  }
+
+  & ul {
+    list-style-position: inside;
   }
 }
 
@@ -229,8 +247,8 @@ header {
   border-radius: var(--main-border-radius);
   border-width: var(--main-border-width);
   box-shadow: var(--box-shadow-default);
-  height: 65vh;
-
+  height: 70vh ;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -244,8 +262,8 @@ header {
 
   & .contact-mail {
     color: var(--text-color);
-    font-size: 4.5rem;
-    padding-bottom: 2rem;
+    font-size: 2.5vw;
+    padding-bottom: 2vw;
 
     &:hover {
       color: var(--hovered-color-links);
@@ -254,10 +272,10 @@ header {
 
   & .contact-socials {
     display: flex;
-    gap: 2rem;
+    gap: 4vw;
 
     & .svg {
-      width: 3rem;
+      width: 2.5vw;
       color: var(--text-color);
       
       &:hover {

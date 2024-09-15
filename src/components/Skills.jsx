@@ -7,7 +7,7 @@ export default function Skills() {
         {
             skills.map((skill) => (
                 <div className='skills-container'>
-                    <h3>{skill.title} :</h3>
+                    <h3>{skill.title}</h3>
                     {
                         skill.contents.map((content) => (
                             <ul>

@@ -1,6 +1,6 @@
 [
     {
-        "title" : "Programming languages",
+        "title" : "PROGRAMMING LANGUAGES",
         "contents": [
             "C++",
             "C#",
@@ -10,14 +10,14 @@
         ]
     },
     {
-        "title" : "Game engines",
+        "title" : "GAME ENGINES",
         "contents" : [
             "Unreal Engine 5",
             "Unity"
         ]
     },
     {
-        "title" : "Source control",
+        "title" : "SOURCE CONTROL",
         "contents" : [
             "Git",
             "Perforce"
@@ -32,7 +32,7 @@
         ]
     },
     {
-        "title" : "API / Framework",
+        "title" : "API'S / FRAMEWORKS",
         "contents" : [
             "SDL",
             "GLM",
