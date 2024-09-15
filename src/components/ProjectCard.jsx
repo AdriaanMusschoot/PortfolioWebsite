@@ -5,6 +5,7 @@ import '../styles/App.css';
 export default function ProjectCard() {
   const [activeIndex, setActiveIndex] = useState(null);
 
+
   useEffect(() => {
     // Toggle body scrolling when a card is active
     document.body.classList.toggle('no-scroll', activeIndex !== null);
@@ -15,12 +16,13 @@ export default function ProjectCard() {
     };
   }, [activeIndex]);
 
-  const handleCardClick = (index) => {
-    if (activeIndex === index) {
-      setActiveIndex(null); // Close the card if it's already open
-    } else {
-      setActiveIndex(index); // Open the clicked card
-    }
+  const closeOpenCard = (event) => {
+    event.stopPropagation(); 
+    setActiveIndex(null); 
+  };
+
+  const openClickedCard = (index) => {
+    setActiveIndex(index);
   };
 
   return (
@@ -30,7 +32,7 @@ export default function ProjectCard() {
           <div
             key={index}
             className={`projectCard-container ${activeIndex === index ? 'active' : ''}`}
-            onClick={() => handleCardClick(index)}
+            onClick={() => openClickedCard(index)}
           >
             <div className='projectCard-container_image'>
               <img src={project.image} alt={project.title} />
@@ -39,19 +41,22 @@ export default function ProjectCard() {
               <h3>{project.title}</h3>
             </div>
 
-            <div className={`projectCard-description ${activeIndex === index ? 'active' : ''}`}>
-              <div className='backdrop' ></div>
-              <div className='content'>
+            <div className={`projectCard-description ${activeIndex === index ? 'active' : ''}`}
+                            onClick={closeOpenCard} >
+              <div 
+                className='backdrop' 
+              />
+              <div 
+                className='content'
+                onClick={(event) => event.stopPropagation()}
+              >
                 <p>{project.description}</p>
               </div>
-              <button onClick={() => setActiveIndex(null)}>Close</button>
+              <button onClick={closeOpenCard}>Close</button>
             </div>
           </div>
         ))
       }
-
-      {/* Backdrop for the card */}
-      {activeIndex !== null && <div className='backdrop' onClick={() => setActiveIndex(null)}></div>}
     </div>
   );
 }
