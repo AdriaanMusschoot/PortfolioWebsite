@@ -50,9 +50,14 @@ export default function ProjectCard() {
                 className='content'
                 onClick={(event) => event.stopPropagation()}
               >
+                <button
+                  onClick={closeOpenCard}
+                  className='button'
+                >
+                  
+                </button>
                 <p>{project.description}</p>
               </div>
-              <button onClick={closeOpenCard}>Close</button>
             </div>
           </div>
         ))

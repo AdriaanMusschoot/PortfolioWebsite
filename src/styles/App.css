@@ -9,9 +9,9 @@
   --background-color:  hsl(312, 22%, 5%);
   --description-background-color: hsl(0, 24%, 35%, 1);
   --description-overlay-color: rgba(0, 0, 0, 0.8);
-  --box-shadow-default: 0 0 1vw hsla(349, 96%, 63%, 0.7), inset 0 0 1vw rgba(0, 0, 0, 0.3);
-  --box-shadow-hovered: 0 0 2vw hsla(349, 96%, 63%, 0.7), inset 0 0 2vw rgba(0, 0, 0, 0.3);
-  --hovered-color-links: hsla(349, 96%, 63%, 1);
+  --box-shadow-default: 0 0 0.5vw hsla(349, 100%, 79%, 0.7), inset 0 0 0.5vw rgba(0, 0, 0, 0.3);
+  --box-shadow-hovered: 0 0 1.5vw hsla(349, 100%, 71%, 0.7), inset 0 0 1.5vw rgba(0, 0, 0, 0.5);
+  --hovered-color-links: rgb(201, 78, 94);
   --linear-gradient-background: linear-gradient(145deg, hsl(312, 22%, 25%), hsl(312, 22%, 15%));
   --quote-size: 1.5vw;
   --quote-font-style: italic;
@@ -35,7 +35,7 @@ body {
 }
 
 #about, #projects, #skills, #contact {
-  scroll-margin-top: 9vw; /* Adjust based on your header height */
+  scroll-margin-top: 9vw; 
 }
 
 html {
@@ -66,13 +66,12 @@ header {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-width: var(--main-border-width);
-  box-shadow: var(--box-shadow-default);
   border-top: 0;
   z-index: 1;
   top: 0;
   position: fixed;
-  left: 0vw; /* Align with body margin */
-  right: 0vw; /* Align with body margin */
+  left: 2vw; /* Align with body margin */
+  right: 2vw; /* Align with body margin */
   display: flex;
   justify-content: center;
   background-color: var(--background-color);
@@ -174,9 +173,8 @@ header {
     margin-left: auto;
     margin-right: auto;
     
-    border-color: var(--main-border-color);
-    border-width: var(--main-border-width);
-    
+    border-bottom-left-radius: var(--main-border-radius);
+    border-bottom-right-radius: var(--main-border-radius);
   }
 
   & .projectCard-container_title {
@@ -195,7 +193,7 @@ header {
   width: 100vw; 
   height: 100vh; 
   background-color: var(--description-overlay-color); 
-  transition: opacity 0.5s ease; 
+  transition: opacity 0.5s ease, visibility 0.5s ease; 
   font-size: 2vh;
   color: var(--text-color);
   overflow-y: auto; 
@@ -223,6 +221,26 @@ header {
     hyphens: auto; 
     text-align: center;
     background-color: var(--description-background-color);
+
+    .button{
+      width: 3vw;
+      height: 3vw;
+      border-style: var(--main-border-style);
+      border-color: var(--main-border-color);
+      border-radius: var(--main-border-radius); 
+      border-width: var(--main-border-width);
+      color: var(--text-color);
+      background-color: var(--background-color);
+      font-size: 2vw;
+      position: relative;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      &:hover{
+        border-color: var(--hovered-color-links);
+        box-shadow: var(--box-shadow-hovered);
+      }
+    }
   }
 }
 
