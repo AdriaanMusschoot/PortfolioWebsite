@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <>
       <div className='header--navbar'>
-        <a href='#about'>About</a>
+        <a href='#about'>Home</a>
         <a href='#projects'>Projects</a>
         <div className='header--logo'>
           <img src='./assets/Logo.png' alt='logo'/>

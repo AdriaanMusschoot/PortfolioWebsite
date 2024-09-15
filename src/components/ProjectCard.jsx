@@ -39,9 +39,11 @@ export default function ProjectCard() {
               <h3>{project.title}</h3>
             </div>
 
-            {/* Description section that slides up from the bottom */}
             <div className={`projectCard-description ${activeIndex === index ? 'active' : ''}`}>
-              <p>{project.description}</p>
+              <div className='backdrop' ></div>
+              <div className='content'>
+                <p>{project.description}</p>
+              </div>
               <button onClick={() => setActiveIndex(null)}>Close</button>
             </div>
           </div>
