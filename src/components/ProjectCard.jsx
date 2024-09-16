@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, act } from 'react';
 import projects from '../data/projects.json';
 import '../styles/App.css';
+import DOMPurify from 'dompurify';
 
 export default function ProjectCard() {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const sanitizedDescription = DOMPurify.sanitize(project.description);
 
+  const [activeIndex, setActiveIndex] = useState(null);
 
   useEffect(() => {
     // Toggle body scrolling when a card is active
@@ -31,7 +33,7 @@ export default function ProjectCard() {
         projects.map((project, index) => (
           <div
             key={index}
-            className={`projectCard-container ${activeIndex === index ? 'active' : ''}`}
+            className={`projectCard-container ${activeIndex === index ? 'active' : ''} `}
             onClick={() => openClickedCard(index)}
           >
             <div className='projectCard-container_image'>
@@ -54,9 +56,12 @@ export default function ProjectCard() {
                   onClick={closeOpenCard}
                   className='button'
                 >
-                  
+                  <img src='./assets/Cross.png' className='button-img'/>
                 </button>
-                <p>{project.description}</p>
+              <div
+                className='description-content' 
+                dangerouslySetInnerHTML={{ __html: sanitizedDescription }}          
+              />
               </div>
             </div>
           </div>

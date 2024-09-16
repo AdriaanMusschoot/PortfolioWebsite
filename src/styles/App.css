@@ -55,6 +55,8 @@ hr {
   border-radius: var(--main-border-radius);
   margin-top: 3vw;
   margin-bottom: 0vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
 }
 
 /* == HEADER == */
@@ -70,12 +72,11 @@ header {
   z-index: 1;
   top: 0;
   position: fixed;
-  left: 2vw; /* Align with body margin */
-  right: 2vw; /* Align with body margin */
+  left: 4vw; /* Align with body margin */
+  right: 4vw; /* Align with body margin */
   display: flex;
   justify-content: center;
   background-color: var(--background-color);
-
 
   & .header--logo {
     margin-top: 1vw;
@@ -93,7 +94,16 @@ header {
     gap: 4vw; /* Space between items */
 
     a {
-      font-size: 2vw;
+      font-size: 2vw; 
+
+      &.active {
+        font-weight: bold;
+        text-decoration: underline; 
+
+        &:hover{
+          color: var(--hovered-color-links);
+        }
+      }
     }
   }
 }
@@ -150,7 +160,7 @@ header {
 
 .projectCard-container {
   width: 40%;
-  background: var(--linear-gradient-background);
+  background: var(--description-background-color);
   box-shadow: var(--box-shadow-default);
   overflow: hidden;
   position: relative;
@@ -159,14 +169,7 @@ header {
   border-color: var(--main-border-color);
   border-radius: var(--main-border-radius); 
   border-width: var(--main-border-width);
-  &:hover{
-    border-color: var(--hovered-color-links);
-    box-shadow: var(--box-shadow-hovered);
 
-    .projectCard-container_title {
-      color: var(--hovered-color-links); 
-    }
-  }
   & .projectCard-container_image img {
     width: 100%;
     display: block;
@@ -182,6 +185,15 @@ header {
     color: var(--text-color);
     text-align: center;
     letter-spacing: 0.05rem;
+  }
+
+  &:hover {
+    border-color: var(--hovered-color-links);
+    box-shadow: var(--box-shadow-hovered);
+
+    .projectCard-container_title{
+      color: var(--hovered-color-links);
+    }
   }
 }
 
@@ -221,8 +233,15 @@ header {
     hyphens: auto; 
     text-align: center;
     background-color: var(--description-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     .button{
+      display: flex;
+      align-items: center;
+      justify-content: center; 
       width: 3vw;
       height: 3vw;
       border-style: var(--main-border-style);
@@ -230,15 +249,19 @@ header {
       border-radius: var(--main-border-radius); 
       border-width: var(--main-border-width);
       color: var(--text-color);
-      background-color: var(--background-color);
+      background-color: transparent;
       font-size: 2vw;
-      position: relative;
-      top: 20px;
-      right: 20px;
       cursor: pointer;
+      position: relative;
+      margin-top: 2%;
+
       &:hover{
         border-color: var(--hovered-color-links);
         box-shadow: var(--box-shadow-hovered);
+      }
+
+      .button-img{
+        width: 120%;
       }
     }
   }
@@ -264,7 +287,7 @@ body.no-scroll {
   line-height: 2vw;
 
   & .skills-container {
-    background: var(--linear-gradient-background);
+    background: var(--description-background-color);
     width: 40%;
     color: var(--text-color);
     padding: 1vw;
