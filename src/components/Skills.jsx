@@ -14,7 +14,7 @@ export default function Skills() {
                                 <li>{content}</li>
                             </ul>
                         ))
-                    }
+                    } 
                 </div>
             ))
         }
