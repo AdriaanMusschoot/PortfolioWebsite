@@ -15,8 +15,8 @@ export default function SnailsAndPotions () {
           height='315' 
           src='./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg' 
           alt='tallas'
-        />
-      </div>
+        /> 
+      </div> 
     </> 
   )
 };
