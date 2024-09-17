@@ -1,12 +1,21 @@
-import React, { useState, useEffect, act } from 'react';
+import React, { useState, useEffect } from 'react';
 import projects from '../data/projects.json';
 import '../styles/App.css';
-import DOMPurify from 'dompurify';
+import SnailsAndPotions from './description/SnailsAndPotions.jsx';
 
 export default function ProjectCard() {
-  const sanitizedDescription = DOMPurify.sanitize(project.description);
 
   const [activeIndex, setActiveIndex] = useState(null);
+
+  const getDescriptionComponent = (descriptionId) => {
+    switch(descriptionId )
+    {
+    case 0:
+      return <SnailsAndPotions />;
+    default:
+      return <div>Component Missing</div>
+    }
+  }
 
   useEffect(() => {
     // Toggle body scrolling when a card is active
@@ -30,43 +39,48 @@ export default function ProjectCard() {
   return (
     <div className='projects'>
       {
-        projects.map((project, index) => (
-          <div
-            key={index}
-            className={`projectCard-container ${activeIndex === index ? 'active' : ''} `}
-            onClick={() => openClickedCard(index)}
-          >
-            <div className='projectCard-container_image'>
-              <img src={project.image} alt={project.title} />
-            </div>
-            <div className='projectCard-container_title'>
-              <h3>{project.title}</h3>
-            </div>
+        projects.map((project, index) => {
+          return (
+            <div
+              key={index}
+              className={`projectCard-container ${activeIndex === index ? 'active' : ''} `}
+              onClick={() => openClickedCard(index)}
+            >
+              {/* Image Section */}
+              <div className='projectCard-container_image'>
+                <img src={project.image} alt={project.title} />
+              </div>
 
-            <div className={`projectCard-description ${activeIndex === index ? 'active' : ''}`}
-                            onClick={closeOpenCard} >
-              <div 
-                className='backdrop' 
-              />
-              <div 
-                className='content'
-                onClick={(event) => event.stopPropagation()}
-              >
-                <button
-                  onClick={closeOpenCard}
-                  className='button'
+              {/* Title Section */}
+              <div className='projectCard-container_title'>
+                <h3>{project.title}</h3>
+              </div>
+
+              {/* Description Section */}
+              <div className={`projectCard-description ${activeIndex === index ? 'active' : ''}`}
+                  onClick={closeOpenCard}>
+                <div className='backdrop' />
+                <div 
+                  className='content'
+                  onClick={(event) => event.stopPropagation()}
                 >
-                  <img src='./assets/Cross.png' className='button-img'/>
-                </button>
-              <div
-                className='description-content' 
-                dangerouslySetInnerHTML={{ __html: sanitizedDescription }}          
-              />
+                  <button
+                    onClick={closeOpenCard}
+                    className='button'
+                  >
+                    <img src='./assets/Cross.png' className='button-img' alt='cross'/>
+                  </button>
+                  <div
+                    className='description-content' >
+                    {getDescriptionComponent(project.description)}
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        ))
+          );
+        })
       }
     </div>
   );
+
 }
