@@ -9,6 +9,12 @@ export default function SnailsAndPotions () {
             <source src='./assets/ProjectImages/SnailsAndPotions/Trailer.mp4' type='video/mp4'/>
             Your browser does not support the video tag.
         </video>     
+        <img 
+          width='560' 
+          height='315' 
+          src='./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg' 
+          alt='Description of the image'
+        />
       </div>
     </> 
   )
