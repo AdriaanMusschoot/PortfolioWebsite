@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import projects from '../data/projects.json';
 import '../styles/App.css';
-import SnailsAndPotions from './description/SnailsAndPotions.jsx';
+import SnailsAndPotions from './SnailsAndPotions.jsx';
 
 export default function ProjectCard() {
 
