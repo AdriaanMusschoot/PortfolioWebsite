@@ -10,10 +10,11 @@ export default function SnailsAndPotions () {
             Your browser does not support the video tag.
         </video>     
         <img 
+          className='trymebitch'
           width='560' 
           height='315' 
           src='./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg' 
-          alt='Description of the image'
+          alt='tallas'
         />
       </div>
     </> 
