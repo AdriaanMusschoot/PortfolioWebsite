@@ -11,9 +11,11 @@ export default function ProjectCard() {
     switch(descriptionId )
     {
     case 0:
-      return <SnailsAndPotions />;
+      return <SnailsAndPotions
+              activeIndex={activeIndex}
+             />;
     default:
-      return <div>Component Missing</div>
+      return <div></div>
     }
   }
 
@@ -72,7 +74,7 @@ export default function ProjectCard() {
                   </button>
                   <div
                     className='description' >
-                    {getDescriptionComponent(project.description)}
+                    {getDescriptionComponent(index)}
                   </div>
                 </div>
               </div>

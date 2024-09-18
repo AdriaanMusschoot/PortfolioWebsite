@@ -1,27 +1,22 @@
 [
     {
         "image" : "./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg",
-        "title" : "Snails And Potions",
-        "description" : 0
+        "title" : "Snails And Potions"
     },
     {
         "image" : "./assets/ProjectImages/testImage.jpg",
-        "title" : "Test",
-        "description" : 1
+        "title" : "Test"
     },
     {
         "image" : "./assets/ProjectImages/testImage.jpg",
-        "title" : "Test",
-        "description" : 2
+        "title" : "Test"
     },
     {
         "image" : "./assets/ProjectImages/testImage.jpg",
-        "title" : "Test",
-        "description" : 3
+        "title" : "Test"
     },
     {
         "image" : "./assets/ProjectImages/testImage.jpg",
-        "title" : "Test",
-        "description" : 4
+        "title" : "Test"
     }
 ]
