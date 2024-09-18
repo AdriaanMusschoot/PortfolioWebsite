@@ -9,6 +9,7 @@
   --background-color:  hsl(312, 22%, 5%);
   --description-background-color: hsl(0, 24%, 35%, 1);
   --description-overlay-color: rgba(0, 0, 0, 0.8);
+  --description-text-size: 1.3vw;
   --box-shadow-default: 0 0 0.5vw hsla(349, 100%, 79%, 0.7), inset 0 0 0.5vw rgba(0, 0, 0, 0.3);
   --box-shadow-hovered: 0 0 1.5vw hsla(349, 100%, 71%, 0.7), inset 0 0 1.5vw rgba(0, 0, 0, 0.5);
   --hovered-color-links: rgb(201, 78, 94);
@@ -219,8 +220,8 @@ header {
 
   .content{
     z-index: 3;
-    margin-top:2vw;
-    margin-bottom:2vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
     width: 70%;
     font-size: 2vw;
     border-style: var(--main-border-style);

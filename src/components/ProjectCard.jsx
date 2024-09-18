@@ -71,7 +71,7 @@ export default function ProjectCard() {
                     <img src='./assets/Cross.png' className='button-img' alt='cross'/>
                   </button>
                   <div
-                    className='description-content' >
+                    className='description' >
                     {getDescriptionComponent(project.description)}
                   </div>
                 </div>
