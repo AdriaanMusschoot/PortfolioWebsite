@@ -5,7 +5,7 @@ export default function SnailsAndPotions () {
     <>
       <div className='Title'>
         <h1>Snails And Potions</h1>
-        <video width='560' height='315' controls src='./assets/ProjectImages/SnailsAndPotions/Trailer.MKV'>
+        <video width='560' height='315' controls src='./assets/ProjectImages/SnailsAndPotions/Trailer.webm'>
             Your browser does not support the video tag.
         </video>     
         <img
