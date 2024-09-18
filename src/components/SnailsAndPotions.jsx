@@ -9,6 +9,7 @@ export default function SnailsAndPotions () {
             Your browser does not support the video tag.
         </video>     
         <iframe
+          title='Trailer'
           className='Trailer'
           width='560' 
           height='315' 
