@@ -5,9 +5,9 @@ export default function SnailsAndPotions () {
     <>
       <div className='Title'>
         <h1>Snails And Potions</h1>
-        <iframe title='Trailer' width='560' height='315' controls src='./assets/ProjectImages/SnailsAndPotions/Trailer.mp4'>
+        <video width='560' height='315' controls src='./assets/ProjectImages/SnailsAndPotions/Trailer.MKV'>
             Your browser does not support the video tag.
-        </iframe>     
+        </video>     
         <img
           className='thumbnail'
           width='560' 
