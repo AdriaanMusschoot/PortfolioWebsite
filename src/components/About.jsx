@@ -14,6 +14,9 @@ export default function About() {
         <p>
         "The only way to do great work is to love what you do. In software development, every bug is a lesson, every challenge an opportunity to grow. Keep coding, keep learning, and the future will be written in your own code."
         </p>
+        <p>
+          -ChatGPT
+        </p>
       </div>
     </>
   )

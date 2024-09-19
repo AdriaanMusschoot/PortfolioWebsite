@@ -78,7 +78,7 @@ export default function SnailsAndPotions({ activeIndex }) {
         <img
           className='itch-img'
           src='./assets/ProjectImages/ITCHIO.svg'
-          alt='thumbnail'
+          alt='itch'
         />
       </a>
     </div>

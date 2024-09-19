@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import projects from '../data/projects.json';
 import '../styles/App.css';
 import SnailsAndPotions from './SnailsAndPotions.jsx';
+import Amugen from './Amugen.jsx';
 
 export default function ProjectCard() {
 
@@ -14,6 +15,10 @@ export default function ProjectCard() {
       return <SnailsAndPotions
               activeIndex={activeIndex}
              />;
+    case 1:
+      return <Amugen
+             />; 
+
     default:
       return <div></div>
     }
@@ -73,6 +78,10 @@ export default function ProjectCard() {
                     className='description' >
                     {getDescriptionComponent(index)}
                   </div>
+                  
+                  <img src='./assets/Cross.png' className='button-img' alt='cross' 
+                    onClick={closeOpenCard}
+                  />
                 </div>
               </div>
             </div>
