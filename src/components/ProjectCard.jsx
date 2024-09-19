@@ -66,12 +66,9 @@ export default function ProjectCard() {
                   className='content'
                   onClick={(event) => event.stopPropagation()}
                 >
-                  <button
+                  <img src='./assets/Cross.png' className='button-img' alt='cross' 
                     onClick={closeOpenCard}
-                    className='button'
-                  >
-                    <img src='./assets/Cross.png' className='button-img' alt='cross'/>
-                  </button>
+                  />
                   <div
                     className='description' >
                     {getDescriptionComponent(index)}
