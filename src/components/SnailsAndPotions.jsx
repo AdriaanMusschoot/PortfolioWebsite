@@ -46,7 +46,7 @@ export default function SnailsAndPotions({ activeIndex }) {
         This means the cauldron needs to detect dynamically if its contents still could add up to a recipe or if they add up to a recipe and then spew out the correct potion. 
         To create a system to detect this was also quite challenging but fun nonetheless.
         The functionality of the UI for this was also done by me, as the player needs to know what ingredients he needs to gather for his potion.
-        Main menu and pause menu I also took upon me as I saw another opportunity to work with state machines :)
+        Main menu and pause menu I also took upon me as I saw another opportunity to work with the State Pattern :)
       </p>
       <video
         className='Trailer'
@@ -64,9 +64,11 @@ export default function SnailsAndPotions({ activeIndex }) {
         We were a team of 5, 2 programming students and 3 game graphics production students. 
         12 weeks we spent 10 hours a week each developing this game (and some bonus hours).
         The first three weeks involved mainly prototyping, defining art style and setting up our guidelines for code as well as art.
+        Then we started hacked away at develompent and rounded off with 15 hours worth of polish work.
+        The prototype as well as the game itself were made in unreal 5 using C++.
         I am really proud of all the work everyone put in and the result is absolutely stunning.
-        Feel free to download it from itch.io and try out the game yourself.
-        These were my lovely colleagues: Tijl Gommers (programmer), Senne Bovee (artist), Ward Vervoort (artist), Luca Zulianello (artist)
+        These were my lovely colleagues: Tijl Gommers (programmer), Senne Bovee (artist), Ward Vervoort (artist), Luca Zulianello (artist).
+        Feel free to download the game from itch.io and try it out yourself.
       </p>
       <a 
         href='https://boomertijl.itch.io/snails-and-potions' 
