@@ -10,7 +10,7 @@ import './styles/App.css';
 
 function App() {
   return (
-    <> 
+    <>
       <Helmet>
         <title>Adriaan Musschoot Portfolio</title>
       </Helmet>

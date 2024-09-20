@@ -24,17 +24,17 @@ export default function SnailsAndPotions({ activeIndex }) {
         May the best snail-master reach the finish first.
       </p>
       <img
-        className='img-1'
+        className='speed'
         src='./assets/ProjectImages/SnailsAndPotions/Speed.jpg'
         alt='thumbnail'
       />
       <img
-        className='img-2'
+        className='overview'
         src='./assets/ProjectImages/SnailsAndPotions/Overview.jpg'
         alt='thumbnail'
       />
       <img
-        className='img-3'
+        className='stats'
         src='./assets/ProjectImages/SnailsAndPotions/Stats.jpg'
         alt='thumbnail'
       />
@@ -48,17 +48,6 @@ export default function SnailsAndPotions({ activeIndex }) {
         The functionality of the UI for this was also done by me, as the player needs to know what ingredients he needs to gather for his potion.
         Main menu and pause menu I also took upon me as I saw another opportunity to work with the State Pattern :)
       </p>
-      <a 
-        href='https://boomertijl.itch.io/snails-and-potions' 
-        target='_blank' 
-        rel='noopener noreferrer'
-      >
-        <img
-          className='itch-img'
-          src='./assets/ProjectImages/ITCHIO.svg'
-          alt='itch'
-        />
-      </a>
       <video
         className='Trailer'
         ref={videoRef}
@@ -81,6 +70,17 @@ export default function SnailsAndPotions({ activeIndex }) {
         These were my lovely colleagues: Tijl Gommers (programmer), Senne Bovee (artist), Ward Vervoort (artist), Luca Zulianello (artist).
         Feel free to download the game from itch.io and try it out yourself.
       </p>
+      <a 
+        href='https://boomertijl.itch.io/snails-and-potions' 
+        target='_blank' 
+        rel='noopener noreferrer'
+      >
+        <img
+          className='itch-img'
+          src='./assets/ProjectImages/ITCHIO.svg'
+          alt='itch'
+        />
+      </a>
     </div>
   );
 }

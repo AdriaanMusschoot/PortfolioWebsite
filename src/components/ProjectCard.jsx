@@ -3,7 +3,6 @@ import projects from '../data/projects.json';
 import '../styles/App.css';
 import SnailsAndPotions from './SnailsAndPotions.jsx';
 import Amugen from './Amugen.jsx';
-import Vulkan from './Vulkan.jsx';
 
 export default function ProjectCard() {
 
@@ -19,25 +18,11 @@ export default function ProjectCard() {
     case 1:
       return <Amugen
              />; 
-    case 2: 
-      return <Vulkan
-             />;
+
     default:
       return <div></div>
     }
   }
-
-  const [imageSrc, setImageSrc] = useState('./assets/CrossDefault.png');
-
-  const handleMouseOver = () => {
-    setImageSrc('./assets/CrossHovered.png');
-  };
-
-  const handleMouseOut = () => {
-    setImageSrc('./assets/CrossDefault.png');
-  };
-
-
 
   useEffect(() => {
     // Toggle body scrolling when a card is active
@@ -86,24 +71,16 @@ export default function ProjectCard() {
                   className='content'
                   onClick={(event) => event.stopPropagation()}
                 >
-                  <img alt='x' 
-                    src={imageSrc}
-                    className='button-img'
+                  <img src='./assets/Cross.png' className='button-img' alt='cross' 
                     onClick={closeOpenCard}
-                    onMouseOver={handleMouseOver}
-                    onMouseOut={handleMouseOut}
                   />
                   <div
                     className='description' >
                     {getDescriptionComponent(index)}
                   </div>
                   
-                  <img alt='x' 
-                    src={imageSrc}
-                    className='button-img'
+                  <img src='./assets/Cross.png' className='button-img' alt='cross' 
                     onClick={closeOpenCard}
-                    onMouseOver={handleMouseOver}
-                    onMouseOut={handleMouseOut}
                   />
                 </div>
               </div>

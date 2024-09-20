@@ -8,8 +8,8 @@
         "title" : "Amugen - Game Engine"
     },
     {
-        "image" : "./assets/ProjectImages/Vulkan/Thumbnail.png",
-        "title" : "Instanced Rendering - Vulkan"
+        "image" : "./assets/ProjectImages/testImage.jpg",
+        "title" : "Test"
     },
     {
         "image" : "./assets/ProjectImages/testImage.jpg",

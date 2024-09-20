@@ -1,6 +1,7 @@
 .snails-and-potions {
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 2%;
 }
 
 .snails-and-potions h1,
@@ -12,7 +13,56 @@
   font-size: var(--description-text-size);
 }
 
-.snails-and-potions .Trailer {
-  margin-top: 2%;
+.snails-and-potions .stats {
+  width: 32%;
+  
+  border-radius: var(--main-border-radius);
+  border-style: var(--main-border-style);
+  border-color: var(--main-border-color);
+  border-width: var(--main-border-width);
+  box-shadow: var(--box-shadow-default);
 }
 
+.snails-and-potions .overview {
+  width: 32%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+  border-radius: var(--main-border-radius);
+  border-style: var(--main-border-style);
+  border-color: var(--main-border-color);
+  border-width: var(--main-border-width);
+  box-shadow: var(--box-shadow-default);
+}
+
+.snails-and-potions .speed {
+  width: 32%;
+  
+  border-radius: var(--main-border-radius);
+  border-style: var(--main-border-style);
+  border-color: var(--main-border-color);
+  border-width: var(--main-border-width);
+  box-shadow: var(--box-shadow-default);
+}
+
+.snails-and-potions .itch-img {
+  width: 20%;
+  border-radius: var(--main-border-radius);
+  border-style: var(--main-border-style);
+  border-color: var(--main-border-color);
+  border-width: var(--main-border-width);
+  box-shadow: var(--box-shadow-default);
+
+  &:hover{
+    box-shadow: var(--box-shadow-hovered);
+  }
+}
+
+.snails-and-potions video {
+  cursor: pointer;
+  border-radius: var(--main-border-radius);
+  border-style: var(--main-border-style);
+  border-color: var(--main-border-color);
+  border-width: var(--main-border-width);
+  box-shadow: var(--box-shadow-default);
+}

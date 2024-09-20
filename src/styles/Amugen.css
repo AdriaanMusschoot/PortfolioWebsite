@@ -1,18 +1,39 @@
 .Amugen {
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 2%;
 }
+
 
 .Amugen h1,
 .Amugen h2 {
   margin: 0;
 }
 
+
 .Amugen p {
   font-size: var(--description-text-size);
 }
 
-.Amugen .Trailer {
-  margin-top: 3%;
-  cursor: default;
+.Amugen .git-img {
+  width: 20%;
+  height: auto;
+  border-radius: var(--main-border-radius);
+  border-style: var(--main-border-style);
+  border-color: var(--main-border-color);
+  border-width: var(--main-border-width);
+  box-shadow: var(--box-shadow-default);
+
+  &:hover{
+    box-shadow: var(--box-shadow-hovered);
+  }
+}
+
+.Amugen .Trailer{
+  margin-top: 4%;
+  border-radius: var(--main-border-radius);
+  border-style: var(--main-border-style);
+  border-color: var(--main-border-color);
+  border-width: var(--main-border-width);
+  box-shadow: var(--box-shadow-default);
 }
