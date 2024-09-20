@@ -1,0 +1,14 @@
+.vulkan {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+}
+  
+.vulkan video {
+    cursor: pointer;
+    border-radius: var(--main-border-radius);
+    border-style: var(--main-border-style);
+    border-color: var(--main-border-color);
+    border-width: var(--main-border-width);
+    box-shadow: var(--box-shadow-default);
+}
