@@ -16,6 +16,7 @@
 }
 
 .Amugen .git-img {
+  margin-top: 2%;
   width: 20%;
   height: auto;
   border-radius: var(--main-border-radius);
@@ -30,6 +31,7 @@
 }
 
 .Amugen .Trailer{
+  width: 80%;
   margin-top: 4%;
   border-radius: var(--main-border-radius);
   border-style: var(--main-border-style);
