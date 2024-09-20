@@ -24,6 +24,18 @@ export default function ProjectCard() {
     }
   }
 
+  const [imageSrc, setImageSrc] = useState('./assets/CrossDefault.png');
+
+  const handleMouseOver = () => {
+    setImageSrc('./assets/CrossHovered.png');
+  };
+
+  const handleMouseOut = () => {
+    setImageSrc('./assets/CrossDefault.png');
+  };
+
+
+
   useEffect(() => {
     // Toggle body scrolling when a card is active
     document.body.classList.toggle('no-scroll', activeIndex !== null);
@@ -71,16 +83,24 @@ export default function ProjectCard() {
                   className='content'
                   onClick={(event) => event.stopPropagation()}
                 >
-                  <img src='./assets/Cross.png' className='button-img' alt='cross' 
+                  <img alt='x' 
+                    src={imageSrc}
+                    className='button-img'
                     onClick={closeOpenCard}
+                    onMouseOver={handleMouseOver}
+                    onMouseOut={handleMouseOut}
                   />
                   <div
                     className='description' >
                     {getDescriptionComponent(index)}
                   </div>
                   
-                  <img src='./assets/Cross.png' className='button-img' alt='cross' 
+                  <img alt='x' 
+                    src={imageSrc}
+                    className='button-img'
                     onClick={closeOpenCard}
+                    onMouseOver={handleMouseOver}
+                    onMouseOut={handleMouseOut}
                   />
                 </div>
               </div>
