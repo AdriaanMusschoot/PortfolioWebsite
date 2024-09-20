@@ -12,7 +12,7 @@
   font-size: var(--description-text-size);
 }
 
-.vulkan .Trailer {
+.vulkan video {
   margin-top: 1%;
   cursor: default;
 }
