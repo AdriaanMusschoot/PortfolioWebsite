@@ -12,7 +12,7 @@ export default function Vulkan() {
             loop
             muted
           >
-            <source src='./assets/ProjectImages/Vulkan/Trailer.webm' />
+            <source src='https://media.githubusercontent.com/media/AdriaanMusschoot/PortfolioWebsite/gh-pages/assets/ProjectImages/Vulkan/Trailer.webm' />
             Your browser does not support the video tag.
           </video>
         </div>
