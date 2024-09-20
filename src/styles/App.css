@@ -348,3 +348,75 @@ body.no-scroll {
     }
   }
 }
+
+/* == INDIVIDUAL CARDS CSS == */
+
+.git-img {
+  margin-top: 2%;
+  width: 20%;
+  height: auto;
+  border-radius: var(--main-border-radius);
+  border-style: var(--main-border-style);
+  border-color: var(--main-border-color);
+  border-width: var(--main-border-width);
+  box-shadow: var(--box-shadow-default);
+
+  &:hover{
+    box-shadow: var(--box-shadow-hovered);
+  }
+}
+
+
+.itch-img {
+  width: 20%;
+  border-radius: var(--main-border-radius);
+  border-style: var(--main-border-style);
+  border-color: var(--main-border-color);
+  border-width: var(--main-border-width);
+  box-shadow: var(--box-shadow-default);
+
+  &:hover{
+    box-shadow: var(--box-shadow-hovered);
+  }
+}
+
+.Trailer {
+  cursor: pointer;
+  border-radius: var(--main-border-radius);
+  border-style: var(--main-border-style);
+  border-color: var(--main-border-color);
+  border-width: var(--main-border-width);
+  box-shadow: var(--box-shadow-default);
+}
+
+.img-1 {
+  width: 32%;
+  
+  border-radius: var(--main-border-radius);
+  border-style: var(--main-border-style);
+  border-color: var(--main-border-color);
+  border-width: var(--main-border-width);
+  box-shadow: var(--box-shadow-default);
+}
+
+.img-2 {
+  width: 32%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+  border-radius: var(--main-border-radius);
+  border-style: var(--main-border-style);
+  border-color: var(--main-border-color);
+  border-width: var(--main-border-width);
+  box-shadow: var(--box-shadow-default);
+}
+
+.img-3 {
+  width: 32%;
+  
+  border-radius: var(--main-border-radius);
+  border-style: var(--main-border-style);
+  border-color: var(--main-border-color);
+  border-width: var(--main-border-width);
+  box-shadow: var(--box-shadow-default);
+}

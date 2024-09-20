@@ -1,14 +1,18 @@
 .vulkan {
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom: 2%;
 }
-  
-.vulkan video {
-    cursor: pointer;
-    border-radius: var(--main-border-radius);
-    border-style: var(--main-border-style);
-    border-color: var(--main-border-color);
-    border-width: var(--main-border-width);
-    box-shadow: var(--box-shadow-default);
+
+.vulkan h1,
+.vulkan h2 {
+  margin: 0;
+}
+
+.vulkan p {
+  font-size: var(--description-text-size);
+}
+
+.vulkan .Trailer {
+  margin-top: 1%;
+  cursor: default;
 }
