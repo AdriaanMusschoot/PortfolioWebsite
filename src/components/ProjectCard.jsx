@@ -3,6 +3,7 @@ import projects from '../data/projects.json';
 import '../styles/App.css';
 import SnailsAndPotions from './SnailsAndPotions.jsx';
 import Amugen from './Amugen.jsx';
+import Vulkan from './Vulkan.jsx';
 
 export default function ProjectCard() {
 
@@ -18,7 +19,9 @@ export default function ProjectCard() {
     case 1:
       return <Amugen
              />; 
-
+    case 2: 
+      return <Vulkan
+             />;
     default:
       return <div></div>
     }
