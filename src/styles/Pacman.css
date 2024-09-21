@@ -1,0 +1,18 @@
+.Pacman {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+  
+.Pacman h1,
+.Pacman h2 {
+  margin: 0;
+}
+
+.Pacman p {
+  font-size: var(--description-text-size);
+}
+
+.Pacman .Trailer{
+  margin-top: 3%;
+  cursor: default;
+}

@@ -4,6 +4,7 @@ import '../styles/App.css';
 import SnailsAndPotions from './SnailsAndPotions.jsx';
 import Amugen from './Amugen.jsx';
 import Vulkan from './Vulkan.jsx';
+import Pacman from './Pacman.jsx';
 
 export default function ProjectCard() {
 
@@ -21,6 +22,9 @@ export default function ProjectCard() {
              />; 
     case 2: 
       return <Vulkan
+          />;             
+    case 3: 
+      return <Pacman
           />;             
 
     default:

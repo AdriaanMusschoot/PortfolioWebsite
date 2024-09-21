@@ -9,7 +9,7 @@ export default function Vulkan() {
           <h1>Instanced Rendering - Vulkan</h1>
           <h2>The Project</h2>
           <p>
-            I have created an application with the Vulkan API, that allows for instanced rendering 2D and 3D objects. 
+            I have created an application with the Vulkan API, that allows for instanced rendering of 2D and 3D objects. 
             This project had a really steep learning curve. We got started by setting a whole load of Vulkan objects, before we could even get started on setting up the pipeline.
             So then when I finally managed to render a triangle with a simple 2D pipeline you know that it felt incredible. 
             Adding a camera and setting up a 3D pipeline with simple diffuse textures really was a great next step. 
