@@ -17,6 +17,8 @@
   --quote-size: 1.1vw;
   --quote-font-style: italic;
   --quote-alignment: center;
+  --time-transition: 0.3s;
+  --scale-transition: 1.1;
 }
 
 body {
@@ -92,16 +94,43 @@ header {
   & .header--navbar {
     display: flex;
     align-items: center;
-    gap: 4vw; /* Space between items */
-
+    gap: 4vw;
+  
     a {
-      font-size: 2vw; 
-
+      font-size: 2vw;
+      position: relative;
+      text-decoration: none;
+      transition: transform var(--time-transition) ease, color var(--time-transition) ease;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 0%; 
+        height: 7%;
+        background-color: var(--text-color);
+        transition: width var(--time-transition) ease,  background-color var(--time-transition) ease;
+        transform: translateX(-50%);
+        border-radius: var(--main-border-radius);
+      }
+      
+      &:hover {
+        transform: scale(var(--scale-transition));
+        color: var(--hovered-color-links);
+      }
+      
       &.active {
         font-weight: bold;
-        text-decoration: underline; 
-
-        &:hover{
+        color: var(--hovered-color-links);
+        
+        &::after {
+          width: 100%;
+          background-color: var(--hovered-color-links);
+        }
+    
+        &:hover {
+          transform: scale(var(--scale-transition));
           color: var(--hovered-color-links);
         }
       }
@@ -238,7 +267,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    
     .button-img{
       margin: 2%;
       width: 5%;
@@ -248,9 +277,11 @@ header {
       border-radius: var(--main-border-radius); 
       border-width: var(--main-border-width);
       box-shadow: var(--box-shadow-default);
+      transition: border-color var(--time-transition) ease, box-shadow var(--time-transition) ease, transform var(--time-transition) ease; /* Add this line for smooth transition */
 
       &:hover{
         cursor: pointer;
+        transform: scale(var(--scale-transition)); /* Scale the button on hover */
         border-color: var(--hovered-color-links);
         box-shadow: var(--box-shadow-hovered);
       }
