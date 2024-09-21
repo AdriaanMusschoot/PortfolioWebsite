@@ -101,40 +101,46 @@ header {
       position: relative;
       text-decoration: none;
       transition: transform var(--time-transition) ease, color var(--time-transition) ease;
-      
+    
       &::after {
         content: '';
         position: absolute;
         left: 50%;
         bottom: 0;
-        width: 0%; 
-        height: 7%;
+        width: 0%;
+        height: 0.15vw;
         background-color: var(--text-color);
-        transition: width var(--time-transition) ease,  background-color var(--time-transition) ease;
+        transition: width var(--time-transition) ease, background-color var(--time-transition) ease;
         transform: translateX(-50%);
         border-radius: var(--main-border-radius);
       }
-      
+    
       &:hover {
         transform: scale(var(--scale-transition));
         color: var(--hovered-color-links);
       }
-      
+    
       &.active {
         font-weight: bold;
         color: var(--hovered-color-links);
-        
+    
         &::after {
           width: 100%;
-          background-color: var(--hovered-color-links);
+          background-color: var(--hovered-color-links); 
         }
     
         &:hover {
           transform: scale(var(--scale-transition));
           color: var(--hovered-color-links);
+    
+          &::after {
+            width: 100%;
+            background-color: var(--hovered-color-links);
+          }
         }
       }
     }
+    
   }
 }
 
@@ -271,19 +277,22 @@ header {
     .button-img{
       margin: 2%;
       width: 5%;
+      height: auto;
         
-      border-style: var(--main-border-style);
-      border-color: var(--main-border-color);
-      border-radius: var(--main-border-radius); 
-      border-width: var(--main-border-width);
-      box-shadow: var(--box-shadow-default);
-      transition: border-color var(--time-transition) ease, box-shadow var(--time-transition) ease, transform var(--time-transition) ease; /* Add this line for smooth transition */
+      transition: border-color var(--time-transition) ease, box-shadow var(--time-transition) ease, transform var(--time-transition) ease;
 
       &:hover{
         cursor: pointer;
-        transform: scale(var(--scale-transition)); /* Scale the button on hover */
-        border-color: var(--hovered-color-links);
-        box-shadow: var(--box-shadow-hovered);
+        transform: scale(var(--scale-transition));
+
+        .img-fill{
+          fill: var(--hovered-color-links);
+        }
+      }
+
+      .img-fill{
+        fill: var(--main-border-color);
+        transition: fill var(--time-transition) ease;
       }
     }
   }
