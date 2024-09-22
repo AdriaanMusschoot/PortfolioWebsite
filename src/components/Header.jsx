@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { ReactComponent as Logo } from '../assets/svg/Logo.svg';
 
 export default function Header() {
   useEffect(() => {
@@ -46,11 +47,13 @@ export default function Header() {
   return (
     <>
       <div className='header--navbar'>
-        <a href='#about'>Home</a>
+        <a href='#home'>Home</a>
         <a href='#projects'>Projects</a>
+        <a href='#about'>
         <div className='header--logo'>
-          <img src='./assets/Logo.png' alt='logo'/>
+          <Logo className='svg'/>
         </div>
+        </a>
         <a href='#skills'>Skills</a>
         <a href='#contact'>Contact</a>
       </div>

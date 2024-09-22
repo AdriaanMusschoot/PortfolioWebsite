@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet';
-import About from './components/About';
+import Home from './components/Home';
 import Contact from './components/Contact';
 import Header from './components/Header';
 import ProjectCard from './components/ProjectCard';
@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import WhiteSpace from './components/WhiteSpace';
 
 import './styles/App.css';
+import About from './components/About.jsx';
 
 function App() {
   return (
@@ -22,22 +23,27 @@ function App() {
         <WhiteSpace />
        </section>
        <hr></hr>
-       <section id='about' className='about'>
-          <About />
+       <section id='home'>
+          <Home />
        </section>
        <hr></hr>
        <section id='projects'>
-        <h2>My Projects</h2>
+        <h2>Projects</h2>
           <ProjectCard />
        </section>
        <hr></hr>
+       <section id='about'>
+          <h2>About</h2>
+          <About/>
+       </section>
+       <hr></hr>
        <section id='skills'>
-        <h2>My Skills</h2>
+        <h2>Skills</h2>
           <Skills />
        </section>
        <hr></hr>
        <section id='contact'>
-        <h2>My Contact Details</h2>
+        <h2>Contact Details</h2>
           <Contact />
        </section>
       </main>
