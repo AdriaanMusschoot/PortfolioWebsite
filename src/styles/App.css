@@ -10,6 +10,7 @@
   --description-background-color: ;
   --description-overlay-color: rgba(0, 0, 0, 0.9);
   --description-text-size: 1.3vw;
+  --about-text-size: 1.1vw;
   --box-shadow-default: 0 0 0 hsla(349, 100%, 79%, 0.7), inset 0 0 0.5vw rgba(0, 0, 0, 0.3);
   --box-shadow-hovered: 0 0 0 hsla(349, 100%, 71%, 0.7), inset 0 0 1.5vw rgba(0, 0, 0, 0.5);
   --hovered-color-links: rgb(201, 78, 94);
@@ -349,7 +350,7 @@ body.no-scroll {
 
 .about-image {
   width: auto;
-  height: 25vw;
+  height: 26vw;
   margin-right: 1vw;
   
   border-style: var(--main-border-style);
@@ -360,17 +361,17 @@ body.no-scroll {
 }
 
 .about-text {
-  font-size: var(--description-text-size);
+  font-size: var(--about-text-size);
   text-align: left;
   
   a{
-    font-size: var(--description-text-size);
+    font-size: var(--about-text-size);
     text-decoration: none;
-    margin-left: 0.4vw;
-    margin-right: 0.4vw;
+    margin-left: 0.3vw;
+    margin-right: 0.3vw;
     color: var(--text-color);
     transition: color var(--time-transition) ease;
-    font-weight:bolder;
+    font-weight:bold;
 
     &:hover{
       color: var(--hovered-color-links);
