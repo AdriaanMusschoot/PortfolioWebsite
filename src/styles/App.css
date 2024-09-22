@@ -466,9 +466,11 @@ body.no-scroll {
   border-color: var(--main-border-color);
   border-width: var(--main-border-width);
   box-shadow: var(--box-shadow-default);
+  transition: transform var(--time-transition) ease, border-color var(--time-transition) ease;
 
   &:hover{
-    box-shadow: var(--box-shadow-hovered);
+    transform: scale(var(--scale-transition));
+    border-color: var(--hovered-color-links);
   }
 }
 
@@ -480,9 +482,11 @@ body.no-scroll {
   border-color: var(--main-border-color);
   border-width: var(--main-border-width);
   box-shadow: var(--box-shadow-default);
+  transition: transform var(--time-transition) ease, border-color var(--time-transition) ease;
 
   &:hover{
-    box-shadow: var(--box-shadow-hovered);
+    transform: scale(var(--scale-transition));
+    border-color: var(--hovered-color-links);
   }
 }
 
