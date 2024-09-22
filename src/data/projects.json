@@ -1,7 +1,7 @@
 [
     {
         "image" : "./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg",
-        "title" : "Snails And Potions"
+        "title" : "Snails And Potions - UE5"
     },
     {
         "image" : "./assets/ProjectImages/Amugen/Thumbnail.png",
@@ -13,7 +13,7 @@
     },
     {
         "image" : "./assets/ProjectImages/Pacman/Thumbnail.png",
-        "title" : "Pac Man"
+        "title" : "Pac Man - Amugen"
     },
     {
         "image" : "./assets/ProjectImages/testImage.jpg",
