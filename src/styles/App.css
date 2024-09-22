@@ -349,7 +349,7 @@ body.no-scroll {
 
 .about-image {
   width: auto;
-  height: 20vw;
+  height: 25vw;
   margin-right: 1vw;
   
   border-style: var(--main-border-style);
@@ -362,6 +362,20 @@ body.no-scroll {
 .about-text {
   font-size: var(--description-text-size);
   text-align: left;
+  
+  a{
+    font-size: var(--description-text-size);
+    text-decoration: none;
+    margin-left: 0.4vw;
+    margin-right: 0.4vw;
+    color: var(--text-color);
+    transition: color var(--time-transition) ease;
+    font-weight:bolder;
+
+    &:hover{
+      color: var(--hovered-color-links);
+    }
+  }
 }
 /* == SKILLS SECTION == */
 
