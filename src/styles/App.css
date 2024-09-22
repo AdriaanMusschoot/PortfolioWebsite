@@ -421,7 +421,7 @@ body.no-scroll {
   border-width: var(--main-border-width);
   box-shadow: var(--box-shadow-default);
   height: 50vh;
-  width: 70%;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;

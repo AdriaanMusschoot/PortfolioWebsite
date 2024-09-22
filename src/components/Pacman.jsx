@@ -13,7 +13,7 @@ export default function Pacman() {
             It was a proof of concept that all the features in my own engine worked.
             <br></br>
             I really enjoyed creating all the gameplay elements behind Pacman. It all starts of with reading in some file data to determine what the playing field looks like (so if ever a new version of the map came out it would be easy to change ;).
-            Working with statemachines for Pacman and the ghosts was a blast from the past. I just love working with statemachines, they seem so trivial but yet can create complex behaviours.
+            Working with statemachines for Pacman and the ghosts was a blast from the past. I just love working with state machines, they seem so trivial but yet can create complex behaviours.
             The subject observer pattern was also very helpfull in decoupling the components from one another. My favourite place to use it was in the animation components. 
             It made it simple to reason wether the ghost is hunting pacman or running from pacman and the spritesheets could then easily be updated on their own.
           </p>

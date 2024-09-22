@@ -19,7 +19,7 @@ export default function Amugen() {
         <br></br>
         <br></br>
         Through the component system the user has access to the update loop and can define their own unique behaviour. Some pre-defined components include RenderComponent, TextComponent, TransformComponent, CollisionComponent.
-        To collision system uses a simple distance check and triggers the appropriate methods.
+        The collision system uses a simple distance check and triggers the appropriate methods.
         To decouple as much as possible but still allow the components to communicate with one another, the Subject-Observer relationship is used.
         <br></br>
         All of the used patterns are applied from the book "Game Programming Patterns" by Bob Nystrom.
