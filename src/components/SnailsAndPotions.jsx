@@ -1,16 +1,6 @@
-import React, { useRef, useEffect } from 'react';
 import '../styles/SnailsAndPotions.css'; // Import your CSS file
 
 export default function SnailsAndPotions({ activeIndex }) {
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      if (activeIndex !== 0) {
-        videoRef.current.pause();
-      }
-    }
-  }, [activeIndex]);
 
   return (
     <div className='snails-and-potions'>
@@ -61,7 +51,6 @@ export default function SnailsAndPotions({ activeIndex }) {
       </a>
       <video
         className='Trailer'
-        ref={videoRef}
         width='100%' height='auto' 
         controls 
         loop
