@@ -278,7 +278,7 @@ header {
   &.active{
       opacity: 1;
       .content{
-        width: 80%;
+        transform: scale(1);
       }
   }
   
@@ -287,7 +287,7 @@ header {
     z-index: 3;
     margin-top: 3%;
     margin-bottom: 3%;
-    width: 0%;
+    width: 80%;
     height: auto;
     font-size: 2vw;
     border-style: var(--main-border-style);
@@ -295,14 +295,16 @@ header {
     border-radius: var(--main-border-radius);
     border-width: var(--main-border-width);
     box-shadow: var(--box-shadow-default);
-    overflow-x: visible;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: width var(--time-project-card-transition) ease;
-
+    transition: transform var(--time-project-card-transition) ease;
+    transform:scale(0);
+    p{
+      font-size: var(--description-text-size);
+    }
     .button-img{
       margin: 2%;
       width: 5%;
