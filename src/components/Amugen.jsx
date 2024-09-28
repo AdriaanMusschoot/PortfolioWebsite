@@ -7,8 +7,7 @@ export default function Amugen() {
       <h1>Amugen - Game Engine</h1>
       <h2>The Project</h2>
       <p>
-        I have developped a custom 2D Engine in C++. 
-        The engine uses a scene graph to determine positions and uses a game object component system.
+        This custom 2D Engine, that I have developed in C++, uses a scene graph to determine positions and uses a game object component system.
         The rendering, input and audio is all handled by SDL.
         To handle the mathematics and positions behind the scene graph I am using GLM.
         <br></br>

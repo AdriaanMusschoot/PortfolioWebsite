@@ -42,11 +42,23 @@ export default function SnailsAndPotions({ activeIndex }) {
         href='https://boomertijl.itch.io/snails-and-potions' 
         target='_blank' 
         rel='noopener noreferrer'
-      >
+        >
         <img
           className='itch-img'
           src='./assets/ProjectImages/ITCHIO.svg'
           alt='itch'
+          />
+      </a>
+          <br></br>
+      <a 
+        href='https://store.steampowered.com/app/3224810/Snails__Potions/' 
+        target='_blank' 
+        rel='noopener noreferrer'
+      >
+        <img
+          className='itch-img'
+          src='./assets/ProjectImages/STEAM.jpg'
+          alt='steam'
         />
       </a>
       <video
