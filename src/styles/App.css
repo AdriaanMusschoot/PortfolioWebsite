@@ -24,7 +24,7 @@
 }
 
 body {
-  margin: 0vh 4vw;
+  margin: 0vh 15vw;
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: suse;
@@ -65,8 +65,6 @@ hr {
   border-radius: var(--main-border-radius);
   margin-top: 3vw;
   margin-bottom: 0vw;
-  margin-left: 3vw;
-  margin-right: 3vw;
 }
 
 /* == HEADER == */
@@ -209,15 +207,20 @@ header {
 }
 /* == PROJECTS SECTION == */
 
-.projects {
+.projects{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 4vw;
 }
 
-.projectCard-container {
-  width: 40%;
+.mainproj-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mainproj-container {
+  width: 45%;
   background: var(--description-background-color);
   box-shadow: var(--box-shadow-default);
   overflow: hidden;
@@ -229,18 +232,17 @@ header {
   border-width: var(--main-border-width);
   transition: border-color var(--time-transition) ease, transform var(--time-transition) ease;
 
-  & .projectCard-container_image img {
+  margin: 1%;
+  & .mainproj-container_image img {
     width: 100%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     
     border-bottom-left-radius: var(--main-border-radius);
     border-bottom-right-radius: var(--main-border-radius);
     transition: transform var(--time-transition) ease;
   }
 
-  & .projectCard-container_title {
+  & .mainproj-container_title {
     font-size: 1.5vw;
     color: var(--text-color);
     text-align: center;
@@ -258,6 +260,58 @@ header {
     }
   }
 }
+
+.addproj-wrapper{
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.addproj-container {
+  width: 21.5%;
+  height: auto;
+  background: var(--description-background-color);
+  box-shadow: var(--box-shadow-default);
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border-style: var(--main-border-style);
+  border-color: var(--main-border-color);
+  border-radius: var(--main-border-radius); 
+  border-width: var(--main-border-width);
+  transition: border-color var(--time-transition) ease, transform var(--time-transition) ease;
+
+  margin: 1%;
+
+  & .addproj-container_image img {
+    width: 100%;
+    display: block;
+    
+    border-bottom-left-radius: var(--main-border-radius);
+    border-bottom-right-radius: var(--main-border-radius);
+    transition: transform var(--time-transition) ease;
+  }
+
+  & .addproj-container_title {
+    font-size: 1.5vw;
+    color: var(--text-color);
+    text-align: center;
+    letter-spacing: 0.05rem;
+    transition: color var(--time-transition) ease, transform var(--time-transition) ease;
+  }
+
+  &:hover {
+    border-color: var(--hovered-color-links);
+    transform: scale(var(--scale-transition));
+
+    .projectCard-container_title{
+      transform: scale(var(--scale-transition));
+      color: var(--hovered-color-links);
+    }
+  }
+}
+
 
 .projectCard-description { 
   cursor: default;
@@ -340,11 +394,12 @@ body.no-scroll {
   display: flex; /* Use Flexbox for layout */
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically (if needed) */
+
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
-.about-content {
-  margin-left: 15%;
-  margin-right: 15%;
+  .about-content {
   display: flex;
   align-items: center;
   text-align: center;
@@ -386,32 +441,40 @@ body.no-scroll {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2vw;
   line-height: 2vw;
 
   & .skills-container {
     background: var(--description-background-color);
-    width: 40%;
+    width: 44%;
     color: var(--text-color);
-    padding: 1vw;
+    padding: 1%;
     border-style: var(--main-border-style);
     border-color: var(--main-border-color);
     border-radius: var(--main-border-radius);
     border-width: var(--main-border-width);
     box-shadow: var(--box-shadow-default);
+    margin:1%;
   }
   & h3 {
-    padding-left: 1vw;
     font-size: 2vw;
+    text-align: center;
   }
 
   & li {
-    padding-left: 1vw;
-    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+  }
+  
+  & .skill-name
+  {
+    font-weight: bold;
   }
 
-  & ul {
-    list-style-position: inside;
+  & .skill-level
+  { 
+    font-size: 100%;
+    font-style: italic;
+    margin-left: auto;
   }
 }
 
@@ -423,14 +486,13 @@ body.no-scroll {
   border-radius: var(--main-border-radius);
   border-width: var(--main-border-width);
   box-shadow: var(--box-shadow-default);
-  height: 50vh;
-  width: 50%;
+  height: 20vw;
+  width: 92%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 0 auto; /* Ensure it's centered within its parent */
-
 
   & p {
     font-style: var(--quote-font-style);

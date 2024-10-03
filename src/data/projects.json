@@ -1,22 +1,43 @@
 [
     {
         "image" : "./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg",
-        "title" : "Snails And Potions - UE5"
+        "title" : "Snails And Potions - UE5",
+        "main" : true
     },
     {
         "image" : "./assets/ProjectImages/Amugen/Thumbnail.png",
-        "title" : "Amugen - Game Engine"
+        "title" : "Amugen - Game Engine",
+        "main" : true
     },
     {
         "image" : "./assets/ProjectImages/Vulkan/Thumbnail.png",
-        "title" : "Instanced Rendering - Vulkan"
+        "title" : "Instanced Rendering - Vulkan",
+        "main" : true
+        
     },
     {
         "image" : "./assets/ProjectImages/Pacman/Thumbnail.png",
-        "title" : "Pac Man - Amugen"
+        "title" : "Pac Man - Amugen",
+        "main" : true
     },
     {
-        "image" : "./assets/ProjectImages/testImage.jpg",
-        "title" : "Test"
+        "image" : "./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg",
+        "title" : "Tectonic",
+        "main" : false
+    },
+    {
+        "image" : "./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg",
+        "title" : "Ray Marcher",
+        "main" : false
+    },
+    {
+        "image" : "./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg",
+        "title" : "Ride of Giri",
+        "main" : false
+    },
+    {
+        "image" : "./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg",
+        "title" : "Souper Hero",
+        "main" : false
     }
 ]

@@ -53,30 +53,58 @@ export default function ProjectCard() {
   };
 
   const isCardActive = (index) => (activeIndex === index ? 'active' : '');
-  
+
+  const mainProjects = projects.filter((project) => project.main);  // Projects with main: true
+  const nonMainProjects = projects.filter((project) => !project.main);  
+
   return (
     <div className='projects'>
+      <div className="mainproj-wrapper">
       {
-        projects.map((project, index) => {
+        mainProjects.map((project, index) => {
           return (
             <div
               key={index}
-              className={`projectCard-container ${isCardActive(index)}`}
+              className={`mainproj-container ${isCardActive(index)}`}
               onClick={() => openClickedCard(index)}
             >
               {/* Image Section */}
-              <div className='projectCard-container_image'>
+              <div className='mainproj-container_image'>
                 <img src={project.image} alt={project.title} />
               </div>
 
               {/* Title Section */}
-              <div className='projectCard-container_title'>
+              <div className='mainproj-container_title'>
                 <h3>{project.title}</h3>
               </div>
             </div>
           );
         })
       }
+      </div>
+      <div className="addproj-wrapper">
+      {
+        nonMainProjects.map((project, index) => {
+          return (
+            <div
+              key={index}
+              className={`addproj-container ${isCardActive(index)}`}
+              onClick={() => openClickedCard(index)}
+            >
+              {/* Image Section */}
+              <div className='addproj-container_image'>
+                <img src={project.image} alt={project.title} />
+              </div>
+
+              {/* Title Section */}
+              <div className='addproj-container_title'>
+                <h3>{project.title}</h3>
+              </div>
+            </div>
+          );
+        })
+      }
+      </div>
 
       {/* Description Section */}
       {activeIndex !== null && (

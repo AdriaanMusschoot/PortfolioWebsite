@@ -10,9 +10,18 @@ export default function Skills() {
                     <h3>{skill.title}</h3>
                     {
                         skill.contents.map((content) => (
-                            <ul>
-                                <li>{content}</li>
-                            </ul>
+                                <li className='content'>
+                                {
+                                    Array.isArray(content) ? (
+                                        <>
+                                          <span className='skill-name'>{content[0]}</span> 
+                                          <span className='skill-level'>{content[1]}</span>
+                                        </>
+                                      ) : (
+                                        <span className='skill-name'>{content}</span>
+                                      )
+                                }
+                                </li>
                         ))
                     } 
                 </div>

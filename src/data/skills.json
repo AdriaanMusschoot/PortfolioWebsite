@@ -2,11 +2,22 @@
     {
         "title" : "PROGRAMMING LANGUAGES",
         "contents": [
-            "C++",
-            "C#",
-            "Python",
-            "Html",
-            "Css"
+            ["C++", "Intermediate"],
+            ["C#", "Intermediate"],
+            ["Python", "Beginner"],
+            ["Html", "Beginner"],
+            ["Css", "Beginner"]
+        ]
+    },
+    {
+        "title" : "API'S / FRAMEWORKS",
+        "contents" : [
+            "SDL",
+            "GLM",
+            "Vulkan",
+            "WPF",
+            "DirectX11",
+            "Dear IMGui"
         ]
     },
     {
@@ -28,18 +39,8 @@
         "contents" : [
             "Visual Studio",
             "VS Code",
-            "Qt"
-        ]
-    },
-    {
-        "title" : "API'S / FRAMEWORKS",
-        "contents" : [
-            "SDL",
-            "GLM",
-            "Vulkan",
-            "WPF",
-            "DirectX11",
-            "Dear IMGui"
+            "Qt",
+            "Rider"
         ]
     }
 ]
