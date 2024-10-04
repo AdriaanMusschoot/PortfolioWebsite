@@ -62,7 +62,20 @@ export default function Header() {
           <a href='#skills'>Skills</a>
           <a href='#contact'>Contact</a>
         </div>
-        
+        <div className='small-contact'>
+          <a href='mailto:adriaan.musschoot@gmail.com' rel='noreferrer' target='_blank'>
+              <MailLogo className='svg'/>
+          </a>
+          <a href='https://www.linkedin.com/in/adriaan-musschoot-29a991288/' rel='noreferrer' target='_blank'>
+              <LinkedInLogo className='svg'/>
+          </a>
+          <a href='https://github.com/AdriaanMusschoot' rel='noreferrer' target='_blank'>
+              <GithubLogo className='svg'/>
+          </a>
+          <a href='https://discordapp.com/users/460746279367082016' rel='noreferrer' target='_blank'>
+            <DiscordLogo className='svg' />
+          </a>
+        </div>
       </div>
     </>
   );

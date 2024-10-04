@@ -86,6 +86,8 @@ header {
   justify-content: center;
   background-color: var(--background-color);
   align-items: center; 
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
 
   & .header--logo {
     margin-top: 6%;
@@ -108,11 +110,16 @@ header {
     display: flex;
     justify-content: space-between; /* Ensure space between nav and contact */
     align-items: center;
+    width: 100%; /* Take up the full width */
 
     & .centered-part{
       display: flex;
-      align-items: center;
-      gap: 4vw;
+    align-items: center;
+    gap: 4vw;
+    position: absolute; /* Absolute centering within the navbar */
+    left: 50%;
+    transform: translateX(-50%);  /* Center the nav links within this space */
+  
       
       a {
         font-size: 2vw;
@@ -168,11 +175,14 @@ header {
    
    & .small-contact{
     margin-left: auto;
-    gap: 1.5vw; /* Add some space between the contact icons */
     display: flex;
     align-items: center; 
+    margin-right: 1vw;
+    gap: 1vw;
+    margin-top: 0.5%;
+
     & .svg {
-      width: 3vw;
+      width: 2.5vw;
       height: auto;
       color: var(--text-color);
       transition: transform var(--time-transition) ease, color var(--time-transition) ease;
