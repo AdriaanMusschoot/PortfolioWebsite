@@ -54,18 +54,16 @@ export default function ProjectCard() {
 
   const isCardActive = (index) => (activeIndex === index ? 'active' : '');
 
-  const mainProjects = projects.filter((project) => project.main);  // Projects with main: true
-  const nonMainProjects = projects.filter((project) => !project.main);  
-
   return (
     <div className='projects'>
       <div className="mainproj-wrapper">
         {
-          mainProjects.map((project, index) => {
+          projects.map((project, index) => {
+            const IsSmallClass = project.main ? '' : 'mainproj-container--small';
             return (
               <div
                 key={index}
-                className={`mainproj-container ${isCardActive(index)}`}
+                className={`mainproj-container ${isCardActive(index)} ${IsSmallClass}`}
                 onClick={() => openClickedCard(index)}
               >
                 {/* Image Section */}
@@ -85,37 +83,16 @@ export default function ProjectCard() {
                 
                 {/* Title Section */}
                 <div className='mainproj-container_title'>
-                  <h3>{project.title}</h3>
+                  {project.title}
+                </div>
+                <div className='mainproj-container_date'>
+                  {project.date}
                 </div>
               </div>
             );
           })
         }
       </div>
-      <div className="addproj-wrapper">
-      {
-        nonMainProjects.map((project, index) => {
-          return (
-            <div
-              key={index}
-              className={`addproj-container ${isCardActive(index)}`}
-              onClick={() => openClickedCard(index)}
-            >
-              {/* Image Section */}
-              <div className='addproj-container_image'>
-                <img src={project.image} alt={project.title} />
-              </div>
-
-              {/* Title Section */}
-              <div className='addproj-container_title'>
-                <h3>{project.title}</h3>
-              </div>
-            </div>
-          );
-        })
-      }
-      </div>
-
       {/* Description Section */}
       {activeIndex !== null && (
         <div className={`projectCard-description ${transitioning ? 'transitioning' : 'active'}`} onClick={closeCard}>

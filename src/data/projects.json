@@ -1,13 +1,15 @@
 [
     {
         "image" : "./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg",
-        "title" : "Snails And Potions - UE5",
+        "title" : "Snails And Potions",
         "main" : true,
         "specifics" :
         [
             "C++",
-            "Team"
-        ]
+            "Team",
+            "UE5"
+        ],
+        "date" : "May 2024"
     },
     {
         "image" : "./assets/ProjectImages/Amugen/Thumbnail.png",
@@ -15,26 +17,47 @@
         "main" : true,
         "specifics" :
         [
-            
-        ]
+            "C++",
+            "Solo",
+            "CMake"
+        ],
+        "date" : "June 2024"
     },
     {
         "image" : "./assets/ProjectImages/Vulkan/Thumbnail.png",
-        "title" : "Instanced Rendering - Vulkan",
+        "title" : "Instanced Rendering",
         "main" : true,
         "specifics" :
         [
-            
-        ]
+            "Vulkan",
+            "C++",
+            "Solo",
+            "Graphics"
+        ],
+        "date" : "June 2024"
         
     },
     {
         "image" : "./assets/ProjectImages/Pacman/Thumbnail.png",
-        "title" : "Pac Man - Amugen",
+        "title" : "Pac Man",
         "main" : true,
         "specifics" :
         [
-            
+            "C++",
+            "Solo",
+            "Amugen"
+        ],
+        "date" : "June 2024"
+    },
+    {
+        "image" : "./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg",
+        "title" : "Ray Marcher",
+        "main" : false,
+        "specifics" :
+        [
+            "C++",
+            "Solo",
+            "Graphics"
         ]
     },
     {
@@ -43,25 +66,19 @@
         "main" : false,
         "specifics" :
         [
-            
+            "C++",
+            "Solo",
+            "Amugen"
         ]
     },
     {
         "image" : "./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg",
-        "title" : "Ray Marcher",
+        "title" : "Trajectory Prediction",
         "main" : false,
         "specifics" :
         [
-            
-        ]
-    },
-    {
-        "image" : "./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg",
-        "title" : "Ride of Giri",
-        "main" : false,
-        "specifics" :
-        [
-            
+            "C#",
+            "Physics"
         ]
     },
     {
@@ -70,7 +87,9 @@
         "main" : false,
         "specifics" :
         [
-            
+            "UE5",
+            "C++",
+            "GameJam"
         ]
     }
 ]
