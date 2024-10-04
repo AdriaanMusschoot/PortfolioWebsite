@@ -63,7 +63,7 @@ export default function Header() {
           <a href='#contact'>Contact</a>
         </div>
         <div className='small-contact'>
-          <a href='mailto:adriaan.musschoot@gmail.com' rel='noreferrer' target='_blank'>
+          <a href='mailto:contact@adriaanmusschoot.com' rel='noreferrer' target='_blank'>
               <MailLogo className='svg'/>
           </a>
           <a href='https://www.linkedin.com/in/adriaan-musschoot-29a991288/' rel='noreferrer' target='_blank'>

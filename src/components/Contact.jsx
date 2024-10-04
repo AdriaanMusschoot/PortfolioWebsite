@@ -9,7 +9,7 @@ export default function Contact() {
     <div className='contact'>
         <p>Got a software idea or challenge? <br></br>Let’s connect and turn your vision into reality!</p>
         <div className='contact-socials'>
-            <a href='mailto:adriaan.musschoot@gmail.com' rel='noreferrer' target='_blank'>
+            <a href='mailto:contact@adriaanmusschoot.com' rel='noreferrer' target='_blank'>
                 <MailLogo className='svg'/>
             </a>
             <a href='https://www.linkedin.com/in/adriaan-musschoot-29a991288/' rel='noreferrer' target='_blank'>
