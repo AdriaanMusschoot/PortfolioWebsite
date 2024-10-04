@@ -60,27 +60,37 @@ export default function ProjectCard() {
   return (
     <div className='projects'>
       <div className="mainproj-wrapper">
-      {
-        mainProjects.map((project, index) => {
-          return (
-            <div
-              key={index}
-              className={`mainproj-container ${isCardActive(index)}`}
-              onClick={() => openClickedCard(index)}
-            >
-              {/* Image Section */}
-              <div className='mainproj-container_image'>
-                <img src={project.image} alt={project.title} />
+        {
+          mainProjects.map((project, index) => {
+            return (
+              <div
+                key={index}
+                className={`mainproj-container ${isCardActive(index)}`}
+                onClick={() => openClickedCard(index)}
+              >
+                {/* Image Section */}
+                <div className='mainproj-container_image'>
+                  <img src={project.image} alt={project.title} />
+                  {/* Specifics Section */}
+                  {project.specifics.length > 0 && (
+                    <div className="mainproj-container_specifics">
+                      <ul>
+                        {project.specifics.map((skill, i) => (
+                          <li key={i}>{skill}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+                
+                {/* Title Section */}
+                <div className='mainproj-container_title'>
+                  <h3>{project.title}</h3>
+                </div>
               </div>
-
-              {/* Title Section */}
-              <div className='mainproj-container_title'>
-                <h3>{project.title}</h3>
-              </div>
-            </div>
-          );
-        })
-      }
+            );
+          })
+        }
       </div>
       <div className="addproj-wrapper">
       {

@@ -254,45 +254,83 @@ header {
 }
 
 .mainproj-container {
-  width: 45%;
-  background: var(--description-background-color);
-  box-shadow: var(--box-shadow-default);
-  overflow: hidden;
-  position: relative;
-  cursor: pointer;
-  border-style: var(--main-border-style);
-  border-color: var(--main-border-color);
-  border-radius: var(--main-border-radius); 
-  border-width: var(--main-border-width);
-  transition: border-color var(--time-transition) ease, transform var(--time-transition) ease;
+    width: 45%;
+    background: var(--background-color);
+    box-shadow: var(--box-shadow-default);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-style: var(--main-border-style);
+    border-color: var(--main-border-color);
+    border-radius: var(--main-border-radius); 
+    border-width: var(--main-border-width);
+    transition: border-color var(--time-transition) ease, transform var(--time-transition) ease;
 
-  margin: 1%;
-  & .mainproj-container_image img {
-    width: 100%;
-    display: block;
-    
-    border-bottom-left-radius: var(--main-border-radius);
-    border-bottom-right-radius: var(--main-border-radius);
-    transition: transform var(--time-transition) ease;
-  }
-
-  & .mainproj-container_title {
-    font-size: 1.5vw;
-    color: var(--text-color);
-    text-align: center;
-    letter-spacing: 0.05rem;
-    transition: color var(--time-transition) ease, transform var(--time-transition) ease;
-  }
-
-  &:hover {
-    border-color: var(--hovered-color-links);
-    transform: scale(var(--scale-transition));
-
-    .projectCard-container_title{
-      transform: scale(var(--scale-transition));
-      color: var(--hovered-color-links);
+    margin: 1%;
+    & .mainproj-container_image img {
+      width: 100%;
+      display: block;
+      
+      border-bottom-left-radius: var(--main-border-radius);
+      border-bottom-right-radius: var(--main-border-radius);
+      transition: transform var(--time-transition) ease;
     }
-  }
+
+    & .mainproj-container_specifics {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: right;
+      opacity: 0;
+      transition: opacity var(--time-transition) ease, transform var(--time-transition) ease, border-color var(--time-transition) ease;
+      border-color: var(--main-border-color);
+      font-weight: bold;
+      font-size: var(--description-text-size);
+      color: var(--text-color);
+    }
+    
+    & .mainproj-container_specifics ul {
+      list-style: none;
+      padding: 0;
+      margin: 1vw;
+      text-align: center;
+    }
+  
+    & .mainproj-container_specifics li {
+      border-style: var(--main-border-style);
+      border-color: var(--main-border-color);
+      border-radius: var(--main-border-radius); 
+      border-width: var(--main-border-width);
+      background: var(--background-color);
+    }
+
+    & .mainproj-container_title {
+      font-size: 1.5vw;
+      color: var(--text-color);
+      text-align: center;
+      letter-spacing: 0.05rem;
+      transition: color var(--time-transition) ease, transform var(--time-transition) ease;
+    }
+
+    &:hover {
+      border-color: var(--hovered-color-links);
+      transform: scale(var(--scale-transition));
+
+      .projectCard-container_title{
+        transform: scale(var(--scale-transition));
+        color: var(--hovered-color-links);
+      }
+
+      .mainproj-container_specifics {
+        opacity: 1;
+      }
+      
+      .mainproj-container_specifics li{
+        border-color: var(--hovered-color-links);
+      }
+    }
 }
 
 .addproj-wrapper{
