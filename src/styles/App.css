@@ -1,7 +1,7 @@
 @import 'fonts.css';
 
 :root {
-  --main-border-radius: 2vw;
+  --main-border-radius: 0.8vw;
   --main-border-style: solid;
   --main-border-color: hsla(0, 23%, 64%, 1);
   --main-border-width: 0.2vw;
@@ -21,7 +21,7 @@
   --time-transition: 0.3s;
   --scale-transition: 1.1;
   --time-project-card-transition: 0.5s;
-  --small-border-radius: 1vw;
+  --small-border-radius: 0.6vw;
 }
 
 body {
@@ -309,7 +309,7 @@ header {
     border-radius: var(--small-border-radius);
     border-width: var(--main-border-width);
     background: var(--background-color);
-    padding: 0.5vw 0.5vw;
+    padding: 0.3vw;
     transition: border-color var(--time-transition) ease;
   }
 
@@ -365,6 +365,8 @@ header {
 
   & .mainproj-container_image img{
     border-radius: var(--small-border-radius);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   & .mainproj-container_specifics ul{
@@ -373,6 +375,7 @@ header {
 
   & .mainproj-container_specifics li{
     font-size: 1vw;
+    padding: 0.2vw;
   }
 }
 

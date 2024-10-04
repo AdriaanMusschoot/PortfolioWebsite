@@ -50,7 +50,7 @@
         "date" : "June 2024"
     },
     {
-        "image" : "./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg",
+        "image" : "./assets/ProjectImages/Raymarcher/Thumbnail.png",
         "title" : "Ray Marcher",
         "main" : false,
         "specifics" :
@@ -61,7 +61,7 @@
         ]
     },
     {
-        "image" : "./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg",
+        "image" : "./assets/ProjectImages/Tectonic/Thumbnail.png",
         "title" : "Tectonic",
         "main" : false,
         "specifics" :
@@ -72,7 +72,7 @@
         ]
     },
     {
-        "image" : "./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg",
+        "image" : "./assets/ProjectImages/TrajectoryPrediction/Thumbnail.png",
         "title" : "Trajectory Prediction",
         "main" : false,
         "specifics" :
@@ -82,7 +82,7 @@
         ]
     },
     {
-        "image" : "./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg",
+        "image" : "./assets/ProjectImages/SouperHero/Thumbnail.png",
         "title" : "Souper Hero",
         "main" : false,
         "specifics" :
