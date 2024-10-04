@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import { ReactComponent as Logo } from '../assets/svg/Logo.svg';
+import { ReactComponent as LinkedInLogo } from '../assets/svg/linkedin_icon.svg';
+import { ReactComponent as GithubLogo } from '../assets/svg/github_icon.svg';
+import { ReactComponent as DiscordLogo } from '../assets/svg/discord_icon.svg';
+import { ReactComponent as MailLogo } from '../assets/svg/mail_icon.svg';
 
 export default function Header() {
   useEffect(() => {
@@ -47,15 +51,18 @@ export default function Header() {
   return (
     <>
       <div className='header--navbar'>
-        <a href='#home'>Home</a>
-        <a href='#projects'>Projects</a>
-        <a href='#about'>
-        <div className='header--logo'>
-          <Logo className='svg'/>
+        <div className='centered-part'>
+          <a href='#home'>Home</a>
+          <a href='#projects'>Projects</a>
+          <a href='#about'>
+          <div className='header--logo'>
+            <Logo className='svg'/>
+          </div>
+          </a>
+          <a href='#skills'>Skills</a>
+          <a href='#contact'>Contact</a>
         </div>
-        </a>
-        <a href='#skills'>Skills</a>
-        <a href='#contact'>Contact</a>
+        
       </div>
     </>
   );

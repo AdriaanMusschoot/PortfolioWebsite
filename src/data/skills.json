@@ -2,45 +2,45 @@
     {
         "title" : "PROGRAMMING LANGUAGES",
         "contents": [
-            ["C++", "Intermediate"],
-            ["C#", "Intermediate"],
-            ["Python", "Beginner"],
-            ["Html", "Beginner"],
-            ["Css", "Beginner"]
+            ["C++", "Primary"],
+            ["C#", "Primary"],
+            ["Python", "Secondary"],
+            ["Html", "Secondary"],
+            ["Css", "Secondary"]
         ]
     },
     {
         "title" : "API'S / FRAMEWORKS",
         "contents" : [
-            "SDL",
-            "GLM",
-            "Vulkan",
-            "WPF",
-            "DirectX11",
-            "Dear IMGui"
+            ["SDL", "Primary"],
+            ["GLM", "Primary"],
+            ["Vulkan", "Primary"],
+            ["WPF", "Secondary"],
+            ["DirectX11", "Secondary"],
+            ["Dear IMGui", "Secondary"]
         ]
     },
     {
         "title" : "GAME ENGINES",
         "contents" : [
-            "Unreal Engine 5",
-            "Unity"
+            ["Unreal Engine 5", "Primary"],
+            ["Unity", "Secondary"]
         ]
     },
     {
         "title" : "SOURCE CONTROL",
         "contents" : [
-            "Git",
-            "Perforce"
+            ["Git", "Primary"],
+            ["Perforce", "Primary"]
         ]
     },
     {
         "title" : "IDE",
         "contents" : [
-            "Visual Studio",
-            "VS Code",
-            "Qt",
-            "Rider"
+            ["Visual Studio", "Primary"],
+            ["Rider", "Primary"],
+            ["VS Code", "Secondary"],
+            ["Qt", "Secondary"]
         ]
     }
 ]

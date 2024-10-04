@@ -14,9 +14,10 @@ export default function Skills() {
                                 {
                                     Array.isArray(content) ? (
                                         <>
-                                          <span className='skill-name'>{content[0]}</span> 
-                                          <span className='skill-level'>{content[1]}</span>
-                                        </>
+                                          <span className='skill-name'>
+                                          {content[1] === 'Primary' ? '● ' : content[1] === 'Secondary' ? '○ ' : ''}{content[0]}
+                                            </span> 
+                                       </>
                                       ) : (
                                         <span className='skill-name'>{content}</span>
                                       )

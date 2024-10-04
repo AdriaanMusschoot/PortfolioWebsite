@@ -85,7 +85,8 @@ header {
   display: flex;
   justify-content: center;
   background-color: var(--background-color);
-  padding-bottom: 0.3%;
+  align-items: center; 
+
   & .header--logo {
     margin-top: 6%;
     width: 10vw;
@@ -105,28 +106,33 @@ header {
 
   & .header--navbar {
     display: flex;
+    justify-content: space-between; /* Ensure space between nav and contact */
     align-items: center;
-    gap: 4vw;
-  
-    a {
-      font-size: 2vw;
-      position: relative;
-      text-decoration: none;
-      transition: transform var(--time-transition) ease, color var(--time-transition) ease;
-    
-      &::after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        width: 0%;
-        height: 0.15vw;
-        background-color: var(--text-color);
-        transition: width var(--time-transition) ease, background-color var(--time-transition) ease;
-        transform: translateX(-50%);
-        border-radius: var(--main-border-radius);
+
+    & .centered-part{
+      display: flex;
+      align-items: center;
+      gap: 4vw;
+      
+      a {
+        font-size: 2vw;
+        position: relative;
+        text-decoration: none;
+        transition: transform var(--time-transition) ease, color var(--time-transition) ease;
+        
+        &::after {
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          width: 0%;
+          height: 0.15vw;
+          background-color: var(--text-color);
+          transition: width var(--time-transition) ease, background-color var(--time-transition) ease;
+          transform: translateX(-50%);
+          border-radius: var(--main-border-radius);
       }
-    
+      
       &:hover {
         transform: scale(var(--scale-transition));
         color: var(--hovered-color-links);
@@ -134,23 +140,23 @@ header {
           fill: var(--hovered-color-links);
         }
       }
-    
+      
       &.active {
         .cls-1{
           fill: var(--hovered-color-links);
         }
         font-weight: bold;
         color: var(--hovered-color-links);
-    
+        
         &::after {
           width: 100%;
           background-color: var(--hovered-color-links); 
         }
-    
+        
         &:hover {
           transform: scale(var(--scale-transition));
           color: var(--hovered-color-links);
-    
+          
           &::after {
             width: 100%;
             background-color: var(--hovered-color-links);
@@ -158,7 +164,25 @@ header {
         }
       }
     }
-    
+   }
+   
+   & .small-contact{
+    margin-left: auto;
+    gap: 1.5vw; /* Add some space between the contact icons */
+    display: flex;
+    align-items: center; 
+    & .svg {
+      width: 3vw;
+      height: auto;
+      color: var(--text-color);
+      transition: transform var(--time-transition) ease, color var(--time-transition) ease;
+      
+      &:hover {
+        transform: scale(var(--scale-transition));
+        color: var(--hovered-color-links);
+      }
+      }
+    }
   }
 }
 
@@ -448,6 +472,7 @@ body.no-scroll {
     width: 44%;
     color: var(--text-color);
     padding: 1%;
+    padding-bottom: 2%;
     border-style: var(--main-border-style);
     border-color: var(--main-border-color);
     border-radius: var(--main-border-radius);
@@ -456,8 +481,9 @@ body.no-scroll {
     margin:1%;
   }
   & h3 {
+    margin-left: 1vw;
     font-size: 2vw;
-    text-align: center;
+    text-align: left;
   }
 
   & li {
@@ -467,14 +493,9 @@ body.no-scroll {
   
   & .skill-name
   {
+    margin-left: 3vw;
+    font-size: 1.5vw;
     font-weight: bold;
-  }
-
-  & .skill-level
-  { 
-    font-size: 100%;
-    font-style: italic;
-    margin-left: auto;
   }
 }
 
