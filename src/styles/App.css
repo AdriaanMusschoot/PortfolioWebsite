@@ -84,8 +84,8 @@ header {
   z-index: 1;
   top: 0;
   position: fixed;
-  left: 13vw; 
-  right: 13vw; 
+  left: 13vw;
+  right: 13vw;
   display: flex;
   justify-content: center;
   background-color: var(--background-color);
@@ -236,7 +236,7 @@ header {
   & .home-lower {
     font-style: var(--quote-font-style);
     font-size: var(--quote-size);
-    text-align: left;
+    text-align: justify;
     margin-right: 25%;
     margin-left: var(--margin-text);
   }
@@ -423,6 +423,7 @@ header {
     transform:scale(0);
     p{
       font-size: var(--description-text-size);
+      text-align: justify;
     }
     .button-img{
       position: absolute;
@@ -486,7 +487,7 @@ body.no-scroll {
 
 .about-text {
   font-size: var(--about-text-size);
-  text-align: left;
+  text-align: justify;
   
   a{
     font-size: var(--about-text-size);

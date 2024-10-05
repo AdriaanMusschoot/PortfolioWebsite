@@ -42,11 +42,11 @@
             ["Visual Studio", "Primary"],
             ["Rider", "Primary"],
             ["VS Code", "Secondary"],
-            ["Qt", "Secondary"]
+            ["Qt Creator", "Secondary"]
         ]
     },
     {
-        "title" : "Human Languages",
+        "title" : "HUMAN LANGUAGES",
         "contents" : [
             ["Dutch", "Primary"],
             ["English", "Primary"],
