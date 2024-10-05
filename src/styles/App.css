@@ -561,7 +561,7 @@ body.no-scroll {
   justify-content: left;
   align-items: left;
   flex-direction: column;
-  margin-bottom: 24vw;
+  margin-bottom: 6vw;
 
   & p {
     font-style: var(--quote-font-style);

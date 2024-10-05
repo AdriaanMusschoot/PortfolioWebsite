@@ -16,8 +16,9 @@
             ["SDL", "Primary"],
             ["GLM", "Primary"],
             ["Vulkan", "Primary"],
-            ["WPF", "Secondary"],
             ["DirectX11", "Secondary"],
+            ["React", "Secondary"],
+            ["WPF", "Secondary"],
             ["Dear IMGui", "Secondary"]
         ]
     },

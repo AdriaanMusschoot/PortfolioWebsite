@@ -50,7 +50,7 @@
         "date" : "June 2024"
     },
     {
-        "image" : "./assets/ProjectImages/Raymarcher/Thumbnail.png",
+        "image" : "./assets/ProjectImages/RayMarcher/Thumbnail.png",
         "title" : "Ray Marcher",
         "main" : false,
         "specifics" :
