@@ -22,7 +22,6 @@ function App() {
        <section id='whitespace' className='whitespace'>
         <WhiteSpace />
        </section>
-       <hr></hr>
        <section id='home'>
           <Home />
        </section>
@@ -47,9 +46,6 @@ function App() {
           <Contact />
        </section>
       </main>
-      <footer>
-        <p>jajagg</p>
-      </footer>
     </>
   );
 }

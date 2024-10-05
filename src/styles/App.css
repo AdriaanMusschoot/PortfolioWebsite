@@ -22,6 +22,7 @@
   --scale-transition: 1.1;
   --time-project-card-transition: 0.5s;
   --small-border-radius: 0.6vw;
+  --margin-text: 2vw;
 }
 
 body {
@@ -30,7 +31,7 @@ body {
   color: var(--text-color);
   font-family: suse;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   flex-direction: column;
 
@@ -46,7 +47,7 @@ body {
 }
 
 #home, #projects, #about, #skills, #contact {
-  scroll-margin-top: 7vw; 
+  scroll-margin-top: 6vw; 
 }
 
 html {
@@ -54,9 +55,10 @@ html {
 }
 
 h2 {
-  font-size: 2vw;
-  text-align: center;
+  font-size: 2.5vw;
+  text-align: left;
   color: var(--text-color);
+  margin-left: var(--margin-text);
 }
 
 hr {
@@ -65,7 +67,8 @@ hr {
   height: 0.2vw;
   border-radius: var(--main-border-radius);
   margin-top: 3vw;
-  margin-bottom: 0vw;
+  margin-left: var(--margin-text);
+  margin-right: var(--margin-text);
 }
 
 /* == HEADER == */
@@ -81,17 +84,17 @@ header {
   z-index: 1;
   top: 0;
   position: fixed;
-  left: 4vw; /* Align with body margin */
-  right: 4vw; /* Align with body margin */
+  left: 13vw; 
+  right: 13vw; 
   display: flex;
   justify-content: center;
   background-color: var(--background-color);
   align-items: center; 
-  padding-top: 0.5%;
-  padding-bottom: 0.5%;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
 
   & .header--logo {
-    margin-top: 6%;
+    margin-top: 5%;
     width: 10vw;
     height: auto;
     
@@ -109,18 +112,15 @@ header {
 
   & .header--navbar {
     display: flex;
-    justify-content: space-between; /* Ensure space between nav and contact */
+    justify-content: space-between; 
     align-items: center;
-    width: 100%; /* Take up the full width */
+    width: 100%;
 
     & .centered-part{
       display: flex;
-    align-items: center;
-    gap: 4vw;
-    position: absolute; /* Absolute centering within the navbar */
-    left: 50%;
-    transform: translateX(-50%);  /* Center the nav links within this space */
-  
+      align-items: center;
+      gap: 2vw;
+      margin-left: 4vw;
       
       a {
         font-size: 2vw;
@@ -178,7 +178,7 @@ header {
     margin-left: auto;
     display: flex;
     align-items: center; 
-    margin-right: 1vw;
+    margin-right: 4vw;
     gap: 1vw;
     margin-top: 0.5%;
 
@@ -206,16 +206,17 @@ header {
 .home {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 
   & .home-top {
-    text-align: center;
+    text-align: left;
     line-height: .5vw;
 
     & h1 {
+      text-align: left;
       font-size: 3vw;
+      margin-left: var(--margin-text);
     }
-
   }
 
   & .home-img {
@@ -235,9 +236,9 @@ header {
   & .home-lower {
     font-style: var(--quote-font-style);
     font-size: var(--quote-size);
-    text-align: var(--quote-alignment);
-    margin-left: 25%;
+    text-align: left;
     margin-right: 25%;
+    margin-left: var(--margin-text);
   }
 }
 /* == PROJECTS SECTION == */
@@ -252,6 +253,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 2vw;
 }
 
 .mainproj-container {
@@ -266,8 +268,7 @@ header {
   border-radius: var(--main-border-radius); 
   border-width: var(--main-border-width);
   transition: border-color var(--time-transition) ease, transform var(--time-transition) ease;
-  margin: 1vw;
-  
+    
   & .mainproj-container_image img {
     width: 100%;
     display: block;
@@ -349,7 +350,6 @@ header {
   }
 }
 
-
 .mainproj-container--small{
   width: 21%;
   border-radius: var(--small-border-radius);
@@ -415,10 +415,9 @@ header {
     border-radius: var(--main-border-radius);
     border-width: var(--main-border-width);
     box-shadow: var(--box-shadow-default);
-    text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     flex-direction: column;
     transition: transform var(--time-project-card-transition) ease;
     transform:scale(0);
@@ -426,8 +425,10 @@ header {
       font-size: var(--description-text-size);
     }
     .button-img{
+      position: absolute;
+      left: 91%;
       margin: 2%;
-      width: 5%;
+      width: 4%;
       height: auto;
         
       transition: border-color var(--time-transition) ease, box-shadow var(--time-transition) ease, transform var(--time-transition) ease;
@@ -457,9 +458,9 @@ body.no-scroll {
 
 
 .about-me {
-  display: flex; /* Use Flexbox for layout */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically (if needed) */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 
   margin-left: 3%;
   margin-right: 3%;
@@ -506,26 +507,34 @@ body.no-scroll {
 .skills {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   line-height: 2vw;
+  margin-left: var(--margin-text);
+  gap: 1vw;
+
+  & .levels{
+    width: 100%; 
+    margin-left: var(--margin-text);
+    font-size: 1.5vw;
+    font-weight: semibold;
+  }
 
   & .skills-container {
     background: var(--description-background-color);
     width: 44%;
     color: var(--text-color);
-    padding: 1%;
-    padding-bottom: 2%;
     border-style: var(--main-border-style);
     border-color: var(--main-border-color);
     border-radius: var(--main-border-radius);
     border-width: var(--main-border-width);
     box-shadow: var(--box-shadow-default);
-    margin:1%;
+    padding: 1vw;
   }
   & h3 {
-    margin-left: 1vw;
+    margin: 0;
     font-size: 2vw;
     text-align: left;
+    margin-bottom: 0.7vw;
   }
 
   & li {
@@ -535,33 +544,29 @@ body.no-scroll {
   
   & .skill-name
   {
-    margin-left: 3vw;
+    margin-left: 1vw;
     font-size: 1.5vw;
-    font-weight: bold;
+    font-weight: semibold;
   }
 }
 
 /* == CONTACT SECTION == */
 
 .contact {
-  border-style: var(--main-border-style);
-  border-color: var(--main-border-color);
-  border-radius: var(--main-border-radius);
-  border-width: var(--main-border-width);
-  box-shadow: var(--box-shadow-default);
-  height: 20vw;
-  width: 92%;
+  height: auto;
+  width: 100%;
+  margin-left: var(--margin-text);
+  margin-right: var(--margin-text);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   flex-direction: column;
-  margin: 0 auto; /* Ensure it's centered within its parent */
+  margin-bottom: 24vw;
 
   & p {
     font-style: var(--quote-font-style);
     font-size: var(--quote-size);
-    text-align: var(--quote-alignment);
-    margin-top: 5vw;
+    text-align: left;
   }
 
   & .contact-socials {

@@ -3,13 +3,21 @@
   margin-right: 10%;
 }
 
-.snails-and-potions h1,
 .snails-and-potions h2 {
   margin: 0;
+  font-weight: lighter;
+}
+
+.snails-and-potions h1 {
+  margin: 0;
+  margin-top: 4vw;
+  text-align: left;
+  color: var(--hovered-color-links);
 }
 
 .snails-and-potions p {
   font-size: var(--description-text-size);
+  text-align: left;
 }
 
 .snails-and-potions .Trailer {

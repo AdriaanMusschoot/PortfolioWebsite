@@ -4,6 +4,14 @@ import skills from '../data/skills.json';
 export default function Skills() {
   return (
     <div className='skills'>
+     <div className='levels'>
+      <div>
+       ● Primary / Proficient
+      </div>
+      <div>
+       ○ Secondary / Some Experience
+      </div>
+     </div>
         {
             skills.map((skill) => (
                 <div className='skills-container'>

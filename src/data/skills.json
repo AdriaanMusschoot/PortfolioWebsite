@@ -4,9 +4,10 @@
         "contents": [
             ["C++", "Primary"],
             ["C#", "Primary"],
-            ["Python", "Secondary"],
+            ["JavaScript", "Secondary"],
+            ["Css", "Secondary"],
             ["Html", "Secondary"],
-            ["Css", "Secondary"]
+            ["Python", "Secondary"]
         ]
     },
     {
@@ -41,6 +42,15 @@
             ["Rider", "Primary"],
             ["VS Code", "Secondary"],
             ["Qt", "Secondary"]
+        ]
+    },
+    {
+        "title" : "Human Languages",
+        "contents" : [
+            ["Dutch", "Primary"],
+            ["English", "Primary"],
+            ["French", "Secondary"],
+            ["German", "Secondary"]
         ]
     }
 ]

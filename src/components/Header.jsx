@@ -4,6 +4,8 @@ import { ReactComponent as LinkedInLogo } from '../assets/svg/linkedin_icon.svg'
 import { ReactComponent as GithubLogo } from '../assets/svg/github_icon.svg';
 import { ReactComponent as DiscordLogo } from '../assets/svg/discord_icon.svg';
 import { ReactComponent as MailLogo } from '../assets/svg/mail_icon.svg';
+import { ReactComponent as CVLogo } from '../assets/svg/CV.svg';
+import CV from '../assets/CV_2023082022_AdriaanMusschoot.pdf';
 
 export default function Header() {
   useEffect(() => {
@@ -52,13 +54,13 @@ export default function Header() {
     <>
       <div className='header--navbar'>
         <div className='centered-part'>
-          <a href='#home'>Home</a>
-          <a href='#projects'>Projects</a>
-          <a href='#about'>
-          <div className='header--logo'>
-            <Logo className='svg'/>
-          </div>
+          <a href='#home'>
+           <div className='header--logo'>
+             <Logo className='svg'/>
+           </div>
           </a>
+          <a href='#projects'>Projects</a>
+          <a href='#about'>About</a>
           <a href='#skills'>Skills</a>
           <a href='#contact'>Contact</a>
         </div>
@@ -69,6 +71,9 @@ export default function Header() {
           <a href='https://www.linkedin.com/in/adriaan-musschoot-29a991288/' rel='noreferrer' target='_blank'>
               <LinkedInLogo className='svg'/>
           </a>
+            <a href={CV} target="_blank" rel="noopener noreferrer">
+              <CVLogo className='svg' />
+            </a>
           <a href='https://github.com/AdriaanMusschoot' rel='noreferrer' target='_blank'>
               <GithubLogo className='svg'/>
           </a>
