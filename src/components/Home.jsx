@@ -14,7 +14,7 @@ export default function Home() {
           When I encounter problems I can really grit my teeth and persist until I find an effective solution.
         </p>
         <p>
-          I am currently looking for an end of study internship as a gameplay developer programming in C++.
+          I am currently looking for an end of study internship (february 2025 - june 2025) as a gameplay developer programming in C++.
         </p>
       </div>
     </ div>
