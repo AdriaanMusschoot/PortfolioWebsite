@@ -5,7 +5,7 @@ import { ReactComponent as GithubLogo } from '../assets/svg/github_icon.svg';
 import { ReactComponent as DiscordLogo } from '../assets/svg/discord_icon.svg';
 import { ReactComponent as MailLogo } from '../assets/svg/mail_icon.svg';
 import { ReactComponent as CVLogo } from '../assets/svg/CV.svg';
-import CV from '../assets/CV_2023082022_AdriaanMusschoot.pdf';
+import CV from '../assets/CV_20241005_AdriaanMusschoot.pdf';
 
 export default function Header() {
   useEffect(() => {
