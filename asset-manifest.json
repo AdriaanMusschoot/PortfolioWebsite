@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.32b037e4.css",
-    "main.js": "/static/js/main.0dc2b40b.js",
+    "main.js": "/static/js/main.2d05c57b.js",
     "static/js/453.9657b1c0.chunk.js": "/static/js/453.9657b1c0.chunk.js",
-    "static/media/CV_20241005_AdriaanMusschoot.pdf": "/static/media/CV_20241005_AdriaanMusschoot.fd1145d3b2dedb013aa7.pdf",
+    "static/media/CV_20241005_AdriaanMusschoot.pdf": "/static/media/CV_20241005_AdriaanMusschoot.5144c19d7c3394319548.pdf",
     "static/media/SUSE-Regular.ttf": "/static/media/SUSE-Regular.5330b1a28f10d7e25116.ttf",
     "static/media/CV.svg": "/static/media/CV.380c48406ae8fb769ee8dbe8f1f08d48.svg",
     "static/media/Logo.svg": "/static/media/Logo.7156993210b4d12e9c8f074a9279a85d.svg",
@@ -13,11 +13,11 @@
     "static/media/discord_icon.svg": "/static/media/discord_icon.e4d0feff06932f3c5cee867477e88db3.svg",
     "index.html": "/index.html",
     "main.32b037e4.css.map": "/static/css/main.32b037e4.css.map",
-    "main.0dc2b40b.js.map": "/static/js/main.0dc2b40b.js.map",
+    "main.2d05c57b.js.map": "/static/js/main.2d05c57b.js.map",
     "453.9657b1c0.chunk.js.map": "/static/js/453.9657b1c0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.32b037e4.css",
-    "static/js/main.0dc2b40b.js"
+    "static/js/main.2d05c57b.js"
   ]
 }
