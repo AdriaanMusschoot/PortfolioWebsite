@@ -11,7 +11,7 @@
         ]
     },
     {
-        "title" : "API'S / FRAMEWORKS",
+        "title" : "APIs / FRAMEWORKS",
         "contents" : [
             ["SDL", "Primary"],
             ["GLM", "Primary"],
@@ -37,7 +37,7 @@
         ]
     },
     {
-        "title" : "IDE",
+        "title" : "IDEs",
         "contents" : [
             ["Visual Studio", "Primary"],
             ["Rider", "Primary"],
