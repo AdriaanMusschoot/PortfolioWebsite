@@ -2,11 +2,10 @@ import React from "react";
 import '../styles/Vulkan.css'; // Import your CSS file
 
 
-export default function Vulkan() {
+export default function Vulkan({activeIndex}) {
     return (
       <>
         <div className='vulkan'>
-          <h1>Instanced Rendering - Vulkan</h1>
           <h2>The Project</h2>
           <p>
             I have created, an application with the Vulkan API, that allows for instanced rendering of 2D and 3D objects. 

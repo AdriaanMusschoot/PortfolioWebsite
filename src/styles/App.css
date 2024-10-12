@@ -401,6 +401,46 @@ header {
         transform: scale(1);
       }
   }
+
+  h1 {
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 4vw;
+    text-align: left;
+    color: var(--hovered-color-links);
+  }
+
+  & .mainproj-container_specifics {
+    position: relative;
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    align-items: right;
+    font-size: var(--description-text-size);
+    color: var(--text-color);
+  }
+  
+  & .mainproj-container_specifics ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: flex;           /* Flexbox layout */
+    justify-content: center;
+    gap: 0.5vw;
+  }
+
+  & .mainproj-container_specifics li {   
+    border-style: var(--main-border-style);
+    border-color: var(--hovered-color-links);
+    border-radius: var(--small-border-radius);
+    border-width: var(--main-border-width);
+    background: var(--background-color);
+    padding: 0.3vw;
+  }
   
   .content{
     background-color: var(--background-color);
@@ -421,14 +461,17 @@ header {
     flex-direction: column;
     transition: transform var(--time-project-card-transition) ease;
     transform:scale(0);
+    padding-bottom: 4vw;
+    
     p{
       font-size: var(--description-text-size);
       text-align: justify;
     }
+    
     .button-img{
       position: absolute;
-      left: 91%;
-      margin: 2%;
+      left: 67vw;
+      top: 5vw;
       width: 4%;
       height: auto;
         

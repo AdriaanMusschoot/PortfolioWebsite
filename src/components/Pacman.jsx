@@ -1,13 +1,11 @@
 import React from "react";
 import '../styles/Pacman.css'; // Import your CSS file
 
-
-export default function Pacman() {
+export default function Pacman({ activeIndex }) {
     return (
       <>
         <div className='Pacman'>
-          <h1>Pac Man - Amugen</h1>
-          <h2>The Project</h2>
+        <h2>The Project</h2>
           <p>
             This project was completely developed in my own 2D engine - Amugen.
             It was a proof of concept that all the features in my own engine worked.

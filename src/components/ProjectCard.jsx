@@ -13,9 +13,9 @@ export default function ProjectCard() {
   const getDescriptionComponent = (descriptionId) => {
     switch (descriptionId) {
       case 0: return <SnailsAndPotions activeIndex={activeIndex} />;
-      case 1: return <Amugen />;
-      case 2: return <Vulkan />;
-      case 3: return <Pacman />;
+      case 1: return <Amugen activeIndex={activeIndex}/>;
+      case 2: return <Vulkan activeIndex={activeIndex}/>;
+      case 3: return <Pacman activeIndex={activeIndex}/>;
       default: return <div></div>;
     }
   };
@@ -113,6 +113,20 @@ export default function ProjectCard() {
                 </g>
               </g>
             </svg>
+            <h1>{projects[activeIndex].title}</h1>
+            <div>
+              {projects[activeIndex].specifics.length > 0 && 
+                (
+                <div className="mainproj-container_specifics">
+                  <ul>
+                    {projects[activeIndex].specifics.map((skill, i) => (
+                      <li key={i}>{skill}</li>
+                    ))}
+                  </ul>
+                </div>
+                )
+              }
+            </div>
             <div className='description'>
               {getDescriptionComponent(activeIndex)}
             </div>

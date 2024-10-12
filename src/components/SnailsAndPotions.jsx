@@ -4,7 +4,6 @@ export default function SnailsAndPotions({ activeIndex }) {
 
   return (
     <div className='snails-and-potions'>
-      <h1>Snails And Potions</h1>
       <h2>The Game</h2>
       <p>
         Snails and Potions is a local fantasy-themed multiplayer pvp game, where each player competes in a snail race with their own snail. 

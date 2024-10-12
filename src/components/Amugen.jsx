@@ -1,10 +1,9 @@
 import '../styles/Amugen.css'; 
 
-export default function Amugen() {
+export default function Amugen({ activeIndex }) {
 
   return (
     <div className='Amugen'>
-      <h1>Amugen - Game Engine</h1>
       <h2>The Project</h2>
       <p>
         This custom 2D Engine, that I have developed in C++, uses a scene graph to determine positions and uses a game object component system.
