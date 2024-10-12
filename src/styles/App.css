@@ -205,42 +205,52 @@ header {
 
 .home {
   display: flex;
-  flex-direction: column;
-  align-items: left;
-
-  & .home-top {
-    text-align: left;
-    line-height: .5vw;
+  justify-content: space-between; /* Space between text and image */
+  align-items: flex-start; /* Align both items at the top */
+  width: 100%;
+  margin-left: var(--margin-text);
+  & .text-container {
+    text-align: justify;
+    margin-right: 4vw;    
 
     & h1 {
-      text-align: left;
       font-size: 3vw;
-      margin-left: var(--margin-text);
+      margin: 0;
+    }
+
+    & h2 {
+      margin: 0;
+      font-size: 2vw;
+    }
+
+    & p {
+      font-size: var(--about-text-size);
+      font-style: italic;
+      margin: 0;
     }
   }
 
-  & .home-img {
-    display: flex;
-    justify-content: center;
+  & .image-container {
+    top: 0;
+    position: relative;
+    margin-top: 3vw;
+    margin-right: 4vw;
     & img {
-      display: block;
-      width: 50%;
+      width: 20vw; /* Adjust image size as needed */
+      height: auto;
       border-style: var(--main-border-style);
       border-color: var(--main-border-color);
       border-radius: var(--main-border-radius);
       border-width: var(--main-border-width);
       box-shadow: var(--box-shadow-default);
     }
-  }
 
-  & .home-lower {
-    font-style: var(--quote-font-style);
-    font-size: var(--quote-size);
-    text-align: justify;
-    margin-right: 25%;
-    margin-left: var(--margin-text);
   }
 }
+
+
+
+
 /* == PROJECTS SECTION == */
 
 .projects{
