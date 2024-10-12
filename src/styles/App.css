@@ -211,7 +211,8 @@ header {
   margin-left: var(--margin-text);
   & .text-container {
     text-align: justify;
-    margin-right: 4vw;    
+    margin-right: 4vw;
+    margin-top: 2vw;
 
     & h1 {
       font-size: 3vw;
@@ -233,7 +234,7 @@ header {
   & .image-container {
     top: 0;
     position: relative;
-    margin-top: 3vw;
+    margin-top: 3.5vw;
     margin-right: 4vw;
     & img {
       width: 20vw; /* Adjust image size as needed */
