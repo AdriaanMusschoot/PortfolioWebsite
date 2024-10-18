@@ -9,7 +9,7 @@
             "Team",
             "UE5"
         ],
-        "date" : "May 2024"
+        "date" : "Feb - May 2024"
     },
     {
         "image" : "./assets/ProjectImages/Amugen/Thumbnail.png",
@@ -21,7 +21,7 @@
             "Solo",
             "CMake"
         ],
-        "date" : "June 2024"
+        "date" : "Feb - June 2024"
     },
     {
         "image" : "./assets/ProjectImages/Vulkan/Thumbnail.png",
@@ -34,31 +34,20 @@
             "Solo",
             "Graphics"
         ],
-        "date" : "June 2024"
+        "date" : "Feb - June 2024"
         
     },
     {
-        "image" : "./assets/ProjectImages/Pacman/Thumbnail.png",
-        "title" : "Pac Man",
+        "image" : "./assets/ProjectImages/RayMarcher/Thumbnail.png",
+        "title" : "Ray Marcher",
         "main" : true,
         "specifics" :
         [
             "C++",
             "Solo",
-            "Amugen"
-        ],
-        "date" : "June 2024"
-    },
-    {
-        "image" : "./assets/ProjectImages/RayMarcher/Thumbnail.png",
-        "title" : "Ray Marcher",
-        "main" : false,
-        "specifics" :
-        [
-            "C++",
-            "Solo",
             "Graphics"
-        ]
+        ],
+        "date" : "Sept - Oct 2024"
     },
     {
         "image" : "./assets/ProjectImages/Tectonic/Thumbnail.png",
@@ -72,6 +61,17 @@
         ]
     },
     {
+        "image" : "./assets/ProjectImages/SouperHero/Thumbnail.png",
+        "title" : "Souper Hero",
+        "main" : false,
+        "specifics" :
+        [
+            "UE5",
+            "C++",
+            "GameJam"
+        ]
+    },
+    {
         "image" : "./assets/ProjectImages/TrajectoryPrediction/Thumbnail.png",
         "title" : "Trajectory Prediction",
         "main" : false,
@@ -82,13 +82,13 @@
         ]
     },
     {
-        "image" : "./assets/ProjectImages/SouperHero/Thumbnail.png",
-        "title" : "Souper Hero",
+        "image" : "./assets/ProjectImages/SouperHero/.png",
+        "title" : "Ride Of Giri",
         "main" : false,
         "specifics" :
         [
             "UE5",
-            "C++",
+            "Blueprints",
             "GameJam"
         ]
     }

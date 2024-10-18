@@ -13,13 +13,13 @@
     {
         "title" : "APIs / FRAMEWORKS",
         "contents" : [
+            ["Vulkan", "Primary"],
             ["SDL", "Primary"],
             ["GLM", "Primary"],
-            ["Vulkan", "Primary"],
             ["DirectX11", "Secondary"],
-            ["React", "Secondary"],
+            ["Dear IMGui", "Secondary"],
             ["WPF", "Secondary"],
-            ["Dear IMGui", "Secondary"]
+            ["React", "Secondary"]
         ]
     },
     {
@@ -52,6 +52,15 @@
             ["English", "Primary"],
             ["French", "Secondary"],
             ["German", "Secondary"]
+        ]
+    },
+    {
+        "title" : "TOOLS",
+        "contents" : [
+            ["RenderDoc", "Primary"],
+            ["Photoshop", "Primary"],
+            ["Maya", "Secondary"],
+            ["Houdini", "Secondary"]
         ]
     }
 ]
