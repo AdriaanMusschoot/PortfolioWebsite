@@ -26,7 +26,7 @@ export default function Raymarcher({activeIndex}) {
             loop
             muted
           >
-            <source src='./assets/ProjectImages/RayMarcher/CubeSpheresmooth.webm' />
+            <source src='./assets/ProjectImages/RayMarcher/Cubespheresmooth.webm' />
             Your browser does not support the video tag.
           </video>
           <video
