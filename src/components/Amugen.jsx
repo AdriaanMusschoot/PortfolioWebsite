@@ -4,7 +4,7 @@ export default function Amugen({ activeIndex }) {
 
   return (
     <div className='Amugen'>
-      <h2>The Project</h2>
+      <h2>The Engine</h2>
       <p>
         This custom 2D Engine, that I have developed in C++, uses a scene graph to determine positions and uses a game object component system.
         The rendering, input and audio is all handled by SDL.
@@ -34,7 +34,7 @@ export default function Amugen({ activeIndex }) {
       <p>
         This project is the most challenging I have faced yet. I really enjoyed sticking to the guidelines as it provides an excellent frame for me to work in.
         Over 4 months I learned so much and it is the project where all of my studies came together, 
-        as I had to prove the engine works by creating a remake of the all time classic Pac-Man (check out other projects).
+        as I had to prove the engine works by creating a remake of the all time classic Pac-Man (check out below).
       </p>
       <a 
         href='https://github.com/AdriaanMusschoot/Amugen' 
@@ -57,6 +57,32 @@ export default function Amugen({ activeIndex }) {
         <source src='./assets/ProjectImages/Amugen/Showcase.webm' />
         Your browser does not support the video tag.
       </video>
+      <h2>Pacman</h2>
+        <p>
+          This project was completely developed in my own 2D engine - Amugen.
+          It was a proof of concept that all the features in my own engine worked.
+          <br></br>
+          I really enjoyed creating all the gameplay elements behind Pacman. It all starts of with reading in some file data to determine what the playing field looks like (so if ever a new version of the map came out it would be easy to change ;).
+          Working with statemachines for Pacman and the ghosts was a blast from the past. I just love working with state machines, they seem so trivial but yet can create complex behaviours.
+          The subject observer pattern was also very helpful in decoupling the components from one another. My favourite place to use it was in the animation components. 
+          It made it simple to reason wether the ghost is hunting pacman or running from pacman and the spritesheets could then easily be updated on their own.
+        </p>
+      <h2>Result</h2>
+        <p>
+          In the end, I was quite satisfied with both the code and the project structure. It reinforces my preference for a clean and organized approach.
+          There is a release version available on github showcasing the gameplay of Pacman.
+        </p>
+        <a 
+          href='https://github.com/AdriaanMusschoot/Programming4' 
+          target='_blank' 
+          rel='noopener noreferrer'
+        >
+          <img
+            className='git-img'
+            src='./assets/ProjectImages/GITHUB.png'
+            alt='git'
+          />
+        </a>
     </div>
   );
 }
