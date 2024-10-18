@@ -44,7 +44,7 @@ export default function Raymarcher({activeIndex}) {
             loop
             muted
           >
-            <source src='./assets/ProjectImages/RayMarcher/Mandelbulb.mp4' />
+            <source src='./assets/ProjectImages/RayMarcher/MandelBulb.mp4' />
             Your browser does not support the video tag.
           </video>
           <h2>Technical</h2>
