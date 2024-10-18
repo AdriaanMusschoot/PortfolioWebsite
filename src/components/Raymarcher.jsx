@@ -26,7 +26,7 @@ export default function Raymarcher({activeIndex}) {
             loop
             muted
           >
-            <source src='./assets/ProjectImages/Raymarcher/CubeSphereSmooth.mp4' />
+            <source src='./assets/ProjectImages/RayMarcher/CubeSphereSmooth.mp4' />
             Your browser does not support the video tag.
           </video>
           <video
@@ -35,7 +35,7 @@ export default function Raymarcher({activeIndex}) {
             loop
             muted
           >
-            <source src='./assets/ProjectImages/Raymarcher/FractalsRotation.mp4' />
+            <source src='./assets/ProjectImages/RayMarcher/FractalsRotation.mp4' />
             Your browser does not support the video tag.
           </video>
           <video
@@ -44,7 +44,7 @@ export default function Raymarcher({activeIndex}) {
             loop
             muted
           >
-            <source src='./assets/ProjectImages/Raymarcher/Mandelbulb.mp4' />
+            <source src='./assets/ProjectImages/RayMarcher/Mandelbulb.mp4' />
             Your browser does not support the video tag.
           </video>
           <h2>Technical</h2>
