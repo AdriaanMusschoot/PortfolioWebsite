@@ -214,7 +214,7 @@ header {
     margin-right: 4vw;
     margin-top: 2vw;
 
-    & h1 {  
+    & h1 {
       font-size: 3vw;
       margin: 0;
     }
@@ -545,12 +545,12 @@ body.no-scroll {
   
   a{
     font-size: var(--about-text-size);
-    text-decoration: underline;
+    text-decoration: none;
     margin-left: 0.3vw;
     margin-right: 0.3vw;
     color: var(--text-color);
     transition: color var(--time-transition) ease;
-    font-weight: normal;
+    font-weight:bold;
 
     &:hover{
       color: var(--hovered-color-links);

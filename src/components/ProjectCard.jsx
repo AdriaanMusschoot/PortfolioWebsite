@@ -4,7 +4,7 @@ import '../styles/App.css';
 import SnailsAndPotions from './SnailsAndPotions.jsx';
 import Amugen from './Amugen.jsx';
 import Vulkan from './Vulkan.jsx';
-import Raymarcher from './Raymarcher.jsx'
+import Pacman from './Pacman.jsx';
 
 export default function ProjectCard() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -15,7 +15,7 @@ export default function ProjectCard() {
       case 0: return <SnailsAndPotions activeIndex={activeIndex} />;
       case 1: return <Amugen activeIndex={activeIndex}/>;
       case 2: return <Vulkan activeIndex={activeIndex}/>;
-      case 3: return <Raymarcher activeIndex={activeIndex}/>
+      case 3: return <Pacman activeIndex={activeIndex}/>;
       default: return <div></div>;
     }
   };
