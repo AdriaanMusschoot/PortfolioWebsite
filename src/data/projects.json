@@ -9,7 +9,8 @@
             "Team",
             "UE5"
         ],
-        "date" : "Feb - May 2024"
+        "date" : "Feb - May 2024",
+        "id": 0
     },
     {
         "image" : "./assets/ProjectImages/Amugen/Thumbnail.png",
@@ -21,7 +22,8 @@
             "Solo",
             "CMake"
         ],
-        "date" : "Feb - June 2024"
+        "date" : "Feb - June 2024",
+        "id": 1
     },
     {
         "image" : "./assets/ProjectImages/Vulkan/Thumbnail.png",
@@ -34,8 +36,8 @@
             "Solo",
             "Graphics"
         ],
-        "date" : "Feb - June 2024"
-        
+        "date" : "Feb - June 2024",
+        "id": 2        
     },
     {
         "image" : "./assets/ProjectImages/RayMarcher/Thumbnail.png",
@@ -47,7 +49,8 @@
             "Solo",
             "Graphics"
         ],
-        "date" : "Sept - Oct 2024"
+        "date" : "Sept - Oct 2024",
+        "id": 3
     },
     {
         "image" : "./assets/ProjectImages/Tectonic/Thumbnail.png",
@@ -58,7 +61,8 @@
             "C++",
             "Solo",
             "Amugen"
-        ]
+        ],
+        "id": 4
     },
     {
         "image" : "./assets/ProjectImages/SouperHero/Thumbnail.png",
@@ -69,7 +73,8 @@
             "UE5",
             "C++",
             "GameJam"
-        ]
+        ],
+        "id": 5
     },
     {
         "image" : "./assets/ProjectImages/TrajectoryPrediction/Thumbnail.png",
@@ -79,7 +84,8 @@
         [
             "C#",
             "Physics"
-        ]
+        ],
+        "id": 6
     },
     {
         "image" : "./assets/ProjectImages/SouperHero/.png",
@@ -88,8 +94,8 @@
         "specifics" :
         [
             "UE5",
-            "Blueprints",
             "GameJam"
-        ]
+        ],
+        "id": 7
     }
 ]

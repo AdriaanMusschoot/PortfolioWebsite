@@ -1,12 +1,6 @@
 .Amugen {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-
-.Amugen h2 {
-  margin: 0;
-  font-weight: lighter;
+  margin-left: var(--margin-project-card);
+  margin-right: var(--margin-project-card);
 }
 
 .Amugen p {

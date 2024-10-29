@@ -4,7 +4,8 @@ import '../styles/App.css';
 import SnailsAndPotions from './SnailsAndPotions.jsx';
 import Amugen from './Amugen.jsx';
 import Vulkan from './Vulkan.jsx';
-import Raymarcher from './Raymarcher.jsx'
+import Raymarcher from './Raymarcher.jsx';
+import PhysicsPrediction from './PhysicsPrediction.jsx';
 
 export default function ProjectCard() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -12,10 +13,11 @@ export default function ProjectCard() {
 
   const getDescriptionComponent = (descriptionId) => {
     switch (descriptionId) {
-      case 0: return <SnailsAndPotions activeIndex={activeIndex} />;
-      case 1: return <Amugen activeIndex={activeIndex}/>;
-      case 2: return <Vulkan activeIndex={activeIndex}/>;
-      case 3: return <Raymarcher activeIndex={activeIndex}/>
+      case 0: return <SnailsAndPotions activeIndex={descriptionId} />;
+      case 1: return <Amugen activeIndex={descriptionId}/>;
+      case 2: return <Vulkan activeIndex={descriptionId}/>;
+      case 3: return <Raymarcher activeIndex={descriptionId}/>;
+      case 6: return <PhysicsPrediction activeIndex={descriptionId}/>;
       default: return <div></div>;
     }
   };
@@ -128,7 +130,7 @@ export default function ProjectCard() {
               }
             </div>
             <div className='description'>
-              {getDescriptionComponent(activeIndex)}
+              {getDescriptionComponent(projects[activeIndex].id)}
             </div>
           </div>
         </div>

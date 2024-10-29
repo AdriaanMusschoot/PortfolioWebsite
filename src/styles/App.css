@@ -23,6 +23,9 @@
   --time-project-card-transition: 0.5s;
   --small-border-radius: 0.6vw;
   --margin-text: 2vw;
+  --margin-titles: 1vw;
+  --margin-small-titles: 0.5vw;
+  --margin-project-card: 10%;
 }
 
 body {
@@ -205,8 +208,8 @@ header {
 
 .home {
   display: flex;
-  justify-content: space-between; /* Space between text and image */
-  align-items: flex-start; /* Align both items at the top */
+  justify-content: space-between;
+  align-items: flex-start;
   width: 100%;
   margin-left: var(--margin-text);
   & .text-container {
@@ -237,7 +240,7 @@ header {
     margin-top: 3.5vw;
     margin-right: 4vw;
     & img {
-      width: 20vw; /* Adjust image size as needed */
+      width: 20vw;
       height: auto;
       border-style: var(--main-border-style);
       border-color: var(--main-border-color);
@@ -310,7 +313,7 @@ header {
     padding: 0;
     margin: 1vw;
     text-align: center;
-    display: flex;           /* Flexbox layout */
+    display: flex;
     justify-content: center;
     gap: 0.5vw;
   }
@@ -415,18 +418,43 @@ header {
 
   h1 {
     margin: 0;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: var(--margin-project-card);
+    margin-right: var(--margin-project-card);
     margin-top: 4vw;
     text-align: left;
     color: var(--hovered-color-links);
   }
 
+  h2{
+    margin: 0;
+    margin-top: var(--margin-titles);
+    margin-bottom: var(--margin-titles);
+    font-weight: bolder;
+  }
+
+  h3{
+    margin: 0;
+    margin-top: var(--margin-titles);
+    margin-bottom: var(--margin-titles);
+    font-weight: lighter;
+  }
+
+  h4{
+    margin: 0;
+    margin-top: var(--margin-small-titles);
+    margin-bottom: var(--margin-small-titles);
+    font-weight: normal;
+  }
+
+  p{
+    margin: 0;
+  }
+
   & .mainproj-container_specifics {
     position: relative;
     margin: 0;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: var(--margin-project-card);
+    margin-right: var(--margin-project-card);
     padding: 0;
     display: flex;
     justify-content: left;
@@ -439,7 +467,7 @@ header {
     list-style: none;
     padding: 0;
     text-align: center;
-    display: flex;           /* Flexbox layout */
+    display: flex;
     justify-content: center;
     gap: 0.5vw;
   }
@@ -458,6 +486,8 @@ header {
     z-index: 3;
     margin-top: 3%;
     margin-bottom: 3%;
+    margin-left: var(--margin-project-card);
+    margin-right: var(--margin-project-card);
     width: 80%;
     height: auto;
     font-size: 2vw;
