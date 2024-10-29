@@ -3,17 +3,17 @@
 :root {
   --main-border-radius: 0.8vw;
   --main-border-style: solid;
-  --main-border-color: hsla(0, 23%, 64%, 1);
+  --main-border-color: #b88e8e;
   --main-border-width: 0.2vw;
-  --text-color:  hsl(0, 45%, 90%);
-  --background-color:  hsl(321, 22%, 15%);
+  --text-color:  #f1dada;
+  --background-color:  #2f1e29;
   --description-background-color: ;
   --description-overlay-color: rgba(0, 0, 0, 0.9);
   --description-text-size: 1.3vw;
   --about-text-size: 1.1vw;
   --box-shadow-default: 0 0 0 hsla(349, 100%, 79%, 0.7), inset 0 0 0.5vw rgba(0, 0, 0, 0.3);
   --box-shadow-hovered: 0 0 0 hsla(349, 100%, 71%, 0.7), inset 0 0 1.5vw rgba(0, 0, 0, 0.5);
-  --hovered-color-links: rgb(201, 78, 94);
+  --hovered-color-links: #c94e5e;
   --linear-gradient-background: linear-gradient(145deg, hsl(312, 22%, 25%), hsl(312, 22%, 15%));
   --quote-size: 1.1vw;
   --quote-font-style: italic;
@@ -719,6 +719,7 @@ body.no-scroll {
 
 .img-1 {
   width: 31%;
+  margin-top: 3%;
   
   border-radius: var(--main-border-radius);
   border-style: var(--main-border-style);
@@ -729,8 +730,7 @@ body.no-scroll {
 
 .img-2 {
   width: 31%;
-  margin-left: 1%;
-  margin-right: 1%;
+  margin-left: 2.5%;
   
   border-radius: var(--main-border-radius);
   border-style: var(--main-border-style);
@@ -741,6 +741,7 @@ body.no-scroll {
 
 .img-3 {
   width: 31%;
+  margin-left: 2.5%;
   
   border-radius: var(--main-border-radius);
   border-style: var(--main-border-style);

@@ -6,6 +6,7 @@ import Amugen from './Amugen.jsx';
 import Vulkan from './Vulkan.jsx';
 import Raymarcher from './Raymarcher.jsx';
 import PhysicsPrediction from './PhysicsPrediction.jsx';
+import SouperHero from './Souperhero.jsx';
 
 export default function ProjectCard() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -17,6 +18,7 @@ export default function ProjectCard() {
       case 1: return <Amugen activeIndex={descriptionId}/>;
       case 2: return <Vulkan activeIndex={descriptionId}/>;
       case 3: return <Raymarcher activeIndex={descriptionId}/>;
+      case 5: return <SouperHero activeIndex={descriptionId}/>;
       case 6: return <PhysicsPrediction activeIndex={descriptionId}/>;
       default: return <div></div>;
     }

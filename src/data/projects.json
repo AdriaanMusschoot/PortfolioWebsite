@@ -65,7 +65,7 @@
         "id": 4
     },
     {
-        "image" : "./assets/ProjectImages/SouperHero/Thumbnail.png",
+        "image" : "./assets/ProjectImages/SouperHero/Thumbnail.jpg",
         "title" : "Souper Hero",
         "main" : false,
         "specifics" :
@@ -88,7 +88,7 @@
         "id": 6
     },
     {
-        "image" : "./assets/ProjectImages/SouperHero/.png",
+        "image" : "./assets/ProjectImages/RideOfGiri/",
         "title" : "Ride Of Giri",
         "main" : false,
         "specifics" :

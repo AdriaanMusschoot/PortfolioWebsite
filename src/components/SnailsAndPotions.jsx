@@ -65,6 +65,7 @@ export default function SnailsAndPotions({ activeIndex }) {
         width='100%' height='auto' 
         controls 
         loop
+        autoPlay
       >
         <source src='./assets/ProjectImages/SnailsAndPotions/Trailer.webm' />
         Your browser does not support the video tag.
