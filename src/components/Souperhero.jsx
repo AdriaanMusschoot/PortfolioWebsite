@@ -11,10 +11,21 @@ export default function SouperHero({ activeIndex }) {
             Trapped in a bubbling pot of soup, your goal is to navigate through a labyrinth of swirling flavors, sizzling obstacles, and slippery ingredients
             to escape before you're completely submerged.
         </p>
-        <video className='Trailer' width='100%' height='auto' controls loop autoPlay>
+        <video className='Trailer' width='100%' height='auto' controls loop autoPlay muted>
             <source src='./assets/ProjectImages/SouperHero/Trailer.webm' />
                 Your browser does not support the video tag.
         </video>
+        <a 
+          href='https://imbajuk.itch.io/souperhero' 
+          target='_blank' 
+          rel='noopener noreferrer'
+          >
+          <img
+            className='itch-img'
+            src='./assets/ProjectImages/ITCHIO.svg'
+            alt='itch'
+            />
+        </a>
       <h2>The project</h2>
       <p>
         This little game was developped for the PolyMars x ScoreSpace speedjam. 
