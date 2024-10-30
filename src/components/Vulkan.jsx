@@ -55,10 +55,10 @@ export default function Vulkan({activeIndex}) {
             className='Trailer'
             width='100%' height='auto' 
             autoPlay
-            loop
             muted
+            controls
           >
-            <source src='https://media.githubusercontent.com/media/AdriaanMusschoot/PortfolioWebsite/gh-pages/assets/ProjectImages/Vulkan/Trailer.webm' />
+            <source src='./assets/ProjectImages/Vulkan/Trailer.webm' />
             Your browser does not support the video tag.
           </video>
         </div>

@@ -65,6 +65,7 @@ export default function SnailsAndPotions({ activeIndex }) {
         width='100%' height='auto' 
         controls 
         loop
+        muted
         autoPlay
       >
         <source src='./assets/ProjectImages/SnailsAndPotions/Trailer.webm' />
