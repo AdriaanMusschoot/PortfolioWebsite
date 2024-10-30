@@ -8,6 +8,7 @@ import Raymarcher from './Raymarcher.jsx';
 import PhysicsPrediction from './PhysicsPrediction.jsx';
 import SouperHero from './Souperhero.jsx';
 import Tectonic from './Tectonic.jsx';
+import RideOfGiri from './RideOfGiri.jsx';
 
 export default function ProjectCard() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -22,6 +23,7 @@ export default function ProjectCard() {
       case 4: return <Tectonic activeIndex={descriptionId}/>;
       case 5: return <SouperHero activeIndex={descriptionId}/>;
       case 6: return <PhysicsPrediction activeIndex={descriptionId}/>;
+      case 7: return <RideOfGiri activeIndex={descriptionId}/>;
       default: return <div></div>;
     }
   };

@@ -716,6 +716,7 @@ body.no-scroll {
 }
 
 .Trailer {
+  margin-top: 2%;
   cursor: pointer;
   border-radius: var(--main-border-radius);
   border-style: var(--main-border-style);

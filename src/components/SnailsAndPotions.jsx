@@ -71,7 +71,6 @@ export default function SnailsAndPotions({ activeIndex }) {
           alt='itch'
           />
       </a>
-          <br></br>
       <a 
         href='https://store.steampowered.com/app/3224810/Snails__Potions/' 
         target='_blank' 
