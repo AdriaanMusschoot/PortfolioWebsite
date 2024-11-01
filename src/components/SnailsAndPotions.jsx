@@ -23,6 +23,11 @@ export default function SnailsAndPotions({ activeIndex }) {
         <source src='./assets/ProjectImages/SnailsAndPotions/Trailer.webm' />
         Your browser does not support the video tag.
       </video>
+      <h2>Winner!</h2>
+      <p>
+        Snails And Potions was selected as the best for the in house game jam held by our school, DAE Game Projects 2024. 
+        We were first in almost every category. This selection is also meant that we could release to steam under the schools steam, which is something we are working on now.
+      </p>
       <h2>My Role</h2>
       <p>
         The biggest part of the game and my biggest task was the snail and making it tick, well actually crawl and make it interact appropriately to all the different potions. 

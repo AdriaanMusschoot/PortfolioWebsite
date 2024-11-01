@@ -108,7 +108,7 @@ export default function Raymarcher({activeIndex}) {
                 If you had a super computer and a crazy amount of GPU-power you can keep zooming in and keep discovering more detail.<br/>
                 To visualize this shape I needed some form of ambient occlusion, otherwise you can't really see the detail.
                 To achieve this in a cheap manner, I used the number of steps the ray had to take to hit a point.<br/>
-                After updating one of the values in the complex sdf, it resulted in this col animated MandelBulb.  
+                After updating one of the values in the complex sdf, it resulted in this cool animated MandelBulb.  
               </p>
             </div>
         </div>

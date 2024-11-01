@@ -38,7 +38,7 @@ export default function Vulkan({activeIndex}) {
             There is a release version available on github showcasing 2D and 3D instanced rendering and a crazy amount of frames per second.
           </p>
           <a 
-            href='https://github.com/AdriaanMusschoot/Amugen' 
+            href='https://github.com/AdriaanMusschoot/VulkanInstancedRendering' 
             target='_blank' 
             rel='noopener noreferrer'
           >
@@ -55,6 +55,7 @@ export default function Vulkan({activeIndex}) {
             className='Trailer'
             width='100%' height='auto' 
             autoPlay
+            loop
             muted
             controls
           >
