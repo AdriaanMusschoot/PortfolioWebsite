@@ -25,7 +25,7 @@ export default function SnailsAndPotions({ activeIndex }) {
       </video>
       <h2>Winner!</h2>
       <p>
-        Snails And Potions was selected theas  best for the in house game jam held by our school, DAE Game Projects 2024. 
+        Snails And Potions was selected as the best for the in house game jam held by our school, DAE Game Projects 2024. 
         We were first in almost every category. This selection is also meant that we could release to steam under the schools steam, which is something we are working on now.
       </p>
       <h2>My Role</h2>
