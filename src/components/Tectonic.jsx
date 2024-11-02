@@ -39,6 +39,11 @@ export default function Tectonic({activeIndex}) {
               We generate some random directions and look if the cell in that direction is already taken or if there is no cell there, sort of a flood fill.<br/>
               I hadn't foreseen this but there were some issues that arose.
             </p>
+            <img
+              className='img'
+              src='./assets/ProjectImages/Tectonic/Thumbnail.png'
+              alt='thumbnail'
+            />
             <div class="container">
               <div class="column">
                 <h4>Impossible Shapes</h4>
