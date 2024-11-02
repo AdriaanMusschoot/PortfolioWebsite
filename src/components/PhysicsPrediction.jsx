@@ -21,6 +21,17 @@ export default function PhysicsPrediction({ activeIndex }) {
             src='./assets/ProjectImages/TrajectoryPrediction/PhysicsSimulation.gif'
             alt='thumbnail'
         />
+        <a 
+            href='https://github.com/AdriaanMusschoot/TrajectoryPrediction' 
+            target='_blank' 
+            rel='noopener noreferrer'
+        >
+            <img
+              className='git-img'
+              src='./assets/ProjectImages/GITHUB.png'
+              alt='git'
+            />
+        </a>
         <h2>
             3D Unity Scene: Ball Simulation
         </h2>
