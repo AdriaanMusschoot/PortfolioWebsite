@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.573bc623.css",
-    "main.js": "/static/js/main.252d74e4.js",
+    "main.js": "/static/js/main.e4b1cb1e.js",
     "static/js/453.9657b1c0.chunk.js": "/static/js/453.9657b1c0.chunk.js",
     "static/media/CV_20241005_AdriaanMusschoot_Public.pdf": "/static/media/CV_20241005_AdriaanMusschoot_Public.bb49039bb55855baca77.pdf",
     "static/media/SUSE-Regular.ttf": "/static/media/SUSE-Regular.5330b1a28f10d7e25116.ttf",
@@ -13,11 +13,11 @@
     "static/media/discord_icon.svg": "/static/media/discord_icon.e4d0feff06932f3c5cee867477e88db3.svg",
     "index.html": "/index.html",
     "main.573bc623.css.map": "/static/css/main.573bc623.css.map",
-    "main.252d74e4.js.map": "/static/js/main.252d74e4.js.map",
+    "main.e4b1cb1e.js.map": "/static/js/main.e4b1cb1e.js.map",
     "453.9657b1c0.chunk.js.map": "/static/js/453.9657b1c0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.573bc623.css",
-    "static/js/main.252d74e4.js"
+    "static/js/main.e4b1cb1e.js"
   ]
 }
