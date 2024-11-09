@@ -13,19 +13,6 @@
         "id": 0
     },
     {
-        "image" : "./assets/ProjectImages/Amugen/Thumbnail.png",
-        "title" : "Amugen - Game Engine",
-        "main" : true,
-        "specifics" :
-        [
-            "C++",
-            "Solo",
-            "CMake"
-        ],
-        "date" : "Feb - June 2024",
-        "id": 1
-    },
-    {
         "image" : "./assets/ProjectImages/Vulkan/Thumbnail.png",
         "title" : "Instanced Rendering",
         "main" : true,
@@ -36,8 +23,8 @@
             "Solo",
             "Graphics"
         ],
-        "date" : "Feb - June 2024",
-        "id": 2        
+        "date" : "Feb - Jun 2024",
+        "id": 2       
     },
     {
         "image" : "./assets/ProjectImages/RayMarcher/Thumbnail.png",
@@ -49,8 +36,21 @@
             "Solo",
             "Graphics"
         ],
-        "date" : "Sept - Oct 2024",
+        "date" : "Sep - Oct 2024",
         "id": 3
+    },
+    {
+        "image" : "./assets/ProjectImages/Amugen/Thumbnail.png",
+        "title" : "Amugen - Game Engine",
+        "main" : true,
+        "specifics" :
+        [
+            "C++",
+            "Solo",
+            "CMake"
+        ],
+        "date" : "Feb - June 2024",
+        "id": 1
     },
     {
         "image" : "./assets/ProjectImages/Tectonic/Thumbnail.png",

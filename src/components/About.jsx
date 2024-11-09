@@ -31,7 +31,9 @@ export default function About() {
             me about a position/opportunity to add me to your team or check out my CV.
             <br></br>
             <br></br>
-            My main branch is <strong>gameplay programming</strong>, with a special passion towards setting up systems and working with finite state machines. I mainly work in Unreal Engine 5 and have also used Unity and
+            I am really interested in <strong>gameplay programming</strong>, with a special passion towards setting up systems and working with finite state machines.
+            More recently I also became very passionate about <strong>graphics programming</strong>.
+            I mainly work in Unreal Engine 5 and have also used Unity and
             <a href="#projects" className="about-link-2">
             my own engine.
             </a>
