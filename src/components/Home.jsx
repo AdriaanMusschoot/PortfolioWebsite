@@ -5,7 +5,7 @@ export default function Home() {
     <div className='home'>
       <div className='text-container'>
         <h1>Adriaan Musschoot</h1>
-        <h2>Gameplay / aspiring Grapics Programmer</h2>
+        <h2>Gameplay / aspiring Graphics Programmer</h2>
         <p>
           As a passionate game developer who thrives in <strong>team environments</strong>, I love to help other people.
           I have a keen <strong>eye for detail</strong> and like working neatly, keeping everything <strong>organized</strong> and refactoring when needed to keep everything clean.
