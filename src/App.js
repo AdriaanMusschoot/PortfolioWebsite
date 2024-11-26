@@ -42,7 +42,7 @@ function App() {
        </section>
        <hr></hr>
        <section id='contact'>
-        <h2>Contact Details</h2>
+        <h2>Contact</h2>
           <Contact />
        </section>
       </main>

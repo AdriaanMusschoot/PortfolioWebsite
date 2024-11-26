@@ -9,7 +9,6 @@ import CV from '../assets/CV_20241005_AdriaanMusschoot_Public.pdf';
 export default function Contact() {
   return (
     <div className='contact'>
-        <p>Got a software idea or challenge? <br></br>Let’s connect and turn your vision into reality!</p>
         <div className='contact-socials'>
             <a href='mailto:contact@adriaanmusschoot.com' rel='noreferrer' target='_blank'>
                 <MailLogo className='svg'/>

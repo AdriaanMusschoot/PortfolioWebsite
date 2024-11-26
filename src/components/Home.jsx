@@ -12,7 +12,7 @@ export default function Home() {
           When I encounter problems, I can really grit my teeth and <strong>persist</strong> until I find an effective and elegant solution.
         </p>
         <p>
-          I am currently looking for an <strong>end of study internship</strong> (February - June 2025) as a gameplay / graphics developer preferably programming in C++.
+          I am currently looking for an <strong>end of study internship</strong> (Feb - Jun 2025) as a gameplay / graphics developer preferably programming in C++.
         </p>
       </div>
       <div className='image-container'>

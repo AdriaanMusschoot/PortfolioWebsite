@@ -1,4 +1,6 @@
 import React from 'react';
+import CV from '../assets/CV_20241005_AdriaanMusschoot_Public.pdf';
+
 
 export default function About() {
   return (
@@ -18,21 +20,24 @@ export default function About() {
             <br></br>
             <br></br>
             My <strong>passion for games</strong> started with mobile games such as Clash- of Clans and Royale. After I got my first laptop, I turned to competitive titles such as Rocket League and the beauty that is the DOOM franchise.
-            When I discovered you could follow a degree centered around creating games, I instantly knew what I wanted to study. It was scary at first since I had never dabbled in software development.
+            When I discovered you could follow a degree centered around <strong>creating games</strong>, I instantly knew what I wanted to study. It was scary at first since I had programmed before.
             But as the challenges were thrown my way, I have managed to tackle all of them.
-            On the table for my third and final year is a semester long of working on a project together in a team of 6 and a graduation work in which I will conduct my own research, in the second semester there is my internship.
             <br></br>
             <br></br>
-            As I am nearing the end of my degree and am <strong>eager to gain some real world experience</strong>,
+            As I am nearing the end of my degree and am <strong>eager to gain my first real world experience</strong>,
             I am looking for an end of study internship from Februari 2025 to June 2025. Feel free to
             <a href="#contact" className="about-link-2">
             contact
             </a>
-            me about a position/opportunity to add me to your team or check out my CV.
+            me about a position/opportunity to add me to your team or check out my
+            <a href={CV} target="_blank" rel="noopener noreferrer">
+              CV
+            </a>
+            .
             <br></br>
             <br></br>
             I am really interested in <strong>gameplay programming</strong>, with a special passion towards setting up systems and working with finite state machines.
-            More recently I also became very passionate about <strong>graphics programming</strong>.
+            More recently I also grew a passion for <strong>graphics programming</strong>.
             I mainly work in Unreal Engine 5 and have also used Unity and
             <a href="#projects" className="about-link-2">
             my own engine.

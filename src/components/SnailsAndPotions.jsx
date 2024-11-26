@@ -4,6 +4,16 @@ export default function SnailsAndPotions({ activeIndex }) {
 
   return (
     <div className='snails-and-potions'>
+      <h2>My Role</h2>
+      <p>
+        The biggest part of the game and my biggest task was the snail and making it tick, well actually crawl and make it interact appropriately to all the different potions. 
+        It included working with the beautiful State Pattern, which I absolutely love working with. 
+        Another big part of the game is recipe crafting which I was also responsible for. Every round different ingredients form the same recipes. 
+        This means the cauldron needs to detect dynamically if its contents still could add up to a recipe or if they add up to a recipe and then spew out the correct potion. 
+        To create a system to detect this was also quite challenging but fun nonetheless.
+        The functionality of the UI for this was also done by me, as the player needs to know what ingredients he needs to gather for his potion.
+        Main menu and pause menu I also took upon me as I saw another opportunity to work with the State Pattern :)
+      </p>
       <h2>The Game</h2>
       <p>
         Snails and Potions is a local fantasy-themed multiplayer pvp game, where each player competes in a snail race with their own snail. 
@@ -27,16 +37,6 @@ export default function SnailsAndPotions({ activeIndex }) {
       <p>
         Snails And Potions was selected as the best for the in house game jam held by our school, DAE Game Projects 2024. 
         We were first in almost every category. This selection is also meant that we could release to steam under the schools steam, which is something we are working on now.
-      </p>
-      <h2>My Role</h2>
-      <p>
-        The biggest part of the game and my biggest task was the snail and making it tick, well actually crawl and make it interact appropriately to all the different potions. 
-        It included working with the beautiful State Pattern, which I absolutely love working with. 
-        Another big part of the game is recipe crafting which I was also responsible for. Every round different ingredients form the same recipes. 
-        This means the cauldron needs to detect dynamically if its contents still could add up to a recipe or if they add up to a recipe and then spew out the correct potion. 
-        To create a system to detect this was also quite challenging but fun nonetheless.
-        The functionality of the UI for this was also done by me, as the player needs to know what ingredients he needs to gather for his potion.
-        Main menu and pause menu I also took upon me as I saw another opportunity to work with the State Pattern :)
       </p>
       <img
         className='img-1'
@@ -63,7 +63,7 @@ export default function SnailsAndPotions({ activeIndex }) {
         The prototype as well as the game itself were made in unreal 5 using C++.
         I am really proud of all the work everyone put in and the result is absolutely stunning.
         These were my lovely colleagues: Tijl Gommers (programmer), Senne Bovee (artist), Ward Vervoort (artist), Luca Zulianello (artist).
-        Feel free to download the game from itch.io and try it out yourself.
+        Feel free to download the game and try it out yourself.
       </p>
       <a 
         href='https://boomertijl.itch.io/snails-and-potions' 
