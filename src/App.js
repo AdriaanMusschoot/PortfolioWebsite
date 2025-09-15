@@ -5,9 +5,10 @@ import Header from './components/Header';
 import ProjectCard from './components/ProjectCard';
 import Skills from './components/Skills';
 import WhiteSpace from './components/WhiteSpace';
+import About from './components/About.jsx';
+import Breaker from './components/Breaker.jsx';
 
 import './styles/App.css';
-import About from './components/About.jsx';
 
 function App() {
   return (
@@ -15,36 +16,50 @@ function App() {
       <Helmet>
         <title>Adriaan Musschoot Portfolio</title>
       </Helmet>
+
       <header>
         <Header />
       </header>
+
       <main>
-       <section id='whitespace' className='whitespace'>
-        <WhiteSpace />
-       </section>
-       <section id='home'>
+        <section id='whitespace' className='whitespace'>
+          <WhiteSpace />
+        </section>
+        <section id='home'>
           <Home />
-       </section>
-       <hr></hr>
-       <section id='projects'>
-        <h2>Projects</h2>
+        </section>
+        <section id ='breaker'>
+          <Breaker/>
+        </section>
+
+        <section id='projects'>
+          <h2>Projects</h2>
           <ProjectCard />
-       </section>
-       <hr></hr>
-       <section id='about'>
+        </section>
+        <section id ='breaker'>
+          <Breaker/>
+        </section>
+
+        <section id='about'>
           <h2>About</h2>
           <About/>
-       </section>
-       <hr></hr>
-       <section id='skills'>
-        <h2>Skills</h2>
+        </section>
+        <section id ='breaker'>
+          <Breaker/>
+        </section>
+
+        <section id='skills'>
+          <h2>Skills</h2>
           <Skills />
-       </section>
-       <hr></hr>
-       <section id='contact'>
-        <h2>Contact</h2>
+        </section>
+        <section id ='breaker'>
+          <Breaker/>
+        </section>
+
+        <section id='contact'>
+          <h2>Contact</h2>
           <Contact />
-       </section>
+        </section>
       </main>
     </>
   );
