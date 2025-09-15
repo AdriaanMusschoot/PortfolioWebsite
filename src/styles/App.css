@@ -1,11 +1,12 @@
 @import 'fonts.css';
 
 :root {
+  --outline-color: #533D73;
   --main-border-radius: 0.8vw;
   --main-border-style: solid;
   --main-border-color: #b88e8e;
   --main-border-width: 0.0vw;
-  --text-color:  #cccccc;
+  --text-color:  #979191;
   --background-color:  #0c0c13;
   --description-background-color: ;
   --description-overlay-color: rgba(0, 0, 0, 0.9);
@@ -13,7 +14,7 @@
   --about-text-size: 1.1vw;
   --box-shadow-default: 0 0 0 hsla(349, 100%, 79%, 0.7), inset 0 0 0.5vw rgba(0, 0, 0, 0.3);
   --box-shadow-hovered: 0 0 0 hsla(349, 100%, 71%, 0.7), inset 0 0 1.5vw rgba(0, 0, 0, 0.5);
-  --hovered-color-links: #c94e5e;
+  --hovered-color-links: #3D4273;
   --linear-gradient-background: linear-gradient(145deg, hsl(312, 22%, 25%), hsl(312, 22%, 15%));
   --quote-size: 1.1vw;
   --quote-font-style: italic;

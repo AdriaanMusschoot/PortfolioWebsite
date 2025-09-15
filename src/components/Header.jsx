@@ -7,7 +7,7 @@ import { ReactComponent as MailLogo } from '../assets/svg/mail_icon.svg';
 import { ReactComponent as CVLogo } from '../assets/svg/CV.svg';
 import CV from '../assets/CV_20241005_AdriaanMusschoot_Public.pdf';
 
-import '../styles/Header.scss'
+import '../styles/Header.css'
 
 export default function Header() {
   useEffect(() => {

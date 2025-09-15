@@ -1,0 +1,12 @@
+:root{
+  --breaker-background-color:  var( --outline-color)
+}
+
+.Breaker{
+  border: none;
+  background-color: var(--breaker-background-color);
+  height: 1px;
+  margin-top:3vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}

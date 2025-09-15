@@ -1,4 +1,4 @@
-import '../styles/Breaker.scss';
+import '../styles/Breaker.css';
 
 export default function Breaker() {
   return (

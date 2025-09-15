@@ -1,16 +1,17 @@
-$header:(
-  --background-color:  #000000,
-  --border-width: 0.0vw,
-  --border-color: #000000
-);
+:root{
+  --header-background-color:  #070613,
+  --header-border-width: 0px,
+  --header-border-color: var(--outline-color)
+  
+}
 
 header {
   border-style: var(--main-border-style);
-  border-color: map-get($header, --border-color);
+  border-color: var(--header-border-color);
   border-radius: var(--main-border-radius);
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  border-width: map-get($header, --border-width);
+  border-width: var(--header-border-width);
   border-top: 0;
   z-index: 1;
   top: 0;
@@ -19,7 +20,7 @@ header {
   right: 13vw;
   display: flex;
   justify-content: center;
-  background-color: map-get($header, --background-color);
+  background-color: var(--header-background-color);
   align-items: center; 
   padding-top: 0.5vw;
   padding-bottom: 0.5vw;
