@@ -1,4 +1,4 @@
-import '../styles/Amugen.css'; 
+import '../styles/cards/Amugen.css'; 
 
 export default function Amugen({ activeIndex }) {
 

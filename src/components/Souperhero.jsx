@@ -1,4 +1,4 @@
-import '../styles/SouperHero.css'; 
+import '../styles/cards/SouperHero.css'; 
 
 export default function SouperHero({ activeIndex }) {
 

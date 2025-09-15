@@ -1,6 +1,8 @@
 import React from 'react';
 import skills from '../data/skills.json';
 
+import '../styles/Skills.css';
+
 export default function Skills() {
   return (
     <div className='skills'>

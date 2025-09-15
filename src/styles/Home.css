@@ -1,0 +1,46 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-left: var(--margin-text);
+  margin-top: 5vw;
+  & .text-container {
+    text-align: justify;
+    margin-right: 4vw;
+    margin-top: 2vw;
+
+    & h1 {  
+      font-size: 3vw;
+      margin: 0;
+    }
+
+    & h2 {
+      margin: 0;
+      font-size: 2vw;
+    }
+
+    & p {
+      font-size: var(--about-text-size);
+      font-style: italic;
+      margin: 0;
+    }
+  }
+
+  & .image-container {
+    top: 0;
+    position: relative;
+    margin-top: 3.5vw;
+    margin-right: 4vw;
+    & img {
+      width: 20vw;
+      height: auto;
+      border-style: var(--main-border-style);
+      border-color: var(--main-border-color);
+      border-radius: var(--main-border-radius);
+      border-width: var(--main-border-width);
+      box-shadow: var(--box-shadow-default);
+    }
+
+  }
+}

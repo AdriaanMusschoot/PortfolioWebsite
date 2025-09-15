@@ -4,7 +4,6 @@ import Contact from './components/Contact';
 import Header from './components/Header';
 import ProjectCard from './components/ProjectCard';
 import Skills from './components/Skills';
-import WhiteSpace from './components/WhiteSpace';
 import About from './components/About.jsx';
 import Breaker from './components/Breaker.jsx';
 
@@ -22,9 +21,6 @@ function App() {
       </header>
 
       <main>
-        <section id='whitespace' className='whitespace'>
-          <WhiteSpace />
-        </section>
         <section id='home'>
           <Home />
         </section>

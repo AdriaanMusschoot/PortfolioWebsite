@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/Raymarcher.css'; // Import your CSS file
+import '../styles/cards/Raymarcher.css'; // Import your CSS file
 
 
 export default function Raymarcher({activeIndex}) {

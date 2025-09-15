@@ -11,6 +11,9 @@ import Tectonic from './Tectonic.jsx';
 import RideOfGiri from './RideOfGiri.jsx';
 //import GetCooked from './GetCooked.jsx';
 
+import '../styles/Projects.css';
+import '../styles/ProjectCard.css';
+
 export default function ProjectCard() {
   const [activeIndex, setActiveIndex] = useState(null);
   const [transitioning, setTransitioning] = useState(false);

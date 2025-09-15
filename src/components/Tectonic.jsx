@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/Tectonic.css'; // Import your CSS file
+import '../styles/cards/Tectonic.css'; // Import your CSS file
 
 
 export default function Tectonic({activeIndex}) {

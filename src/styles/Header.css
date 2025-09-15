@@ -1,8 +1,8 @@
 :root{
-  --header-background-color:  #070613,
-  --header-border-width: 0px,
-  --header-border-color: var(--outline-color)
-  
+  --header-background-color: var(--card-fill-color);
+  --header-border-width: var(--outline-width);
+  --header-border-color: var(--outline-color);
+
 }
 
 header {
