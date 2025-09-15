@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.573bc623.css",
-    "main.js": "/static/js/main.6d45027d.js",
+    "main.css": "/static/css/main.b3c055b8.css",
+    "main.js": "/static/js/main.1d562f69.js",
     "static/js/584.1435511e.chunk.js": "/static/js/584.1435511e.chunk.js",
     "static/media/CV_20241005_AdriaanMusschoot_Public.pdf": "/static/media/CV_20241005_AdriaanMusschoot_Public.a643e7bcf8faaa2c403e.pdf",
     "static/media/SUSE-Regular.ttf": "/static/media/SUSE-Regular.5330b1a28f10d7e25116.ttf",
@@ -12,12 +12,12 @@
     "static/media/linkedin_icon.svg": "/static/media/linkedin_icon.111fb6083791fc795f02ae2c5c71e3e4.svg",
     "static/media/discord_icon.svg": "/static/media/discord_icon.e4d0feff06932f3c5cee867477e88db3.svg",
     "index.html": "/index.html",
-    "main.573bc623.css.map": "/static/css/main.573bc623.css.map",
-    "main.6d45027d.js.map": "/static/js/main.6d45027d.js.map",
+    "main.b3c055b8.css.map": "/static/css/main.b3c055b8.css.map",
+    "main.1d562f69.js.map": "/static/js/main.1d562f69.js.map",
     "584.1435511e.chunk.js.map": "/static/js/584.1435511e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.573bc623.css",
-    "static/js/main.6d45027d.js"
+    "static/css/main.b3c055b8.css",
+    "static/js/main.1d562f69.js"
   ]
 }
