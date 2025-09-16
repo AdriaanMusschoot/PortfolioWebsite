@@ -3,46 +3,11 @@
         "title" : "PROGRAMMING LANGUAGES",
         "contents": [
             ["C++", "Primary"],
-            ["C#", "Primary"],
+            ["C#", "Secondary"],
             ["JavaScript", "Secondary"],
             ["Css", "Secondary"],
             ["Html", "Secondary"],
             ["Python", "Secondary"]
-        ]
-    },
-    {
-        "title" : "APIs / FRAMEWORKS",
-        "contents" : [
-            ["Vulkan", "Primary"],
-            ["SDL", "Primary"],
-            ["GLM", "Primary"],
-            ["DirectX11", "Secondary"],
-            ["Dear IMGui", "Secondary"],
-            ["WPF", "Secondary"],
-            ["React", "Secondary"]
-        ]
-    },
-    {
-        "title" : "GAME ENGINES",
-        "contents" : [
-            ["Unreal Engine 5", "Primary"],
-            ["Unity", "Secondary"]
-        ]
-    },
-    {
-        "title" : "SOURCE CONTROL",
-        "contents" : [
-            ["Git", "Primary"],
-            ["Perforce", "Primary"]
-        ]
-    },
-    {
-        "title" : "IDEs",
-        "contents" : [
-            ["Visual Studio", "Primary"],
-            ["Rider", "Primary"],
-            ["VS Code", "Secondary"],
-            ["Qt Creator", "Secondary"]
         ]
     },
     {
@@ -55,10 +20,41 @@
         ]
     },
     {
+        "title" : "GAME ENGINES",
+        "contents" : [
+            ["Unreal Engine 5", "Primary"],
+            ["Unity", "Secondary"]
+        ]
+    },
+    {
+        "title" : "SOURCE CONTROL",
+        "contents" : [
+            ["Perforce", "Primary"],
+            ["Git", "Primary"]
+        ]
+    },
+    {
+        "title" : "APIs / FRAMEWORKS",
+        "contents" : [
+            ["UE MASS", "Primary"],
+            ["SDL", "Primary"],
+            ["GLM", "Primary"],
+            ["Vulkan", "Secondary"],
+            ["DirectX11", "Secondary"],
+            ["Dear IMGui", "Secondary"],
+            ["React", "Secondary"],
+            ["WPF", "Secondary"]
+        ]
+    },
+    {
         "title" : "TOOLS",
         "contents" : [
-            ["RenderDoc", "Primary"],
-            ["Photoshop", "Primary"],
+            ["Rider", "Primary"],
+            ["Visual Studio", "Primary"],
+            ["VS Code", "Secondary"],
+            ["RenderDoc", "Secondary"],
+            ["QTCreator", "Secondary"],
+            ["Photoshop, GIMP", "Secondary"],
             ["Maya", "Secondary"],
             ["Houdini", "Secondary"]
         ]
