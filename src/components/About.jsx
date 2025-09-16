@@ -1,6 +1,7 @@
 import React from 'react';
 import CV from '../assets/CV_20241005_AdriaanMusschoot_Public.pdf';
 
+import '../styles/About.css';
 
 export default function About() {
   return (

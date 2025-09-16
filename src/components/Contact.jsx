@@ -6,6 +6,8 @@ import { ReactComponent as MailLogo } from '../assets/svg/mail_icon.svg';
 import { ReactComponent as CVLogo } from '../assets/svg/CV.svg';
 import CV from '../assets/CV_20241005_AdriaanMusschoot_Public.pdf';
 
+import '../styles/Contact.css';
+
 export default function Contact() {
   return (
     <div className='contact'>
