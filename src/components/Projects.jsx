@@ -134,19 +134,17 @@ export default function ProjectCard() {
             >
               <CrossButton className="cross-button" onClick={closeCard}/>
               <h1>{activeProject.title}</h1>
-              <div>
-                {activeProject.specifics.length > 0 && 
-                  (
-                  <div className="mainproj-container_specifics">
-                    <ul>
-                      {activeProject.specifics.map((skill, i) => (
-                        <li key={i}>{skill}</li>
-                      ))}
-                    </ul>
-                  </div>
-                  )
-                }
-              </div>
+              {activeProject.specifics.length > 0 && 
+                (
+                <div className="projectContainer_specifics">
+                  <ul>
+                    {activeProject.specifics.map((skill, i) => (
+                      <li key={i}>{skill}</li>
+                    ))}
+                  </ul>
+                </div>
+                )
+              }
               <div className='description'>
                 {projectCardMap[activeProject.title]}
               </div>

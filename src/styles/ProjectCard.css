@@ -56,7 +56,7 @@
     font-weight: normal;
   }
 
-  & .mainproj-container_specifics {
+  & .projectContainer_specifics {
     position: relative;
     margin: 0;
     /* Need to specify margins because its not part of the card contents, but actually of the json */ 
@@ -65,12 +65,11 @@
     padding: 0;
     display: flex;
     justify-content: left;
-    align-items: right;
-    font-size: var(--description-text-size);
+    font-size: var(--standard-text-font-size);
     color: var(--text-color);
   }
   
-  & .mainproj-container_specifics ul {
+  & .projectContainer_specifics ul {
     list-style: none;
     padding: 0;
     text-align: center;
@@ -79,11 +78,7 @@
     gap: 0.5vw;
   }
 
-  & .mainproj-container_specifics li {   
-    border-style: var(--main-border-style);
-    border-color: var(--hovered-color-links);
-    border-radius: var(--main-border-radius);
-    border-width: var(--main-border-width);
+  & .projectContainer_specifics li {
     background: var(--card-fill-color);
     padding: 0.3vw;
   }
