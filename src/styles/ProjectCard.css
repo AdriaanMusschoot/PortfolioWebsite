@@ -120,26 +120,19 @@
       text-align: justify;
     }
     
-    .button-img{
+    .cross-button{
       position: absolute;
       left: 67vw;
-      top: 5vw;
-      width: 4%;
+      top: 4vw;
+      width: 8%;
       height: auto;
-      transition: border-color var(--time-transition) ease, box-shadow var(--time-transition) ease, transform var(--time-transition) ease;
-
+      stroke: var(--outline-color);
+      transition: stroke var(--time-transition) ease, transform var(--time-transition) ease;
+      
       &:hover{
         cursor: pointer;
         transform: scale(var(--scale-transition));
-
-        .img-fill{
-          fill: var(--hovered-color-links);
-        }
-      }
-
-      .img-fill{
-        fill: var(--outline-color);
-        transition: fill var(--time-transition) ease;
+        stroke: var(--hovered-color-links);
       }
     }
   }

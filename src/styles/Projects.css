@@ -10,12 +10,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  gap: 2vw;
-  margin-left: 2.3vw;
+  gap: 1.3vw;
+  margin-left: 2.2vw;
 }
 
 .mainproj-container {
-  width: 30%;
+  width: 20.8vw;
   background: var(--card-fill-color);
   box-shadow: var(--box-shadow-default);
   overflow: hidden;
@@ -114,12 +114,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  gap: 2vw;
-  margin-left: 2.3vw;
+  gap: 1vw;
+  margin-left: 2.2vw;
 }
 
 .smallproj-container{
-  width: 21%;
+  width: 15.5vw;
   background: var(--card-fill-color);
   box-shadow: var(--box-shadow-default);
   overflow: hidden;
