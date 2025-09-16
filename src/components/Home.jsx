@@ -3,22 +3,26 @@ import React from 'react';
 import '../styles/Home.css';
 
 export default function Home() {
+  const highlightClass = 'Highlight';
+  const emphasisClass = 'Emphasis';
+
   return (
     <div className='home'>
       <div className='text-container'>
-        <h1>Adriaan Musschoot</h1>
-        <h2>Gameplay / aspiring Graphics Programmer</h2>
+        <h1>Hi, I'm <span className={highlightClass}>Adriaan</span></h1>
+        <h2>I'm a <span className={highlightClass}>games programmer</span>.</h2>
         <p>
-          As a passionate game developer who thrives in <strong>team environments</strong>, I love to help other people.
-          I have a keen <strong>eye for detail</strong> and like working neatly, keeping everything <strong>organized</strong> and refactoring when needed to keep everything clean.
-          When I encounter problems, I can really grit my teeth and <strong>persist</strong> until I find an effective and elegant solution.
+          <strong className='Welcome'>Welcome to my portfolio!</strong>
         </p>
         <p>
-          I am currently looking for an <strong>end of study internship</strong> (Feb - Jun 2025) as a gameplay / graphics developer preferably programming in C++.
+          As a passionate game developer who thrives in <span className={emphasisClass}>team environments</span>, I love to help other people.
+          I have a keen <span className={emphasisClass}>eye for detail</span> and like working neatly, keeping everything <span className={emphasisClass}>organized</span> and refactoring when needed to keep everything clean.
+          When I encounter problems, I can really grit my teeth and <span className={emphasisClass}>persist</span> until I find an effective and elegant solution.
         </p>
-      </div>
-      <div className='image-container'>
-        <img src='./assets/pfp.png' alt='Profile' className='profile-image' />
+        <p>
+          I am currently looking for <span className={emphasisClass}>a junior games programmer position</span>, to make my first mark in the industry.
+          Please reach out if you have any <span className={emphasisClass}>opportunities</span>!
+        </p>
       </div>
     </div>
   );

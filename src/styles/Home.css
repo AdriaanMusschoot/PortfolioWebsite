@@ -5,42 +5,38 @@
   width: 100%;
   margin-left: var(--margin-text);
   margin-top: 5vw;
-  & .text-container {
-    text-align: justify;
-    margin-right: 4vw;
-    margin-top: 2vw;
+}
 
-    & h1 {  
-      font-size: 3vw;
-      margin: 0;
-    }
+.home .text-container{
+  text-align: justify;
+  margin-right: 4vw;
+  margin-top: 2vw;
+}
 
-    & h2 {
-      margin: 0;
-      font-size: 2vw;
-    }
+.home .text-container h1{
+  font-size: 3vw;
+  margin: 0;
+}
 
-    & p {
-      font-size: var(--about-text-size);
-      font-style: italic;
-      margin: 0;
-    }
-  }
+.home .text-container h2 {
+  margin: 0;
+  font-size: 2.5vw;
+}
 
-  & .image-container {
-    top: 0;
-    position: relative;
-    margin-top: 3.5vw;
-    margin-right: 4vw;
-    & img {
-      width: 20vw;
-      height: auto;
-      border-style: var(--main-border-style);
-      border-color: var(--main-border-color);
-      border-radius: var(--main-border-radius);
-      border-width: var(--main-border-width);
-      box-shadow: var(--box-shadow-default);
-    }
+.home .text-container .Highlight {
+  color: var(--hovered-color-links);
+}
 
-  }
+.home .text-container p {
+  font-size: 1.5vw;
+}
+
+.home .text-container .Welcome {
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.home .text-container .Emphasis{
+  font-style: italic;
+  font-weight: bold;
 }
