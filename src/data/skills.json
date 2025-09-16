@@ -13,10 +13,10 @@
     {
         "title" : "HUMAN LANGUAGES",
         "contents" : [
-            ["Dutch", "Primary"],
-            ["English", "Primary"],
-            ["French", "Secondary"],
-            ["German", "Secondary"]
+            ["Dutch - Native", "Primary"],
+            ["English - Full Working Proficiency", "Primary"],
+            ["French - Limited Working Proficiency", "Secondary"],
+            ["German - Limited Working Proficiency", "Secondary"]
         ]
     },
     {
