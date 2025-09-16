@@ -73,7 +73,7 @@
     list-style: none;
     padding: 0;
     text-align: center;
-    display: flex;
+    display: flex !important;
     justify-content: center;
     gap: 0.5vw;
   }
