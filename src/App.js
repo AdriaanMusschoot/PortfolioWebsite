@@ -28,7 +28,7 @@ function App() {
           <Breaker/>
         </section>
 
-        <h2>Main Projects</h2>
+        <h2>Projects</h2>
         <section id='projects'>
           <Projects />
         </section>

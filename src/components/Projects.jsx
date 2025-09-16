@@ -14,25 +14,25 @@ import '../styles/Projects.css';
 import '../styles/ProjectCard.css';
 
 export default function ProjectCard() {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeProject, setActiveProject] = useState(null);
   const [transitioning, setTransitioning] = useState(false);
 
   const projectCardMap = {
     'Snails & Potions': <SnailsAndPotions />,
-    'Amugen': <Amugen />,
-    'Vulkan': <Vulkan />,
-    'Raymarcher': <Raymarcher />,
+    'Amugen - Game Engine': <Amugen />,
+    'Instanced Rendering': <Vulkan />,
+    'Ray Marcher': <Raymarcher />,
     'Tectonic': <Tectonic />,
     'Souper Hero': <SouperHero />,
-    'Physics Prediction': <PhysicsPrediction />,
+    'Trajectory Prediction': <PhysicsPrediction />,
     'Ride Of Giri': <RideOfGiri />,
   };
 
   useEffect(() => {
-    document.body.classList.toggle('no-scroll', activeIndex !== null);
+    document.body.classList.toggle('no-scroll', activeProject !== null);
 
     const handleKeyDown = (event) => {
-      if (event.key === 'Escape' && activeIndex !== null) {
+      if (event.key === 'Escape' && activeProject !== null) {
         closeCard();
       }
     };
@@ -42,35 +42,35 @@ export default function ProjectCard() {
       window.removeEventListener('keydown', handleKeyDown);
       document.body.classList.remove('no-scroll');
     };
-  }, [activeIndex]);
+  }, [activeProject]);
 
   const closeCard = () => {
     setTransitioning(true);
     setTimeout(() => {
-      setActiveIndex(null);
+      setActiveProject(null);
       setTransitioning(false);
     }, 500); // Match this duration with your CSS transition time
   };
 
-  const openClickedCard = (index) => {
+  const openClickedCard = (project) => {
     setTransitioning(true);
-    setActiveIndex(index);
+    setActiveProject(project);
     setTimeout(() => {
       setTransitioning(false);
     }, 0); // Set to 0 to allow the transition to take effect
   };
 
-  const isCardActive = (index) => (activeIndex === index ? 'active' : '');
+  const isCardActive = (project) => (activeProject === project ? 'active' : '');
 
   return (
     <div className='projects'>
+      <h2>Main</h2>
       {/* Main Projects Section */}
       <div className="mainproj-wrapper">
-        {MainProjects.map((project, index) => (
+        {MainProjects.map((project) => (
           <div
-            key={index}
-            className={`mainproj-container ${isCardActive(index)}`}
-            onClick={() => openClickedCard(index)}
+            className={`mainproj-container ${isCardActive(project)}`}
+            onClick={() => openClickedCard(project)}
           >
             <div className='mainproj-container_image'>
               <img src={project.image} alt={project.title} />
@@ -93,19 +93,18 @@ export default function ProjectCard() {
           </div>
         ))}
       </div>
-      <h2> Additional Projects</h2>
+      <h2>Additional</h2>
       {/* Small Projects Section */}
       <div className="smallproj-wrapper">
-        {SmallProjects.map((project, index) => (
+        {SmallProjects.map((project) => (
           <div
-            key={index + MainProjects.length - 1}
-            className={`smallproj-container ${isCardActive(index + MainProjects.length)} mainproj-container--small`}
-            onClick={() => openClickedCard(index + MainProjects.length)}
+            className={`smallproj-container ${isCardActive(project)}`}
+            onClick={() => openClickedCard(project)}
           >
-            <div className='mainproj-container_image'>
+            <div className='smallproj-container_image'>
               <img src={project.image} alt={project.title} />
               {project.specifics.length > 0 && (
-                <div className="mainproj-container_specifics">
+                <div className="smallproj-container_specifics">
                   <ul>
                     {project.specifics.map((skill, i) => (
                       <li key={i}>{skill}</li>
@@ -114,17 +113,17 @@ export default function ProjectCard() {
                 </div>
               )}
             </div>
-            <div className='mainproj-container_title'>
+            <div className='smallproj-container_title'>
               {project.title}
             </div>
-            <div className='mainproj-container_date'>
+            <div className='smallproj-container_date'>
               {project.date}
             </div>
           </div>
         ))}
       </div>
       {/* Description Section */}
-      {activeIndex !== null && (
+      {activeProject !== null && (
         <div className={`projectCard-description ${transitioning ? 'transitioning' : 'active'}`} onClick={closeCard}>
           <div className='backdrop' />
           <div
@@ -143,13 +142,13 @@ export default function ProjectCard() {
                 </g>
               </g>
             </svg>
-            <h1>{MainProjects[activeIndex].title}</h1>
+            <h1>{activeProject.title}</h1>
             <div>
-              {MainProjects[activeIndex].specifics.length > 0 && 
+              {activeProject.specifics.length > 0 && 
                 (
                 <div className="mainproj-container_specifics">
                   <ul>
-                    {MainProjects[activeIndex].specifics.map((skill, i) => (
+                    {activeProject.specifics.map((skill, i) => (
                       <li key={i}>{skill}</li>
                     ))}
                   </ul>
@@ -158,7 +157,7 @@ export default function ProjectCard() {
               }
             </div>
             <div className='description'>
-              {projectCardMap[MainProjects[activeIndex].title]}
+              {projectCardMap[activeProject.title]}
             </div>
           </div>
         </div>
