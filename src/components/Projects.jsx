@@ -65,8 +65,9 @@ export default function ProjectCard() {
 
   return (
     <div className='projects'>
-      <h2>Main</h2>
+      <h2>Projects</h2>
       {/* Main Projects Section */}
+      <h3>Main</h3>
       <div className="mainproj-wrapper">
         {MainProjects.map((project) => (
           <div
@@ -94,7 +95,7 @@ export default function ProjectCard() {
           </div>
         ))}
       </div>
-      <h2>Additional</h2>
+      <h3>Additional</h3>
       {/* Small Projects Section */}
       <div className="smallproj-wrapper">
         {SmallProjects.map((project) => (
@@ -127,9 +128,8 @@ export default function ProjectCard() {
         {/* Description Section */}
         {activeProject !== null && (
           <div className={`projectCard-description ${transitioning ? 'transitioning' : 'active'}`} onClick={closeCard}>
-            <div className='backdrop' />
             <div
-              className='content'
+              className='contentDetails'
               onClick={(event) => event.stopPropagation()}
             >
               <CrossButton className="cross-button" onClick={closeCard}/>

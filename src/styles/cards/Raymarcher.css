@@ -1,8 +1,3 @@
-.Raymarcher {
-    margin-left: var(--margin-project-card);
-    margin-right: var(--margin-project-card);
-}
-
 .video-container {
   display: flex;
   align-items: left;

@@ -11,7 +11,7 @@ import '../styles/Header.css'
 
 export default function Header() {
   useEffect(() => {
-    const sections = document.querySelectorAll('section:not(.whitespace)');
+    const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.header--navbar a');
 
     function changeActiveLink() {

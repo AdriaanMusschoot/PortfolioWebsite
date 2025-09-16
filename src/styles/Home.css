@@ -14,25 +14,20 @@
 }
 
 .home .text-container h1{
-  font-size: 3vw;
+  font-size: var(--primary-title-font-size);
   margin: 0;
 }
 
 .home .text-container h2 {
   margin: 0;
-  font-size: 2.5vw;
 }
 
 .home .text-container .Highlight {
   color: var(--hovered-color-links);
 }
 
-.home .text-container p {
-  font-size: 1.5vw;
-}
-
 .home .text-container .Welcome {
-  font-size: 1.5vw;
+  font-size: var(--standart-text-font-size);
   font-weight: bold;
 }
 

@@ -23,32 +23,23 @@ function App() {
       <main>
         <section id='home'>
           <Home />
-        </section>
-        <section id ='breaker'>
           <Breaker/>
         </section>
 
-        <h2>Projects</h2>
         <section id='projects'>
           <Projects />
-        </section>
-        <section id ='breaker'>
           <Breaker/>
         </section>
 
         <section id='about'>
           <h2>About</h2>
           <About/>
-        </section>
-        <section id ='breaker'>
           <Breaker/>
         </section>
 
         <section id='skills'>
           <h2>Skills</h2>
           <Skills />
-        </section>
-        <section id ='breaker'>
           <Breaker/>
         </section>
 

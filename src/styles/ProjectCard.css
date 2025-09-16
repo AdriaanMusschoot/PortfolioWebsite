@@ -1,3 +1,7 @@
+:root {
+  --margin-project-card: 10%;
+}
+
 .projects .descriptionWrapper{
   display: flex;
   flex-wrap: wrap;
@@ -22,48 +26,40 @@
   
   &.active{
       opacity: 1;
-      .content{
+      .contentDetails{
         transform: scale(1);
       }
   }
 
   h1 {
     margin: 0;
+    margin-top: 4vw;
+    /* Need to specify margins because its not part of the card contents, but actually of the json */ 
     margin-left: var(--margin-project-card);
     margin-right: var(--margin-project-card);
-    margin-top: 4vw;
     text-align: left;
     color: var();
   }
 
   h2{
     margin: 0;
-    margin-top: var(--margin-titles);
-    margin-bottom: var(--margin-titles);
     font-weight: bolder;
   }
 
   h3{
     margin: 0;
-    margin-top: var(--margin-titles);
-    margin-bottom: var(--margin-titles);
     font-weight: lighter;
   }
 
   h4{
     margin: 0;
-    margin-top: var(--margin-small-titles);
-    margin-bottom: var(--margin-small-titles);
     font-weight: normal;
-  }
-
-  p{
-    margin: 0;
   }
 
   & .mainproj-container_specifics {
     position: relative;
     margin: 0;
+    /* Need to specify margins because its not part of the card contents, but actually of the json */ 
     margin-left: var(--margin-project-card);
     margin-right: var(--margin-project-card);
     padding: 0;
@@ -92,20 +88,18 @@
     padding: 0.3vw;
   }
   
-  .content{
+  .contentDetails{
+    border-style: var(--outline-style);
+    border-color: var(--outline-color);
+    border-radius: var(--outline-radius);
+    border-width: var(--outline-width);
     background-color: var(--background-color);
     z-index: 3;
     margin-top: 3%;
     margin-bottom: 3%;
-    margin-left: var(--margin-project-card);
-    margin-right: var(--margin-project-card);
-    width: 80%;
+    width: 80vw;
     height: auto;
     font-size: 2vw;
-    border-style: var(--main-border-style);
-    border-color: var(--outline-color);
-    border-radius: var(--main-border-radius);
-    border-width: var(--outline-width);
     box-shadow: var(--box-shadow-default);
     display: flex;
     justify-content: left;
@@ -114,16 +108,16 @@
     transition: transform var(--time-project-card-transition) ease;
     transform:scale(0);
     padding-bottom: 4vw;
-    
-    p{
-      font-size: var(--description-text-size);
-      text-align: justify;
+
+    .description{
+      margin-left: var(--margin-project-card);
+      margin-right: var(--margin-project-card);
     }
-    
+
     .cross-button{
       position: absolute;
       left: 67vw;
-      top: 4vw;
+      top: 3.6vw;
       width: 8%;
       height: auto;
       stroke: var(--outline-color);

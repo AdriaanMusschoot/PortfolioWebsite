@@ -16,13 +16,14 @@
   }
 
   & .skills-container {
+    border-style: var(--outline-style);
+    border-color: var(--outline-color);
+    border-radius: var(--outline-radius);
+    border-width: var(--outline-width);
+
     background: var(--card-fill-color);
     width: 44%;
     color: var(--text-color);
-    border-style: var(--main-border-style);
-    border-color: var(--outline-color);
-    border-radius: var(--main-border-radius);
-    border-width: var(--outline-width);
     box-shadow: var(--box-shadow-default);
     padding: 1vw;
   }

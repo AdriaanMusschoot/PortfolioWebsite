@@ -1,17 +1,10 @@
-:root{
-  --header-background-color: var(--card-fill-color);
-  --header-border-width: var(--outline-width);
-  --header-border-color: var(--outline-color);
-
-}
-
 header {
-  border-style: var(--main-border-style);
-  border-color: var(--header-border-color);
-  border-radius: var(--main-border-radius);
+  border-style: var(--outline-style);
+  border-color: var(--outline-color);
+  border-radius: var(--outline-radius);
+  border-width: var(--outline-width);
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  border-width: var(--header-border-width);
   border-top: 0;
   z-index: 1;
   top: 0;
@@ -20,7 +13,7 @@ header {
   right: 13vw;
   display: flex;
   justify-content: center;
-  background-color: var(--header-background-color);
+  background-color: var(--card-fill-color);
   align-items: center; 
   padding-top: 0.5vw;
   padding-bottom: 0.5vw;

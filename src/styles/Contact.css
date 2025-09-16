@@ -9,7 +9,7 @@
   justify-content: left;
   align-items: left;
   flex-direction: column;
-  margin-bottom: 6vw;
+  margin-bottom: 40vw;
 
   & p {
     font-style: var(--quote-font-style);

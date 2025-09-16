@@ -1,12 +1,3 @@
-.Amugen {
-  margin-left: var(--margin-project-card);
-  margin-right: var(--margin-project-card);
-}
-
-.Amugen p {
-font-size: var(--description-text-size);
-}
-
 .Amugen .Trailer {
 margin-top: 3%;
 cursor: default;

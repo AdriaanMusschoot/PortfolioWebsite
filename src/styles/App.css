@@ -1,43 +1,43 @@
 @import 'fonts.css';
 
 :root {
-  /* Shared Outline Values */
+  /* Main Outline Values */
   --outline-color: #3D5D73;
-  --outline-width: 0.1vw;
+  --outline-width: 0.15vw;
+  --outline-style: solid;
+  --outline-radius: 0.0vw;
 
   /* Fill Color Values */
   --card-fill-color: #3D4273;
 
+  /* Drop Shadow Values */
+  /* First part 0 0 0, because we don't want on the outside of the boxes*/
+  --box-shadow-default: 0 0 0 var(--hovered-color-links), inset 0 0 0 rgba(0, 0, 0, 0.5);
+  --box-shadow-hovered: 0 0 0 var(--hovered-color-links), inset 0 0 0 rgba(0, 0, 0, 0.5);
   
   /* Font-Size Variables */
+  --primary-title-font-size: 3vw;
   --section-title-font-size: 2.3vw;
-  
-  /* Old Values */
-  --main-border-radius: 0.0vw;
-  --main-border-style: solid;
-  --main-border-color: #b88e8e;
-  --main-border-width: 0.0vw;
+  --subsection-title-font-size: 2vw;
+  --standart-text-font-size: 1.5vw;
+
+  /* Default Text Values */
   --text-color:  #b8b1be;
-  --background-color:  #0c0c13;
-  --description-background-color: ;
-  --description-overlay-color: rgba(0, 0, 0, 0.9);
-  --description-text-size: 1vw;
-  --about-text-size: 1.1vw;
-  --box-shadow-default: 0 0 0 hsla(349, 100%, 79%, 0.7), inset 0 0 0.5vw rgba(0, 0, 0, 0.3);
-  --box-shadow-hovered: 0 0 0 hsla(349, 100%, 71%, 0.7), inset 0 0 1.5vw rgba(0, 0, 0, 0.5);
-  --hovered-color-links: #b270b6;
-  --linear-gradient-background: linear-gradient(145deg, hsl(312, 22%, 25%), hsl(312, 22%, 15%));
-  --quote-size: 1.1vw;
-  --quote-font-style: italic;
-  --quote-alignment: center;
-  --time-transition: 0.3s;
-  --scale-transition: 1.1;
-  --time-project-card-transition: 0.5s;
-  --small-border-radius: 0.6vw;
   --margin-text: 2vw;
-  --margin-titles: 1vw;
-  --margin-small-titles: 0.5vw;
-  --margin-project-card: 10%;
+
+  /* Standard Backgound value for the page and when a card pops up */
+  --background-color:  #0c0c13;
+
+  /* Overlay Value for when a card pops up */
+  --description-overlay-color: rgba(0, 0, 0, 0.9);
+
+  /* Transition values used for hovering*/
+  --time-transition: 0.3s;
+  --hovered-color-links: #b270b6;
+  --scale-transition: 1.1;
+
+  /* Transition values used for opening a project card needs to match in Projects.jsx */
+  --time-project-card-transition: 0.5s;
 }
 
 body {
@@ -69,11 +69,23 @@ html {
   scroll-behavior: smooth;
 }
 
+p {
+  font-size: var(--standart-text-font-size);
+  text-align: justify;
+}
+
 h2 {
   font-size: var(--section-title-font-size);
   text-align: left;
   color: var(--text-color);
   margin-left: var(--margin-text);
+}
+
+h3 {
+  text-align: left;
+  color: var(--text-color);
+  margin-left: var(--margin-text);
+  font-size: var(--subsection-title-font-size);
 }
 
 body.no-scroll {

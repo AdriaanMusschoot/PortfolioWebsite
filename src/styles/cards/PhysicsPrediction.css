@@ -1,8 +1,3 @@
-.PhysicsPrediction {
-    margin-left: var(--margin-project-card);
-    margin-right: var(--margin-project-card);
-}
-
 .PhysicsPrediction .prediction-gif{
   width: 100%;
   height: auto;

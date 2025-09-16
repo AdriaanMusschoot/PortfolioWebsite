@@ -17,11 +17,11 @@
   width: auto;
   height: 26vw;
   margin-right: 1vw;
-  
-  border-style: var(--main-border-style);
-  border-color: var(--main-border-color);
-  border-radius: var(--main-border-radius);
-  border-width: var(--main-border-width);
+
+  border-style: var(--outline-style);
+  border-color: var(--outline-color);
+  border-radius: var(--outline-radius);
+  border-width: var(--outline-width);
   box-shadow: var(--box-shadow-default);
 }
 
@@ -30,7 +30,7 @@
   text-align: justify;
   
   a{
-    font-size: var(--about-text-size);
+    font-size: var(--standart-text-font-size);
     text-decoration: underline;
     margin-left: 0.3vw;
     margin-right: 0.3vw;
