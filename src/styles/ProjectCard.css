@@ -1,3 +1,9 @@
+.projects .descriptionWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .projectCard-description { 
   cursor: default;
   position: fixed; 

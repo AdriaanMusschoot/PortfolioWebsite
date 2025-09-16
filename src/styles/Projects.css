@@ -1,9 +1,7 @@
 /* == PROJECTS SECTION == */
 
-.projects{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.projects h2{
+  font-size: 2vw;
 }
 
 /* == MAIN PROJECTS SECTION == */
@@ -11,12 +9,13 @@
 .mainproj-wrapper{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   gap: 2vw;
+  margin-left: 2.3vw;
 }
 
 .mainproj-container {
-  width: 45%;
+  width: 30%;
   background: var(--card-fill-color);
   box-shadow: var(--box-shadow-default);
   overflow: hidden;
@@ -114,8 +113,9 @@
 .smallproj-wrapper{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   gap: 2vw;
+  margin-left: 2.3vw;
 }
 
 .smallproj-container{
