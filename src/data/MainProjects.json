@@ -1,0 +1,41 @@
+[
+    {
+        "image" : "./assets/ProjectImages/BFG/Thumbnail_BFG.png",
+        "title" : "BFG - 3D Action Adventure Game",
+        "main" : true,
+        "specifics" :
+        [
+            "Team",
+            "UE5 x Mass",
+            "C++"
+        ],
+        "date" : "Feb - Jun 2025",
+        "id": 0
+    },
+    {
+        "image" : "./assets/ProjectImages/GetCooked!/Thumbnail_GetCooked!.png",
+        "title" : "Get Cooked!",
+        "main" : true,
+        "specifics" :
+        [
+            "Team",
+            "C++",
+            "UE5"
+        ],
+        "date" : "Sep - Dec 2024",
+        "id": 1
+    },
+    {
+        "image" : "./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg",
+        "title" : "Snails & Potions",
+        "main" : true,
+        "specifics" :
+        [
+            "C++",
+            "Team",
+            "UE5"
+        ],
+        "date" : "Feb - May 2024",
+        "id": 2
+    }
+]

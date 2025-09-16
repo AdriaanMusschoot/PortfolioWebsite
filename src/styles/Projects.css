@@ -107,6 +107,13 @@
   }
 }
 
+.smallproj-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2vw;
+}
+
 .mainproj-container--small{
   width: 21%;
   border-radius: var(--main-border-radius);

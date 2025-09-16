@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import projects from '../data/projects.json';
-import '../styles/App.css';
+import MainProjects from '../data/MainProjects.json';
+import SmallProjects from '../data/SmallProjects.json';
 import SnailsAndPotions from './SnailsAndPotions.jsx';
 import Amugen from './Amugen.jsx';
 import Vulkan from './Vulkan.jsx';
@@ -9,7 +9,6 @@ import PhysicsPrediction from './PhysicsPrediction.jsx';
 import SouperHero from './Souperhero.jsx';
 import Tectonic from './Tectonic.jsx';
 import RideOfGiri from './RideOfGiri.jsx';
-//import GetCooked from './GetCooked.jsx';
 
 import '../styles/Projects.css';
 import '../styles/ProjectCard.css';
@@ -18,19 +17,15 @@ export default function ProjectCard() {
   const [activeIndex, setActiveIndex] = useState(null);
   const [transitioning, setTransitioning] = useState(false);
 
-  const getDescriptionComponent = (descriptionId) => {
-    switch (descriptionId) {
-      case 0: return <SnailsAndPotions activeIndex={descriptionId} />;
-      case 1: return <Amugen activeIndex={descriptionId}/>;
-      case 2: return <Vulkan activeIndex={descriptionId}/>;
-      case 3: return <Raymarcher activeIndex={descriptionId}/>;
-      case 4: return <Tectonic activeIndex={descriptionId}/>;
-      case 5: return <SouperHero activeIndex={descriptionId}/>;
-      case 6: return <PhysicsPrediction activeIndex={descriptionId}/>;
-      case 7: return <RideOfGiri activeIndex={descriptionId}/>;
-      //case 8: return <GetCooked activeIndex={descriptionId}/>;
-      default: return <div></div>;
-    }
+  const projectCardMap = {
+    'Snails & Potions': <SnailsAndPotions />,
+    'Amugen': <Amugen />,
+    'Vulkan': <Vulkan />,
+    'Raymarcher': <Raymarcher />,
+    'Tectonic': <Tectonic />,
+    'Souper Hero': <SouperHero />,
+    'Physics Prediction': <PhysicsPrediction />,
+    'Ride Of Giri': <RideOfGiri />,
   };
 
   useEffect(() => {
@@ -69,42 +64,64 @@ export default function ProjectCard() {
 
   return (
     <div className='projects'>
+      {/* Main Projects Section */}
       <div className="mainproj-wrapper">
-        {
-          projects.map((project, index) => {
-            const IsSmallClass = project.main ? '' : 'mainproj-container--small';
-            return (
-              <div
-                key={index}
-                className={`mainproj-container ${isCardActive(index)} ${IsSmallClass}`}
-                onClick={() => openClickedCard(index)}
-              >
-                {/* Image Section */}
-                <div className='mainproj-container_image'>
-                  <img src={project.image} alt={project.title} />
-                  {/* Specifics Section */}
-                  {project.specifics.length > 0 && (
-                    <div className="mainproj-container_specifics">
-                      <ul>
-                        {project.specifics.map((skill, i) => (
-                          <li key={i}>{skill}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
+        {MainProjects.map((project, index) => (
+          <div
+            key={index}
+            className={`mainproj-container ${isCardActive(index)}`}
+            onClick={() => openClickedCard(index)}
+          >
+            <div className='mainproj-container_image'>
+              <img src={project.image} alt={project.title} />
+              {project.specifics.length > 0 && (
+                <div className="mainproj-container_specifics">
+                  <ul>
+                    {project.specifics.map((skill, i) => (
+                      <li key={i}>{skill}</li>
+                    ))}
+                  </ul>
                 </div>
-                
-                {/* Title Section */}
-                <div className='mainproj-container_title'>
-                  {project.title}
+              )}
+            </div>
+            <div className='mainproj-container_title'>
+              {project.title}
+            </div>
+            <div className='mainproj-container_date'>
+              {project.date}
+            </div>
+          </div>
+        ))}
+      </div>
+      <h2> Additional Projects</h2>
+      {/* Small Projects Section */}
+      <div className="smallproj-wrapper">
+        {SmallProjects.map((project, index) => (
+          <div
+            key={index + MainProjects.length - 1}
+            className={`smallproj-container ${isCardActive(index + MainProjects.length)} mainproj-container--small`}
+            onClick={() => openClickedCard(index + MainProjects.length)}
+          >
+            <div className='mainproj-container_image'>
+              <img src={project.image} alt={project.title} />
+              {project.specifics.length > 0 && (
+                <div className="mainproj-container_specifics">
+                  <ul>
+                    {project.specifics.map((skill, i) => (
+                      <li key={i}>{skill}</li>
+                    ))}
+                  </ul>
                 </div>
-                <div className='mainproj-container_date'>
-                  {project.date}
-                </div>
-              </div>
-            );
-          })
-        }
+              )}
+            </div>
+            <div className='mainproj-container_title'>
+              {project.title}
+            </div>
+            <div className='mainproj-container_date'>
+              {project.date}
+            </div>
+          </div>
+        ))}
       </div>
       {/* Description Section */}
       {activeIndex !== null && (
@@ -126,13 +143,13 @@ export default function ProjectCard() {
                 </g>
               </g>
             </svg>
-            <h1>{projects[activeIndex].title}</h1>
+            <h1>{MainProjects[activeIndex].title}</h1>
             <div>
-              {projects[activeIndex].specifics.length > 0 && 
+              {MainProjects[activeIndex].specifics.length > 0 && 
                 (
                 <div className="mainproj-container_specifics">
                   <ul>
-                    {projects[activeIndex].specifics.map((skill, i) => (
+                    {MainProjects[activeIndex].specifics.map((skill, i) => (
                       <li key={i}>{skill}</li>
                     ))}
                   </ul>
@@ -141,7 +158,7 @@ export default function ProjectCard() {
               }
             </div>
             <div className='description'>
-              {getDescriptionComponent(projects[activeIndex].id)}
+              {projectCardMap[MainProjects[activeIndex].title]}
             </div>
           </div>
         </div>

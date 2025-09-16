@@ -1,13 +1,17 @@
 @import 'fonts.css';
 
 :root {
-  /* Shared Colour Values */
+  /* Shared Outline Values */
   --outline-color: #3D5D73;
-  --card-fill-color: #3D4273;
-
-  /* Shared Width Values */
   --outline-width: 0.1vw;
 
+  /* Fill Color Values */
+  --card-fill-color: #3D4273;
+
+  
+  /* Font-Size Variables */
+  --section-title-font-size: 2.5vw;
+  
   /* Old Values */
   --main-border-radius: 0.0vw;
   --main-border-style: solid;
@@ -17,7 +21,7 @@
   --background-color:  #0c0c13;
   --description-background-color: ;
   --description-overlay-color: rgba(0, 0, 0, 0.9);
-  --description-text-size: 1.3vw;
+  --description-text-size: 1vw;
   --about-text-size: 1.1vw;
   --box-shadow-default: 0 0 0 hsla(349, 100%, 79%, 0.7), inset 0 0 0.5vw rgba(0, 0, 0, 0.3);
   --box-shadow-hovered: 0 0 0 hsla(349, 100%, 71%, 0.7), inset 0 0 1.5vw rgba(0, 0, 0, 0.5);
@@ -66,7 +70,7 @@ html {
 }
 
 h2 {
-  font-size: 2.5vw;
+  font-size: var(--section-title-font-size);
   text-align: left;
   color: var(--text-color);
   margin-left: var(--margin-text);

@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Header from './components/Header';
-import ProjectCard from './components/ProjectCard';
+import Projects from './components/Projects.jsx';
 import Skills from './components/Skills';
 import About from './components/About.jsx';
 import Breaker from './components/Breaker.jsx';
@@ -28,9 +28,9 @@ function App() {
           <Breaker/>
         </section>
 
+        <h2>Main Projects</h2>
         <section id='projects'>
-          <h2>Projects</h2>
-          <ProjectCard />
+          <Projects />
         </section>
         <section id ='breaker'>
           <Breaker/>

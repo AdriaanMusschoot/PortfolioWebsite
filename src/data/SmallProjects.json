@@ -1,44 +1,5 @@
 [
     {
-        "image" : "./assets/ProjectImages/BFG/Thumbnail_BFG.png",
-        "title" : "BFG - 3D Action Adventure Game",
-        "main" : true,
-        "specifics" :
-        [
-            "Team",
-            "UE5 x Mass",
-            "C++"
-        ],
-        "date" : "Feb - Jun 2025",
-        "id": 9
-    },
-    {
-        "image" : "./assets/ProjectImages/GetCooked!/Thumbnail_GetCooked!.png",
-        "title" : "Get Cooked!",
-        "main" : true,
-        "specifics" :
-        [
-            "Team",
-            "C++",
-            "UE5"
-        ],
-        "date" : "Sep - Dec 2024",
-        "id": 8
-    },
-    {
-        "image" : "./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg",
-        "title" : "Snails & Potions",
-        "main" : true,
-        "specifics" :
-        [
-            "C++",
-            "Team",
-            "UE5"
-        ],
-        "date" : "Feb - May 2024",
-        "id": 0
-    },
-    {
         "image" : "./assets/ProjectImages/Amugen/Thumbnail.png",
         "title" : "Amugen - Game Engine",
         "main" : false,
@@ -48,7 +9,7 @@
             "CMake"
         ],
         "date" : "Feb - June 2024",
-        "id": 1
+        "id": 0
     },
     {
         "image" : "./assets/ProjectImages/Vulkan/Thumbnail.png",
@@ -58,11 +19,10 @@
         [
             "Vulkan",
             "C++",
-            "Graphics",
             "CMake"
         ],
         "date" : "Feb - Jun 2024",
-        "id": 2       
+        "id": 1       
     },
     {
         "image" : "./assets/ProjectImages/RayMarcher/Thumbnail.png",
@@ -74,7 +34,7 @@
             "Graphics"
         ],
         "date" : "Sep - Oct 2024",
-        "id": 3
+        "id": 2
     },
     {
         "image" : "./assets/ProjectImages/Tectonic/Thumbnail.png",
@@ -85,7 +45,7 @@
             "C++",
             "Amugen"
         ],
-        "id": 4
+        "id": 3
     },
     {
         "image" : "./assets/ProjectImages/SouperHero/Thumbnail.jpg",
@@ -97,7 +57,7 @@
             "C++",
             "GameJam"
         ],
-        "id": 5
+        "id": 4
     },
     {
         "image" : "./assets/ProjectImages/TrajectoryPrediction/Thumbnail.png",
@@ -108,7 +68,7 @@
             "C#",
             "Physics"
         ],
-        "id": 6
+        "id": 5
     },
     {
         "image" : "./assets/ProjectImages/RideOfGiri/Thumbnail.jpg",
@@ -119,6 +79,6 @@
             "UE5",
             "GameJam"
         ],
-        "id": 7
+        "id": 6
     }
 ]
