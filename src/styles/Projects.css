@@ -57,7 +57,8 @@
     gap: 0.5vw;
   }
 
-  & .mainproj-container_specifics li {   
+  & .mainproj-container_specifics li {
+    font-size: var(--standart-text-font-size);
     border-style: var(--main-border-style);
     border-color: var(--main-border-color);
     border-radius: var(--main-border-radius);
@@ -176,7 +177,7 @@
   }
 
   & .smallproj-container_specifics li{
-    font-size: 1vw;
+    font-size: var(--standart-text-font-size);
     padding: 0.2vw;
     border-style: var(--main-border-style);
     border-color: var(--main-border-color);

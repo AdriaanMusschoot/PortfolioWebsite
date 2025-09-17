@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/cards/Vulkan.css'; // Import your CSS file
+import '../../styles/cards/Vulkan.css'; // Import your CSS file
 
 
 export default function Vulkan({activeIndex}) {

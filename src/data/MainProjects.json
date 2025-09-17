@@ -9,12 +9,11 @@
             "UE5 x Mass",
             "C++"
         ],
-        "date" : "Feb - Jun 2025",
-        "id": 0
+        "date" : "Feb - Jun 2025"
     },
     {
         "image" : "./assets/ProjectImages/GetCooked!/Thumbnail_GetCooked!.png",
-        "title" : "Get Cooked!",
+        "title" : "GetCooked!",
         "main" : true,
         "specifics" :
         [
@@ -22,8 +21,7 @@
             "C++",
             "UE5"
         ],
-        "date" : "Sep - Dec 2024",
-        "id": 1
+        "date" : "Sep - Dec 2024"
     },
     {
         "image" : "./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg",
@@ -35,7 +33,6 @@
             "Team",
             "UE5"
         ],
-        "date" : "Feb - May 2024",
-        "id": 2
+        "date" : "Feb - May 2024"
     }
 ]

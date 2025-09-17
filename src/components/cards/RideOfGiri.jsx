@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/cards/RideOfGiri.css'; // Import your CSS file
+import '../../styles/cards/RideOfGiri.css'; // Import your CSS file
 
 
 export default function RideOfGiri({activeIndex}) {

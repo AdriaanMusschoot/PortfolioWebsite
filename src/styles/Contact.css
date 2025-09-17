@@ -11,12 +11,6 @@
   flex-direction: column;
   margin-bottom: 40vw;
 
-  & p {
-    font-style: var(--quote-font-style);
-    font-size: var(--quote-size);
-    text-align: left;
-  }
-
   & .contact-socials {
     display: flex;
     gap: 4vw;

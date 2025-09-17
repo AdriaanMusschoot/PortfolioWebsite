@@ -1,4 +1,4 @@
-import '../styles/cards/PhysicsPrediction.css'; 
+import '../../styles/cards/PhysicsPrediction.css'; 
 
 export default function PhysicsPrediction({ activeIndex }) {
 

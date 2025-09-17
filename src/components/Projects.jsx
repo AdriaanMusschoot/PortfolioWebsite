@@ -1,16 +1,24 @@
+/* React Imports */
 import React, { useState, useEffect } from 'react';
-import MainProjects from '../data/MainProjects.json';
-import SmallProjects from '../data/SmallProjects.json';
-import SnailsAndPotions from './SnailsAndPotions.jsx';
-import Amugen from './Amugen.jsx';
-import Vulkan from './Vulkan.jsx';
-import Raymarcher from './Raymarcher.jsx';
-import PhysicsPrediction from './PhysicsPrediction.jsx';
-import SouperHero from './Souperhero.jsx';
-import Tectonic from './Tectonic.jsx';
-import RideOfGiri from './RideOfGiri.jsx';
 import { ReactComponent as CrossButton } from '../assets/svg/cross-small.svg';
 
+/* Project Card Data */
+import MainProjects from '../data/MainProjects.json';
+import SmallProjects from '../data/SmallProjects.json';
+
+/* Project Details */
+import SnailsAndPotions from './cards/SnailsAndPotions.jsx';
+import Amugen from './cards/Amugen.jsx';
+import Vulkan from './cards/Vulkan.jsx';
+import Raymarcher from './cards/Raymarcher.jsx';
+import PhysicsPrediction from './cards/PhysicsPrediction.jsx';
+import SouperHero from './cards/Souperhero.jsx';
+import Tectonic from './cards/Tectonic.jsx';
+import RideOfGiri from './cards/RideOfGiri.jsx';
+import GetCooked from './cards/GetCooked.jsx';
+import BFG from './cards/BFG.jsx';
+
+/* Style Imports */
 import '../styles/Projects.css';
 import '../styles/ProjectCard.css';
 
@@ -27,6 +35,8 @@ export default function ProjectCard() {
     'Souper Hero': <SouperHero />,
     'Trajectory Prediction': <PhysicsPrediction />,
     'Ride Of Giri': <RideOfGiri />,
+    'GetCooked!': <GetCooked />,
+    'BFG - 3D Action Adventure Game': <BFG />,
   };
 
   useEffect(() => {

@@ -1,14 +1,16 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
+
+/* Data Imports */
 import { ReactComponent as Logo } from '../assets/svg/Logo.svg';
-import { ReactComponent as LinkedInLogo } from '../assets/svg/linkedin_icon.svg';
-import { ReactComponent as GithubLogo } from '../assets/svg/github_icon.svg';
-import { ReactComponent as DiscordLogo } from '../assets/svg/discord_icon.svg';
-import { ReactComponent as MailLogo } from '../assets/svg/mail_icon.svg';
-import { ReactComponent as CVLogo } from '../assets/svg/CV.svg';
-import CV from '../assets/CV_20241005_AdriaanMusschoot_Public.pdf';
+import CVButton from './buttons/CVButton.jsx';
+import MailToButton from './buttons/MailToButton.jsx';
+import LinkedInButton from './buttons/LinkedInButton.jsx';
+import GithubButton from './buttons/GithubButton.jsx';
 
-import '../styles/Header.css'
+/* Style Imports */
+import '../styles/Header.css';
 
+/* HTML */
 export default function Header() {
   useEffect(() => {
     const sections = document.querySelectorAll('section');
@@ -67,21 +69,10 @@ export default function Header() {
           <a href='#contact'>Contact</a>
         </div>
         <div className='small-contact'>
-          <a href='mailto:contact@adriaanmusschoot.com' rel='noreferrer' target='_blank'>
-              <MailLogo className='svg'/>
-          </a>
-          <a href='https://www.linkedin.com/in/adriaan-musschoot/' rel='noreferrer' target='_blank'>
-              <LinkedInLogo className='svg'/>
-          </a>
-            <a href={CV} target="_blank" rel="noopener noreferrer">
-              <CVLogo className='svg' />
-            </a>
-          <a href='https://github.com/AdriaanMusschoot' rel='noreferrer' target='_blank'>
-              <GithubLogo className='svg'/>
-          </a>
-          <a href='https://discordapp.com/users/460746279367082016' rel='noreferrer' target='_blank'>
-            <DiscordLogo className='svg' />
-          </a>
+          <MailToButton/>
+          <LinkedInButton/>
+          <CVButton/>
+          <GithubButton/>
         </div>
       </div>
     </>

@@ -74,6 +74,10 @@ p {
   text-align: justify;
 }
 
+h1 {
+  font-size: var(--primary-title-font-size);
+}
+
 h2 {
   font-size: var(--section-title-font-size);
   text-align: left;

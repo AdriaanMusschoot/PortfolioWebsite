@@ -1,4 +1,4 @@
-import '../styles/cards/SnailsAndPotions.css'; // Import your CSS file
+import '../../styles/cards/SnailsAndPotions.css'; // Import your CSS file
 
 export default function SnailsAndPotions({ activeIndex }) {
 
