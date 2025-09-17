@@ -25,7 +25,7 @@ export default function About() {
           </p>
           <p>
             Currently I am looking for a job as a Junior Games Programmer.
-            The minimum requirement for it is programming. Gameplay, Tools , ... anything goes, I am genuinely curious to anything thrown in my path and eager to learn how to get it right.
+            The minimum requirement for it is programming. Gameplay, Tools , ... anything goes as long as its connected to games, I am genuinely curious to anything thrown in my path and eager to learn how to get it right.
           </p>
         </div>
       </div>
