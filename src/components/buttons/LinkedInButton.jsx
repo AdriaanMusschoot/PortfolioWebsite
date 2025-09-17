@@ -2,7 +2,7 @@
 import { ReactComponent as LinkedInLogo } from '../../assets/svg/linkedin_icon.svg';
 
 /* HTML */
-export default function LinkedInButton({}) {
+export default function LinkedInButton() {
   return (
     <a href='https://www.linkedin.com/in/adriaan-musschoot/' rel='noreferrer' target='_blank'>
         <LinkedInLogo className='svg'/>
