@@ -73,6 +73,7 @@
     list-style: none;
     padding: 0;
     text-align: center;
+    /* Something Overrides this (no clue what) so need !important */
     display: flex !important;
     justify-content: center;
     gap: 0.5vw;
