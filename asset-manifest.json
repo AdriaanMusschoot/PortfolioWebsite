@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.900f6f55.css",
-    "main.js": "/static/js/main.1471aa76.js",
+    "main.js": "/static/js/main.792c3a10.js",
     "static/js/584.1435511e.chunk.js": "/static/js/584.1435511e.chunk.js",
+    "static/media/Trailer_GetCooked.mp4": "/static/media/Trailer_GetCooked.6a0d896b74c5f2a13f4b.mp4",
     "static/media/Snails&Potions_Trailer.webm": "/static/media/Snails&Potions_Trailer.87b50963419c41d20af7.webm",
     "static/media/InstancedRendering_Trailer.webm": "/static/media/InstancedRendering_Trailer.1d7cbcb2333f44bb50fe.webm",
     "static/media/RideOfGiri_Trailer.webm": "/static/media/RideOfGiri_Trailer.725c459d37e2e9984f81.webm",
@@ -38,13 +39,12 @@
     "static/media/linkedin_icon.svg": "/static/media/linkedin_icon.111fb6083791fc795f02ae2c5c71e3e4.svg",
     "index.html": "/index.html",
     "static/media/cross-small.svg": "/static/media/cross-small.2c59be51ab9546c1dae28c127cdf4bbc.svg",
-    "static/media/Trailer_GetCooked.mp4": "/static/media/Trailer_GetCooked.5e88c60a5b4c94156716.mp4",
     "main.900f6f55.css.map": "/static/css/main.900f6f55.css.map",
-    "main.1471aa76.js.map": "/static/js/main.1471aa76.js.map",
+    "main.792c3a10.js.map": "/static/js/main.792c3a10.js.map",
     "584.1435511e.chunk.js.map": "/static/js/584.1435511e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.900f6f55.css",
-    "static/js/main.1471aa76.js"
+    "static/js/main.792c3a10.js"
   ]
 }
