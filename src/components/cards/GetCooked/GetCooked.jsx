@@ -1,6 +1,9 @@
 /* Data Imports */
 
-
+import ThrowingGif from './Resources/FoodWars_Throwing.gif';
+import TowerTroopVSEnemyGif from './Resources/FoodWars_TowerAndTroopVsEnemy.gif';
+import TowerVsEnemyGif from './Resources/FoodWars_TowerVsEnemy.gif';
+import TroopInteractionGif from './Resources/FoodWars_TroopInteraction.gif';
 
 /* Style Imports */
 import './GetCooked.css';
@@ -31,10 +34,10 @@ export default function GetCooked({activeIndex})
                         I will never forget that night, that was some of the best bonding time with my team.
                     </p>
                     <div className='Foodwars-Container'>
-                        <img src='./assets/ProjectImages/GetCooked!/FoodWars_Throwing.gif' alt='Food Wars Throwing'/>
-                        <img src='./assets/ProjectImages/GetCooked!/FoodWars_TowerAndTroopVsEnemy.gif' alt='Food Wars Tower And Troop Vs Enemy'/>
-                        <img src='./assets/ProjectImages/GetCooked!/FoodWars_TowerVsEnemy.gif' alt='Food Wars Tower Vs Enemy'/>
-                        <img src='./assets/ProjectImages/GetCooked!/FoodWars_TroopInteraction.gif' alt='Food Wars Troop Interaction'/>
+                        <img src={ThrowingGif} alt='Food Wars Throwing'/>
+                        <img src={TowerTroopVSEnemyGif} alt='Food Wars Tower And Troop Vs Enemy'/>
+                        <img src={TowerVsEnemyGif} alt='Food Wars Tower Vs Enemy'/>
+                        <img src={TroopInteractionGif} alt='Food Wars Troop Interaction'/>
                     </div>
                 <h3>What I did</h3>
                     <p>
