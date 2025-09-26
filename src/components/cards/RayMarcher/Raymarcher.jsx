@@ -1,5 +1,9 @@
 import React from "react";
 
+/* Data Imports */
+import CubeSphereSmoothVideo from './Resources/Cubespheresmooth.webm';
+import FractalsRotationVideo from './Resources/Fractalsrotation.webm';
+import MandelbulbVideo from './Resources/Mandelbulb.webm';
 /* Style Imports */
 import './Raymarcher.css';
 
@@ -25,7 +29,7 @@ export default function Raymarcher({activeIndex}) {
             loop
             muted
           >
-            <source src='./assets/ProjectImages/RayMarcher/Cubespheresmooth.webm' />
+            <source src={CubeSphereSmoothVideo} />
             Your browser does not support the video tag.
           </video>
           <video
@@ -34,7 +38,7 @@ export default function Raymarcher({activeIndex}) {
             loop
             muted
           >
-            <source src='./assets/ProjectImages/RayMarcher/Fractalsrotation.webm' />
+            <source src={FractalsRotationVideo} />
             Your browser does not support the video tag.
           </video>
           <video
@@ -43,7 +47,7 @@ export default function Raymarcher({activeIndex}) {
             loop
             muted
           >
-            <source src='./assets/ProjectImages/RayMarcher/Mandelbulb.webm' />
+            <source src={MandelbulbVideo} />
             Your browser does not support the video tag.
           </video>
           <a 
@@ -69,7 +73,7 @@ export default function Raymarcher({activeIndex}) {
           {/* First Video and Text (Left) */}
             <div className='video-container video-container-left'>
               <video className='SphereBox' autoPlay loop muted>
-                <source src='./assets/ProjectImages/RayMarcher/Cubespheresmooth.webm' />
+                <source src={CubeSphereSmoothVideo} />
                 Your browser does not support the video tag.
               </video>
               <p className='video-description'>
@@ -86,7 +90,7 @@ export default function Raymarcher({activeIndex}) {
             {/* Second Video and Text (Right) */}
             <div className='video-container video-container-right'>
               <video className='FractalsRotated' autoPlay loop muted>
-                <source src='./assets/ProjectImages/RayMarcher/Fractalsrotation.webm' />
+                <source src={FractalsRotationVideo} />
                 Your browser does not support the video tag.
               </video>
               <p className='video-description'>
@@ -102,7 +106,7 @@ export default function Raymarcher({activeIndex}) {
             {/* Third Video and Text (Left) */}
             <div className='video-container video-container-left'>
               <video className='Fractals' autoPlay loop muted>
-                <source src='./assets/ProjectImages/RayMarcher/Mandelbulb.webm' />
+                <source src={MandelbulbVideo} />
                 Your browser does not support the video tag.
               </video>
               <p className='video-description'>

@@ -9,9 +9,6 @@ import SmallProjects from '../../data/SmallProjects.json';
 /* Project Details */
 import SnailsAndPotions from '../cards/SnailsAndPotions/SnailsAndPotions.jsx';
 import Amugen from '../cards/Amugen/Amugen.jsx';
-
-
-
 import InstancedRendering from '../cards/InstancedRendering/InstancedRendering.jsx';
 import Raymarcher from '../cards/RayMarcher/Raymarcher.jsx';
 import PhysicsPrediction from '../cards/PhysicsPrediction/PhysicsPrediction.jsx';
