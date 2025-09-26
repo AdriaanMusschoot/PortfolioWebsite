@@ -1,3 +1,10 @@
+/* Data Imports */
+
+import TrailerVideo from './Resources/Snails&Potions_Trailer.webm';
+import SpeedPotionPNG from './Resources/Speed.jpg';
+import EndGameStatsPNG from './Resources/Stats.jpg';
+import OverviewGamePNG from './Resources/Overview.jpg';
+
 /* Style Imports */
 import './SnailsAndPotions.css'; // Import your CSS file
 
@@ -24,15 +31,8 @@ export default function SnailsAndPotions({ activeIndex }) {
         They must gather ingredients and brawl over them with the other players when their interests overlap. 
         May the best snail-master reach the finish first.
       </p>
-      <video
-        className='Trailer'
-        width='100%' height='auto' 
-        controls 
-        loop
-        muted
-        autoPlay
-      >
-        <source src='./assets/ProjectImages/SnailsAndPotions/Snails&Potions_Trailer.webm' />
+      <video className='Trailer' width='100%' height='auto' controls loop muted autoPlay>
+        <source src={TrailerVideo} />
         Your browser does not support the video tag.
       </video>
       <h2>Winner!</h2>
@@ -42,17 +42,17 @@ export default function SnailsAndPotions({ activeIndex }) {
       </p>
       <img
         className='img-1'
-        src='./assets/ProjectImages/SnailsAndPotions/Speed.jpg'
+        src={SpeedPotionPNG}
         alt='thumbnail'
       />
       <img
         className='img-2'
-        src='./assets/ProjectImages/SnailsAndPotions/Overview.jpg'
+        src={OverviewGamePNG}
         alt='thumbnail'
       />
       <img
         className='img-3'
-        src='./assets/ProjectImages/SnailsAndPotions/Stats.jpg'
+        src={EndGameStatsPNG}
         alt='thumbnail'
       />
       <h2>The Project</h2>

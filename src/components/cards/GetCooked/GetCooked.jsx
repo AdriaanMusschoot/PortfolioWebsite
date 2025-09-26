@@ -4,6 +4,7 @@ import ThrowingGif from './Resources/FoodWars_Throwing.gif';
 import TowerTroopVSEnemyGif from './Resources/FoodWars_TowerAndTroopVsEnemy.gif';
 import TowerVsEnemyGif from './Resources/FoodWars_TowerVsEnemy.gif';
 import TroopInteractionGif from './Resources/FoodWars_TroopInteraction.gif';
+import TrailerVideo from './Resources/Trailer_GetCooked.mp4';
 
 /* Style Imports */
 import './GetCooked.css';
@@ -99,7 +100,7 @@ export default function GetCooked({activeIndex})
                 <h3>What I did</h3>
             <h2>The Game</h2>
                     <video className='Trailer' width='100%' height='auto' controls autoPlay loop muted>
-                        <source src='./assets/ProjectImages/GetCooked!/Trailer_GetCooked!.mp4' />
+                        <source src={TrailerVideo} />
                         Your browser does not support the video tag.
                     </video>
                     <p>
