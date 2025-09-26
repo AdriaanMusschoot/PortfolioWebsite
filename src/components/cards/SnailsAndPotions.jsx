@@ -30,7 +30,7 @@ export default function SnailsAndPotions({ activeIndex }) {
         muted
         autoPlay
       >
-        <source src='./assets/ProjectImages/SnailsAndPotions/Trailer.webm' />
+        <source src='./assets/ProjectImages/SnailsAndPotions/Snails&Potions_Trailer.webm' />
         Your browser does not support the video tag.
       </video>
       <h2>Winner!</h2>

@@ -35,7 +35,7 @@ export default function ProjectCard() {
     'Souper Hero': <SouperHero />,
     'Trajectory Prediction': <PhysicsPrediction />,
     'Ride Of Giri': <RideOfGiri />,
-    'GetCooked!': <GetCooked />,
+    'Get Cooked!': <GetCooked />,
     'BFG - 3D Action Adventure Game': <BFG />,
   };
 
