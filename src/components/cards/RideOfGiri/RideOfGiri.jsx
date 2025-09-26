@@ -1,5 +1,8 @@
 import React from "react";
 
+/* Data Imports */
+import TrailerVideo from './Resources/RideOfGiri_Trailer.webm'
+
 /* Style Imports */
 import './RideOfGiri.css';
 
@@ -20,7 +23,7 @@ export default function RideOfGiri({activeIndex}) {
               muted
               autoPlay
             >
-              <source src='./assets/ProjectImages/RideOfGiri/Trailer.webm' />
+              <source src={TrailerVideo} />
               Your browser does not support the video tag.
             </video>
             <h2>The Project</h2>
