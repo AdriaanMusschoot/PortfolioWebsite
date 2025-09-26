@@ -9,7 +9,10 @@ import SmallProjects from '../../data/SmallProjects.json';
 /* Project Details */
 import SnailsAndPotions from '../cards/SnailsAndPotions/SnailsAndPotions.jsx';
 import Amugen from '../cards/Amugen/Amugen.jsx';
-import Vulkan from '../cards/Vulkan/Vulkan.jsx';
+
+
+
+import InstancedRendering from '../cards/InstancedRendering/InstancedRendering.jsx';
 import Raymarcher from '../cards/RayMarcher/Raymarcher.jsx';
 import PhysicsPrediction from '../cards/PhysicsPrediction/PhysicsPrediction.jsx';
 import SouperHero from '../cards/SouperHero/Souperhero.jsx';
@@ -29,7 +32,7 @@ export default function ProjectCard() {
   const projectCardMap = {
     'Snails & Potions': <SnailsAndPotions />,
     'Amugen - Game Engine': <Amugen />,
-    'Instanced Rendering': <Vulkan />,
+    'Instanced Rendering': <InstancedRendering />,
     'Ray Marcher': <Raymarcher />,
     'Tectonic': <Tectonic />,
     'Souper Hero': <SouperHero />,

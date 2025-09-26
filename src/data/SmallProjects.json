@@ -1,6 +1,6 @@
 [
     {
-        "image" : "./assets/ProjectImages/Amugen/Thumbnail.png",
+        "image" : "./assets/CardThumbnails/Amugen_Thumbnail.png",
         "title" : "Amugen - Game Engine",
         "specifics" :
         [
@@ -10,7 +10,7 @@
         "date" : "Feb - June 2024"
     },
     {
-        "image" : "./assets/ProjectImages/Vulkan/Thumbnail.png",
+        "image" : "./assets/CardThumbnails/InstancedRendering_Thumbnail.png",
         "title" : "Instanced Rendering",
         "specifics" :
         [
@@ -21,7 +21,7 @@
         "date" : "Feb - Jun 2024"
     },
     {
-        "image" : "./assets/ProjectImages/RayMarcher/Thumbnail.png",
+        "image" : "./assets/CardThumbnails/Raymarcher_Thumbnail.png",
         "title" : "Ray Marcher",
         "specifics" :
         [
@@ -31,7 +31,7 @@
         "date" : "Sep - Oct 2024"
     },
     {
-        "image" : "./assets/ProjectImages/Tectonic/Thumbnail.png",
+        "image" : "./assets/CardThumbnails/Tectonic_Thumbnail.png",
         "title" : "Tectonic",
         "specifics" :
         [
@@ -40,7 +40,7 @@
         ]
     },
     {
-        "image" : "./assets/ProjectImages/SouperHero/Thumbnail.jpg",
+        "image" : "./assets/CardThumbnails/SouperHero_Thumbnail.jpg",
         "title" : "Souper Hero",
         "specifics" :
         [
@@ -50,7 +50,7 @@
         ]
     },
     {
-        "image" : "./assets/ProjectImages/TrajectoryPrediction/Thumbnail.png",
+        "image" : "./assets/CardThumbnails/PhysicsPrediction_Thumbnail.png",
         "title" : "Trajectory Prediction",
         "specifics" :
         [
@@ -59,7 +59,7 @@
         ]
     },
     {
-        "image" : "./assets/ProjectImages/RideOfGiri/Thumbnail.jpg",
+        "image" : "./assets/CardThumbnails/RideOfGiri_Thumbnail.jpg",
         "title" : "Ride Of Giri",
         "specifics" :
         [
