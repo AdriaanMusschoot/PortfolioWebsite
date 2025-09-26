@@ -1,11 +1,11 @@
 import { Helmet } from 'react-helmet';
-import Home from './components/Home';
-import Contact from './components/Contact';
-import Header from './components/Header';
-import Projects from './components/Projects.jsx';
-import Skills from './components/Skills';
-import About from './components/About.jsx';
-import Breaker from './components/Breaker.jsx';
+import Home from './components/home/Home.jsx';
+import Contact from './components/contact/Contact.jsx';
+import Header from './components/header/Header.jsx';
+import Projects from './components/projects/Projects.jsx';
+import Skills from './components/skills/Skills.jsx';
+import About from './components/about/About.jsx';
+import Breaker from './components/breaker/Breaker.jsx';
 
 import './styles/App.css';
 
