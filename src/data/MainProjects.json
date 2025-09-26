@@ -1,8 +1,7 @@
 [
     {
-        "image" : "./assets/ProjectImages/BFG/Thumbnail_BFG.png",
+        "image" : "./assets/ProjectImages/BFG/BFG_Thumbnail.png",
         "title" : "BFG - 3D Action Adventure Game",
-        "main" : true,
         "specifics" :
         [
             "Team",
@@ -14,7 +13,6 @@
     {
         "image" : "./assets/ProjectImages/GetCooked!/Thumbnail_GetCooked!.png",
         "title" : "Get Cooked!",
-        "main" : true,
         "specifics" :
         [
             "Team",
@@ -26,7 +24,6 @@
     {
         "image" : "./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg",
         "title" : "Snails & Potions",
-        "main" : true,
         "specifics" :
         [
             "C++",

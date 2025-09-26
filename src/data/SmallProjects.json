@@ -2,7 +2,6 @@
     {
         "image" : "./assets/ProjectImages/Amugen/Thumbnail.png",
         "title" : "Amugen - Game Engine",
-        "main" : false,
         "specifics" :
         [
             "C++",
@@ -13,7 +12,6 @@
     {
         "image" : "./assets/ProjectImages/Vulkan/Thumbnail.png",
         "title" : "Instanced Rendering",
-        "main" : false,
         "specifics" :
         [
             "Vulkan",
@@ -25,7 +23,6 @@
     {
         "image" : "./assets/ProjectImages/RayMarcher/Thumbnail.png",
         "title" : "Ray Marcher",
-        "main" : false,
         "specifics" :
         [
             "C++",
@@ -36,7 +33,6 @@
     {
         "image" : "./assets/ProjectImages/Tectonic/Thumbnail.png",
         "title" : "Tectonic",
-        "main" : false,
         "specifics" :
         [
             "C++",
@@ -46,7 +42,6 @@
     {
         "image" : "./assets/ProjectImages/SouperHero/Thumbnail.jpg",
         "title" : "Souper Hero",
-        "main" : false,
         "specifics" :
         [
             "UE5",
@@ -57,7 +52,6 @@
     {
         "image" : "./assets/ProjectImages/TrajectoryPrediction/Thumbnail.png",
         "title" : "Trajectory Prediction",
-        "main" : false,
         "specifics" :
         [
             "C#",
@@ -67,7 +61,6 @@
     {
         "image" : "./assets/ProjectImages/RideOfGiri/Thumbnail.jpg",
         "title" : "Ride Of Giri",
-        "main" : false,
         "specifics" :
         [
             "UE5",
