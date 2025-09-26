@@ -1,3 +1,6 @@
+/* Data Imports */
+import PhysicsPredictionGIF from './Resources/PhysicsSimulation.gif'
+
 /* Style Imports */
 import './PhysicsPrediction.css'; 
 
@@ -20,7 +23,7 @@ export default function PhysicsPrediction({ activeIndex }) {
             </p>
         <img
             className='prediction-gif'
-            src='./assets/ProjectImages/TrajectoryPrediction/PhysicsSimulation.gif'
+            src={PhysicsPredictionGIF}
             alt='thumbnail'
         />
         <a 
