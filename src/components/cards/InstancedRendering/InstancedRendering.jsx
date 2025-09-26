@@ -1,5 +1,11 @@
 import React from "react";
 
+/* Data Imports */
+import RenderingTrianglesIMG from './Resources/RenderingTriangles.png';
+import NotInstancedRenderingIMG from './Resources/NotInstanceRendering.png';
+import OverviewIMG from './Resources/Overview.png';
+import TrailerVideo from './Resources/InstancedRendering_Trailer.webm';
+
 /* Style Imports */
 import './InstancedRendering.css';
 
@@ -20,17 +26,17 @@ export default function InstancedRendering({activeIndex}) {
           </p>
           <img
             className='img-1'
-            src='./assets/ProjectImages/Vulkan/RenderingTriangles.png'
+            src={RenderingTrianglesIMG}
             alt='thumbnail'
           />
           <img
             className='img-2'
-            src='./assets/ProjectImages/Vulkan/NotInstanceRendering.png'
+            src={NotInstancedRenderingIMG}
             alt='thumbnail'
           />
           <img
             className='img-3'
-            src='./assets/ProjectImages/Vulkan/Overview.png'
+            src={OverviewIMG}
             alt='thumbnail'
           />
           <h2>Specifications</h2>
@@ -61,7 +67,7 @@ export default function InstancedRendering({activeIndex}) {
             muted
             controls
           >
-            <source src='./assets/ProjectImages/Vulkan/Trailer.webm' />
+            <source src={TrailerVideo} />
             Your browser does not support the video tag.
           </video>
         </div>
