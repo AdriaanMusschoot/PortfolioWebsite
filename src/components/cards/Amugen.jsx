@@ -1,5 +1,7 @@
+/* Style Imports */
 import '../../styles/cards/Amugen.css'; 
 
+/* HTML */
 export default function Amugen({ activeIndex }) {
 
   return (
@@ -37,7 +39,7 @@ export default function Amugen({ activeIndex }) {
         as I had to prove the engine works by creating a remake of the all time classic Pac-Man (check out below).
       </p>
       <a 
-        href='https://github.com/AdriaanMusschoot/Amugen' 
+        href='https://github.com/AdriaanMusschoot/Amugen/Amugen_Showcase.webm' 
         target='_blank' 
         rel='noopener noreferrer'
       >
@@ -49,12 +51,12 @@ export default function Amugen({ activeIndex }) {
       </a>
       <video
         className='Trailer'
-        width='100%' height='auto' 
+        width='100%' height='auto'
         autoPlay
         loop
         muted
       >
-        <source src='./assets/ProjectImages/Amugen/Showcase.webm' />
+        <source src='../../assets/CardImages/Amugen/Amugen_Showcase.webm' />
         Your browser does not support the video tag.
       </video>
       <h2>Pacman</h2>
@@ -73,8 +75,8 @@ export default function Amugen({ activeIndex }) {
           There is a release version available on github showcasing the gameplay of Pacman.
         </p>
         <a 
-          href='https://github.com/AdriaanMusschoot/Programming4' 
-          target='_blank' 
+          href='https://github.com/AdriaanMusschoot/Pacman'
+          target='_blank'
           rel='noopener noreferrer'
         >
           <img

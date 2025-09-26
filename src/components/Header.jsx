@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
 /* Data Imports */
-import { ReactComponent as Logo } from '../assets/svg/Logo.svg';
+import { ReactComponent as Logo } from '../assets/SVG/Logo.svg';
 import CVButton from './buttons/CVButton.jsx';
 import MailToButton from './buttons/MailToButton.jsx';
 import LinkedInButton from './buttons/LinkedInButton.jsx';

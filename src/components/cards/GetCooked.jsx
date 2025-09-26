@@ -50,7 +50,8 @@ export default function GetCooked({activeIndex})
                     </p>
             <h2>Development</h2>
                     <p>
-                        We had a development period of about 6 weeks. Extra features were needed and others were slashed.
+                        We had a development period of about 6 weeks, during which extra features were added and others were slashed.
+                        Coordinating and working together with the artists was key.
                     </p>
                     <p> 
                         When the game was play tested, players didn't know what to do when picking up the wrong ingredient, 
