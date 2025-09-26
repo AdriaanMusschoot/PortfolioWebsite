@@ -1,4 +1,11 @@
 import React from "react";
+
+/* Data Imports */
+import WorkingExampleIMG from './Resources/WorkingExample.png';
+import ImpossibleShapeIMG from './Resources/ImpossibleShape.png';
+import BlockingShapeIMG from './Resources/BlockingShape.png';
+import UnfillableShapeIMG from './Resources/UnfillableShape.png';
+
 /* Style Imports */
 import './Tectonic.css';
 
@@ -25,8 +32,8 @@ export default function Tectonic({activeIndex}) {
             </p>
             <img
               className='big'
-              src='./assets/ProjectImages/Tectonic/Example.png'
-              alt='thumbnail'
+              src={WorkingExampleIMG}
+              alt='Working Example'
             />
             <h3>Why tectonics?</h3>
             <p>
@@ -40,15 +47,10 @@ export default function Tectonic({activeIndex}) {
               We generate some random directions and look if the cell in that direction is already taken or if there is no cell there, sort of a flood fill.<br/>
               I hadn't foreseen this but there were some issues that arose.
             </p>
-            <img
-              className='img'
-              src='./assets/ProjectImages/Tectonic/Thumbnail.png'
-              alt='thumbnail'
-            />
             <div class="container">
               <div class="column">
-                <h4>Impossible Shapes</h4>
-                <img class="img" src="./assets/ProjectImages/Tectonic/ImfillableShape02.png" alt="thumbnail" />
+                <h4>Unfillable Shapes</h4>
+                <img class="img" src={UnfillableShapeIMG} alt="thumbnail" />
                 <p>
                     Some shapes become impossible to fill up with the correct numbers later on.
                     Take this shape for example. 
@@ -60,7 +62,7 @@ export default function Tectonic({activeIndex}) {
               </div>
               <div class="column">
                 <h4>Blocking Shapes</h4>
-                <img class="img" src="./assets/ProjectImages/Tectonic/ImfillableShape01.png" alt="thumbnail" />
+                <img class="img" src={BlockingShapeIMG} alt="thumbnail" />
                 <p>
                     Here in a similar fashion to the first one it is also impossible to fill up.
                     If there were a 4 or 5 filled in as part of a bigger shape (10), the shape (9) is not impossible to fill up.
@@ -69,10 +71,9 @@ export default function Tectonic({activeIndex}) {
                     I could then unwind the stack and place a different shape and try again. 
                 </p>
               </div>
-
               <div class="column">
                 <h4>Generating shapes</h4>
-                <img class="img" src="./assets/ProjectImages/Tectonic/ImpossibleShape.png" alt="thumbnail" />
+                <img class="img" src={ImpossibleShapeIMG} alt="thumbnail" />
                 <p>
                     With this flood-fill approach there is another issue.
                     Some shapes are simply not possible to generate.<br/>
