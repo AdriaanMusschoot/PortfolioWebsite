@@ -1,3 +1,12 @@
+/* Data Imports */
+import TrailerVideo from './Resources/SouperHero_Trailer.webm';
+import DeathrunIMG from './Resources/Deathrun.jpg';
+import Gameplay01IMG from './Resources/Gameplay01.jpg';
+import Gameplay02IMG from './Resources/Gameplay02.jpg';
+import Gameplay03IMG from './Resources/Gameplay03.jpg';
+import LevelIMG from './Resources/Level.jpg';
+import MenuIMG from './Resources/Menu.jpg';
+
 /* Style Imports */
 import './SouperHero.css'; 
 
@@ -14,7 +23,7 @@ export default function SouperHero({ activeIndex }) {
             to escape before you're completely submerged.
         </p>
         <video className='Trailer' width='100%' height='auto' controls loop autoPlay muted>
-            <source src='./assets/ProjectImages/SouperHero/Trailer.webm' />
+            <source src={TrailerVideo} />
                 Your browser does not support the video tag.
         </video>
         <a 
@@ -39,32 +48,32 @@ export default function SouperHero({ activeIndex }) {
       </p>
       <img
             className='img-1'
-            src='./assets/ProjectImages/SouperHero/Gameplay01.jpg'
+            src={Gameplay01IMG}
             alt='thumbnail'
       />
       <img
             className='img-2'
-            src='./assets/ProjectImages/SouperHero/Menu.jpg'
+            src={MenuIMG}
             alt='thumbnail'
       />
       <img
             className='img-3'
-            src='./assets/ProjectImages/SouperHero/Gameplay02.jpg'
+            src={Gameplay02IMG}
             alt='thumbnail'
       />
       <img
             className='img-1'
-            src='./assets/ProjectImages/SouperHero/Level.jpg'
+            src={LevelIMG}
             alt='thumbnail'
       />
       <img
             className='img-2'
-            src='./assets/ProjectImages/SouperHero/Thumbnail.jpg'
+            src={Gameplay03IMG}
             alt='thumbnail'
       />
       <img
             className='img-3'
-            src='./assets/ProjectImages/SouperHero/Deathrun.jpg'
+            src={DeathrunIMG}
             alt='thumbnail'
       />
     </div>
