@@ -86,6 +86,13 @@ export default function GetCooked({activeIndex})
                         We just call straight to the objects instead of using events, to keep our concerns seperate.
                     </p>
             <h2>Polishing</h2>
+                    <p>
+                        Two weeks to make the game feel as best as possible. Adding sounds, VFX, making the UI 3D on the final day.
+                        The final stretch was intense, but luckily we managed to get by without any crunch time.
+                        I added dynamic splatters it really made the kitchen come alive. 
+                        Overall, we kept quite a good separation of concerns, so adding all of these effects was as simple as just adding a call into the correct system.
+                    </p>
+                <h3>What I did</h3>
             <h2>The Game</h2>
                     <video className='Trailer' width='100%' height='auto' controls autoPlay loop muted>
                         <source src='./assets/ProjectImages/GetCooked!/Trailer_GetCooked!.mp4' />
