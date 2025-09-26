@@ -1,3 +1,6 @@
+/* Data Imports */
+import TrailerVideo from './Resources/Amugen_Showcase.webm';
+
 /* Style Imports */
 import './Amugen.css'; 
 
@@ -39,8 +42,8 @@ export default function Amugen() {
         as I had to prove the engine works by creating a remake of the all time classic Pac-Man (check out below).
       </p>
       <a 
-        href='https://github.com/AdriaanMusschoot/Amugen/Amugen_Showcase.webm' 
-        target='_blank' 
+        href='https://github.com/AdriaanMusschoot/Amugen' 
+        target='_blank'
         rel='noopener noreferrer'
       >
         <img
@@ -56,7 +59,7 @@ export default function Amugen() {
         loop
         muted
       >
-        <source src='../../assets/CardImages/Amugen/Amugen_Showcase.webm' />
+        <source src={TrailerVideo} />
         Your browser does not support the video tag.
       </video>
       <h2>Pacman</h2>
