@@ -1,13 +1,16 @@
+.about {
+  margin-left: var(--margin-text);
+  margin-right: var(--margin-text)
+}
+
 .about-me {
   display: flex; 
   justify-content: center; 
   align-items: center; 
 
-  margin-left: 3%;
-  margin-right: 3%;
 }
 
-  .about-content {
+.about-content {
   display: flex;
   align-items: center;
   text-align: center;

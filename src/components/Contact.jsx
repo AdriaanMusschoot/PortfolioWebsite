@@ -11,6 +11,7 @@ import '../styles/Contact.css';
 export default function Contact() {
   return (
     <div className='contact'>
+      <h2>Contact</h2>
         <div className='contact-socials'>
             <MailToButton/>
             <LinkedInButton/>

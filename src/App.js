@@ -37,27 +37,21 @@ function App() {
         </section>
 
         <section id='about'>
-          <h2>About</h2>
           <About/>
           <Breaker/>
         </section>
 
         <section id='skills'>
-          <h2>Skills</h2>
           <Skills />
           <Breaker/>
         </section>
 
         <section id='contact'>
-          <h2>Contact</h2>
           <Contact />
           <Breaker/>
         </section>
 
-        <section id='epilogue'>
-          <h2>Epilogue</h2>
-          <Epilogue />
-        </section>
+        <Epilogue />
       </main>
     </>
   );

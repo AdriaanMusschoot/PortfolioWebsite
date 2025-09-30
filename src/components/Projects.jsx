@@ -36,7 +36,7 @@ export default function ProjectCard() {
     'Trajectory Prediction': <PhysicsPrediction />,
     'Ride Of Giri': <RideOfGiri />,
     'Get Cooked!': <GetCooked />,
-    'BFG - 3D Action Adventure Game': <BFG />,
+    'BFG - 3D Action Game': <BFG />,
   };
 
   useEffect(() => {

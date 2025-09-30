@@ -82,13 +82,11 @@ h2 {
   font-size: var(--section-title-font-size);
   text-align: left;
   color: var(--text-color);
-  margin-left: var(--margin-text);
 }
 
 h3 {
   text-align: left;
   color: var(--text-color);
-  margin-left: var(--margin-text);
   font-size: var(--subsection-title-font-size);
 }
 
