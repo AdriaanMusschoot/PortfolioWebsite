@@ -2,7 +2,7 @@
 import CVButton from './buttons/CVButton.jsx';
 import MailToButton from './buttons/MailToButton.jsx';
 import LinkedInButton from './buttons/LinkedInButton.jsx';
-import GithubButton from './buttons/GithubButton.jsx';
+import GithubButton from './buttons/GithubLogoButton.jsx';
 
 /* Style Imports */
 import '../styles/Contact.css';

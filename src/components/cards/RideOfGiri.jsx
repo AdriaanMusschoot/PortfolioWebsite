@@ -1,7 +1,10 @@
-import React from "react";
-import '../../styles/cards/RideOfGiri.css'; // Import your CSS file
+/* Data Imports */
+import ItchioButton from '../buttons/projectButtons/ItchioButton.jsx';
 
+/* Style Imports */
+import '../../styles/cards/RideOfGiri.css';
 
+/* HTML */
 export default function RideOfGiri({activeIndex}) {
     return (
         <div className='RideOfGiri'>
@@ -40,17 +43,7 @@ export default function RideOfGiri({activeIndex}) {
                 I really enjoyed working together with everyone. I feel like we got the most out of the project in the given time and our skillset at the time.
                 Looking back on the project I would organize ourselves a bit better, and make sure we don't have to resort to sharing files by passing around a hard drive.
             </p>
-            <a 
-                href='https://kniptang.itch.io/ride-of-giri' 
-                target='_blank' 
-                rel='noopener noreferrer'
-                >
-                <img
-                  className='itch-img'
-                  src='./assets/ProjectImages/ITCHIO.svg'
-                  alt='itch'
-                  />
-            </a>
+            <ItchioButton sourceLink={'https://kniptang.itch.io/ride-of-giri'}/>
         </div>
     )
   };

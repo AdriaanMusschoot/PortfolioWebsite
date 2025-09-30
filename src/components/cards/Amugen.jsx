@@ -1,5 +1,10 @@
+/* Data Imports */
+import GithubTextButton from '../buttons/projectButtons/GithubTextButton.jsx';
+
+/* Style Imports */
 import '../../styles/cards/Amugen.css'; 
 
+/* HTML */
 export default function Amugen({ activeIndex }) {
 
   return (
@@ -36,17 +41,7 @@ export default function Amugen({ activeIndex }) {
         Over 4 months I learned so much and it is the project where all of my studies came together, 
         as I had to prove the engine works by creating a remake of the all time classic Pac-Man (check out below).
       </p>
-      <a 
-        href='https://github.com/AdriaanMusschoot/Amugen' 
-        target='_blank' 
-        rel='noopener noreferrer'
-      >
-        <img
-          className='git-img'
-          src='./assets/ProjectImages/GITHUB.png'
-          alt='git'
-        />
-      </a>
+      <GithubTextButton sourceLink='https://github.com/AdriaanMusschoot/Amugen'/>
       <video
         className='Trailer'
         width='100%' height='auto' 
@@ -72,17 +67,7 @@ export default function Amugen({ activeIndex }) {
           In the end, I was quite satisfied with both the code and the project structure. It reinforces my preference for a clean and organized approach.
           There is a release version available on github showcasing the gameplay of Pacman.
         </p>
-        <a 
-          href='https://github.com/AdriaanMusschoot/Programming4' 
-          target='_blank' 
-          rel='noopener noreferrer'
-        >
-          <img
-            className='git-img'
-            src='./assets/ProjectImages/GITHUB.png'
-            alt='git'
-          />
-        </a>
+        <GithubTextButton sourceLink='https://github.com/AdriaanMusschoot/Pacman'/>
     </div>
   );
 }

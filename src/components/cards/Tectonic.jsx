@@ -1,7 +1,10 @@
-import React from "react";
-import '../../styles/cards/Tectonic.css'; // Import your CSS file
+/* Data Imports */
+import GithubTextButton from '../buttons/projectButtons/GithubTextButton.jsx';
 
+/* Style Imports */
+import '../../styles/cards/Tectonic.css';
 
+/* HTML */
 export default function Tectonic({activeIndex}) {
     return (
       <>
@@ -81,17 +84,7 @@ export default function Tectonic({activeIndex}) {
                 </p>
               </div>
             </div>
-            <a 
-              href='https://github.com/AdriaanMusschoot/Amugen' 
-              target='_blank' 
-              rel='noopener noreferrer'
-            >
-              <img
-                className='git-img'
-                src='./assets/ProjectImages/GITHUB.png'
-                alt='git'
-              />
-            </a>
+            <GithubTextButton sourceLink='https://github.com/AdriaanMusschoot/Amugen'/>
         </div>
       </>
     )

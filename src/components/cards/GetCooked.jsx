@@ -1,6 +1,6 @@
 /* Data Imports */
-
-
+import ItchioButton from '../buttons/projectButtons/ItchioButton.jsx';
+import GithubTextButton from '../buttons/projectButtons/GithubTextButton.jsx';
 
 /* Style Imports */
 import '../../styles/cards/GetCooked.css';
@@ -10,7 +10,6 @@ export default function GetCooked({activeIndex})
 {
     return (
         <div className='GetCookedCard'>
-            <p>Work In Progress</p>
             <h2>Prototyping</h2>
                     <p>
                         Creating the initial prototype for Get Cooked! was quite chaotic. We were only 3 programmers, no art no design.
@@ -112,6 +111,8 @@ export default function GetCooked({activeIndex})
                         , Get Cooked! is the ultimate test of culinary and tactical skills. 
                         Will you reign supreme in the kitchen clash? 
                     </p>
+                <ItchioButton sourceLink='https://imbajuk.itch.io/getcooked'/>
+                <GithubTextButton sourceLink='https://github.com/AdriaanMusschoot/GetCooked'/>
         </div>
     )
 };

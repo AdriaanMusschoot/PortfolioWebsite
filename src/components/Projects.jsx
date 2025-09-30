@@ -1,6 +1,6 @@
 /* React Imports */
 import React, { useState, useEffect } from 'react';
-import { ReactComponent as CrossButton } from '../assets/svg/cross-small.svg';
+import { ReactComponent as CrossButton } from '../assets/svg/smallcross_icon.svg';
 
 /* Project Card Data */
 import MainProjects from '../data/MainProjects.json';

@@ -1,7 +1,10 @@
-import React from "react";
-import '../../styles/cards/Raymarcher.css'; // Import your CSS file
+/* Data Imports */
+import GithubTextButton from '../buttons/projectButtons/GithubTextButton.jsx';
 
+/* Style Imports */
+import '../../styles/cards/Raymarcher.css';
 
+/* HTML */
 export default function Raymarcher({activeIndex}) {
     return (
       <>
@@ -10,7 +13,7 @@ export default function Raymarcher({activeIndex}) {
           <p>
              As my recent interest in graphics programming has risen,
              I decided to look into sphere tracing on my own. 
-             I used the framework of a previousy made raytracer, and transformed it into a spheretracing raymarcher.<br/>
+             I used the framework of a previously made raytracer, and transformed it into a spheretracing raymarcher.<br/>
              This project was made completely on the cpu, so to at least achieve some frames to look at the beautiful scenes,
              I had to make the application multi-threaded. <br/>
              Later, I would like to port this to Vulkan, to experiment some more and have some decent performance.  
@@ -44,17 +47,7 @@ export default function Raymarcher({activeIndex}) {
             <source src='./assets/ProjectImages/RayMarcher/Mandelbulb.webm' />
             Your browser does not support the video tag.
           </video>
-          <a 
-            href='https://github.com/AdriaanMusschoot/RayMarching' 
-            target='_blank' 
-            rel='noopener noreferrer'
-          >
-            <img
-              className='git-img'
-              src='./assets/ProjectImages/GITHUB.png'
-              alt='git'
-            />
-          </a>
+          <GithubTextButton sourceLink='https://github.com/AdriaanMusschoot/RayMarching' />
           <h2>What is sphere tracing in ray marching?</h2>
             <p>
               In raytracing you shoot a ray into the scene from the camera pov and calculate the intersection point of a ray. 

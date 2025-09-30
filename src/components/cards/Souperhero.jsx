@@ -1,5 +1,10 @@
+/* Data Imports */
+import ItchioButton from '../buttons/projectButtons/ItchioButton.jsx';
+
+/* Style Imports */
 import '../../styles/cards/SouperHero.css'; 
 
+/* HTML */
 export default function SouperHero({ activeIndex }) {
 
   return (
@@ -15,17 +20,7 @@ export default function SouperHero({ activeIndex }) {
             <source src='./assets/ProjectImages/SouperHero/Trailer.webm' />
                 Your browser does not support the video tag.
         </video>
-        <a 
-          href='https://imbajuk.itch.io/souperhero' 
-          target='_blank' 
-          rel='noopener noreferrer'
-          >
-          <img
-            className='itch-img'
-            src='./assets/ProjectImages/ITCHIO.svg'
-            alt='itch'
-            />
-        </a>
+        <ItchioButton sourceLink='https://imbajuk.itch.io/souperhero' />
       <h2>The project</h2>
       <p>
         This little game was developped for the PolyMars x ScoreSpace speedjam. 

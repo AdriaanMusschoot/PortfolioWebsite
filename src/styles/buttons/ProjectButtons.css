@@ -1,0 +1,14 @@
+.svg{
+    width: 15vw;
+    height: auto;
+    fill: var(--text-color);
+    margin-top: 2vw;
+    margin-right: 3vw;
+    margin-left: 3vw;
+
+    transition: transform var(--time-transition) ease, fill var(--time-transition) ease;
+    &:hover{
+        transform: scale(var(--scale-transition));
+        fill: var(--hovered-color-links);
+    }
+}

@@ -1,5 +1,5 @@
 /* Data Imports */
-import { ReactComponent as CVLogo } from '../../assets/svg/CV.svg';
+import { ReactComponent as CVLogo } from '../../assets/svg/CV_icon.svg';
 
 /* HTML */
 export default function CVButton() {
