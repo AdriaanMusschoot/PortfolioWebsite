@@ -1,0 +1,11 @@
+.PhysicsPrediction .prediction-gif{
+  width: 100%;
+  height: auto;
+  margin-top: var(--margin-titles);
+  
+  border-radius: var(--main-border-radius);
+  border-style: var(--main-border-style);
+  border-color: var(--main-border-color);
+  border-width: var(--main-border-width);
+  box-shadow: var(--box-shadow-default);
+}

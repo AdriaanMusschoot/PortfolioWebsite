@@ -1,7 +1,8 @@
 [
     {
-        "image" : "./assets/CardThumbnails/Amugen_Thumbnail.png",
+        "image" : "./assets/ProjectImages/Amugen/Thumbnail.png",
         "title" : "Amugen - Game Engine",
+        "main" : false,
         "specifics" :
         [
             "C++",
@@ -10,8 +11,9 @@
         "date" : "Feb - June 2024"
     },
     {
-        "image" : "./assets/CardThumbnails/InstancedRendering_Thumbnail.png",
+        "image" : "./assets/ProjectImages/Vulkan/Thumbnail.png",
         "title" : "Instanced Rendering",
+        "main" : false,
         "specifics" :
         [
             "Vulkan",
@@ -21,8 +23,9 @@
         "date" : "Feb - Jun 2024"
     },
     {
-        "image" : "./assets/CardThumbnails/Raymarcher_Thumbnail.png",
+        "image" : "./assets/ProjectImages/RayMarcher/Thumbnail.png",
         "title" : "Ray Marcher",
+        "main" : false,
         "specifics" :
         [
             "C++",
@@ -31,8 +34,9 @@
         "date" : "Sep - Oct 2024"
     },
     {
-        "image" : "./assets/CardThumbnails/Tectonic_Thumbnail.png",
+        "image" : "./assets/ProjectImages/Tectonic/Thumbnail.png",
         "title" : "Tectonic",
+        "main" : false,
         "specifics" :
         [
             "C++",
@@ -40,8 +44,9 @@
         ]
     },
     {
-        "image" : "./assets/CardThumbnails/SouperHero_Thumbnail.jpg",
+        "image" : "./assets/ProjectImages/SouperHero/Thumbnail.jpg",
         "title" : "Souper Hero",
+        "main" : false,
         "specifics" :
         [
             "UE5",
@@ -50,8 +55,9 @@
         ]
     },
     {
-        "image" : "./assets/CardThumbnails/PhysicsPrediction_Thumbnail.png",
+        "image" : "./assets/ProjectImages/TrajectoryPrediction/Thumbnail.png",
         "title" : "Trajectory Prediction",
+        "main" : false,
         "specifics" :
         [
             "C#",
@@ -59,8 +65,9 @@
         ]
     },
     {
-        "image" : "./assets/CardThumbnails/RideOfGiri_Thumbnail.jpg",
+        "image" : "./assets/ProjectImages/RideOfGiri/Thumbnail.jpg",
         "title" : "Ride Of Giri",
+        "main" : false,
         "specifics" :
         [
             "UE5",

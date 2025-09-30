@@ -1,0 +1,31 @@
+/* == CONTACT SECTION == */
+
+.contact {
+  height: auto;
+  width: 100%;
+  margin-left: var(--margin-text);
+  margin-right: var(--margin-text);
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+  margin-bottom: 40vw;
+
+  & .contact-socials {
+    display: flex;
+    gap: 4vw;
+    margin-bottom: 5vw;
+
+    & .svg {
+      width: 3vw;
+      height: auto;
+      color: var(--text-color);
+      transition: transform var(--time-transition) ease, color var(--time-transition) ease;
+
+      &:hover {
+        transform: scale(var(--scale-transition));
+        color: var(--hovered-color-links);
+      }
+    }
+  }
+}

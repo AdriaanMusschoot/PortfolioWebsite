@@ -1,7 +1,8 @@
 [
     {
-        "image" : "./assets/CardThumbnails/BFG_Thumbnail.png",
+        "image" : "./assets/ProjectImages/BFG/Thumbnail_BFG.png",
         "title" : "BFG - 3D Action Adventure Game",
+        "main" : true,
         "specifics" :
         [
             "Team",
@@ -11,8 +12,9 @@
         "date" : "Feb - Jun 2025"
     },
     {
-        "image" : "./assets/CardThumbnails/GetCooked!_Thumbnail.png",
+        "image" : "./assets/ProjectImages/GetCooked!/Thumbnail_GetCooked!.png",
         "title" : "Get Cooked!",
+        "main" : true,
         "specifics" :
         [
             "Team",
@@ -22,8 +24,9 @@
         "date" : "Sep - Dec 2024"
     },
     {
-        "image" : "./assets/CardThumbnails/Snails&Potions_Thumbnail.jpg",
+        "image" : "./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg",
         "title" : "Snails & Potions",
+        "main" : true,
         "specifics" :
         [
             "C++",
