@@ -9,7 +9,7 @@
   justify-content: left;
   align-items: left;
   flex-direction: column;
-
+  
   & .contact-socials {
     display: flex;
     gap: 4vw;

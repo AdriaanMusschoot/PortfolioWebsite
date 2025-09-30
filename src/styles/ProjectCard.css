@@ -1,14 +1,16 @@
 :root {
-  --margin-project-card: 10%;
+  --margin-project-card-sides: 9%;
+  --margin-project-card-top: 3.5%;
+  --margin-project-card-bottom: 3.5%;
 }
 
-.projects .descriptionWrapper{
+.projects .card-wrapper{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.projectCard-description { 
+.card-background { 
   cursor: default;
   position: fixed; 
   top: 0; 
@@ -26,42 +28,13 @@
   
   &.active{
       opacity: 1;
-      .contentDetails{
+      .card{
         transform: scale(1);
       }
   }
 
-  h1 {
-    margin: 0;
-    margin-top: 4vw;
-    /* Need to specify margins because its not part of the card contents, but actually of the json */ 
-    margin-left: var(--margin-project-card);
-    margin-right: var(--margin-project-card);
-    text-align: left;
-  }
-
-  h2{
-    margin: 0;
-    font-weight: bolder;
-  }
-
-  h3{
-    margin: 0;
-    font-weight: lighter;
-  }
-
-  h4{
-    margin: 0;
-    font-weight: normal;
-  }
-
   & .projectContainer_specifics {
     position: relative;
-    margin: 0;
-    /* Need to specify margins because its not part of the card contents, but actually of the json */ 
-    margin-left: var(--margin-project-card);
-    margin-right: var(--margin-project-card);
-    padding: 0;
     display: flex;
     justify-content: left;
     font-size: var(--standard-text-font-size);
@@ -69,10 +42,11 @@
   }
   
   & .projectContainer_specifics ul {
+    margin: 0vw;  
     list-style: none;
     padding: 0;
-    text-align: center;
-    /* Something Overrides this (no clue what) so need !important */
+    text-align: center; 
+    /* Something Overrides this once it is pushed (no clue what) so need !important */
     display: flex !important;
     justify-content: center;
     gap: 0.5vw;
@@ -82,8 +56,8 @@
     background: var(--card-fill-color);
     padding: 0.3vw;
   }
-  
-  .contentDetails{
+
+  .card{
     border-style: var(--outline-style);
     border-color: var(--outline-color);
     border-radius: var(--outline-radius);
@@ -102,11 +76,12 @@
     flex-direction: column;
     transition: transform var(--time-project-card-transition) ease;
     transform:scale(0);
-    padding-bottom: 4vw;
 
-    .description{
-      margin-left: var(--margin-project-card);
-      margin-right: var(--margin-project-card);
+    .cardDetails{
+      margin-left: var(--margin-project-card-sides);
+      margin-right: var(--margin-project-card-sides);
+      margin-top: var(--margin-project-card-top);
+      margin-bottom: var(--margin-project-card-bottom);
     }
 
     .cross-button{

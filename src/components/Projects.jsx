@@ -75,9 +75,8 @@ export default function ProjectCard() {
 
   return (
     <div className='projects'>
-      <h2>Projects</h2>
       {/* Main Projects Section */}
-      <h3>Main</h3>
+      <h2>Most Relevant</h2>
       <div className="mainproj-wrapper">
         {MainProjects.map((project) => (
           <div
@@ -105,8 +104,8 @@ export default function ProjectCard() {
           </div>
         ))}
       </div>
-      <h3>Additional</h3>
       {/* Small Projects Section */}
+      <h3>Other Projects</h3>
       <div className="smallproj-wrapper">
         {SmallProjects.map((project) => (
           <div
@@ -134,29 +133,31 @@ export default function ProjectCard() {
           </div>
         ))}
       </div>
-      <div className='descriptionWrapper'>
+      <div className='card-wrapper'>
         {/* Description Section */}
         {activeProject !== null && (
-          <div className={`projectCard-description ${transitioning ? 'transitioning' : 'active'}`} onClick={closeCard}>
+          <div className={`card-background ${transitioning ? 'transitioning' : 'active'}`} onClick={closeCard}>
             <div
-              className='contentDetails'
+              className='card'
               onClick={(event) => event.stopPropagation()}
             >
               <CrossButton className="cross-button" onClick={closeCard}/>
-              <h1>{activeProject.title}</h1>
-              {activeProject.specifics.length > 0 && 
-                (
-                <div className="projectContainer_specifics">
-                  <ul>
-                    {activeProject.specifics.map((skill, i) => (
-                      <li key={i}>{skill}</li>
-                    ))}
-                  </ul>
+              <div className='cardDetails'>
+                <h1>{activeProject.title}</h1>
+                {activeProject.specifics.length > 0 && 
+                  (
+                    <div className="projectContainer_specifics">
+                    <ul>
+                      {activeProject.specifics.map((skill, i) => (
+                        <li key={i}>{skill}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  )
+                }
+                <div className='description'>
+                  {projectCardMap[activeProject.title]}
                 </div>
-                )
-              }
-              <div className='description'>
-                {projectCardMap[activeProject.title]}
               </div>
             </div>
           </div>
