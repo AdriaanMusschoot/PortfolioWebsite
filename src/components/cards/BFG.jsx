@@ -8,6 +8,7 @@ export default function BFG()
 {
     return (
         <div className="BFG">
+            <p>Work in progress</p>
             <h2>Black Forest Games GMBH</h2>
                     <p>
                         As final part to my education I completed an internship at Black Forest Games.
