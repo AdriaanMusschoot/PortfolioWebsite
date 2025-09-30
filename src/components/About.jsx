@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div className="about-me">
       <div className="about-content">
-        <img src="./assets/pfp2.jpg" alt="me" className="about-image" />
+        <img src="./assets/Profile/ProfilePicture.jpg" alt="me" className="about-image" />
         <div className="about-text">
           <p>
             Hi there! Let me tell you a little bit about myself. In case you skipped the intro my name is Adriaan.
