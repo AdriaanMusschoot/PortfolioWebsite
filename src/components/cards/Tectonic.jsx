@@ -84,7 +84,7 @@ export default function Tectonic({activeIndex}) {
                 </p>
               </div>
             </div>
-            <ButtonLinkContainer links={['https://github.com/AdriaanMusschoot/Amugen']} />
+            <ButtonLinkContainer links={['https://github.com/AdriaanMusschoot/Tectonic']} />
         </div>
       </>
     )
