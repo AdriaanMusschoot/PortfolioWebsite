@@ -1,12 +1,17 @@
+/* React Imports */
 import { Helmet } from 'react-helmet';
+
+/* Data Imports */
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Header from './components/Header';
 import Projects from './components/Projects.jsx';
 import Skills from './components/Skills';
 import About from './components/About.jsx';
+import Epilogue from './components/Epilogue.jsx';
 import Breaker from './components/Breaker.jsx';
 
+/* Style Imports */
 import './styles/App.css';
 
 function App() {
@@ -46,6 +51,12 @@ function App() {
         <section id='contact'>
           <h2>Contact</h2>
           <Contact />
+          <Breaker/>
+        </section>
+
+        <section id='epilogue'>
+          <h2>Epilogue</h2>
+          <Epilogue />
         </section>
       </main>
     </>

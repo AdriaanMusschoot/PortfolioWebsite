@@ -1,0 +1,8 @@
+.epilogue {
+      margin-left: var(--margin-text);
+      margin-bottom: 21vw;
+}
+
+.epilogue a{
+    font-size: var(--standart-text-font-size);
+}
