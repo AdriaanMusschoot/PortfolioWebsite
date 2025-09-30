@@ -13,7 +13,6 @@
   & .contact-socials {
     display: flex;
     gap: 4vw;
-    margin-bottom: 5vw;
 
     & .svg {
       width: 3vw;

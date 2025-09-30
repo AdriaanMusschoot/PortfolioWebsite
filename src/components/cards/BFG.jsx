@@ -8,7 +8,7 @@ export default function BFG({activeIndex})
 {
     return (
         <div>
-            Work In Progress
+            <h2></h2>
         </div>
     )
 };
