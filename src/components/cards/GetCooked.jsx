@@ -1,6 +1,5 @@
 /* Data Imports */
-import ItchioButton from '../buttons/projectButtons/ItchioButton.jsx';
-import GithubTextButton from '../buttons/projectButtons/GithubTextButton.jsx';
+import ButtonLinkContainer from '../buttons/projectButtons/ButtonLinkContainer.jsx';
 
 /* Style Imports */
 import '../../styles/cards/GetCooked.css';
@@ -111,8 +110,7 @@ export default function GetCooked({activeIndex})
                         , Get Cooked! is the ultimate test of culinary and tactical skills. 
                         Will you reign supreme in the kitchen clash? 
                     </p>
-                <ItchioButton sourceLink='https://imbajuk.itch.io/getcooked'/>
-                <GithubTextButton sourceLink='https://github.com/AdriaanMusschoot/GetCooked'/>
+                <ButtonLinkContainer links={['https://imbajuk.itch.io/getcooked','https://github.com/AdriaanMusschoot/GetCooked']}/>
         </div>
     )
 };

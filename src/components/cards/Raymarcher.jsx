@@ -1,5 +1,5 @@
 /* Data Imports */
-import GithubTextButton from '../buttons/projectButtons/GithubTextButton.jsx';
+import ButtonLinkContainer from '../buttons/projectButtons/ButtonLinkContainer.jsx';
 
 /* Style Imports */
 import '../../styles/cards/Raymarcher.css';
@@ -47,7 +47,7 @@ export default function Raymarcher({activeIndex}) {
             <source src='./assets/ProjectImages/RayMarcher/Mandelbulb.webm' />
             Your browser does not support the video tag.
           </video>
-          <GithubTextButton sourceLink='https://github.com/AdriaanMusschoot/RayMarching' />
+          <ButtonLinkContainer links={['https://github.com/AdriaanMusschoot/RayMarching']}/>
           <h2>What is sphere tracing in ray marching?</h2>
             <p>
               In raytracing you shoot a ray into the scene from the camera pov and calculate the intersection point of a ray. 

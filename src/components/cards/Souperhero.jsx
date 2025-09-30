@@ -1,5 +1,5 @@
 /* Data Imports */
-import ItchioButton from '../buttons/projectButtons/ItchioButton.jsx';
+import ButtonLinkContainer from '../buttons/projectButtons/ButtonLinkContainer.jsx';
 
 /* Style Imports */
 import '../../styles/cards/SouperHero.css'; 
@@ -20,7 +20,7 @@ export default function SouperHero({ activeIndex }) {
             <source src='./assets/ProjectImages/SouperHero/Trailer.webm' />
                 Your browser does not support the video tag.
         </video>
-        <ItchioButton sourceLink='https://imbajuk.itch.io/souperhero' />
+        <ButtonLinkContainer links={['https://imbajuk.itch.io/souperhero']} />
       <h2>The project</h2>
       <p>
         This little game was developped for the PolyMars x ScoreSpace speedjam. 

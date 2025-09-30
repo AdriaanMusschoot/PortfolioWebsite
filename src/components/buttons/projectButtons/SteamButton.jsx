@@ -1,9 +1,6 @@
 /* Data Imports */
 import { ReactComponent as SteamSVG } from '../../../assets/svg/steam_icon.svg';
 
-/* Style Imports */
-import '../../../styles/buttons/ProjectButtons.css';
-
 /* HTML */
 export default function SteamButton({sourceLink}) {
   return (

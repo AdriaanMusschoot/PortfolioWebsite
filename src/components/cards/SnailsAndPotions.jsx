@@ -1,7 +1,5 @@
 /* Data Imports */
-import ItchioButton from '../buttons/projectButtons/ItchioButton.jsx';
-import GithubTextButton from '../buttons/projectButtons/GithubTextButton.jsx';
-import SteamButton from '../buttons/projectButtons/SteamButton.jsx';
+import ButtonLinkContainer from '../buttons/projectButtons/ButtonLinkContainer.jsx';
 
 /* Style Imports */
 import '../../styles/cards/SnailsAndPotions.css'; 
@@ -72,9 +70,7 @@ export default function SnailsAndPotions({ activeIndex }) {
         These were my lovely colleagues: Tijl Gommers (programmer), Senne Bovee (artist), Ward Vervoort (artist), Luca Zulianello (artist).
         Feel free to download the game and try it out yourself.
       </p>
-      <SteamButton sourceLink='https://store.steampowered.com/app/3224810/Snails__Potions/'/>
-      <ItchioButton sourceLink='https://boomertijl.itch.io/snails-and-potions'/>
-      <GithubTextButton sourceLink='https://github.com/AdriaanMusschoot/SnailsAndPotions'/>
+      <ButtonLinkContainer links={['https://store.steampowered.com/app/3224810/Snails__Potions/','https://boomertijl.itch.io/snails-and-potions', 'https://github.com/AdriaanMusschoot/SnailsAndPotions']}/>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 /* Data Imports */
-import GithubTextButton from '../buttons/projectButtons/GithubTextButton.jsx';
+import ButtonLinkContainer from '../buttons/projectButtons/ButtonLinkContainer.jsx';
 
 /* Style Imports */
 import '../../styles/cards/PhysicsPrediction.css'; 
@@ -26,7 +26,7 @@ export default function PhysicsPrediction({ activeIndex }) {
             src='./assets/ProjectImages/TrajectoryPrediction/PhysicsSimulation.gif'
             alt='thumbnail'
         />
-        <GithubTextButton sourceLink='https://github.com/AdriaanMusschoot/TrajectoryPrediction'/>
+        <ButtonLinkContainer links={['https://github.com/AdriaanMusschoot/TrajectoryPrediction']}/>
         <h2>
             3D Unity Scene: Ball Simulation
         </h2>

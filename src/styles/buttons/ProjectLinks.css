@@ -1,0 +1,21 @@
+.button-link-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10vw;
+}
+
+.button-link-container .svg{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    fill: var(--text-color);
+    width: 15vw;
+    height: auto;
+    transition: transform var(--time-transition) ease, fill var(--time-transition) ease;
+}
+
+.button-link-container .svg:hover{
+    fill: var(--hovered-color-links);
+    transform: scale(var(--scale-transition));
+    cursor: pointer;
+}

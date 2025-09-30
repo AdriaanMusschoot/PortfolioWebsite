@@ -1,7 +1,7 @@
 import React from "react";
 
 /* Data Imports */
-import GithubTextButton from '../buttons/projectButtons/GithubTextButton.jsx';
+import ButtonLinkContainer from '../buttons/projectButtons/ButtonLinkContainer.jsx';
 
 /* Style Imports */
 import '../../styles/cards/Vulkan.css'; // Import your CSS file
@@ -42,7 +42,7 @@ export default function Vulkan({activeIndex}) {
             All the dependencies and libraries are imported using CMAKE.
             There is a release version available on github showcasing 2D and 3D instanced rendering and a crazy amount of frames per second.
           </p>
-          <GithubTextButton sourceLink='https://github.com/AdriaanMusschoot/VulkanInstancedRendering'/>
+          <ButtonLinkContainer links={['https://github.com/AdriaanMusschoot/VulkanInstancedRendering']} />
           <p>
             Check out this beautiful display of 10'000 ferrari's (modeled by me) consisting of 2008 vertices running at an average 90 frames per second. 
           </p>

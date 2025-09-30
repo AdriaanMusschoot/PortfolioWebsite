@@ -1,3 +1,5 @@
+/* Data Imports */
+
 /* Style Imports */
 import '../../styles/cards/BFG.css';
 

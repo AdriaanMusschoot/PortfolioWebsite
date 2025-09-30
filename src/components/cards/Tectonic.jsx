@@ -1,5 +1,5 @@
 /* Data Imports */
-import GithubTextButton from '../buttons/projectButtons/GithubTextButton.jsx';
+import ButtonLinkContainer from '../buttons/projectButtons/ButtonLinkContainer.jsx';
 
 /* Style Imports */
 import '../../styles/cards/Tectonic.css';
@@ -84,7 +84,7 @@ export default function Tectonic({activeIndex}) {
                 </p>
               </div>
             </div>
-            <GithubTextButton sourceLink='https://github.com/AdriaanMusschoot/Amugen'/>
+            <ButtonLinkContainer links={['https://github.com/AdriaanMusschoot/Amugen']} />
         </div>
       </>
     )
