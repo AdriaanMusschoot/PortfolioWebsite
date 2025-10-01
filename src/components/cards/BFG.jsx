@@ -58,17 +58,44 @@ export default function BFG()
                                 <img className='ListeningSphereVisualInitial' src='./assets/ProjectImages/BFG/ListeningSphere_Visual_Initial.png' alt='Listening Sphere Visuals Initial'></img>
                             </div>
                             <img className='ListeningSphereCodeInitial' src='./assets/ProjectImages/BFG/ListeningSphere_Code_Initial.png' alt='Listening Sphere Code Initial'></img>
+                        <h4>Feeling Perception</h4>
+                            Creating the feeling perception was the first time with I had to work in other parts of the codebase that weren't on my island.
+                            At first I was a bit scared to make changes to existing code. 
+                            I will never forget the first one. Some logic on public struct members happening twice in 2 different places.
+                            So I quickly refactored it into a function and called it from both places. 
+                            Receiving feedback on that change reaffirmed that code is an ever evolving process. 
                     </p>
                 <h3>Maintenance Work</h3>
                     <p>
+                        To keep it simple at the start, the perception system was created purely for enemies.
+                        Once that evolved and new use cases came up, trouble arose.
+                        <h4>Security Cameras = Trouble</h4>
+                            <div className='SecurityCameraAlignmentSection'>
+                                <div className='SecurityCameraAlignmentText'>
+                                    When the sight perception was created, all entities that used it were aligned with the world up axis.
+                                    Once security cameras were introduced and they could be rotated in the world, the sight wedge no longer worked as intended.
+                                    <br></br><br></br>
+                                    Below you'll find an update version of the sight wedge detection.
+                                    It uses projections of vectors onto the appropriate axis to accommodate for the rotations.
 
+                                </div>
+                                <video className='SecurityCameraAlignmentVideo' src='./assets/ProjectImages/BFG/ShowcaseSecurityCameraBad.mp4' autoPlay loop muted controls />
+                            </div>
+                            <img className='SightWedgeCodeUpdated' src='./assets/ProjectImages/BFG/SightWedge_Code_Updated.png' alt='Sight Wedge Code Updated' />
+                        <h4>Make It More Generic!</h4>
+                            Security cameras don't need to start combat, they need to open doors, trigger alarms and so on.
+                            So instead of triggering combat, I changed it to a generic event 'entity within sight wedge'.
+                            Doing it this way also allowed for any entity to have a detection period.    
                     </p>
                 <h3>Finalizing</h3>
                     <p>
-                        The fact it was seperate also gave the task to think about how I would design the system from the ground up.
-                        From which I was able to make plenty of mistakes, rip out big parts and put them back together in an improved way.
-
+                        <h4>Increasing Detection Accuracy</h4>
+                        <h4>Debugging</h4>
+                        <h4>Documentation</h4>
+                            The fact it was separate also gave the task to think about how I would design the system from the ground up.
+                            From which I was able to make plenty of mistakes, rip out big parts and put them back together in an improved way.
                     </p>
+                <h3>System Analysis</h3>
         </div>
     )
 };

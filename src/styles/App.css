@@ -78,22 +78,6 @@ a {
   margin: 0;
 }
 
-h1 {
-  font-size: var(--primary-title-font-size);
-}
-
-h2 {
-  font-size: var(--section-title-font-size);
-  text-align: left;
-  color: var(--text-color);
-}
-
-h3 {
-  text-align: left;
-  color: var(--text-color);
-  font-size: var(--subsection-title-font-size);
-}
-
 body.no-scroll {
   overflow: hidden;
 }

@@ -5,7 +5,7 @@
 }
 
 .SightWedgeVisualInitial {
-    width: 15vw;
+    width: 30vw;
     height: auto;
 }
 
@@ -21,11 +21,27 @@
 }
 
 .ListeningSphereVisualInitial {
-    width: 15vw;
+    width: 30vw;
     height: auto;
 }
 
 .ListeningSphereCodeInitial {
+    margin-top: 1vw;
+    width: 100%;
+}
+
+.SecurityCameraAlignmentSection {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+
+.SecurityCameraAlignmentVideo {
+    width: 30vw;
+    height: auto;
+}
+
+.SightWedgeCodeUpdated {
     margin-top: 1vw;
     width: 100%;
 }

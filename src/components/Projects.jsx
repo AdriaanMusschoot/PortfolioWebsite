@@ -76,7 +76,7 @@ export default function ProjectCard() {
   return (
     <div className='projects'>
       {/* Main Projects Section */}
-      <h2>Most Relevant</h2>
+      <h2>Most Relevant Projects</h2>
       <div className="mainproj-wrapper">
         {MainProjects.map((project) => (
           <div
