@@ -9,7 +9,6 @@ import Projects from './components/Projects.jsx';
 import Skills from './components/Skills';
 import About from './components/About.jsx';
 import Epilogue from './components/Epilogue.jsx';
-import Breaker from './components/Breaker.jsx';
 
 /* Style Imports */
 import './styles/App.css';
@@ -24,33 +23,12 @@ function App() {
       <header>
         <Header />
       </header>
-
       <main>
-        <section id='home'>
-          <Home />
-          <Breaker/>
-        </section>
-
-        <section id='projects'>
-          <Projects />
-          <Breaker/>
-        </section>
-
-        <section id='about'>
-          <About/>
-          <Breaker/>
-        </section>
-
-        <section id='skills'>
-          <Skills />
-          <Breaker/>
-        </section>
-
-        <section id='contact'>
-          <Contact />
-          <Breaker/>
-        </section>
-
+        <Home />
+        <Projects />
+        <About />
+        <Skills />
+        <Contact />
         <Epilogue />
       </main>
     </>

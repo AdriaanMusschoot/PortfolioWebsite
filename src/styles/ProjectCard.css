@@ -68,7 +68,6 @@
     margin-bottom: 3%;
     width: 80vw;
     height: auto;
-    font-size: 2vw;
     box-shadow: var(--box-shadow-default);
     display: flex;
     justify-content: left;
@@ -87,7 +86,7 @@
     .cross-button{
       position: absolute;
       left: 67vw;
-      top: 3.6vw;
+      top: 4vw;
       width: 8%;
       height: auto;
       stroke: var(--outline-color);

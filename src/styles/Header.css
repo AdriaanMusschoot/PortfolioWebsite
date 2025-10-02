@@ -1,4 +1,4 @@
-header {
+Header {
   border-style: var(--outline-style);
   border-color: var(--outline-color);
   border-radius: var(--outline-radius);
@@ -48,7 +48,6 @@ header {
       margin-left: 4vw;
       
       a {
-        font-size: var(--section-title-font-size);
         position: relative;
         text-decoration: none;
         transition: transform var(--time-transition) ease, color var(--time-transition) ease;

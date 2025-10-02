@@ -1,13 +1,9 @@
 /* == CONTACT SECTION == */
 
 .contact {
-  height: auto;
-  width: 100%;
   margin-left: var(--margin-text);
   margin-right: var(--margin-text);
   display: flex;
-  justify-content: left;
-  align-items: left;
   flex-direction: column;
   
   & .contact-socials {
@@ -16,7 +12,6 @@
 
     & .svg {
       width: 3vw;
-      height: auto;
       color: var(--text-color);
       transition: transform var(--time-transition) ease, color var(--time-transition) ease;
 

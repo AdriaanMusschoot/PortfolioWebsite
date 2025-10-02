@@ -7,7 +7,5 @@
   border: none;
   background-color: var(--breaker-background-color);
   height: var(--breaker-width);
-  margin-top: 3vw;
-  margin-left: 2vw;
-  margin-right: 2vw;
+  margin-top: 1.5vw;
 }

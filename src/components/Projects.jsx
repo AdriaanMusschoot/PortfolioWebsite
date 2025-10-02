@@ -1,6 +1,7 @@
 /* React Imports */
 import React, { useState, useEffect } from 'react';
 import { ReactComponent as CrossButton } from '../assets/svg/smallcross_icon.svg';
+import Breaker from './Breaker.jsx';
 
 /* Project Card Data */
 import MainProjects from '../data/MainProjects.json';
@@ -74,7 +75,7 @@ export default function ProjectCard() {
   const isCardActive = (project) => (activeProject === project ? 'active' : '');
 
   return (
-    <div className='projects'>
+    <section id='projects' className='projects'>
       {/* Main Projects Section */}
       <h2>Most Relevant Projects</h2>
       <div className="mainproj-wrapper">
@@ -89,18 +90,22 @@ export default function ProjectCard() {
                 <div className="mainproj-container_specifics">
                   <ul>
                     {project.specifics.map((skill, i) => (
-                      <li key={i}>{skill}</li>
+                      <li key={i}>
+                        <p>
+                          {skill}
+                        </p>
+                      </li>
                     ))}
                   </ul>
                 </div>
               )}
             </div>
-            <div className='mainproj-container_title'>
+            <p className='mainproj-container_title'>
               {project.title}
-            </div>
-            <div className='mainproj-container_date'>
+            </p>
+            <p className='mainproj-container_date'>
               {project.date}
-            </div>
+            </p>
           </div>
         ))}
       </div>
@@ -118,18 +123,22 @@ export default function ProjectCard() {
                 <div className="smallproj-container_specifics">
                   <ul>
                     {project.specifics.map((skill, i) => (
-                      <li key={i}>{skill}</li>
+                      <li key={i}>
+                        <p>
+                            {skill}
+                        </p>
+                      </li>
                     ))}
                   </ul>
                 </div>
               )}
             </div>
-            <div className='smallproj-container_title'>
+            <p className='smallproj-container_title'>
               {project.title}
-            </div>
-            <div className='smallproj-container_date'>
+            </p>
+            <p className='smallproj-container_date'>
               {project.date}
-            </div>
+            </p>
           </div>
         ))}
       </div>
@@ -149,7 +158,11 @@ export default function ProjectCard() {
                     <div className="projectContainer_specifics">
                     <ul>
                       {activeProject.specifics.map((skill, i) => (
-                        <li key={i}>{skill}</li>
+                        <li key={i}>
+                          <p>
+                            {skill}
+                          </p>
+                        </li>
                       ))}
                     </ul>
                   </div>
@@ -163,6 +176,7 @@ export default function ProjectCard() {
           </div>
         )}
       </div>
-    </div>
+      <Breaker/>
+    </section>
   );
 }

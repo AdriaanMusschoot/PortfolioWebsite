@@ -13,7 +13,7 @@ export default function Tectonic({activeIndex}) {
             <p>
                For a personal passion project I decided to try to automate the process of setting up a Tectonic puzzle myself. 
                I made this project in my own 2D game engine, Amugen, since all I needed was some basic 2D graphics and very rigid logic.
-               It is still a work in progress, as I work on it on my own whenever I can find the time.<br/> 
+               It is still a work in progress, as I work on my own time.<br/> 
                To find out more about my progress and a bit of an explanation take a look below.
             </p>
             <h3>What is a tectonic, you might wonder?</h3>

@@ -1,37 +1,26 @@
 .home {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
   margin-left: var(--margin-text);
+  margin-right: var(--margin-text);
   margin-top: 5vw;
 }
 
-.home .text-container{
-  text-align: justify;
-  margin-right: 4vw;
-  margin-top: 2vw;
-}
-
-.home .text-container h1{
-  font-size: var(--primary-title-font-size);
-  margin: 0;
-}
-
-.home .text-container h2 {
-  margin: 0;
-}
-
-.home .text-container .Highlight {
+.home .Highlight {
   color: var(--hovered-color-links);
 }
 
-.home .text-container .Welcome {
-  font-size: var(--standart-text-font-size);
+.home .Emphasis {
+  font-style: italic;
   font-weight: bold;
 }
 
-.home .text-container .Emphasis{
-  font-style: italic;
-  font-weight: bold;
+.home h1 {
+  margin: 0;
+}
+
+.home h2 {
+  margin: 0;
+}
+
+.home h3 {
+  margin: 0;
 }

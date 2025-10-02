@@ -14,13 +14,11 @@ export default function Amugen({ activeIndex }) {
         This custom 2D Engine, that I have developed in C++, uses a scene graph to determine positions and uses a game object component system.
         The rendering, input and audio is all handled by SDL.
         To handle the mathematics and positions behind the scene graph I am using GLM.
-        <br></br>
-        <br></br>
+        <br></br><br></br>
         Most dependecies for rendering are nicely put away in RAII wrappers.
         The command pattern is used to provide an easy way for the user to handle input.
         Audio, provided through a service locator, is managed on a seperate thread to not uphold the main threads update loop.
-        <br></br>
-        <br></br>
+        <br></br><br></br>
         Through the component system the user has access to the update loop and can define their own unique behaviour. Some pre-defined components include RenderComponent, TextComponent, TransformComponent, CollisionComponent.
         The collision system uses a simple distance check and triggers the appropriate methods.
         To decouple as much as possible but still allow the components to communicate with one another, the Subject-Observer relationship is used.

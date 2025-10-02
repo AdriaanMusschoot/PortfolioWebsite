@@ -8,7 +8,7 @@
 .mainproj-wrapper{
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
   gap: 1.3vw;
 }
 
@@ -75,7 +75,6 @@
   & .mainproj-container_title {
     margin-top: 2%;
     font-weight: bold;
-    font-size: 1.5vw;
     color: var(--text-color);
     text-align: left;
     margin-left: 5%;
@@ -110,7 +109,7 @@
 .smallproj-wrapper{
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
   gap: 0.9vw;
 }
 
@@ -139,7 +138,6 @@
 
   & .smallproj-container_title {
     font-weight: bold;
-    font-size: 1vw;
     color: var(--text-color);
     text-align: left;
     margin-left: 5%;
@@ -180,7 +178,6 @@
   }
 
   & .smallproj-container_specifics li{
-    font-size: var(--standart-text-font-size);
     padding: 0.2vw;
     border-style: var(--main-border-style);
     border-color: var(--main-border-color);
@@ -193,7 +190,7 @@
 
   & .smallproj-container_date {
     margin-bottom: 3%;
-    font-size: 0.8vw;
+    font-size: 1vw;
     color: var(--text-color);
     margin-left: 5%;
     text-align: left;

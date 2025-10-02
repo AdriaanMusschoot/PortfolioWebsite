@@ -13,15 +13,13 @@ export default function GetCooked({activeIndex})
                     <p>
                         Creating the initial prototype for Get Cooked! was quite chaotic. We were only 3 programmers, no art no design.
                         As you can imagine the visuals were not up to par, but for a prototype it had to do.
-                    </p>
-                    <p>
+                        <br></br><br></br>
                         We lacked version control like Perforce for proper management of binary files.
                         Totally not ideal as we decided to only use blueprints for quick iteration.
                         Our solution? A discord channel with the files you currently had checked out. 
                         Far from ideal, it definitely didn't result in us comparing them visually, whenever a merge conflict did happen.
                         This really makes you appreciate the tools that are available.
-                    </p>
-                    <p>
+                        <br></br><br></br>
                         We only had a week to create a prototype, so we mainly focused on getting a full game loop working for a proof of concepts.
                         It even boiled down to us getting together on the final night.
                         Then we could try to balance the troops, as we didn't have any time before.
@@ -40,8 +38,7 @@ export default function GetCooked({activeIndex})
                         It was quite fun to reverse engineer the throwing trajectory using some clever math.
                         Also when the throwing arc was added we used the debug lines first and when we made the build on the final day we realised that vanished.
                         So we quickly added a spline renderer to visualize the throwing arc (which was reassigned every frame but hey it's only a prototype right?).
-                    </p>
-                    <p>
+                        <br></br><br></br>
                         My second task was the cooking aspect. This meant I got to work with the beautiful state pattern which I really enjoyed.
                         I also added the basic functionality of the player walking, picking up ingredients, placing them etc. 
                         And of course the team helped each other out where needed.
@@ -49,15 +46,13 @@ export default function GetCooked({activeIndex})
             <h2>Development</h2>
                     <p>
                         We had a development period of about 6 weeks. Extra features were needed and others were slashed.
-                    </p>
-                    <p> 
+                        <br></br><br></br>
                         When the game was play tested, players didn't know what to do when picking up the wrong ingredient, 
                         we intended for them to use it as ammo in an unused kitchen.
                         Players were looking for a place to throw the ingredient away. 
                         So we added a trash can to get rid of unwanted ingredients.
                         This was a small but nice addition for players to feel more comfortable.
-                    </p>
-                    <p>
+                        <br></br><br></br>
                         As deadlines drew closer we noticed we wouldn't have time to implement every troop we wanted.
                         So, as a team we decided to not implement the last troop (rest in peace, wrap).
                         Luckily, there would still be a fully playable game with the troops we already conjured up.
@@ -71,13 +66,11 @@ export default function GetCooked({activeIndex})
                         Getting that initial state machine working was quite tricky, and actually maintaining it was too. 
                         I dove in head first, and didn't really compare the tools already available.
                         I think I could have saved myself much work if I had used Unreal's behaviour trees or in house state machine solution.
-                    </p>
-                    <p>
+                        <br></br><br></br>
                         I also added localization. I learned from implementing the statemachine for the troops quickly without checking existing solutions, 
                         that I should take some time and learn about Unreal's built in systems for that.
                         Once, I figured that out it was quite nice to work with.
-                    </p>
-                    <p>
+                        <br></br><br></br>
                         When people play against each other it seemed they liked to compare their stats for that round. 
                         So that's exactly what I implemented with a post game stat menu. 
                         Sadly, we did not decouple it quite as well as I remembered. 
@@ -90,7 +83,6 @@ export default function GetCooked({activeIndex})
                         I added dynamic splatters it really made the kitchen come alive. 
                         Overall, we kept quite a good separation of concerns, so adding all of these effects was as simple as just adding a call into the correct system.
                     </p>
-                <h3>What I did</h3>
             <h2>The Game</h2>
                     <video className='Trailer' width='100%' height='auto' controls autoPlay loop muted>
                         <source src='./assets/ProjectImages/GetCooked!/Trailer_GetCooked!.mp4' />
@@ -100,12 +92,10 @@ export default function GetCooked({activeIndex})
                         Get Cooked! is a fast-paced action-strategy multiplayer game where culinary chaos meets strategic battles. 
                         Gather ingredients, cook dishes, and unleash them as troops to dominate the battlefield. 
                         Outcook and outfight your opponent to claim victory!
-                    </p>
-                    <p>
+                        <br></br><br></br>
                         Your goal? Destroy your opponent's cooking stations while defending your own in fast-paced 1v1 matches. 
                         Each dish brings unique powers to the fight, letting you strategize and outcook your rival.
-                    </p>
-                    <p>
+                        <br></br><br></br>
                         With intuitive gameplay, unique dish combinations, and high-energy battles
                         , Get Cooked! is the ultimate test of culinary and tactical skills. 
                         Will you reign supreme in the kitchen clash? 

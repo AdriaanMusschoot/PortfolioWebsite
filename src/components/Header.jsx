@@ -63,10 +63,18 @@ export default function Header() {
              <Logo className='svg'/>
            </div>
           </a>
-          <a href='#projects'>Projects</a>
-          <a href='#about'>About</a>
-          <a href='#skills'>Skills</a>
-          <a href='#contact'>Contact</a>
+          <a href='#projects'>
+            <h4>Projects</h4>
+          </a>
+          <a href='#about'>
+            <h4>About</h4>
+          </a>
+          <a href='#skills'>
+            <h4>Skills</h4>
+          </a>
+          <a href='#contact'>
+            <h4>Contact</h4>
+          </a>
         </div>
         <div className='small-contact'>
           <MailToButton/>

@@ -15,12 +15,6 @@
   --box-shadow-default: 0 0 0 var(--hovered-color-links), inset 0 0 0 rgba(0, 0, 0, 0.5);
   --box-shadow-hovered: 0 0 0 var(--hovered-color-links), inset 0 0 0 rgba(0, 0, 0, 0.5);
   
-  /* Font-Size Variables */
-  --primary-title-font-size: 3vw;
-  --section-title-font-size: 2.3vw;
-  --subsection-title-font-size: 2vw;
-  --standart-text-font-size: 1.3vw;
-
   /* Default Text Values */
   --text-color:  #b8b1be;
   --margin-text: 2vw;
@@ -40,6 +34,7 @@
   --time-project-card-transition: 0.5s;
 }
 
+/* Main Body */
 body {
   margin: 0vh 15vw;
   background-color: var(--background-color);
@@ -49,16 +44,11 @@ body {
   justify-content: left;
   align-items: center;
   flex-direction: column;
+}
 
-  & a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 2vw;
-    font-weight: bold;
-    &:hover{
-      color:var(--hovered-color-links);
-    }
-  }
+/* Scrolling behaviour */
+body.no-scroll {
+  overflow: hidden;
 }
 
 #home, #projects, #about, #skills, #contact {
@@ -69,29 +59,51 @@ html {
   scroll-behavior: smooth;
 }
 
+
+/* Text Elements */
+h1 {
+  --margin-h1: 1.5vw;
+  margin-top: var(--margin-h1);
+  margin-bottom: var(--margin-h1);
+  font-size: 3vw;
+}
+
+h2 {
+  --margin-h2: 1.25vw;
+  margin-top: var(--margin-h2);
+  margin-bottom: var(--margin-h2);
+  font-size: 2.5vw;
+}
+
+h3 {
+  --margin-h3: 1vw;
+  margin-top: var(--margin-h3);
+  margin-bottom: var(--margin-h3);
+  font-size: 2vw;
+}
+
+h4 {
+  --margin-h4: 0.75vw;
+  margin-top: var(--margin-h4);
+  margin-bottom: var(--margin-h4);
+  font-size: 1.5vw;
+}
+
 p {
-  font-size: var(--standart-text-font-size);
+  margin: 0;
+  font-size: 1.3vw;
   text-align: justify;
 }
 
 a {
-  margin: 0;
+  color: var(--text-color);
+  font-weight: bold;
+  &:hover{
+    color:var(--hovered-color-links);
+  }
 }
 
-body.no-scroll {
-  overflow: hidden;
-}
-
-.Trailer {
-  margin-top: 2%;
-  cursor: pointer;
-  border-radius: var(--main-border-radius);
-  border-style: var(--main-border-style);
-  border-color: var(--main-border-color);
-  border-width: var(--main-border-width);
-  box-shadow: var(--box-shadow-default);
-}
-
+/* To be moved to indivdual elements */
 .img-1 {
   width: 31%;
   margin-top: 3%;

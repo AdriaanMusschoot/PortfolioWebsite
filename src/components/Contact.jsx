@@ -1,3 +1,6 @@
+/* React Imports */
+import Breaker from './Breaker.jsx';
+
 /* Data Imports */
 import CVButton from './buttons/CVButton.jsx';
 import MailToButton from './buttons/MailToButton.jsx';
@@ -10,7 +13,7 @@ import '../styles/Contact.css';
 /* HTML */
 export default function Contact() {
   return (
-    <div className='contact'>
+    <section id='contact' className='contact'>
       <h2>Contact</h2>
         <div className='contact-socials'>
             <MailToButton/>
@@ -18,6 +21,7 @@ export default function Contact() {
             <CVButton/>
             <GithubButton/>
         </div>
-    </div>
+      <Breaker/>
+    </section>
   )
 };
