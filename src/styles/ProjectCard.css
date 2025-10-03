@@ -86,7 +86,7 @@
     .cross-button{
       position: absolute;
       left: 67vw;
-      top: 4vw;
+      top: 3vw;
       width: 8%;
       height: auto;
       stroke: var(--outline-color);

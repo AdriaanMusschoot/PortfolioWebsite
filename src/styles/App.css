@@ -83,10 +83,18 @@ h3 {
 }
 
 h4 {
-  --margin-h4: 0.75vw;
+  --margin-h4: 0.8vw;
   margin-top: var(--margin-h4);
   margin-bottom: var(--margin-h4);
-  font-size: 1.5vw;
+  font-size: 1.6vw;
+}
+
+h5 {
+  --margin-h5: 0.5vw;
+  margin-top: var(--margin-h5);
+  margin-bottom: var(--margin-h5);
+  font-size: 1.4vw;
+  font-weight: normal;
 }
 
 p {

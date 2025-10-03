@@ -8,7 +8,6 @@ export default function BFG()
 {
     return (
         <div className="BFG">
-            <p>Work in progress</p>
             <h2>Black Forest Games GMBH</h2>
                 <p>
                     As final part to my education I completed an internship at Black Forest Games.
@@ -37,74 +36,134 @@ export default function BFG()
                         For that to work enemies needed to be able to perceive the player by either hearing him make a sound, watching him crawl around in their fov or feeling an attack from the yet undetected player. 
                         Any of these would send out an event and in this case start combat.
                     </p>
-                <h3>Simple Beginnings</h3>
-                    <p>
-                        I had previously never worked with Mass, so I knew it was going to take some time to get it right.
-                        In my first iteration for the system I was working with constant shared fragments, thinking that a per config basis was appropriate.
-                        Initially this was fine, but later on designers wanted to change it per instance, so we needed to switch to a regular fragment for a per instance basis.
-                    </p>
-                    <h4>Sight Perception</h4>
-                        <div className='SightWedgeInitial'>
-                            <p>
-                                For the sight perception, the designers wanted a sight wedge, not just a cone.
-                                So I simplified the math into 3 steps, a distance check, a height check and an angle check.
-                                Every check was to the center of the player for simplicity.
-                                By performing these checks in this order, I could early out and avoid the more expensive angle check at the end.
-                            </p>
-                            <img className='SightWedgeVisualInitial' src='./assets/ProjectImages/BFG/SightWedge_Visual_Initial.png' alt='Sight Wedge Visuals Initial'></img>
-                        </div>
-                        <img className='SightWedgeCodeInitial' src='./assets/ProjectImages/BFG/SightWedge_Code_Initial.png' alt='Sight Wedge Code Initial'></img>
-                    <h4>Hearing Perception</h4>
-                        <div className='ListeningSphereInitial'>
-                            <p>
-                                For the hearing perception, we just went for a simple sphere check.
-                                A noise is represented by a sphere with a radius, an enemy also has a radius and if these two overlap the enemy can hear the noise.
-                            </p>
-                            <img className='ListeningSphereVisualInitial' src='./assets/ProjectImages/BFG/ListeningSphere_Visual_Initial.png' alt='Listening Sphere Visuals Initial'></img>
-                        </div>
-                        <img className='ListeningSphereCodeInitial' src='./assets/ProjectImages/BFG/ListeningSphere_Code_Initial.png' alt='Listening Sphere Code Initial'></img>
-                    <h4>Feeling Perception</h4>
-                        <p>
-                            Creating the feeling perception was the first time with I had to work in other parts of the codebase that weren't on my island.
-                            At first I was a bit scared to make changes to existing code. 
-                            I will never forget the first one. Some logic on public struct members happening twice in 2 different places.
-                            So I quickly refactored it into a function and called it from both places. 
-                            Receiving feedback on that change reaffirmed that code is an ever evolving process. 
-                        </p>
-                <h3>Maintenance Work</h3>
-                    <p>
-                        To keep it simple at the start, the perception system was created purely for enemies.
-                        Once that evolved and new use cases came up, trouble arose.
-                    </p>
-                    <h4>Security Cameras = Trouble</h4>
-                        <div className='SecurityCameraAlignmentSection'>
-                            <div className='SecurityCameraAlignmentText'>
-                                <p>
-                                    When the sight perception was created, all entities that used it were aligned with the world up axis.
-                                    Once security cameras were introduced and they could be rotated in the world, the sight wedge no longer worked as intended.
-                                    <br></br><br></br>
-                                    Below you'll find an update version of the sight wedge detection.
-                                    It uses projections of vectors onto the appropriate axis to accommodate for the rotations.
-                                </p>
-                            </div>
-                            <video className='SecurityCameraAlignmentVideo' src='./assets/ProjectImages/BFG/ShowcaseSecurityCameraBad.mp4' autoPlay loop muted controls />
-                        </div>
-                            <img className='SightWedgeCodeUpdated' src='./assets/ProjectImages/BFG/SightWedge_Code_Updated.png' alt='Sight Wedge Code Updated' />
-                    <h4>Make It More Generic!</h4>
-                        <p>
-                            Security cameras don't need to start combat, they need to open doors, trigger alarms and so on.
-                            So instead of triggering combat, I changed it to a generic event 'entity within sight wedge'.
-                            Doing it this way also allowed for any entity to have a detection period.    
-                        </p>
-                <h3>Finalizing</h3>
-                        <h4>Increasing Detection Accuracy</h4>
-                        <h4>Debugging</h4>
-                        <h4>Documentation</h4>
-                    <p>
-                            The fact it was separate also gave the task to think about how I would design the system from the ground up.
-                            From which I was able to make plenty of mistakes, rip out big parts and put them back together in an improved way.
-                    </p>
                 <h3>System Analysis</h3>
+                    <p>
+                        The fact this system was separate at the start also gave me the task to think about how I would design the system from the ground up.
+                        From which I was able to make plenty of mistakes, rip out big parts and put them back together in an improved way.
+                        As I kept working on the system, I became more and more attached to it.
+                    </p>
+                    <h4>Mass Structure</h4>
+                        <p>
+                            Each perception type, has one regular fragment. On it are stored the parameters for that perception type. 
+                            Designers can add these fragments on any entity and tweak its values, to make it perceive.
+                            In code each perception type has its own matching processor, that iterates over the fragments and performs its logic.
+                            The player is made perceivable by adding a mass tag to it. 
+                            When a processor that listens to the addition of that tag, a reference to its mass handle is stored in the perception subsystem.
+                            This way if later the player had a dog running with him, you could just add the tag to the dog and it would be perceivable.
+                        </p>
+                    <h4>Types Of Perception</h4>
+                        <h5>Sight</h5>
+                            <p>
+                                The sight processor iterates over all entities that have a sight wedge fragment and checks if they can see any perceivable entities.
+                                If that is the case it then sends out a corresponding event, an entity entered my sight wedge.
+                                And it will try to store a reference to that entity on the sight wedge fragment. 
+                                By storing these references, we can compare them to last frame to determine if the entity is still in the sight wedge, or if it has left.
+                                Then we can send out the appropriate event, an entity exited my sight wedge, and remove it from the array on the fragment. 
+                            </p>
+                        <h5>Listening</h5>
+                            <p>
+                                Any noises produced by entities are stored for one frame in the perception subsystem.
+                                The listening processor iterates over all entities that have a listening sphere fragment and checks if they hear any of those noises.
+                                If the entity was able to hear a noise (produced by any entity), it sends out the corresponding event, I heard a noise.
+                                After executing all of its logic it clears out the noises stored in the perception subsystem.
+                            </p>
+                        <h5>Feeling</h5>
+                            <p>
+                                Any entity that receives damage, will send out an event, I got hit.
+                                If the amount of damage was enough to kill the entity it will not, this way we allow for stealth.
+                            </p>
+                    <h4>Responding To The Events</h4>
+                        <p>
+                            
+                        </p>
+                <h3>Evolution of the system</h3>
+                    <h4>Simple Beginnings</h4>
+                        <p>
+                            I had previously never worked with Mass, so I knew it was going to take some time to get it right.
+                            In my first iteration for the system I was working with constant shared fragments, thinking that a per config basis was appropriate.
+                            Initially this was fine, but later on designers wanted to change it per instance, so we needed to switch to a regular fragment for a per instance basis.
+                            Logic wise not a lot changed, but I had to rip out a lot of code and make it work with the new fragment type.
+                        </p>
+                        <h5>Sight Perception</h5>
+                            <div className='Media-Next-To-Text'>
+                                <p>
+                                    For the sight perception, the designers wanted a sight wedge, not just a cone.
+                                    So I simplified the math into 3 steps, a distance check, a height check and an angle check.
+                                    Every check was to the center of the player for simplicity.
+                                    By performing these checks in this order, I could early out and avoid the more expensive angle check at the end.
+                                </p>
+                                <img src='./assets/ProjectImages/BFG/SightWedge_Visual_Initial.png' alt='Sight Wedge Visuals Initial'></img>
+                            </div>
+                            <img className='Code-Snippet' src='./assets/ProjectImages/BFG/SightWedge_Code_Initial.png' alt='Sight Wedge Code Initial'></img>
+                        <h5>Hearing Perception</h5>
+                            <div className='Media-Next-To-Text'>
+                                <p>
+                                    For the hearing perception, we just went for a simple sphere check.
+                                    A noise is represented by a sphere with a radius, an enemy also has a radius and if these two overlap the enemy can hear the noise.
+                                </p>
+                                <img src='./assets/ProjectImages/BFG/ListeningSphere_Visual_Initial.png' alt='Listening Sphere Visuals Initial'></img>
+                            </div>
+                            <img className='Code-Snippet' src='./assets/ProjectImages/BFG/ListeningSphere_Code_Initial.png' alt='Listening Sphere Code Initial'></img>
+                        <h5>Feeling Perception</h5>
+                            <p>
+                                Creating the feeling perception was the first time with I had to work in other parts of the codebase that weren't on my island.
+                                At first I was a bit scared to make changes to existing code. 
+                                I will never forget the first one. Some logic on public struct members happening twice in 2 different places.
+                                So I quickly refactored it into a function and called it from both places. 
+                                Receiving feedback on that change reaffirmed that code is an ever evolving process. 
+                            </p>
+                    <h4>Maintenance Work</h4>
+                        <p>
+                            To keep it simple at the start, the perception system was created purely for enemies.
+                            Once that evolved and new use cases came up, trouble arose.
+                        </p>
+                        <h5>Security Cameras = Trouble</h5>
+                            <div className='Media-Next-To-Text'>
+                                <div className='SecurityCameraAlignmentText'>
+                                    <p>
+                                        When the sight perception was created, all entities that used it were aligned with the world up axis.
+                                        Once security cameras were introduced and they could be rotated in the world, the sight wedge no longer worked as intended.
+                                        <br></br><br></br>
+                                        Below you'll find an update version of the sight wedge detection.
+                                        It uses projections of vectors onto the appropriate axis to accommodate for the rotations.
+                                    </p>
+                                </div>
+                                <video className='SecurityCameraAlignmentVideo' src='./assets/ProjectImages/BFG/ShowcaseSecurityCameraBad.mp4' autoPlay loop muted controls />
+                            </div>
+                                <img className='Code-Snippet' src='./assets/ProjectImages/BFG/SightWedge_Code_Updated.png' alt='Sight Wedge Code Updated' />
+                        <h5>Make It More Generic!</h5>
+                            <p>
+                                Security cameras don't need to start combat, they need to open doors, trigger alarms and so on.
+                                So instead of triggering combat, I changed it to a generic event 'entity within sight wedge'.
+                                Doing it this way also allowed for any entity to have a detection period.    
+                            </p>
+                    <h4>Finalizing</h4>
+                        <h5>Increasing Detection Accuracy</h5>
+                            <div className='Media-Next-To-Text'>
+                                <p>
+                                    After discussing the system with another programmer over lunch, he suggested checking out something he implemented for a different game.
+                                    Instead of checking for a single point, you generate spheres within a capsule from the player.
+                                    Similarly, I generated those (spheres) cylinders in my case as the math already in place worked for that.
+                                    <br></br><br></br>
+                                    After writing this I realised that generating three cylinders with the same radii on top of each other can really just be 1 big cylinder.
+                                    But I am no longer at the company to change that sadly.
+                                </p>
+                                <img src='./assets/ProjectImages/BFG/SightWedge_Visual_Cylinder.png' alt='Sight Wedge Visuals Cylinder'></img>
+                            </div>
+                        <h5>Debugging</h5>
+                            <div className='Media-Next-To-Text'>
+                                <p>
+                                    To help designers fine tune the parameters of the system, I added debugging options at editor time and runtime.
+                                    This way of opt-in debugging through the console, allows both designers and programmers to easily debug it without causing any clutter.
+                                </p>
+                                <video src='./assets/ProjectImages/BFG/PerceptionSystem_DesignerExperience.mp4' alt='Designer Usage' autoPlay loop muted controls></video>
+                            </div>
+                        <h5>Documentation</h5>
+                            <p>
+                                Additionally I wrote external documentation for anyone to understand how to use the system.
+                                This included explanations of each perception type, every parameter, how to enable debugging.
+                                As the system was evolving, I kept the documentation up to date.
+                            </p>
         </div>
     )
 };

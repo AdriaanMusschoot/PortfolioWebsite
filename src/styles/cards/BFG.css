@@ -4,44 +4,23 @@
     gap: 3vw;
 }
 
-.SightWedgeVisualInitial {
-    width: 30vw;
-    height: auto;
-}
-
-.SightWedgeCodeInitial {
-    margin-top: 1vw;
-    width: 100%;
-}
-
-.ListeningSphereInitial {
+.Media-Next-To-Text {
     display: flex;
     flex-direction: row;
     gap: 3vw;
 }
 
-.ListeningSphereVisualInitial {
+.Media-Next-To-Text img {
     width: 30vw;
     height: auto;
 }
 
-.ListeningSphereCodeInitial {
-    margin-top: 1vw;
-    width: 100%;
-}
-
-.SecurityCameraAlignmentSection {
-    display: flex;
-    flex-direction: row;
-    gap: 3vw;
-}
-
-.SecurityCameraAlignmentVideo {
+.Media-Next-To-Text video {
     width: 30vw;
     height: auto;
 }
 
-.SightWedgeCodeUpdated {
+.Code-Snippet {
     margin-top: 1vw;
     width: 100%;
 }
