@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: row;
     gap: 3vw;
+    align-items: flex-start;
 }
 
 .Media-Next-To-Text img {
@@ -18,6 +19,29 @@
 .Media-Next-To-Text video {
     width: 30vw;
     height: auto;
+}
+
+.Title-Next-To-Title {
+    display: flex;
+    gap: 3vw;
+    width: 100%;
+}
+
+.Title-Next-To-Title p {
+    width: 50%;
+}
+
+.Img-Next-To-Img {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    align-items: flex-start;
+}
+
+.Img-Next-To-Img img {
+  width: 50%;
+  height: auto;
+  display: block;
 }
 
 .Code-Snippet {

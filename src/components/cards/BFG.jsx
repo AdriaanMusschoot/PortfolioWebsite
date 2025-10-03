@@ -14,8 +14,7 @@ export default function BFG()
                     They are a German Company located in Offenburg. 
                     Mostly known for titles such as "Giana Sisters: Twisted Dreams", "Fade to Silence", "Destroy All Humans 1 & 2". 
                     During my time there I joined the team to release an upcoming title.
-                    My main task was creating a Perception System.
-                    I also worked together with the team on the trigger device system and improved the chain reaction system.
+                    My main task was creating a Perception System, and I also worked with the team to improve the chain reaction system.
                     I will dive a bit deeper into my work for each of these systems below.
                 </p>
             <h2>Disclaimer!</h2>
@@ -23,6 +22,7 @@ export default function BFG()
                     All visual assets shown below, have been modified to not show any of the actual visuals of the game.
                 </p>
             <h2>Perception System (Core Project)</h2>
+                <video width='100%' className='FullPerceptionVideo' src='./assets/ProjectImages/BFG/Showcase_FullPerceptionSystem.mp4' alt='Perception System Showcase' autoPlay loop muted controls></video>
                 <h3>The Goal Of The System</h3>
                     <p>
                         Initially this task was assigned to me so I could familiarize myself with the code base
@@ -74,7 +74,11 @@ export default function BFG()
                             </p>
                     <h4>Responding To The Events</h4>
                         <p>
-                            
+                            Responding to these events is not part of the perception system.
+                            Instead that happens in the chain reaction system.
+                            There are processors that listen to the events sent out by the perception system.
+                            These processors then execute any chain reaction actions when this event triggers.
+                            As I was using this system, I also found out that some core functionality was missing, but more about that below the Perception System.
                         </p>
                 <h3>Evolution of the system</h3>
                     <h4>Simple Beginnings</h4>
@@ -82,7 +86,7 @@ export default function BFG()
                             I had previously never worked with Mass, so I knew it was going to take some time to get it right.
                             In my first iteration for the system I was working with constant shared fragments, thinking that a per config basis was appropriate.
                             Initially this was fine, but later on designers wanted to change it per instance, so we needed to switch to a regular fragment for a per instance basis.
-                            Logic wise not a lot changed, but I had to rip out a lot of code and make it work with the new fragment type.
+                            Logic wise not a lot changed, but I had to rip out a lot of code and make it work again with the new fragment type.
                         </p>
                         <h5>Sight Perception</h5>
                             <div className='Media-Next-To-Text'>
@@ -135,7 +139,12 @@ export default function BFG()
                             <p>
                                 Security cameras don't need to start combat, they need to open doors, trigger alarms and so on.
                                 So instead of triggering combat, I changed it to a generic event 'entity within sight wedge'.
-                                Doing it this way also allowed for any entity to have a detection period.    
+                                Doing it this way also allowed for any entity to have a detection period.
+                                <br></br><br></br>
+                                Additionally they also don't need a listening sphere, so I introduced a base fragment for perception type fragments.
+                                This allowed to just store them in an array on the entity and add or remove which ever one the designer needed.
+                                Saddly, this was not covered by default mass functionality, as most of it happens with templates.
+                                But the type was unknown at runtime, so I had to do a mass deep dive and create a custom push command.
                             </p>
                     <h4>Finalizing</h4>
                         <h5>Increasing Detection Accuracy</h5>
@@ -164,6 +173,39 @@ export default function BFG()
                                 This included explanations of each perception type, every parameter, how to enable debugging.
                                 As the system was evolving, I kept the documentation up to date.
                             </p>
+            <h2>Chain Reaction System</h2>
+                <h3>What's missing?</h3>
+                    <div className='Media-Next-To-Text'>
+                        <p>
+                            As I started using the chain reaction system, to activate combat on perception events.
+                            I quickly discovered some core functionality was missing. 
+                            After debugging for an extensive period why I couldn't get two instigators to work I stumbled on this hidden code.
+                            Quite a surprise to find out that something I could select in blueprints, wouldn't translate to C++.
+                            So I added support for it.
+                        </p>
+                        <img src='./assets/ProjectImages/BFG/SingleInstigatorProblem.png' alt='Single Instigator Problem'></img>
+                    </div>
+                <h3>Hard To Use</h3>
+                    <p>
+                        While I kept using the system, I found it quite cumbersome to work with. 
+                        If you wanted a chain reaction to listen to the same event, you had to duplicate the entire chain reaction and add a different action.
+                        If an entity was listening to itself for the event to trigger, it suddenly became impossible for anyone else to trigger the event.
+                        I discussed this with my colleague and we came to the conclusion that indeed it could be improved. 
+                        The result is that designers can now achieve the image on the right instead of the left.
+                    </p>
+                    <div className='Title-Next-To-Title'>
+                        <p>Before</p>
+                        <p>After</p>
+                    </div>
+                    <div className='Img-Next-To-Img'>
+                        <img src='./assets/ProjectImages/BFG/ChainReaction_Visuals_Before.png' alt='Chain Reaction Visual Before'></img>
+                        <img src='./assets/ProjectImages/BFG/ChainReaction_Visuals_After.png' alt='Chain Reaction Visual After'></img>
+                    </div>
+                    <p>Before</p>
+                    <img className='Code-Snippet' src ='./assets/ProjectImages/BFG/ChainReaction_Code_Before.png' alt='Chain Reaction Code Before'></img>
+                    <p>After</p>
+                    <img className='Code-Snippet' src ='./assets/ProjectImages/BFG/ChainReaction_Code_After.png' alt='Chain Reaction Code After'></img>
+            <h2>Conclusion</h2>
         </div>
     )
 };

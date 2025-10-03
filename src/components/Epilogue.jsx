@@ -13,18 +13,22 @@ export default function Epilogue() {
         <h2>Epilogue</h2>
           <p>
             Credits to:
-          </p>
-          <p>
+            <br></br>
             <a href={LaisLink} target='_blank' rel='noreferrer'>
               Lais Ben Belgacem
             </a>
-              : for the initial layout and framework setup
-          </p>
-          <p>
+              : for the initial layout and framework setup.
+            <br></br>
             <a href={JulianLink} target='_blank' rel='noreferrer'>
               Julian Rijken
             </a>
-              : for the layout inspiration
+              : for the layout inspiration.
+            <br></br><br></br>
+            Copyright © 2025
+            <br/>
+            Adriaan Musschoot Portfolio Website.
+            <br/>
+            All rights reserved.
           </p>
     </div>
   )
