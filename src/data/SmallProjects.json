@@ -1,7 +1,7 @@
 [
     {
         "image" : "./assets/ProjectImages/Amugen/Thumbnail.png",
-        "title" : "Amugen - Game Engine",
+        "title" : "Custom 2D Engine",
         "main" : false,
         "specifics" :
         [

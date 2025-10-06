@@ -18,7 +18,7 @@
   border-radius: var(--outline-radius); 
   border-width: var(--outline-width);
 
-  width: 32%;
+  width: 31%;
   background: var(--card-fill-color);
   box-shadow: var(--box-shadow-default);
   overflow: hidden;
@@ -43,11 +43,10 @@
     left: 0;
     display: flex;
     justify-content: center;
-    align-items: right;
+    align-items: left;
     opacity: 0;
     transition: opacity var(--time-transition) ease, border-color var(--time-transition) ease;
     border-color: var(--main-border-color);
-    font-size: var(--description-text-size);
     color: var(--text-color);
   }
   
@@ -57,12 +56,12 @@
     margin: 1vw;
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    flex-wrap: wrap;
     gap: 0.5vw;
   }
 
   & .mainproj-container_specifics li {
-    font-size: var(--standart-text-font-size);
     border-style: var(--main-border-style);
     border-color: var(--main-border-color);
     border-radius: var(--main-border-radius);
@@ -83,7 +82,7 @@
 
   & .mainproj-container_date {
     margin-bottom: 3%;
-    font-size: 1vw;
+    font-size: var(--p1);
     color: var(--text-color);
     margin-left: 5%;
     text-align: left;
@@ -119,7 +118,7 @@
   border-radius: var(--outline-radius); 
   border-width: var(--outline-width);
 
-  width: 23.5%;
+  width: 20%;
   background: var(--card-fill-color);
   box-shadow: var(--box-shadow-default);
   overflow: hidden;
@@ -173,11 +172,13 @@
     margin: 1vw;
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    flex-wrap: wrap;
     gap: 0.5vw;
   }
 
   & .smallproj-container_specifics li{
+    font-size: var(--p1);
     padding: 0.2vw;
     border-style: var(--main-border-style);
     border-color: var(--main-border-color);
@@ -190,7 +191,7 @@
 
   & .smallproj-container_date {
     margin-bottom: 3%;
-    font-size: 1vw;
+    font-size: var(--p1);
     color: var(--text-color);
     margin-left: 5%;
     text-align: left;

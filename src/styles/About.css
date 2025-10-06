@@ -4,11 +4,14 @@
   margin-bottom: 0;
 }
 
+.about-content{
+  display: flex;
+}
+
 .about-left {
   width: 11vw;
   height: auto;
   margin-right: 1vw;
-  float: left;
 
   box-shadow: var(--box-shadow-default);
 }

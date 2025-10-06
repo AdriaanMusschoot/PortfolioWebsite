@@ -109,7 +109,7 @@ export default function ProjectCard() {
           </div>
         ))}
       </div>
-      <br></br><br></br>
+      <br></br>
       {/* Small Projects Section */}
       <div className="smallproj-wrapper">
         {SmallProjects.map((project) => (
