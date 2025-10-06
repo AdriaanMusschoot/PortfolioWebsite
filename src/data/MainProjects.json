@@ -6,9 +6,9 @@
         "specifics" :
         [
             "Team",
+            "C++",
             "UE5",
-            "Mass",
-            "C++"
+            "ECS"
         ],
         "date" : "Feb - Jun 2025"
     },
@@ -30,8 +30,8 @@
         "main" : true,
         "specifics" :
         [
-            "C++",
             "Team",
+            "C++",
             "UE5"
         ],
         "date" : "Feb - May 2024"

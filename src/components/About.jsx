@@ -9,9 +9,13 @@ export default function About() {
   return (
     <section className="about" id='about'> 
           <h2>About</h2>
-          <div className="about-me">
             <div className="about-content">
-              <img src="./assets/Profile/ProfilePicture.jpg" alt="me" className="about-image" />
+              <div className="about-left">
+                <img src="./assets/Profile/ProfilePicture.jpg" alt="me" className="about-image" />
+                <a href="./assets/Profile/20251508_CV_AdriaanMusschoot_Public.pdf" target="_blank" rel="noopener noreferrer">
+                  <p>CV</p>
+                </a>
+              </div>
               <div className="about-text">
                 <p>
                   Hi there! Let me tell you a little bit about myself. In case you missed the intro my name is Adriaan.
@@ -31,7 +35,6 @@ export default function About() {
                 </p>
               </div>
             </div>
-          </div>
       <Breaker/>
     </section>
   );

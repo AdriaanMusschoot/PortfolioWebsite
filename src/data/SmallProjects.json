@@ -5,6 +5,7 @@
         "main" : false,
         "specifics" :
         [
+            "Solo",
             "C++",
             "CMake"
         ],
@@ -16,9 +17,9 @@
         "main" : false,
         "specifics" :
         [
-            "Vulkan",
+            "Solo",
             "C++",
-            "CMake"
+            "Vulkan"
         ],
         "date" : "Feb - Jun 2024"
     },
@@ -28,6 +29,7 @@
         "main" : false,
         "specifics" :
         [
+            "Solo",
             "C++",
             "Graphics"
         ],
@@ -39,9 +41,10 @@
         "main" : false,
         "specifics" :
         [
-            "C++",
-            "Amugen"
-        ]
+            "Solo",
+            "C++"
+        ],
+        "date" : "Aug - Sep 2024"
     },
     {
         "image" : "./assets/ProjectImages/SouperHero/Thumbnail.jpg",
@@ -49,20 +52,11 @@
         "main" : false,
         "specifics" :
         [
-            "UE5",
+            "GameJam",
             "C++",
-            "GameJam"
-        ]
-    },
-    {
-        "image" : "./assets/ProjectImages/TrajectoryPrediction/Thumbnail.png",
-        "title" : "Trajectory Prediction",
-        "main" : false,
-        "specifics" :
-        [
-            "C#",
-            "Physics"
-        ]
+            "UE5"
+        ],
+        "date" : "Jul 2024"
     },
     {
         "image" : "./assets/ProjectImages/RideOfGiri/Thumbnail.jpg",
@@ -70,8 +64,21 @@
         "main" : false,
         "specifics" :
         [
-            "UE5",
-            "GameJam"
-        ]
+            "GameJam",
+            "UE5"
+        ],
+        "date" : "Feb 2024"
+    },
+    {
+        "image" : "./assets/ProjectImages/TrajectoryPrediction/Thumbnail.png",
+        "title" : "Trajectory Prediction",
+        "main" : false,
+        "specifics" :
+        [
+            "Solo",
+            "C#",
+            "Unity"
+        ],
+        "date" : "Dec 2023"
     }
 ]

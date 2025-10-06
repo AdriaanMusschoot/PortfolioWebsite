@@ -77,7 +77,7 @@ export default function ProjectCard() {
   return (
     <section id='projects' className='projects'>
       {/* Main Projects Section */}
-      <h2>Most Relevant Projects</h2>
+      <h2>Projects</h2>
       <div className="mainproj-wrapper">
         {MainProjects.map((project) => (
           <div
@@ -109,8 +109,8 @@ export default function ProjectCard() {
           </div>
         ))}
       </div>
+      <br></br><br></br>
       {/* Small Projects Section */}
-      <h3>Other Projects</h3>
       <div className="smallproj-wrapper">
         {SmallProjects.map((project) => (
           <div

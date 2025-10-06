@@ -105,7 +105,9 @@ p {
 
 a {
   color: var(--text-color);
+  font-size: var(--standart-text-font-size);
   font-weight: bold;
+  
   &:hover{
     color:var(--hovered-color-links);
   }
