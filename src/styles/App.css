@@ -2,7 +2,7 @@
 
 :root {
   /* Font-Sizing */
-  --base-size: 1.5rem;
+  --base-size: 1.2vw;
   --scale: 1.25;
   --p: var(--base-size);
   --p1: calc(var(--p) / var(--scale));
@@ -16,7 +16,7 @@
   --outline-color: #3D5D73;
   --outline-width: 0.15vw;
   --outline-style: solid;
-  --outline-radius: 0.0vw;
+  --outline-radius: 0vw;
 
   /* Fill Color Values */
   --card-fill-color: #3D4273;
@@ -43,38 +43,6 @@
 
   /* Transition values used for opening a project card needs to match in Projects.jsx */
   --time-project-card-transition: 0.5s;
-}
-
-/* Screen Size Adjustments */
-
-@media (max-width: 1200px) {
-  :root {
-    --base-size: 1rem;
-  }
-}
-
-@media (max-width: 800px) {
-  :root {
-    --base-size: 0.8rem;
-  }
-}
-
-@media (max-width: 500px) {
-  :root {
-    --base-size: 0.7rem;
-  }
-}
-
-@media (max-width: 400px) {
-  :root {
-    --base-size: 0.6rem;
-  }
-}
-
-@media (max-width: 300px) {
-  :root {
-    --base-size: 0.5rem;
-  }
 }
 
 /* Main Body */

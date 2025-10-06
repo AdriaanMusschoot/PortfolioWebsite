@@ -29,7 +29,7 @@ export default function ProjectCard() {
 
   const projectCardMap = {
     'Snails & Potions': <SnailsAndPotions />,
-    'Amugen - Game Engine': <Amugen />,
+    '2D Engine': <Amugen />,
     'Instanced Rendering': <Vulkan />,
     'Ray Marcher': <Raymarcher />,
     'Tectonic': <Tectonic />,

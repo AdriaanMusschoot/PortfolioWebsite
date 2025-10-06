@@ -1,7 +1,7 @@
 [
     {
         "image" : "./assets/ProjectImages/Amugen/Thumbnail.png",
-        "title" : "Custom 2D Engine",
+        "title" : "2D Engine",
         "main" : false,
         "specifics" :
         [
