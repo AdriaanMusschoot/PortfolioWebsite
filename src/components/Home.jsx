@@ -12,18 +12,16 @@ export default function Home() {
 
   return (
     <section className='home' id='home'>
-        <h1>Hi, I'm <span className={highlightClass}>Adriaan</span></h1>
-          <h2>I'm a <span className={highlightClass}>game/software</span> developer</h2>
-              <h3>Welcome to my portfolio!</h3>
-            <p>
-              As a passionate developer who thrives in <span className={emphasisClass}>team environments</span>, I love to help other people.
-              I have a keen <span className={emphasisClass}>eye for detail</span> and like working neatly, keeping everything <span className={emphasisClass}>organized</span> and refactoring when needed to keep everything clean.
-              When I encounter problems, I can really grit my teeth and <span className={emphasisClass}>persist</span> until I find an effective and elegant solution.
-              <br></br><br></br>
-              I am currently looking for <span className={emphasisClass}>a junior programmer position</span>, to make my first mark in the industry.
-              Please have a look at my projects and reach out if you know of any <span className={emphasisClass}>opportunities</span>!
-            </p>
-      <Breaker/>
+      <div className='home-background'>
+          <div className="home-text">
+            <h1><span className={highlightClass}>C++/Unreal Engine</span> Developer</h1>
+                <h2>Welcome to my portfolio!</h2>
+                  <p>
+                    Looking for a<span className={`${highlightClass} ${emphasisClass}`}> junior games programmer position</span>.
+                  </p>
+          </div>
+      </div>
+      <Breaker />
     </section>
   );
 }

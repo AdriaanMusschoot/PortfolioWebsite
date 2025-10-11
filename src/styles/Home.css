@@ -1,7 +1,28 @@
-.home {
+.home-background {
+  background-image: url('../assets/bg/Background_Home.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home-background::before {
+  content: ''; /* Otherwise Overlay Dissapears */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 78%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 0;
+}
+
+.home-text {
+  height: 78vh;
+  align-content: center;
+  text-align: center;
+  position: relative;
   margin-left: var(--margin-text);
   margin-right: var(--margin-text);
-  margin-top: 5vw;
 }
 
 .home .Highlight {
@@ -15,12 +36,24 @@
 
 .home h1 {
   margin: 0;
+  text-align: center;
 }
 
 .home h2 {
   margin: 0;
+  margin-bottom: 0.5vw;
+  text-align: center;
 }
 
-.home h3 {
-  margin: 0;
+.home p{
+  padding: 0.3vw;
+  display: inline-block;
+  text-align: center;
+  outline: var(--outline-width) var(--outline-style) var(--outline-color);
+  background-color: var(--card-fill-color);
+}
+
+.home .Breaker { 
+  margin-left: var(--margin-text);
+  margin-right: var(--margin-text);
 }

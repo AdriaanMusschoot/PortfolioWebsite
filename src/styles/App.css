@@ -28,7 +28,7 @@
   
   /* Default Text Values */
   --text-color:  #b8b1be;
-  --margin-text: 2vw;
+  --margin-text: 15vw;
 
   /* Standard Backgound value for the page and when a card pops up */
   --background-color:  #0c0c13;
@@ -47,7 +47,6 @@
 
 /* Main Body */
 body {
-  margin: 0vh 15vw;
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: suse;
