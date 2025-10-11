@@ -1,8 +1,45 @@
 [
     {
+        "image" : "./assets/ProjectImages/GetCooked!/Thumbnail_GetCooked!.png",
+        "title" : "Get Cooked!",
+        "type" : "main",
+        "specifics" :
+        [
+            "Team",
+            "C++",
+            "UE5"
+        ],
+        "date" : "Sep - Dec 2024"
+    },
+    {
+        "image" : "./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg",
+        "title" : "Snails & Potions",
+        "type" : "main",
+        "specifics" :
+        [
+            "Team",
+            "C++",
+            "UE5"
+        ],
+        "date" : "Feb - May 2024"
+    },
+    {
+        "image" : "./assets/ProjectImages/BFG/Thumbnail_BFG.png",
+        "title" : "BFG - 3D Action Game",
+        "type" : "main",
+        "specifics" :
+        [
+            "Team",
+            "C++",
+            "UE5",
+            "ECS"
+        ],
+        "date" : "Feb - Jun 2025"
+    },
+    {
         "image" : "./assets/ProjectImages/Amugen/Thumbnail.png",
         "title" : "2D Engine",
-        "main" : false,
+        "type" : "small",
         "specifics" :
         [
             "Solo",
@@ -14,7 +51,7 @@
     {
         "image" : "./assets/ProjectImages/Vulkan/Thumbnail.png",
         "title" : "Instanced Rendering",
-        "main" : false,
+        "type" : "small",
         "specifics" :
         [
             "Solo",
@@ -26,7 +63,7 @@
     {
         "image" : "./assets/ProjectImages/RayMarcher/Thumbnail.png",
         "title" : "Ray Marcher",
-        "main" : false,
+        "type" : "small",
         "specifics" :
         [
             "Solo",
@@ -38,7 +75,7 @@
     {
         "image" : "./assets/ProjectImages/Tectonic/Thumbnail.png",
         "title" : "Tectonic",
-        "main" : false,
+        "type" : "small",
         "specifics" :
         [
             "Solo",
@@ -49,7 +86,7 @@
     {
         "image" : "./assets/ProjectImages/SouperHero/Thumbnail.jpg",
         "title" : "Souper Hero",
-        "main" : false,
+        "type" : "small",
         "specifics" :
         [
             "GameJam",
@@ -61,7 +98,7 @@
     {
         "image" : "./assets/ProjectImages/RideOfGiri/Thumbnail.jpg",
         "title" : "Ride Of Giri",
-        "main" : false,
+        "type" : "small",
         "specifics" :
         [
             "GameJam",
@@ -72,7 +109,7 @@
     {
         "image" : "./assets/ProjectImages/TrajectoryPrediction/Thumbnail.png",
         "title" : "Trajectory Prediction",
-        "main" : false,
+        "type" : "small",
         "specifics" :
         [
             "Solo",

@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Header from './components/Header';
-import Projects from './components/Projects.jsx';
+import Projects from './components/projects/Projects.jsx';
 import Skills from './components/Skills';
 import About from './components/About.jsx';
 import Epilogue from './components/Epilogue.jsx';

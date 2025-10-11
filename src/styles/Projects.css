@@ -3,6 +3,10 @@
   margin-right: var(--margin-text);
 }
 
+.projects h2{
+  text-align: center;
+}
+
 /* == MAIN PROJECTS SECTION == */
 
 .mainproj-wrapper{

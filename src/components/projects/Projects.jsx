@@ -1,27 +1,27 @@
 /* React Imports */
 import React, { useState, useEffect } from 'react';
-import { ReactComponent as CrossButton } from '../assets/svg/smallcross_icon.svg';
-import Breaker from './Breaker.jsx';
+import { ReactComponent as CrossButton } from '../../assets/svg/smallcross_icon.svg';
+import Breaker from '../Breaker.jsx';
 
 /* Project Card Data */
-import MainProjects from '../data/MainProjects.json';
-import SmallProjects from '../data/SmallProjects.json';
+import Projects from '../../data/projects.json';
 
 /* Project Details */
-import SnailsAndPotions from './cards/SnailsAndPotions.jsx';
-import Amugen from './cards/Amugen.jsx';
-import Vulkan from './cards/Vulkan.jsx';
-import Raymarcher from './cards/Raymarcher.jsx';
-import PhysicsPrediction from './cards/PhysicsPrediction.jsx';
-import SouperHero from './cards/Souperhero.jsx';
-import Tectonic from './cards/Tectonic.jsx';
-import RideOfGiri from './cards/RideOfGiri.jsx';
-import GetCooked from './cards/GetCooked.jsx';
-import BFG from './cards/BFG.jsx';
+import SnailsAndPotions from '../cards/SnailsAndPotions.jsx';
+import Amugen from '../cards/Amugen.jsx';
+import Vulkan from '../cards/Vulkan.jsx';
+import Raymarcher from '../cards/Raymarcher.jsx';
+import PhysicsPrediction from '../cards/PhysicsPrediction.jsx';
+import SouperHero from '../cards/Souperhero.jsx';
+import Tectonic from '../cards/Tectonic.jsx';
+import RideOfGiri from '../cards/RideOfGiri.jsx';
+import GetCooked from '../cards/GetCooked.jsx';
+import BFG from '../cards/BFG.jsx';
 
 /* Style Imports */
-import '../styles/Projects.css';
-import '../styles/ProjectCard.css';
+import '../../styles/Projects.css';
+import '../../styles/ProjectCard.css';
+import FeaturedWork from './FeaturedWork.jsx';
 
 export default function ProjectCard() {
   const [activeProject, setActiveProject] = useState(null);
@@ -74,9 +74,12 @@ export default function ProjectCard() {
 
   const isCardActive = (project) => (activeProject === project ? 'active' : '');
 
+  const MainProjects = Projects.filter(project => project.type === 'main');
+  
   return (
     <section id='projects' className='projects'>
       {/* Main Projects Section */}
+      <FeaturedWork />
       <h2>Projects</h2>
       <div className="mainproj-wrapper">
         {MainProjects.map((project) => (
@@ -112,7 +115,7 @@ export default function ProjectCard() {
       <br></br>
       {/* Small Projects Section */}
       <div className="smallproj-wrapper">
-        {SmallProjects.map((project) => (
+        {Projects.map((project) => (
           <div
             className={`smallproj-container ${isCardActive(project)}`}
             onClick={() => openClickedCard(project)}
