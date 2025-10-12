@@ -5,7 +5,7 @@ import ButtonLinkContainer from '../buttons/projectButtons/ButtonLinkContainer.j
 import '../../styles/cards/PhysicsPrediction.css'; 
 
 /* HTML */
-export default function PhysicsPrediction({ activeIndex }) {
+export default function PhysicsPrediction() {
 
   return (
     <div className='PhysicsPrediction'>

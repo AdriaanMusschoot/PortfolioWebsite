@@ -5,7 +5,7 @@ import ButtonLinkContainer from '../buttons/projectButtons/ButtonLinkContainer.j
 import '../../styles/cards/SouperHero.css'; 
 
 /* HTML */
-export default function SouperHero({ activeIndex }) {
+export default function SouperHero() {
 
   return (
     <div className='SouperHero'>

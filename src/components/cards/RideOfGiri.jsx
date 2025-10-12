@@ -5,7 +5,7 @@ import ButtonLinkContainer from '../buttons/projectButtons/ButtonLinkContainer.j
 import '../../styles/cards/RideOfGiri.css';
 
 /* HTML */
-export default function RideOfGiri({activeIndex}) {
+export default function RideOfGiri() {
     return (
         <div className='RideOfGiri'>
             <h2>The Game</h2>

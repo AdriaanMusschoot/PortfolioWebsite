@@ -5,7 +5,7 @@ import ButtonLinkContainer from '../buttons/projectButtons/ButtonLinkContainer.j
 import '../../styles/cards/Raymarcher.css';
 
 /* HTML */
-export default function Raymarcher({activeIndex}) {
+export default function Raymarcher() {
     return (
       <>
         <div className='Raymarcher'>

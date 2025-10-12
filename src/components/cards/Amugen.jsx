@@ -5,7 +5,7 @@ import ButtonLinkContainer from '../buttons/projectButtons/ButtonLinkContainer.j
 import '../../styles/cards/Amugen.css'; 
 
 /* HTML */
-export default function Amugen({ activeIndex }) {
+export default function Amugen() {
 
   return (
     <div className='Amugen'>

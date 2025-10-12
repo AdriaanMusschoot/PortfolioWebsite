@@ -5,7 +5,7 @@ import ButtonLinkContainer from '../buttons/projectButtons/ButtonLinkContainer.j
 import '../../styles/cards/Tectonic.css';
 
 /* HTML */
-export default function Tectonic({activeIndex}) {
+export default function Tectonic() {
     return (
       <>
         <div className='Tectonic'>

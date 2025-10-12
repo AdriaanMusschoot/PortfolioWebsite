@@ -1,6 +1,6 @@
 :root{
   --breaker-background-color:  var( --outline-color);
-  --breaker-width: var(--outline-width);
+  --breaker-width: 0.15vw;
 }
 
 .Breaker{

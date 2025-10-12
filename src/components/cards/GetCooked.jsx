@@ -5,7 +5,7 @@ import ButtonLinkContainer from '../buttons/projectButtons/ButtonLinkContainer.j
 import '../../styles/cards/GetCooked.css';
 
 /* HTML */
-export default function GetCooked({activeIndex}) 
+export default function GetCooked() 
 {
     return (
         <div className='GetCookedCard'>

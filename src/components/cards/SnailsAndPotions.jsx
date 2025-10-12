@@ -5,7 +5,7 @@ import ButtonLinkContainer from '../buttons/projectButtons/ButtonLinkContainer.j
 import '../../styles/cards/SnailsAndPotions.css'; 
 
 /* HTML */
-export default function SnailsAndPotions({ activeIndex }) {
+export default function SnailsAndPotions() {
 
   return (
     <div className='snails-and-potions'>

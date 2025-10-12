@@ -7,7 +7,7 @@ import ButtonLinkContainer from '../buttons/projectButtons/ButtonLinkContainer.j
 import '../../styles/cards/Vulkan.css'; // Import your CSS file
 
 /* HTML */
-export default function Vulkan({activeIndex}) {
+export default function Vulkan() {
     return (
       <>
         <div className='vulkan'>
