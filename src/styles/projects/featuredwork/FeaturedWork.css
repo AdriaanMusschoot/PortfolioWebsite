@@ -1,3 +1,7 @@
+.featured-work h2 {
+    text-align: center;
+}
+
 .featured-work .highlight {
     color: var(--hovered-color-links);
 }
