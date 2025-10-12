@@ -1,7 +1,3 @@
-import React from 'react';
-/* Data Imports */
-import Breaker from './Breaker.jsx';
-
 /* Style Imports */
 import '../styles/Home.css';
 
