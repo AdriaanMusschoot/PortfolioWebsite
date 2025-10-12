@@ -14,7 +14,7 @@ import '../styles/Header.css';
 export default function Header() {
   useEffect(() => {
     const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.header--navbar a');
+    const navLinks = document.querySelectorAll('.header-wrapper .section-links a');
 
     function changeActiveLink() {
         let closestSectionIndex = -1;
@@ -56,8 +56,8 @@ export default function Header() {
   
   return (
     <>
-      <div className='header--navbar'>
-        <div className='centered-part'>
+      <div className='header-wrapper'>
+        <div className='section-links'>
           <a href='#home'>
            <div className='header--logo'>
              <Logo className='svg'/>

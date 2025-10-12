@@ -43,9 +43,9 @@
   --description-overlay-color: rgba(0, 0, 0, 0.9);
 
   /* Transition values used for hovering*/
-  --time-transition: 0.3s;
+  --transition-time: 0.3s;
   --hovered-color-links: #b270b6;
-  --scale-transition: 1.1;
+  --transform-scale: 1.1;
 
   /* Transition values used for opening a project card needs to match in Projects.jsx */
   --time-project-card-transition: 0.5s;
@@ -122,10 +122,21 @@ a {
   color: var(--text-color);
   font-size: var(--p);
   font-weight: bold;
-  
-  &:hover{
-    color:var(--hovered-color-links);
-  }
+  transition: color var(--transition-time) ease;
+}
+
+a:hover {
+  color:var(--hovered-color-links);
+}
+
+svg {
+  color: var(--text-color);
+  transition: transform var(--transition-time) ease, color var(--transition-time) ease;
+}
+
+svg:hover {
+  transform: scale(var(--transform-scale));
+  color: var(--hovered-color-links);
 }
 
 img {

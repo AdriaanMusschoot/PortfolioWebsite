@@ -12,13 +12,6 @@
 
     & .svg {
       width: 3vw;
-      color: var(--text-color);
-      transition: transform var(--time-transition) ease, color var(--time-transition) ease;
-
-      &:hover {
-        transform: scale(var(--scale-transition));
-        color: var(--hovered-color-links);
-      }
     }
   }
 }
