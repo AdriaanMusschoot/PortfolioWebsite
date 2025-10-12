@@ -5,14 +5,14 @@ import Projects from '../../../data/projects.json'
 import '../../../styles/projects/projectgrid/ProjectGrid.css'
 
 /* HTIML */
-export default function ProjectGrid() {
+export default function ProjectGrid({ ActivateProjectCallback }) {
     return (
         <div className='project-grid-wrapper'>
             <h2>Projects</h2>
             <div className="project-grid">
                 {
                     Projects.map((project) => (
-                        <div className='project'>
+                        <div className='project' onClick={() => ActivateProjectCallback(project)}>
                             <img src={project.image} alt={project.title} />
                             <div className='text'>
                                 <p className='title'>{project.title}</p>

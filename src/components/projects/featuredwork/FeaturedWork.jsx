@@ -9,17 +9,17 @@ import Projects from '../../../data/projects.json';
 import '../../../styles/projects/featuredwork/FeaturedWork.css';
 
 /* HTML */
-export default function FeaturedWork() {
+export default function FeaturedWork({ ActivateProjectCallback }) {
 
   const FeaturedProjects = Projects.filter(project => project.type === 'main');
   const FeaturedProjectName = 'featured-project';
   
   return (
     <div id='featured-work' className='featured-work'>
-        <h2>Featured Work</h2>
+        <h2><span className='highlight'>Featured</span> Work</h2>
         {
             FeaturedProjects.map((project, index) => (
-              <div /* Div For the Whole Project Card */>
+              <div /* Div For the Whole Project Card */ onClick={() => ActivateProjectCallback(project)}>
                 { index % 2 === 0 ? ( /* If the projects index is even, put the image on one side else put it on the other side */
                   <>
                     <div className={`${FeaturedProjectName} odd`}>

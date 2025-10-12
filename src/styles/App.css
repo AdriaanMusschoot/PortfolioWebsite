@@ -19,8 +19,10 @@
   --outline-radius: 0vw;
 
   --base-radius-size: 0.5vw;
-  --radius-scale: 1.25;
-  --img-radius: var(--base-radius-size);
+  --radius-scale: 2;
+  --border-radius-standard: var(--base-radius-size);
+  --border-radius-small: calc(var(--border-radius-standard) / var(--radius-scale));
+  --border-radius-large: calc(var(--border-radius-standard) * var(--radius-scale));
 
   /* Fill Color Values */
   --card-fill-color: #3D4273;
@@ -114,7 +116,6 @@ h5 {
 p {
   margin: 0;
   font-size: var(--p);
-  text-align: justify;
 }
 
 a {
@@ -128,7 +129,7 @@ a {
 }
 
 img {
-  border-radius: var(--img-radius);
+  border-radius: var(--border-radius-standard);
 }
 
 /* To be moved to indivudal elements */

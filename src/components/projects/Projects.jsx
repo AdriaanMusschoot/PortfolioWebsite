@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { ReactComponent as CrossButton } from '../../assets/svg/smallcross_icon.svg';
 import Breaker from '../Breaker.jsx';
 import FeaturedWork from './featuredwork/FeaturedWork.jsx';
-import AllProjects from './projectgrid/ProjectGrid.jsx'
+import ProjectGrid from './projectgrid/ProjectGrid.jsx'
 
 /* Project Details */
 import SnailsAndPotions from '../cards/SnailsAndPotions.jsx';
@@ -22,6 +22,7 @@ import '../../styles/Projects.css';
 import '../../styles/ProjectCard.css';
 
 export default function ProjectCard() {
+  
   const [activeProject, setActiveProject] = useState(null);
   const [transitioning, setTransitioning] = useState(false);
 
@@ -59,7 +60,7 @@ export default function ProjectCard() {
     setTimeout(() => {
       setActiveProject(null);
       setTransitioning(false);
-    }, 500); // Match this duration with your CSS transition time
+    }, 500); // Match this duration with the CSS transition time
   };
 
   const openClickedCard = (project) => {
@@ -70,12 +71,10 @@ export default function ProjectCard() {
     }, 0); // Set to 0 to allow the transition to take effect
   };
 
-  const isCardActive = (project) => (activeProject === project ? 'active' : '');
-
   return (
     <section id='projects' className='projects'>
-      <FeaturedWork />
-      <AllProjects />
+      <FeaturedWork ActivateProjectCallback={openClickedCard} />
+      <ProjectGrid ActivateProjectCallback={openClickedCard} />
       {/* Small Projects Section */}
       <div className='card-wrapper'>
         {/* Description Section */}

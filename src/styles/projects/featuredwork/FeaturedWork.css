@@ -1,8 +1,16 @@
+.featured-work .highlight {
+    color: var(--hovered-color-links);
+}
+
 .featured-project {
     display: grid;
     margin-bottom: 2vw;
     outline: var(--outline-width) var(--outline-style) var(--outline-color);
     gap: 1vw;
+}
+
+.featured-project :hover {
+    cursor: pointer;
 }
 
 .featured-project h3 {
@@ -20,4 +28,5 @@
 .featured-project-thumbnail {
   width: 100%;
   height: auto;
+  border-radius: var(--border-radius-large);
 }

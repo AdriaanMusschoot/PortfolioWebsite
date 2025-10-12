@@ -1,7 +1,7 @@
 Header {
   border-style: var(--outline-style);
   border-color: var(--outline-color);
-  border-radius: var(--outline-radius);
+  border-radius: var(--border-radius-standard);
   border-width: var(--outline-width);
   border-top-left-radius: 0;
   border-top-right-radius: 0;
