@@ -5,7 +5,7 @@ import '../../styles/cards/BFG.css';
 
 /* HTML */
 export default function BFG() 
-{
+{ 
     return (
         <div className="BFG">
             <h2>Black Forest Games GMBH</h2>
@@ -38,33 +38,33 @@ export default function BFG()
                     </p>
                 <h3>System Analysis</h3>
                     <p>
-                        The fact this system was separate at the start also gave me the task to think about how I would design the system from the ground up.
-                        From which I was able to make plenty of mistakes, rip out big parts and put them back together in an improved way.
-                        As I kept working on the system, I became more and more attached to it.
+                        The fact this system was separate at the start also gave me the task to think about how I would design the system from scratch.
+                        Therefore I was able to make plenty of mistakes, rip out big parts and put them back together in an improved way.
+                        As I kept working on the system, I became more and more familiar with it (and a little bit attached).
                     </p>
                     <h4>Mass Structure</h4>
                         <p>
-                            Each perception type, has one regular fragment. On it are stored the parameters for that perception type. 
+                            Each perception type has one regular fragment. On it are stored the parameters for that perception type. 
                             Designers can add these fragments on any entity and tweak its values, to make it perceive.
                             In code each perception type has its own matching processor, that iterates over the fragments and performs its logic.
                             The player is made perceivable by adding a mass tag to it. 
-                            When a processor that listens to the addition of that tag, a reference to its mass handle is stored in the perception subsystem.
+                            When a processor listens to the addition of that tag, a reference to its mass handle is stored in the perception subsystem.
                             This way if later the player had a dog running with him, you could just add the tag to the dog and it would be perceivable.
                         </p>
                     <h4>Types Of Perception</h4>
                         <h5>Sight</h5>
                             <p>
                                 The sight processor iterates over all entities that have a sight wedge fragment and checks if they can see any perceivable entities.
-                                If that is the case it then sends out a corresponding event, an entity entered my sight wedge.
+                                If that is the case it sends out a corresponding event; an entity entered my sight wedge.
                                 And it will try to store a reference to that entity on the sight wedge fragment. 
-                                By storing these references, we can compare them to last frame to determine if the entity is still in the sight wedge, or if it has left.
-                                Then we can send out the appropriate event, an entity exited my sight wedge, and remove it from the array on the fragment. 
+                                By storing these references, we can compare them to last frame to determine whether the entity is still in the sight wedge, or it has left.
+                                Then we can send out the appropriate event, 'an entity exited my sight wedge', and remove it from the array on the fragment. 
                             </p>
                         <h5>Listening</h5>
                             <p>
                                 Any noises produced by entities are stored for one frame in the perception subsystem.
                                 The listening processor iterates over all entities that have a listening sphere fragment and checks if they hear any of those noises.
-                                If the entity was able to hear a noise (produced by any entity), it sends out the corresponding event, I heard a noise.
+                                If the entity was able to hear a noise (produced by any entity), it sends out the corresponding event; I heard a noise.
                                 After executing all of its logic it clears out the noises stored in the perception subsystem.
                             </p>
                         <h5>Feeling</h5>
@@ -83,7 +83,7 @@ export default function BFG()
                 <h3>Evolution of the system</h3>
                     <h4>Simple Beginnings</h4>
                         <p>
-                            I had previously never worked with Mass, so I knew it was going to take some time to get it right.
+                            I had never worked with Mass before, so I knew it was going to take some time to get it right.
                             In my first iteration for the system I was working with constant shared fragments, thinking that a per config basis was appropriate.
                             Initially this was fine, but later on designers wanted to change it per instance, so we needed to switch to a regular fragment for a per instance basis.
                             Logic wise not a lot changed, but I had to rip out a lot of code and make it work again with the new fragment type.
@@ -94,7 +94,7 @@ export default function BFG()
                                     For the sight perception, the designers wanted a sight wedge, not just a cone.
                                     So I simplified the math into 3 steps, a distance check, a height check and an angle check.
                                     Every check was to the center of the player for simplicity.
-                                    By performing these checks in this order, I could early out and avoid the more expensive angle check at the end.
+                                    By performing these checks in this order, I could stop the calculation early and avoid the more expensive angle check at the end.
                                 </p>
                                 <img src='./assets/ProjectImages/BFG/SightWedge_Visual_Initial.png' alt='Sight Wedge Visuals Initial'></img>
                             </div>
@@ -110,7 +110,7 @@ export default function BFG()
                             <img className='Code-Snippet' src='./assets/ProjectImages/BFG/ListeningSphere_Code_Initial.png' alt='Listening Sphere Code Initial'></img>
                         <h5>Feeling Perception</h5>
                             <p>
-                                Creating the feeling perception was the first time with I had to work in other parts of the codebase that weren't on my island.
+                                Creating the feeling perception was the first time that I had to work in other parts of the codebase that weren't on my island.
                                 At first I was a bit scared to make changes to existing code. 
                                 I will never forget the first one. Some logic on public struct members happening twice in 2 different places.
                                 So I quickly refactored it into a function and called it from both places. 
@@ -143,7 +143,7 @@ export default function BFG()
                                 <br></br><br></br>
                                 Additionally they also don't need a listening sphere, so I introduced a base fragment for perception type fragments.
                                 This allowed to just store them in an array on the entity and add or remove which ever one the designer needed.
-                                Saddly, this was not covered by default mass functionality, as most of it happens with templates.
+                                Sadly, this was not covered by default mass functionality, as most of it happens with templates.
                                 But the type was unknown at runtime, so I had to do a mass deep dive and create a custom push command.
                             </p>
                     <h4>Finalizing</h4>
@@ -155,14 +155,14 @@ export default function BFG()
                                     Similarly, I generated those (spheres) cylinders in my case as the math already in place worked for that.
                                     <br></br><br></br>
                                     After writing this I realised that generating three cylinders with the same radii on top of each other can really just be 1 big cylinder.
-                                    But I am no longer at the company to change that sadly.
+                                    Unfortunately, I am no longer at the company to change that.
                                 </p>
                                 <img src='./assets/ProjectImages/BFG/SightWedge_Visual_Cylinder.png' alt='Sight Wedge Visuals Cylinder'></img>
                             </div>
                         <h5>Debugging</h5>
                             <div className='Media-Next-To-Text'>
                                 <p>
-                                    To help designers fine tune the parameters of the system, I added debugging options at editor time and runtime.
+                                    To help designers finetune the parameters of the system, I added debugging options at editor time and runtime.
                                     This way of opt-in debugging through the console, allows both designers and programmers to easily debug it without causing any clutter.
                                 </p>
                                 <video src='./assets/ProjectImages/BFG/PerceptionSystem_DesignerExperience.mp4' alt='Designer Usage' autoPlay loop muted controls></video>
@@ -177,8 +177,7 @@ export default function BFG()
                 <h3>What's missing?</h3>
                     <div className='Media-Next-To-Text'>
                         <p>
-                            As I started using the chain reaction system, to activate combat on perception events.
-                            I quickly discovered some core functionality was missing. 
+                            As I started using the chain reaction system, to activate combat on perception events, I quickly discovered some core functionality was missing. 
                             After debugging for an extensive period why I couldn't get two instigators to work I stumbled on this hidden code.
                             Quite a surprise to find out that something I could select in blueprints, wouldn't translate to C++.
                             So I added support for it.
@@ -187,7 +186,7 @@ export default function BFG()
                     </div>
                 <h3>Hard To Use</h3>
                     <p>
-                        While I kept using the system, I found it quite cumbersome to work with. 
+                        The more I was using the system, the more cumbersome it became to work with. 
                         If you wanted a chain reaction to listen to the same event, you had to duplicate the entire chain reaction and add a different action.
                         If an entity was listening to itself for the event to trigger, it suddenly became impossible for anyone else to trigger the event.
                         I discussed this with my colleague and we came to the conclusion that indeed it could be improved. 
