@@ -1,0 +1,8 @@
+.featured-work-text p {
+    text-align: center;
+}
+
+.featured-work-text .highlight {
+    font-weight: bold;
+    color: var(--hovered-color-links);
+}

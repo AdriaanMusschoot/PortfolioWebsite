@@ -3,6 +3,7 @@
     margin-bottom: 2vw;
     outline: var(--outline-width) var(--outline-style) var(--outline-color);
     text-align: center;
+    gap: 1vw;
 }
 
 .featured-project h3 {

@@ -21,7 +21,7 @@ import BFG from '../cards/BFG.jsx';
 /* Style Imports */
 import '../../styles/Projects.css';
 import '../../styles/ProjectCard.css';
-import FeaturedWork from './FeaturedWork.jsx';
+import FeaturedWork from './featuredwork/FeaturedWork.jsx';
 
 export default function ProjectCard() {
   const [activeProject, setActiveProject] = useState(null);
