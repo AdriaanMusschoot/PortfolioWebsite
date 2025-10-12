@@ -133,7 +133,8 @@ a {
 }
 
 a:hover {
-  color:var(--hovered-color-links);
+  color: var(--hovered-color-links);
+  cursor: pointer;
 }
 
 svg {
@@ -144,6 +145,7 @@ svg {
 svg:hover {
   transform: scale(var(--transform-scale));
   color: var(--hovered-color-links);
+  cursor: pointer;
 }
 
 img {

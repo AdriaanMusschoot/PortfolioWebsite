@@ -11,15 +11,15 @@ import Breaker from './Breaker';
 export default function Skills() {
   return (
     <section id='skills' className='skills-section'>
-        <h2>Skills</h2>
+        <div className='header'>
+          <h2>Skills</h2>
+          <p className='levels'>
+            Primary / Proficient = ●
+            <br></br>
+            Secondary / Some Experience = ○
+          </p>
+        </div>
         <div className='skills'>
-            <div className='levels'>
-              <p>
-                ● Primary / Proficient
-                <br></br>
-                ○ Secondary / Some Experience
-              </p>
-            </div>
                 {
                   skills.map((skill) => 
                     (

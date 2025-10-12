@@ -4,35 +4,39 @@
   margin-right: var(--margin-text);
 }
 
+.skills-section .header{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; 
+  font-weight: semibold;
+  align-items: center;
+}
+
+.skills-section .header .levels{
+  margin-left: auto;
+  text-align: right;
+}
+
 .skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   row-gap: 1vw;
   column-gap: 1vw;
-  
-  & .levels{
-    width: 100%; 
-    margin-bottom: 1%;
-    font-weight: semibold;
-  }
-
-  & .skills-container {
-    border-style: var(--outline-style);
-    border-color: var(--outline-color);
-    border-radius: var(--outline-radius);
-    border-width: var(--outline-width);
-
-    background: var(--card-fill-color);
-    width: 46.5%;
-    color: var(--text-color);
-    box-shadow: var(--box-shadow-default);
-    padding: 1%;
-  }
 
   & li {
     display: flex;
   }
+}
+
+
+.skills .skills-container {
+  border-radius: var(--border-radius-standard);
+  background: var(--card-fill-color);
+  width: 46.5%;
+  color: var(--text-color);
+  box-shadow: var(--box-shadow-default);
+  padding: 1%;
 }
 
 .skills h4{

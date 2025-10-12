@@ -4,7 +4,7 @@
   --margin-project-card-bottom: 3.5%;
 }
 
-.projects .card-wrapper{
+.card-wrapper{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -26,13 +26,6 @@
   transition: opacity var(--time-project-card-transition) ease;
   opacity: 0;
   
-  &.active{
-      opacity: 1;
-      .card{
-        transform: scale(1);
-      }
-  }
-
   & .projectContainer_specifics {
     position: relative;
     display: flex;
@@ -57,46 +50,46 @@
     padding: 0.3vw;
   }
 
-  .card{
-    border-style: var(--outline-style);
-    border-color: var(--outline-color);
-    border-radius: var(--outline-radius);
-    border-width: var(--outline-width);
-    background-color: var(--background-color);
-    z-index: 3;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    width: 80vw;
-    height: auto;
-    box-shadow: var(--box-shadow-default);
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    flex-direction: column;
-    transition: transform var(--time-project-card-transition) ease;
-    transform:scale(0);
+}
 
-    .cardDetails{
-      margin-left: var(--margin-project-card-sides);
-      margin-right: var(--margin-project-card-sides);
-      margin-top: var(--margin-project-card-top);
-      margin-bottom: var(--margin-project-card-bottom);
+.card-background.active{
+    opacity: 1;
+    .card{
+      transform: scale(1);
     }
+}
 
-    .cross-button{
-      position: absolute;
-      left: 67vw;
-      top: 3vw;
-      width: 8%;
-      height: auto;
-      stroke: var(--outline-color);
-      transition: stroke var(--time-transition) ease, transform var(--time-transition) ease;
-      
-      &:hover{
-        cursor: pointer;
-        transform: scale(var(--scale-transition));
-        stroke: var(--hovered-color-links);
-      }
-    }
-  }
+.card-background .card{
+  border-style: var(--outline-style);
+  border-color: var(--outline-color);
+  border-width: var(--outline-width);
+  border-radius: var(--border-radius-large);
+  background-color: var(--background-color);
+  z-index: 3;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 80vw;
+  height: auto;
+  box-shadow: var(--box-shadow-default);
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+  transition: transform var(--time-project-card-transition) ease;
+  transform: scale(0);
+}
+
+.card-background .card .cardDetails {
+  margin-left: var(--margin-project-card-sides);
+  margin-right: var(--margin-project-card-sides);
+  margin-top: var(--margin-project-card-top);
+  margin-bottom: var(--margin-project-card-bottom);
+}
+
+.card-background .card .cross-button{
+  position: absolute;
+  left: 67vw;
+  top: 3vw;
+  width: 8%;
+  height: auto;
 }

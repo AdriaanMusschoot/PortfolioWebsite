@@ -23,8 +23,7 @@ export default function About() {
                   When I got my first laptop, I turned to Rocket League and the DOOM Franchise.
                   <br></br><br></br>
                   After discovering I could follow a degree in game development, that's exactly what I did.
-                  It wasn't easy as I had never programmed before, but I stuck through it and now I am a proud graduate with a Bachelor's in
-                  <a href="https://www.digitalartsandentertainment.be/page/31/Game+Development" target="_blank" rel="noopener noreferrer">Game Development</a>!
+                  It wasn't easy as I had never programmed before, but I stuck through it and now I am a proud graduate with a Bachelor's in Game Development!
                   <br></br><br></br>
                   My favourite programming task usually involves some geometric brain gymnastics.
                   Setting up gameplay systems for designers is also something I really enjoy, as it requires me to think about all aspects of the system.
