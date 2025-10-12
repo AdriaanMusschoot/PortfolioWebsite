@@ -1,3 +1,6 @@
+/* Style Imports */
+import '../../../../styles/projects/featuredwork/individual/FeaturedBFG.css';
+
 /* HTML */
 export default function FeaturedBFG({ highlightClassName }) {
   return (

@@ -1,3 +1,6 @@
+/* Style Imports */
+import '../../../../styles/projects/featuredwork/individual/FeaturedGetCooked.css';
+
 /* HTML */
 export default function FeaturedGetCooked() {
   return (

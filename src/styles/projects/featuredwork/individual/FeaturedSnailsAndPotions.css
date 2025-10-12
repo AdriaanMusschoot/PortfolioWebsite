@@ -1,0 +1,3 @@
+.featured-project .thumbnail.SnailsAndPotions {
+  box-shadow: hsla(95, 22%, 36%, var(--box-shadow-opacity-thumbnail)) var(--box-shadow-width-thumbnail);
+}

@@ -9,7 +9,8 @@
             "C++",
             "UE5"
         ],
-        "date" : "Sep - Dec 2024"
+        "date" : "Sep - Dec 2024",
+        "id": "GetCooked"
     },
     {
         "image" : "./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg",
@@ -21,7 +22,8 @@
             "C++",
             "UE5"
         ],
-        "date" : "Feb - May 2024"
+        "date" : "Feb - May 2024",
+        "id": "SnailsAndPotions"
     },
     {
         "image" : "./assets/ProjectImages/BFG/Thumbnail_BFG.png",
@@ -34,7 +36,8 @@
             "UE5",
             "Mass (ECS)"
         ],
-        "date" : "Feb - Jun 2025"
+        "date" : "Feb - Jun 2025",
+        "id": "BFG"
     },
     {
         "image" : "./assets/ProjectImages/Amugen/Thumbnail.png",
@@ -46,7 +49,8 @@
             "C++",
             "CMake"
         ],
-        "date" : "Feb - June 2024"
+        "date" : "Feb - June 2024",
+        "id": "Amugen"
     },
     {
         "image" : "./assets/ProjectImages/Vulkan/Thumbnail.png",
@@ -58,7 +62,8 @@
             "C++",
             "Vulkan"
         ],
-        "date" : "Feb - Jun 2024"
+        "date" : "Feb - Jun 2024",
+        "id": "InstancedRendering"
     },
     {
         "image" : "./assets/ProjectImages/RayMarcher/Thumbnail.png",
@@ -70,7 +75,8 @@
             "C++",
             "Graphics"
         ],
-        "date" : "Sep - Oct 2024"
+        "date" : "Sep - Oct 2024",
+        "id": "RayMarcher"
     },
     {
         "image" : "./assets/ProjectImages/Tectonic/Thumbnail.png",
@@ -81,7 +87,8 @@
             "Solo",
             "C++"
         ],
-        "date" : "Aug - Sep 2024"
+        "date" : "Aug - Sep 2024",
+        "id" : "Tectonic"
     },
     {
         "image" : "./assets/ProjectImages/SouperHero/Thumbnail.jpg",
@@ -93,7 +100,8 @@
             "C++",
             "UE5"
         ],
-        "date" : "Jul 2024"
+        "date" : "Jul 2024",
+        "id" : "SouperHero"
     },
     {
         "image" : "./assets/ProjectImages/RideOfGiri/Thumbnail.jpg",
@@ -104,7 +112,8 @@
             "GameJam",
             "UE5"
         ],
-        "date" : "Feb 2024"
+        "date" : "Feb 2024",
+        "id" : "RideOfGiri"
     },
     {
         "image" : "./assets/ProjectImages/TrajectoryPrediction/Thumbnail.png",
@@ -116,6 +125,7 @@
             "C#",
             "Unity"
         ],
-        "date" : "Dec 2023"
+        "date" : "Dec 2023",
+        "id" : "TrajectoryPrediction"
     }
 ]

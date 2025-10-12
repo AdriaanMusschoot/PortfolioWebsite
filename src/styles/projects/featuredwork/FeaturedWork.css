@@ -1,3 +1,8 @@
+:root {
+  --box-shadow-width-thumbnail: 0vw 0vw 10vw;
+  --box-shadow-opacity-thumbnail: 0.2;
+}
+
 .featured-work h2 {
     text-align: center;
 }
@@ -34,10 +39,10 @@
 }
 
 .featured-project .thumbnail {
-  width: 100%;
-  height: auto;
-  border-radius: var(--border-radius-large);
-  transition: filter var(--transition-time) ease;
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-large);
+    transition: filter var(--transition-time) ease;
 }
 
 .featured-project .explore-project-button {
@@ -57,7 +62,7 @@
 }
 
 .featured-project:hover .thumbnail {
-    filter: brightness(50%);
+    filter: brightness(80%);
 }
 
 .featured-project .explore-project-button:hover {

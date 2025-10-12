@@ -4,7 +4,6 @@ import FeaturedWorkText from './FeaturedWorkText.jsx';
 /* Data Imports */
 import Projects from '../../../data/projects.json';
 
-
 /* Style Imports */
 import '../../../styles/projects/featuredwork/FeaturedWork.css';
 
@@ -25,7 +24,7 @@ export default function FeaturedWork({ ActivateProjectCallback }) {
                     <div className={`${FeaturedProjectName} odd`}>
                       <FeaturedWorkText project={project}/>
                       <div className='img-button-container'>
-                        <img className='thumbnail' src={project.image} alt={project.title} />
+                        <img className={`thumbnail ${project.id}`} src={project.image} alt={project.title} />
                         <h4 className='explore-project-button' onClick={() => ActivateProjectCallback(project)}>Explore Project</h4>
                       </div>
                     </div>
@@ -34,7 +33,7 @@ export default function FeaturedWork({ ActivateProjectCallback }) {
                   <>
                     <div className={`${FeaturedProjectName} even`}>
                       <div className='img-button-container'>
-                        <img className='thumbnail' src={project.image} alt={project.title} />
+                        <img className={`thumbnail ${project.id}`} src={project.image} alt={project.title} />
                         <h4 className='explore-project-button' onClick={() => ActivateProjectCallback(project)}>Explore Project</h4>
                       </div>
                       <FeaturedWorkText project={project}/>
