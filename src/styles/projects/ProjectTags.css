@@ -5,7 +5,7 @@
 }
 
 .project-tags p {
-  background-color: var(--card-fill-color);
-  padding: 0.2vw;
+  background-color: var(--outline-color);
+  padding: var(--padding-small);
   border-radius: var(--border-radius-small);
 }

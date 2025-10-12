@@ -13,16 +13,23 @@
   --h1: calc(var(--h2) * var(--font-scale));
 
   /* Main Outline Values */
-  --outline-color: #3D5D73;
+  --outline-color: #40647c;
   --outline-width: 0vw;
   --outline-style: solid;
-  --outline-radius: 0vw;
 
+  /* Radius */
   --base-radius-size: 0.5vw;
-  --radius-scale: 2;
+  --border-radius-scale: 2;
   --border-radius-standard: var(--base-radius-size);
-  --border-radius-small: calc(var(--border-radius-standard) / var(--radius-scale));
-  --border-radius-large: calc(var(--border-radius-standard) * var(--radius-scale));
+  --border-radius-small: calc(var(--border-radius-standard) / var(--border-radius-scale));
+  --border-radius-large: calc(var(--border-radius-standard) * var(--border-radius-scale));
+
+  /* Padding */
+  --base-padding-size: 0.8vw;
+  --padding-scale: 2;
+  --padding-standard: var(--base-padding-size);
+  --padding-small: calc(var(--padding-standard) / var(--padding-scale));
+  --padding-large: calc(var(--padding-standard) * var(--padding-scale));
 
   /* Fill Color Values */
   --card-fill-color: #3D4273;

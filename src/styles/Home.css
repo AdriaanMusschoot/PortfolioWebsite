@@ -46,11 +46,11 @@
 }
 
 .home p{
-  padding: 0.3vw;
+  padding: var(--padding-small);
   display: inline-block;
   text-align: center;
   outline: var(--outline-width) var(--outline-style) var(--outline-color);
-  background-color: var(--card-fill-color);
+  background-color: var(--outline-color);
   border-radius: var(--border-radius-small);
 }
 
