@@ -1,5 +1,10 @@
-.featured-work-text p {
-    text-align: center;
+.featured-work-text {
+    align-content: center;
+    padding-left: 1vw;;
+}
+
+.featured-work-text h3{ 
+    margin: 0
 }
 
 .featured-work-text .highlight {

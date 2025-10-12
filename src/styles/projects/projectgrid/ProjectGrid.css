@@ -1,0 +1,30 @@
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vw;
+}
+
+.project {
+    width: 100%;
+    background-color: var(--card-fill-color);
+    border-radius: var(--img-radius);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.project .text {
+    padding: 0.3vw;
+}
+
+.project .title {
+    font-weight: bold;
+}
+
+.project .date {
+    font-size: var(--p1);
+}

@@ -2,21 +2,25 @@
 
 :root {
   /* Font-Sizing */
-  --base-size: 1.2vw;
-  --scale: 1.25;
-  --p: var(--base-size);
-  --p1: calc(var(--p) / var(--scale));
-  --h5: calc(var(--p) * var(--scale));
-  --h4: calc(var(--h5) * var(--scale));
-  --h3: calc(var(--h4) * var(--scale));
-  --h2: calc(var(--h3) * var(--scale));
-  --h1: calc(var(--h2) * var(--scale));
+  --base-font-size: 1.2vw;
+  --font-scale: 1.25;
+  --p: var(--base-font-size);
+  --p1: calc(var(--p) / var(--font-scale));
+  --h5: calc(var(--p) * var(--font-scale));
+  --h4: calc(var(--h5) * var(--font-scale));
+  --h3: calc(var(--h4) * var(--font-scale));
+  --h2: calc(var(--h3) * var(--font-scale));
+  --h1: calc(var(--h2) * var(--font-scale));
 
   /* Main Outline Values */
   --outline-color: #3D5D73;
-  --outline-width: 0.15vw;
+  --outline-width: 0vw;
   --outline-style: solid;
   --outline-radius: 0vw;
+
+  --base-radius-size: 0.5vw;
+  --radius-scale: 1.25;
+  --img-radius: var(--base-radius-size);
 
   /* Fill Color Values */
   --card-fill-color: #3D4273;
@@ -123,7 +127,11 @@ a {
   }
 }
 
-/* To be moved to indivdual elements */
+img {
+  border-radius: var(--img-radius);
+}
+
+/* To be moved to indivudal elements */
 .img-1 {
   width: 31%;
   margin-top: 3%;

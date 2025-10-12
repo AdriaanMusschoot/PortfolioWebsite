@@ -2,9 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { ReactComponent as CrossButton } from '../../assets/svg/smallcross_icon.svg';
 import Breaker from '../Breaker.jsx';
-
-/* Project Card Data */
-import Projects from '../../data/projects.json';
+import FeaturedWork from './featuredwork/FeaturedWork.jsx';
+import AllProjects from './projectgrid/ProjectGrid.jsx'
 
 /* Project Details */
 import SnailsAndPotions from '../cards/SnailsAndPotions.jsx';
@@ -21,7 +20,6 @@ import BFG from '../cards/BFG.jsx';
 /* Style Imports */
 import '../../styles/Projects.css';
 import '../../styles/ProjectCard.css';
-import FeaturedWork from './featuredwork/FeaturedWork.jsx';
 
 export default function ProjectCard() {
   const [activeProject, setActiveProject] = useState(null);
@@ -74,77 +72,11 @@ export default function ProjectCard() {
 
   const isCardActive = (project) => (activeProject === project ? 'active' : '');
 
-  const MainProjects = Projects.filter(project => project.type === 'main');
-  
   return (
     <section id='projects' className='projects'>
-      {/* Main Projects Section */}
       <FeaturedWork />
-      <h2>Projects</h2>
-      <div className="mainproj-wrapper">
-        {MainProjects.map((project) => (
-          <div
-            className={`mainproj-container ${isCardActive(project)}`}
-            onClick={() => openClickedCard(project)}
-          >
-            <div className='mainproj-container_image'>
-              <img src={project.image} alt={project.title} />
-              {project.specifics.length > 0 && (
-                <div className="mainproj-container_specifics">
-                  <ul>
-                    {project.specifics.map((skill, i) => (
-                      <li key={i}>
-                        <p>
-                          {skill}
-                        </p>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </div>
-            <p className='mainproj-container_title'>
-              {project.title}
-            </p>
-            <p className='mainproj-container_date'>
-              {project.date}
-            </p>
-          </div>
-        ))}
-      </div>
-      <br></br>
+      <AllProjects />
       {/* Small Projects Section */}
-      <div className="smallproj-wrapper">
-        {Projects.map((project) => (
-          <div
-            className={`smallproj-container ${isCardActive(project)}`}
-            onClick={() => openClickedCard(project)}
-          >
-            <div className='smallproj-container_image'>
-              <img src={project.image} alt={project.title} />
-              {project.specifics.length > 0 && (
-                <div className="smallproj-container_specifics">
-                  <ul>
-                    {project.specifics.map((skill, i) => (
-                      <li key={i}>
-                        <p>
-                            {skill}
-                        </p>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </div>
-            <p className='smallproj-container_title'>
-              {project.title}
-            </p>
-            <p className='smallproj-container_date'>
-              {project.date}
-            </p>
-          </div>
-        ))}
-      </div>
       <div className='card-wrapper'>
         {/* Description Section */}
         {activeProject !== null && (

@@ -13,7 +13,6 @@
   
   & .levels{
     width: 100%; 
-    margin-left: var(--margin-text);
     margin-bottom: 1%;
     font-weight: semibold;
   }
