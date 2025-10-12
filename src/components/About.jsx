@@ -1,5 +1,6 @@
 /* Data Imports */
 import Breaker from './Breaker.jsx';
+import CVButton from './buttons/CVButton.jsx';
 
 /* Style Imports */
 import '../styles/About.css';
@@ -12,9 +13,7 @@ export default function About() {
             <div className="about-content">
               <div className="about-left">
                 <img src="./assets/Profile/ProfilePicture.jpg" alt="me" className="about-image" />
-                <a href="./assets/Profile/20251508_CV_AdriaanMusschoot_Public.pdf" target="_blank" rel="noopener noreferrer">
-                  <p>CV</p>
-                </a>
+                <CVButton />
               </div>
               <div className="about-text">
                 <p>
