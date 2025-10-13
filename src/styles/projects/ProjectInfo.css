@@ -1,5 +1,7 @@
 :root {
   --padding-project-card-sides: 9%;
+  --padding-project-card-top: 4%;
+  --padding-project-card-bottom: 4%;
   --margin-project-card-top: 3.5%;
   --margin-project-card-bottom: 3.5%;
 }
@@ -43,7 +45,10 @@
     background-color: var(--background-color);
 
     /* Ensure Card Has Padding Without Extra Size */
-    padding: 0 var(--padding-project-card-sides) 0 var(--padding-project-card-sides);
+    padding-left: var(--padding-project-card-sides);
+    padding-right: var(--padding-project-card-sides);
+    padding-top: var(--padding-project-card-top);
+    padding-bottom: var(--padding-project-card-bottom);
     box-sizing: border-box;
 
     margin-top: var(--margin-project-card-top);
@@ -57,10 +62,17 @@
     transform: scale(1);
 }
 
+.card-popup-window .card .header {
+    display: flex;
+    align-items: center;
+}
+
+.card-popup-window .card .header h1 {
+    margin: 0;
+}
+
 .card-popup-window .card .cross-button{
-  position: absolute;
-  left: 67vw;
-  top: 3vw;
   width: 8%;
   height: auto;
+  margin-left: auto;
 }

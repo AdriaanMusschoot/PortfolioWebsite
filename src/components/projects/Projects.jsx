@@ -79,8 +79,7 @@ export default function ProjectCard() {
           <div className={`card-popup-window ${transitioning ? 'transitioning' : 'active'}`}>
             <div className='background' onClick={closeCard}>
               <div className='card' onClick={(event) => event.stopPropagation()}>
-                <div className='card-details'>
-                  <div className='card-header'>
+                  <div className='header'>
                     <h1>{activeProject.title}</h1>
                     <CrossButton className="cross-button" onClick={closeCard}/>
                   </div>
@@ -88,7 +87,6 @@ export default function ProjectCard() {
                   <div className='description'>
                     {projectCardMap[activeProject.title]}
                   </div>
-                </div>
               </div>
             </div>
           </div>
