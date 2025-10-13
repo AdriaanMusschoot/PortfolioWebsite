@@ -6,7 +6,6 @@ import '../styles/Epilogue.css';
 /* HTML */
 export default function Epilogue() {
   const LaisLink = 'https://portfolio-25ma.onrender.com/';
-  const JulianLink = 'https://julianrijken.com/';
   
   return (
     <div className='epilogue'>
@@ -18,11 +17,6 @@ export default function Epilogue() {
               Lais Ben Belgacem
             </a>
               : for the initial layout and framework setup.
-            <br></br>
-            <a href={JulianLink} target='_blank' rel='noreferrer'>
-              Julian Rijken
-            </a>
-              : for the layout inspiration.
             <br></br><br></br>
             Copyright © 2025
             <br/>

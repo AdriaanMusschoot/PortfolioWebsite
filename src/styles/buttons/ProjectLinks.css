@@ -3,11 +3,3 @@
     flex-direction: row;
     justify-content: center;
 }
-
-.button-link-container .svg{
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-    fill: var(--text-color);
-    width: 4vw;
-    height: auto;
-}

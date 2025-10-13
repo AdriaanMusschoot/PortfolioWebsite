@@ -85,9 +85,15 @@
 .card-popup-window .card .tags-links {
     display: flex;
     align-items: center;
+    margin-top: 1vw;
 }
 
 .card-popup-window .card .tags-links .button-link-container {
     margin-left: 5vw;
     gap: 1vw;
+}
+
+.card-popup-window .card .tags-links .button-link-container svg{
+    width: 5vw;
+    height: auto;
 }
