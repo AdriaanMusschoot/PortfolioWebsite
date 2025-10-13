@@ -1,0 +1,66 @@
+:root {
+  --padding-project-card-sides: 9%;
+  --margin-project-card-top: 3.5%;
+  --margin-project-card-bottom: 3.5%;
+}
+
+.card-popup-window{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--text-color);
+}
+
+.card-popup-window .background {
+    background-color: var(--description-overlay-color);
+    width: 100%; /* Ensure it covers the full width */
+    position: fixed; 
+
+    /* Center the card itself */
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center;
+
+    /* Ensure it is scrollable */
+    overflow-y: auto; 
+    height: 100%; 
+    top: 0;
+
+    /* Hidden By Default */
+    opacity: 0;
+    transition: opacity var(--time-project-card-transition) ease;
+
+    z-index: 3; /* Ensure it is above the header */
+}
+
+.card-popup-window.active .background {
+    opacity: 1;
+}
+
+.card-popup-window .background .card {
+    width: 80%;
+    border-radius: var(--border-radius-large);
+    background-color: var(--background-color);
+
+    /* Ensure Card Has Padding Without Extra Size */
+    padding: 0 var(--padding-project-card-sides) 0 var(--padding-project-card-sides);
+    box-sizing: border-box;
+
+    margin-top: var(--margin-project-card-top);
+    margin-bottom: var(--margin-project-card-bottom);
+
+    transition: transform var(--time-project-card-transition) ease;
+    transform: scale(0);
+}
+
+.card-popup-window.active .background .card { 
+    transform: scale(1);
+}
+
+.card-popup-window .card .cross-button{
+  position: absolute;
+  left: 67vw;
+  top: 3vw;
+  width: 8%;
+  height: auto;
+}

@@ -2,7 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { ReactComponent as CrossButton } from '../../assets/svg/smallcross_icon.svg';
 import FeaturedWork from './featuredwork/FeaturedWork.jsx';
-import ProjectGrid from './projectgrid/ProjectGrid.jsx'
+import ProjectGrid from './projectgrid/ProjectGrid.jsx';
+import ProjectTags from './ProjectTags.jsx';
 
 /* Project Details */
 import SnailsAndPotions from '../cards/SnailsAndPotions.jsx';
@@ -18,7 +19,7 @@ import BFG from '../cards/BFG.jsx';
 
 /* Style Imports */
 import '../../styles/Projects.css';
-import '../../styles/ProjectCard.css';
+import '../../styles/projects/ProjectInfo.css';
 
 export default function ProjectCard() {
   
@@ -74,41 +75,24 @@ export default function ProjectCard() {
     <section id='projects' className='projects'>
       <FeaturedWork ActivateProjectCallback={openClickedCard} />
       <ProjectGrid ActivateProjectCallback={openClickedCard} />
-      {/* Small Projects Section */}
-      <div className='card-wrapper'>
-        {/* Description Section */}
         {activeProject !== null && (
-          <div className={`card-background ${transitioning ? 'transitioning' : 'active'}`} onClick={closeCard}>
-            <div
-              className='card'
-              onClick={(event) => event.stopPropagation()}
-            >
-              <CrossButton className="cross-button" onClick={closeCard}/>
-              <div className='cardDetails'>
-                <h1>{activeProject.title}</h1>
-                {activeProject.specifics.length > 0 && 
-                  (
-                    <div className="projectContainer_specifics">
-                    <ul>
-                      {activeProject.specifics.map((skill, i) => (
-                        <li key={i}>
-                          <p>
-                            {skill}
-                          </p>
-                        </li>
-                      ))}
-                    </ul>
+          <div className={`card-popup-window ${transitioning ? 'transitioning' : 'active'}`}>
+            <div className='background' onClick={closeCard}>
+              <div className='card' onClick={(event) => event.stopPropagation()}>
+                <div className='card-details'>
+                  <div className='card-header'>
+                    <h1>{activeProject.title}</h1>
+                    <CrossButton className="cross-button" onClick={closeCard}/>
                   </div>
-                  )
-                }
-                <div className='description'>
-                  {projectCardMap[activeProject.title]}
+                  <ProjectTags tags={activeProject.specifics} />
+                  <div className='description'>
+                    {projectCardMap[activeProject.title]}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         )}
-      </div>
     </section>
   );
 }
