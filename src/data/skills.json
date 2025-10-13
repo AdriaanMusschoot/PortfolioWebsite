@@ -30,7 +30,7 @@
         "title" : "SOURCE CONTROL",
         "contents" : [
             ["Perforce", "Primary"],
-            ["Git", "Primary"]
+            ["Git", "Secondary"]
         ]
     },
     {

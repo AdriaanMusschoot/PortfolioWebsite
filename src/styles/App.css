@@ -12,6 +12,14 @@
   --h2: calc(var(--h3) * var(--font-scale));
   --h1: calc(var(--h2) * var(--font-scale));
 
+  /* Title Margins */
+  --bottom-margin-scale: 2;
+  --margin-h1: 4vw;
+  --margin-h2: 3vw;
+  --margin-h3: 2vw;
+  --margin-h4: 1vw;
+  --margin-h5: 0.5vw;
+
   /* Main Outline Values */
   --outline-color: #40647c;
   --outline-width: 0vw;
@@ -32,7 +40,9 @@
   --padding-large: calc(var(--padding-standard) * var(--padding-scale));
 
   /* Fill Color Values */
-  --card-fill-color: #3D4273;
+  --fill-color: rgb(61, 66, 115);
+  --fill-color-semitransparent: rgba(61, 66, 115, 0.8);
+  --fill-color-background: rgba(255, 255, 255, 0.05);
 
   /* Drop Shadow Values */
   /* First part 0 0 0, because we don't want on the outside of the boxes*/
@@ -85,37 +95,32 @@ html {
 
 /* Text Elements */
 h1 {
-  --margin-h1: 1.5vw;
   margin-top: var(--margin-h1);
-  margin-bottom: var(--margin-h1);
+  margin-bottom: calc(var(--margin-h1) / var(--bottom-margin-scale));
   font-size: var(--h1);
 }
 
 h2 {
-  --margin-h2: 1.25vw;
   margin-top: var(--margin-h2);
-  margin-bottom: var(--margin-h2);
+  margin-bottom: calc(var(--margin-h2) / var(--bottom-margin-scale));
   font-size: var(--h2);
 }
 
 h3 {
-  --margin-h3: 1vw;
   margin-top: var(--margin-h3);
-  margin-bottom: var(--margin-h3);
+  margin-bottom: calc(var(--margin-h3) / var(--bottom-margin-scale));
   font-size: var(--h3);
 }
 
 h4 {
-  --margin-h4: 0.8vw;
   margin-top: var(--margin-h4);
-  margin-bottom: var(--margin-h4);
+  margin-bottom: calc(var(--margin-h4) / var(--bottom-margin-scale));
   font-size: var(--h4);
 }
 
 h5 {
-  --margin-h5: 0.5vw;
   margin-top: var(--margin-h5);
-  margin-bottom: var(--margin-h5);
+  margin-bottom: calc(var(--margin-h5) / var(--bottom-margin-scale));
   font-size: var(--h5);
   font-weight: normal;
 }

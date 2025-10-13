@@ -1,7 +1,4 @@
 /* React Imports */
-import Breaker from './Breaker.jsx';
-
-/* Data Imports */
 import CVButton from './buttons/CVButton.jsx';
 import MailToButton from './buttons/MailToButton.jsx';
 import LinkedInButton from './buttons/LinkedInButton.jsx';
@@ -21,7 +18,6 @@ export default function Contact() {
             <CVButton/>
             <GithubButton/>
         </div>
-      <Breaker/>
     </section>
   )
 };

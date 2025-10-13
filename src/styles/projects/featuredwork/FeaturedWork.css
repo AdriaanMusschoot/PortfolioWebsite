@@ -46,7 +46,7 @@
 }
 
 .featured-project .explore-project-button {
-    background-color: var(--card-fill-color);
+    background-color: var(--fill-color);
     position: absolute;
     left: 50%;
     top: 50%;

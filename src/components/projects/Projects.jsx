@@ -1,7 +1,6 @@
 /* React Imports */
 import React, { useState, useEffect } from 'react';
 import { ReactComponent as CrossButton } from '../../assets/svg/smallcross_icon.svg';
-import Breaker from '../Breaker.jsx';
 import FeaturedWork from './featuredwork/FeaturedWork.jsx';
 import ProjectGrid from './projectgrid/ProjectGrid.jsx'
 
@@ -110,7 +109,6 @@ export default function ProjectCard() {
           </div>
         )}
       </div>
-      <Breaker/>
     </section>
   );
 }

@@ -13,11 +13,12 @@ Header {
   right: 13vw;
   display: flex;
   justify-content: center;
-  background-color: var(--card-fill-color);
+  background-color: var(--fill-color-semitransparent);
   align-items: center; 
   padding-top: 0.5vw;
   padding-bottom: 0.5vw;
 }
+
 
 .header-wrapper {
   display: flex;
@@ -33,6 +34,10 @@ Header {
   flex-wrap: wrap;
   gap: 2vw;
   margin-left: 4vw;
+}
+
+.header-wrapper .section-links h4 {
+  margin: 0;
 }
 
 .header-wrapper .section-links a {

@@ -1,5 +1,4 @@
 /* Data Imports */
-import Breaker from './Breaker.jsx';
 import CVButton from './buttons/CVButton.jsx';
 
 /* Style Imports */
@@ -33,7 +32,6 @@ export default function About() {
                 </p>
               </div>
             </div>
-      <Breaker/>
     </section>
   );
 }

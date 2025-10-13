@@ -9,34 +9,53 @@
   flex-wrap: wrap;
   width: 100%; 
   font-weight: semibold;
-  align-items: center;
+  align-items: flex-end;
+  margin-bottom: 2vw;
+}
+
+.skills-section .header h2 {
+  margin-bottom: 0;
 }
 
 .skills-section .header .levels{
   margin-left: auto;
   text-align: right;
+  background-color: var(--fill-color-background);
+  padding: var(--padding-small);
+  border-radius: var(--border-radius-small);
+}
+
+.skills-section .header .levels .primary-legend{
+  color: var(--hovered-color-links);
+}
+
+.skills-section .header .levels .secondary-legend{
+  color: var(--outline-color);
 }
 
 .skills {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
-  row-gap: 1vw;
-  column-gap: 1vw;
-
-  & li {
-    display: flex;
-  }
+  gap: 1vw;
 }
 
-
-.skills .skills-container {
+.skills .section {
+  background-color: var(--fill-color-background);
   border-radius: var(--border-radius-standard);
-  background: var(--card-fill-color);
-  width: 46.5%;
+  width: 100%;
   color: var(--text-color);
   box-shadow: var(--box-shadow-default);
-  padding: 1%;
+  padding: var(--padding-standard);
+  box-sizing: border-box; /* Need this to make padding not increase size */
+}
+
+.skills .section .primary-elements{
+  color: var(--hovered-color-links);
+}
+
+.skills .section .secondary-elements{
+  color: var(--outline-color);
 }
 
 .skills h4{
