@@ -4,7 +4,8 @@
     gap: 2vw;
 }
 
-.project {
+.project-grid .project {
+    position: relative;
     width: 100%;
     background-color: var(--fill-color-background);
     border-radius: var(--border-radius-standard);
@@ -12,25 +13,38 @@
     transition: all var(--transition-time) ease;
 }
 
-.project:hover {
+.project-grid .project:hover {
     cursor: pointer;
     transform: scale(var(--transform-scale));
 }
 
-.project img {
+.project-grid .project img {
     width: 100%;
     height: auto;
     border-radius: 0;
 }
 
-.project .text {
+.project-grid .project .text {
     padding: 0.3vw;
 }
 
-.project .title {
+.project-grid .project .title {
     font-weight: bold;
 }
 
-.project .date {
+.project-grid .project .date {
     font-size: var(--p1);
+}
+
+.project-grid .project .project-tags {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1vw;
+    opacity: 0;
+    transition: opacity var(--transition-time) ease;
+}
+
+.project-grid .project:hover .project-tags {
+    opacity: 1;
 }

@@ -6,6 +6,11 @@
   --margin-project-card-bottom: 3.5%;
 }
 
+.projects {
+    margin-left: var(--margin-text);
+    margin-right: var(--margin-text);
+}
+
 .card-popup-window{
     position: absolute;
     top: 0;
