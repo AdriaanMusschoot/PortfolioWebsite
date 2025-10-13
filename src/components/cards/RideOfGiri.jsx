@@ -1,6 +1,3 @@
-/* Data Imports */
-import ButtonLinkContainer from '../buttons/projectButtons/ButtonLinkContainer.jsx';
-
 /* Style Imports */
 import '../../styles/cards/RideOfGiri.css';
 
@@ -43,7 +40,6 @@ export default function RideOfGiri() {
                 I really enjoyed working together with everyone. I feel like we got the most out of the project in the given time and our skillset at the time.
                 Looking back on the project I would organize ourselves a bit better, and make sure we don't have to resort to sharing files by passing around a hard drive.
             </p>
-            <ButtonLinkContainer links={['https://kniptang.itch.io/ride-of-giri']}/>
         </div>
     )
   };

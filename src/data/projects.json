@@ -10,7 +10,11 @@
             "UE5"
         ],
         "date" : "Sep - Dec 2024",
-        "id": "GetCooked"
+        "id": "GetCooked",
+        "links" : 
+        [
+            "https://imbajuk.itch.io/getcooked"
+        ]
     },
     {
         "image" : "./assets/ProjectImages/SnailsAndPotions/Thumbnail.jpg",
@@ -23,7 +27,12 @@
             "UE5"
         ],
         "date" : "Feb - May 2024",
-        "id": "SnailsAndPotions"
+        "id": "SnailsAndPotions",
+        "links" : 
+        [
+            "https://store.steampowered.com/app/3224810/Snails__Potions/",
+            "https://boomertijl.itch.io/snails-and-potions"
+        ]
     },
     {
         "image" : "./assets/ProjectImages/BFG/Thumbnail_BFG.png",
@@ -37,7 +46,8 @@
             "Mass (ECS)"
         ],
         "date" : "Feb - Jun 2025",
-        "id": "BFG"
+        "id": "BFG",
+        "links" : [""]
     },
     {
         "image" : "./assets/ProjectImages/Amugen/Thumbnail.png",
@@ -50,7 +60,12 @@
             "CMake"
         ],
         "date" : "Feb - June 2024",
-        "id": "Amugen"
+        "id": "Amugen",
+        "links" : 
+        [
+            "https://github.com/AdriaanMusschoot/Amugen",
+            "https://github.com/AdriaanMusschoot/Pacman"
+        ]
     },
     {
         "image" : "./assets/ProjectImages/Vulkan/Thumbnail.png",
@@ -63,7 +78,8 @@
             "Vulkan"
         ],
         "date" : "Feb - Jun 2024",
-        "id": "InstancedRendering"
+        "id": "InstancedRendering",
+        "links" : ["https://github.com/AdriaanMusschoot/VulkanInstancedRendering"]
     },
     {
         "image" : "./assets/ProjectImages/RayMarcher/Thumbnail.png",
@@ -76,7 +92,8 @@
             "Graphics"
         ],
         "date" : "Sep - Oct 2024",
-        "id": "RayMarcher"
+        "id": "RayMarcher",
+        "links" : ["https://github.com/AdriaanMusschoot/RayMarching"]
     },
     {
         "image" : "./assets/ProjectImages/Tectonic/Thumbnail.png",
@@ -88,7 +105,11 @@
             "C++"
         ],
         "date" : "Aug - Sep 2024",
-        "id" : "Tectonic"
+        "id" : "Tectonic",
+        "links" : 
+        [
+            "https://github.com/AdriaanMusschoot/Tectonic"
+        ]
     },
     {
         "image" : "./assets/ProjectImages/SouperHero/Thumbnail.jpg",
@@ -101,7 +122,8 @@
             "UE5"
         ],
         "date" : "Jul 2024",
-        "id" : "SouperHero"
+        "id" : "SouperHero",
+        "links" : ["https://imbajuk.itch.io/souperhero"]
     },
     {
         "image" : "./assets/ProjectImages/RideOfGiri/Thumbnail.jpg",
@@ -113,7 +135,8 @@
             "UE5"
         ],
         "date" : "Feb 2024",
-        "id" : "RideOfGiri"
+        "id" : "RideOfGiri",
+        "links" : ["https://kniptang.itch.io/ride-of-giri"]
     },
     {
         "image" : "./assets/ProjectImages/TrajectoryPrediction/Thumbnail.png",
@@ -126,6 +149,7 @@
             "Unity"
         ],
         "date" : "Dec 2023",
-        "id" : "TrajectoryPrediction"
+        "id" : "TrajectoryPrediction",
+        "links" : ["https://github.com/AdriaanMusschoot/TrajectoryPrediction"]
     }
 ]

@@ -4,6 +4,7 @@ import { ReactComponent as CrossButton } from '../../assets/svg/smallcross_icon.
 import FeaturedWork from './featuredwork/FeaturedWork.jsx';
 import ProjectGrid from './projectgrid/ProjectGrid.jsx';
 import ProjectTags from './ProjectTags.jsx';
+import ButtonLinkContainer from '../buttons/projectButtons/ButtonLinkContainer.jsx';
 
 /* Project Details */
 import SnailsAndPotions from '../cards/SnailsAndPotions.jsx';
@@ -83,7 +84,10 @@ export default function ProjectCard() {
                     <h1>{activeProject.title}</h1>
                     <CrossButton className="cross-button" onClick={closeCard}/>
                   </div>
-                  <ProjectTags tags={activeProject.specifics} />
+                  <div className='tags-links'>
+                    <ProjectTags tags={activeProject.specifics} />
+                    <ButtonLinkContainer links={activeProject.links}/>
+                  </div>
                   <div className='description'>
                     {projectCardMap[activeProject.title]}
                   </div>

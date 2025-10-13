@@ -71,8 +71,18 @@
     margin: 0;
 }
 
-.card-popup-window .card .cross-button{
+.card-popup-window .card .header .cross-button{
   width: 8%;
   height: auto;
   margin-left: auto;
+}
+
+.card-popup-window .card .tags-links {
+    display: flex;
+    align-items: center;
+}
+
+.card-popup-window .card .tags-links .button-link-container {
+    margin-left: 5vw;
+    gap: 1vw;
 }

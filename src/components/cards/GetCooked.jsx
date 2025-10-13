@@ -1,6 +1,3 @@
-/* Data Imports */
-import ButtonLinkContainer from '../buttons/projectButtons/ButtonLinkContainer.jsx';
-
 /* Style Imports */
 import '../../styles/cards/GetCooked.css';
 
@@ -100,7 +97,6 @@ export default function GetCooked()
                         , Get Cooked! is the ultimate test of culinary and tactical skills. 
                         Will you reign supreme in the kitchen clash? 
                     </p>
-                <ButtonLinkContainer links={['https://imbajuk.itch.io/getcooked','https://github.com/AdriaanMusschoot/GetCooked']}/>
         </div>
     )
 };

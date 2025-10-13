@@ -1,6 +1,3 @@
-/* Data Imports */
-import ButtonLinkContainer from '../buttons/projectButtons/ButtonLinkContainer.jsx';
-
 /* Style Imports */
 import '../../styles/cards/PhysicsPrediction.css'; 
 
@@ -26,7 +23,6 @@ export default function PhysicsPrediction() {
             src='./assets/ProjectImages/TrajectoryPrediction/PhysicsSimulation.gif'
             alt='thumbnail'
         />
-        <ButtonLinkContainer links={['https://github.com/AdriaanMusschoot/TrajectoryPrediction']}/>
         <h2>
             3D Unity Scene: Ball Simulation
         </h2>

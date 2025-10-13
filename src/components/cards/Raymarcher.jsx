@@ -1,6 +1,3 @@
-/* Data Imports */
-import ButtonLinkContainer from '../buttons/projectButtons/ButtonLinkContainer.jsx';
-
 /* Style Imports */
 import '../../styles/cards/Raymarcher.css';
 
@@ -47,7 +44,6 @@ export default function Raymarcher() {
             <source src='./assets/ProjectImages/RayMarcher/Mandelbulb.webm' />
             Your browser does not support the video tag.
           </video>
-          <ButtonLinkContainer links={['https://github.com/AdriaanMusschoot/RayMarching']}/>
           <h2>What is sphere tracing in ray marching?</h2>
             <p>
               In raytracing you shoot a ray into the scene from the camera pov and calculate the intersection point of a ray. 

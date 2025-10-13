@@ -1,6 +1,3 @@
-/* Data Imports */
-import ButtonLinkContainer from '../buttons/projectButtons/ButtonLinkContainer.jsx';
-
 /* Style Imports */
 import '../../styles/cards/Tectonic.css';
 
@@ -84,7 +81,6 @@ export default function Tectonic() {
                 </p>
               </div>
             </div>
-            <ButtonLinkContainer links={['https://github.com/AdriaanMusschoot/Tectonic']} />
         </div>
       </>
     )
