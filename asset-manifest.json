@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f0964dd.css",
-    "main.js": "/static/js/main.035bd73b.js",
+    "main.css": "/static/css/main.a2fd6f59.css",
+    "main.js": "/static/js/main.2ca144d6.js",
     "static/js/584.1435511e.chunk.js": "/static/js/584.1435511e.chunk.js",
     "static/media/Background_Home.png": "/static/media/Background_Home.27b4489eb4d3c1c12fb6.png",
     "static/media/SUSE-Regular.ttf": "/static/media/SUSE-Regular.5330b1a28f10d7e25116.ttf",
+    "static/media/github_text.svg": "/static/media/github_text.7ab359d7a560856a21e725b23d097bd8.svg",
     "static/media/CV_icon.svg": "/static/media/CV_icon.380c48406ae8fb769ee8dbe8f1f08d48.svg",
     "static/media/itchio_icon.svg": "/static/media/itchio_icon.9093224041303146be965d64d577ca74.svg",
     "static/media/amulogo_icon.svg": "/static/media/amulogo_icon.449578d62a28ae8ba3d410ff1f9bbacc.svg",
-    "static/media/github_text.svg": "/static/media/github_text.70aa71cb850a5f323b68cf5a9ef3a76e.svg",
     "static/media/steam_icon.svg": "/static/media/steam_icon.94412bdefc14775d03613d9cd4d5bbb2.svg",
     "static/media/github_icon.svg": "/static/media/github_icon.628919db6f92aae857b511d3fdf1eb5a.svg",
     "static/media/mail_icon.svg": "/static/media/mail_icon.f40fbce854bc45a6cba044f37dfcd292.svg",
     "static/media/linkedin_icon.svg": "/static/media/linkedin_icon.111fb6083791fc795f02ae2c5c71e3e4.svg",
     "index.html": "/index.html",
     "static/media/smallcross_icon.svg": "/static/media/smallcross_icon.af584cdd815378d3348af8907333ce7a.svg",
-    "main.2f0964dd.css.map": "/static/css/main.2f0964dd.css.map",
-    "main.035bd73b.js.map": "/static/js/main.035bd73b.js.map",
+    "main.a2fd6f59.css.map": "/static/css/main.a2fd6f59.css.map",
+    "main.2ca144d6.js.map": "/static/js/main.2ca144d6.js.map",
     "584.1435511e.chunk.js.map": "/static/js/584.1435511e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f0964dd.css",
-    "static/js/main.035bd73b.js"
+    "static/css/main.a2fd6f59.css",
+    "static/js/main.2ca144d6.js"
   ]
 }
