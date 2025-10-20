@@ -1,3 +1,7 @@
+/* React Imports */
+import { ShortIntro, ShortIntroAlinea, ShortIntroTitle } from './shared/ShortIntro.js';
+import ShortIntroMedia from './shared/ShortIntroMedia.jsx';
+
 /* Style Imports */
 import '../../styles/cards/Tectonic.css';
 
@@ -6,6 +10,17 @@ export default function Tectonic() {
     return (
       <>
         <div className='Tectonic'>
+            <ShortIntro>
+                  <ShortIntroAlinea>
+                        <ShortIntroTitle>
+                        Quick Overview
+                        </ShortIntroTitle>
+                        <p>
+                        Tectonic Short Text
+                        </p>
+                  </ShortIntroAlinea>
+                  <ShortIntroMedia MediaFilePath='./assets/ProjectImages/Tectonic/Thumbnail.png' />
+            </ShortIntro>
             <h2>The Project</h2>
             <p>
                For a personal passion project I decided to try to automate the process of setting up a Tectonic puzzle myself. 
@@ -39,11 +54,6 @@ export default function Tectonic() {
               We generate some random directions and look if the cell in that direction is already taken or if there is no cell there, sort of a flood fill.<br/>
               I hadn't foreseen this but there were some issues that arose.
             </p>
-            <img
-              className='img'
-              src='./assets/ProjectImages/Tectonic/Thumbnail.png'
-              alt='thumbnail'
-            />
             <div class="container">
               <div class="column">
                 <h4>Impossible Shapes</h4>

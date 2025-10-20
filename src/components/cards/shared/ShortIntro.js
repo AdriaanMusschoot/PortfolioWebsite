@@ -10,11 +10,6 @@ export const ShortIntro = styled.div`
 export const ShortIntroAlinea = styled.div`
 `
 
-export const ShortIntroVideo = styled.video`
-    width: 100%;
-    height: auto;
-`
-
 export const ShortIntroTitle = styled.h3`
     margin: 0;
 `

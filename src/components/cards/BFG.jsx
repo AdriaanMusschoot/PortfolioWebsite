@@ -1,4 +1,6 @@
-/* Data Imports */
+/* React Imports */
+import { ShortIntro, ShortIntroAlinea, ShortIntroTitle } from './shared/ShortIntro.js';
+import ShortIntroMedia from './shared/ShortIntroMedia.jsx';
 
 /* Style Imports */
 import '../../styles/cards/BFG.css';
@@ -8,6 +10,17 @@ export default function BFG()
 { 
     return (
         <div className="BFG">
+            <ShortIntro>
+                <ShortIntroAlinea>
+                    <ShortIntroTitle>
+                        Quick Overview
+                    </ShortIntroTitle>
+                    <p>
+                        BFG Short Text
+                    </p>
+                </ShortIntroAlinea>
+                <ShortIntroMedia MediaFilePath='./assets/ProjectImages/BFG/Showcase_FullPerceptionSystem.mp4' />
+            </ShortIntro>
             <h2>Black Forest Games GMBH</h2>
                 <p>
                     As final part to my education I completed an internship at Black Forest Games.
@@ -22,7 +35,6 @@ export default function BFG()
                     All visual assets shown below, have been modified to not show any of the actual visuals of the game.
                 </p>
             <h2>Perception System (Core Project)</h2>
-                <video width='100%' className='FullPerceptionVideo' src='./assets/ProjectImages/BFG/Showcase_FullPerceptionSystem.mp4' alt='Perception System Showcase' autoPlay loop muted controls></video>
                 <h3>The Goal Of The System</h3>
                     <p>
                         Initially this task was assigned to me so I could familiarize myself with the code base

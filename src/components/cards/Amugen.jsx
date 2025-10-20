@@ -1,3 +1,7 @@
+/* React Imports */
+import { ShortIntro, ShortIntroAlinea, ShortIntroTitle } from './shared/ShortIntro.js';
+import ShortIntroMedia from './shared/ShortIntroMedia.jsx';
+
 /* Style Imports */
 import '../../styles/cards/Amugen.css'; 
 
@@ -6,6 +10,18 @@ export default function Amugen() {
 
   return (
     <div className='Amugen'>
+      <ShortIntro>
+          <ShortIntroAlinea>
+              <ShortIntroTitle>
+                  Quick Overview
+              </ShortIntroTitle>
+              <p>
+                  BFG Short Text
+              </p>
+          </ShortIntroAlinea>
+          <ShortIntroMedia MediaFilePath='./assets/ProjectImages/Amugen/Showcase.webm' />
+      </ShortIntro>
+      
       <h2>The Engine</h2>
       <p>
         This custom 2D Engine, that I have developed in C++, uses a scene graph to determine positions and uses a game object component system.
@@ -36,16 +52,6 @@ export default function Amugen() {
         Over 4 months I learned so much and it is the project where all of my studies came together, 
         as I had to prove the engine works by creating a remake of the all time classic Pac-Man (check out below).
       </p>
-      <video
-        className='Trailer'
-        width='100%' height='auto' 
-        autoPlay
-        loop
-        muted
-      >
-        <source src='./assets/ProjectImages/Amugen/Showcase.webm' />
-        Your browser does not support the video tag.
-      </video>
       <h2>Pacman</h2>
         <p>
           This project was completely developed in my own 2D engine - Amugen.

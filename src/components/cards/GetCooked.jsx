@@ -1,5 +1,6 @@
 /* React Imports */
-import { ShortIntro, ShortIntroAlinea, ShortIntroVideo, ShortIntroTitle } from './Styles/BaseCardStyles.js';
+import { ShortIntro, ShortIntroAlinea, ShortIntroTitle } from './shared/ShortIntro.js';
+import ShortIntroMedia from './shared/ShortIntroMedia.jsx';
 
 /* Style Imports */
 import '../../styles/cards/GetCooked.css';
@@ -11,12 +12,14 @@ export default function GetCooked()
         <div className='GetCookedCard'>
             <ShortIntro>
                 <ShortIntroAlinea>
-                    <ShortIntroTitle>About The Project</ShortIntroTitle>
+                    <ShortIntroTitle>
+                        About The Project
+                    </ShortIntroTitle>
                     <p>
                         Here Is Text
                     </p>
                 </ShortIntroAlinea>
-                <ShortIntroVideo src="./assets/ProjectImages/GetCooked!/Trailer_GetCooked!.mp4" controls autoPlay />
+                <ShortIntroMedia MediaFilePath="./assets/ProjectImages/GetCooked!/Trailer_GetCooked!.mp4" />
             </ShortIntro>
             <h2>Prototyping</h2>
                     <p>
@@ -93,10 +96,6 @@ export default function GetCooked()
                         Overall, we kept quite a good separation of concerns, so adding all of these effects was as simple as just adding a call into the correct system.
                     </p>
             <h2>The Game</h2>
-                    <video className='Trailer' width='100%' height='auto' controls autoPlay loop muted>
-                        <source src='./assets/ProjectImages/GetCooked!/Trailer_GetCooked!.mp4' />
-                        Your browser does not support the video tag.
-                    </video>
                     <p>
                         Get Cooked! is a fast-paced action-strategy multiplayer game where culinary chaos meets strategic battles. 
                         Gather ingredients, cook dishes, and unleash them as troops to dominate the battlefield. 

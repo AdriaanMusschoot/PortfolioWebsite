@@ -1,3 +1,7 @@
+/* React Imports */
+import { ShortIntro, ShortIntroAlinea, ShortIntroTitle } from './shared/ShortIntro.js';
+import ShortIntroMedia from './shared/ShortIntroMedia.jsx';
+
 /* Style Imports */
 import '../../styles/cards/Vulkan.css'; // Import your CSS file
 
@@ -6,6 +10,17 @@ export default function Vulkan() {
     return (
       <>
         <div className='vulkan'>
+          <ShortIntro>
+                <ShortIntroAlinea>
+                      <ShortIntroTitle>
+                      Quick Overview
+                      </ShortIntroTitle>
+                      <p>
+                      Tectonic Short Text
+                      </p>
+                </ShortIntroAlinea>
+                <ShortIntroMedia MediaFilePath='./assets/ProjectImages/Vulkan/Trailer.webm' />
+          </ShortIntro>
           <h2>The Project</h2>
           <p>
             I have created, an application with the Vulkan API, that allows for instanced rendering of 2D and 3D objects. 
@@ -40,17 +55,6 @@ export default function Vulkan() {
           <p>
             Check out this beautiful display of 10'000 ferrari's (modeled by me) consisting of 2008 vertices running at an average 90 frames per second. 
           </p>
-          <video
-            className='Trailer'
-            width='100%' height='auto' 
-            autoPlay
-            loop
-            muted
-            controls
-          >
-            <source src='./assets/ProjectImages/Vulkan/Trailer.webm' />
-            Your browser does not support the video tag.
-          </video>
         </div>
       </>
     )

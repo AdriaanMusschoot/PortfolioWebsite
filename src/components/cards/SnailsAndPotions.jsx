@@ -1,5 +1,6 @@
 /* React Imports */
-import { ShortIntro, ShortIntroAlinea, ShortIntroVideo, ShortIntroTitle } from './Styles/BaseCardStyles.js';
+import { ShortIntro, ShortIntroAlinea, ShortIntroTitle } from './shared/ShortIntro.js';
+import ShortIntroMedia from './shared/ShortIntroMedia.jsx';
 
 /* Style Imports */
 import '../../styles/cards/SnailsAndPotions.css'; 
@@ -18,7 +19,7 @@ export default function SnailsAndPotions() {
             Snails And Potions Short Text
           </p>
         </ShortIntroAlinea>
-        <ShortIntroVideo src='./assets/ProjectImages/SnailsAndPotions/Snails&Potions_Trailer.webm' />
+        <ShortIntroMedia MediaFilePath='./assets/ProjectImages/SnailsAndPotions/Snails&Potions_Trailer.webm' />
       </ShortIntro>
       <h2>My Role</h2>
       <p>
@@ -38,17 +39,6 @@ export default function SnailsAndPotions() {
         They must gather ingredients and brawl over them with the other players when their interests overlap. 
         May the best snail-master reach the finish first.
       </p>
-      <video
-        className='Trailer'
-        width='100%' height='auto' 
-        controls 
-        loop
-        muted
-        autoPlay
-      >
-        <source src='./assets/ProjectImages/SnailsAndPotions/Snails&Potions_Trailer.webm' />
-        Your browser does not support the video tag.
-      </video>
       <h2>Winner!</h2>
       <p>
         Snails And Potions was selected as the best for the in house game jam held by our school, DAE Game Projects 2024. 

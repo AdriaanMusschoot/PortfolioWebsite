@@ -1,3 +1,7 @@
+/* React Imports */
+import { ShortIntro, ShortIntroAlinea, ShortIntroTitle } from './shared/ShortIntro.js';
+import ShortIntroMedia from './shared/ShortIntroMedia.jsx';
+
 /* Style Imports */
 import '../../styles/cards/PhysicsPrediction.css'; 
 
@@ -6,6 +10,17 @@ export default function PhysicsPrediction() {
 
   return (
     <div className='PhysicsPrediction'>
+        <ShortIntro>
+            <ShortIntroAlinea>
+                <ShortIntroTitle>
+                    Quick Overview
+                </ShortIntroTitle>
+                <p>
+                    Trajectory Projection Short Text
+                </p>
+            </ShortIntroAlinea>
+            <ShortIntroMedia MediaFilePath='./assets/ProjectImages/TrajectoryPrediction/PhysicsSimulation.gif' />
+        </ShortIntro>
         <h2>
             Physics Simulation
         </h2>
@@ -18,11 +33,6 @@ export default function PhysicsPrediction() {
                 If it were for scientific research accuracy is of the utmost importance. 
                 If it were to simulate physics in a videogame, you would prioritize real world performance and keep it simple.
             </p>
-        <img
-            className='prediction-gif'
-            src='./assets/ProjectImages/TrajectoryPrediction/PhysicsSimulation.gif'
-            alt='thumbnail'
-        />
         <h2>
             3D Unity Scene: Ball Simulation
         </h2>

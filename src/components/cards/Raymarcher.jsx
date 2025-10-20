@@ -1,3 +1,7 @@
+/* React Imports */
+import { ShortIntro, ShortIntroAlinea, ShortIntroTitle } from './shared/ShortIntro.js';
+import ShortIntroMedia from './shared/ShortIntroMedia.jsx';
+
 /* Style Imports */
 import '../../styles/cards/Raymarcher.css';
 
@@ -6,6 +10,17 @@ export default function Raymarcher() {
     return (
       <>
         <div className='Raymarcher'>
+          <ShortIntro>
+            <ShortIntroAlinea>
+                <ShortIntroTitle>
+                    Quick Overview
+                </ShortIntroTitle>
+                <p>
+                    Ray marcher Short Text
+                </p>
+            </ShortIntroAlinea>
+            <ShortIntroMedia MediaFilePath='./assets/ProjectImages/RayMarcher/Mandelbulb.webm' />
+          </ShortIntro>
           <h2>The Project</h2>
           <p>
              As my recent interest in graphics programming has risen,

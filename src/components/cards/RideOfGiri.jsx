@@ -1,3 +1,7 @@
+/* React Imports */
+import { ShortIntro, ShortIntroAlinea, ShortIntroTitle } from './shared/ShortIntro.js';
+import ShortIntroMedia from './shared/ShortIntroMedia.jsx';
+
 /* Style Imports */
 import '../../styles/cards/RideOfGiri.css';
 
@@ -5,22 +9,22 @@ import '../../styles/cards/RideOfGiri.css';
 export default function RideOfGiri() {
     return (
         <div className='RideOfGiri'>
+            <ShortIntro>
+                <ShortIntroAlinea>
+                    <ShortIntroTitle>
+                        Quick Overview
+                    </ShortIntroTitle>
+                    <p>
+                        Ride Of Giri Short Text
+                    </p>
+                </ShortIntroAlinea>
+                <ShortIntroMedia MediaFilePath='./assets/ProjectImages/RideOfGiri/Trailer.webm' />
+            </ShortIntro>
             <h2>The Game</h2>
             <p>
                 Welcome to the ride of your life where you control a cute little ball of rice trying to make its way down the slopes.
                 Hang on to the chopsticks for dear life and beware not to fly of into the forest, you won't like what you'll find there.
             </p>
-            <video
-              className='Trailer'
-              width='100%' height='auto' 
-              controls 
-              loop
-              muted
-              autoPlay
-            >
-              <source src='./assets/ProjectImages/RideOfGiri/Trailer.webm' />
-              Your browser does not support the video tag.
-            </video>
             <h2>The Project</h2>
             <p>
                 This project was made in 2 days together with 4 of my friends. We we're 4 devs and one artist.
