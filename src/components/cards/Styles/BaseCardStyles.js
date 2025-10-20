@@ -18,6 +18,3 @@ export const ShortIntroVideo = styled.video`
 export const ShortIntroTitle = styled.h3`
     margin: 0;
 `
-
-export const ShortIntroText = styled.p`
-`
