@@ -1,3 +1,6 @@
+/* React Imports */
+import { ShortIntro, ShortIntroAlinea, ShortIntroVideo, ShortIntroTitle } from './Styles/BaseCardStyles.js';
+
 /* Style Imports */
 import '../../styles/cards/SnailsAndPotions.css'; 
 
@@ -6,6 +9,17 @@ export default function SnailsAndPotions() {
 
   return (
     <div className='snails-and-potions'>
+      <ShortIntro>
+        <ShortIntroAlinea>
+          <ShortIntroTitle>
+            Quick Overview
+          </ShortIntroTitle>
+          <p>
+            Snails And Potions Short Text
+          </p>
+        </ShortIntroAlinea>
+        <ShortIntroVideo src='./assets/ProjectImages/SnailsAndPotions/Snails&Potions_Trailer.webm' />
+      </ShortIntro>
       <h2>My Role</h2>
       <p>
         The biggest part of the game and my biggest task was the snail and making it tick, well actually crawl and make it interact appropriately to all the different potions. 
