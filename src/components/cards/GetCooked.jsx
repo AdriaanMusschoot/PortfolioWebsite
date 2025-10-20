@@ -1,3 +1,6 @@
+/* React Imports */
+import { ShortIntro, ShortIntroAlinea, ShortIntroVideo, ShortIntroTitle } from './Styles/BaseCardStyles.js';
+
 /* Style Imports */
 import '../../styles/cards/GetCooked.css';
 
@@ -6,9 +9,18 @@ export default function GetCooked()
 {
     return (
         <div className='GetCookedCard'>
+            <ShortIntro>
+                <ShortIntroAlinea>
+                    <ShortIntroTitle>About The Project</ShortIntroTitle>
+                    <p>
+                        Here Is Text
+                    </p>
+                </ShortIntroAlinea>
+                <ShortIntroVideo src="./assets/ProjectImages/GetCooked!/Trailer_GetCooked!.mp4" controls autoPlay />
+            </ShortIntro>
             <h2>Prototyping</h2>
                     <p>
-                        Creating the initial prototype for Get Cooked! was quite chaotic. We were only 3 programmers, no art no design.
+'                        Creating the initial prototype for Get Cooked! was quite chaotic. We were only 3 programmers, no art no design.
                         As you can imagine the visuals were not up to par, but for a prototype it had to do.
                         <br></br><br></br>
                         We lacked version control like Perforce for proper management of binary files.
@@ -22,7 +34,7 @@ export default function GetCooked()
                         Then we could try to balance the troops, as we didn't have any time before.
                         At least after we found new bugs and fixed them for a big part of that evening.
                         I will never forget that night, that was some of the best bonding time with my team.
-                    </p>
+'                    </p>
                     <div className='Foodwars-Container'>
                         <img src='./assets/ProjectImages/GetCooked!/FoodWars_Throwing.gif' alt='Food Wars Throwing'/>
                         <img src='./assets/ProjectImages/GetCooked!/FoodWars_TowerAndTroopVsEnemy.gif' alt='Food Wars Tower And Troop Vs Enemy'/>
