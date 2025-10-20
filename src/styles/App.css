@@ -157,6 +157,10 @@ img {
   border-radius: var(--border-radius-standard);
 }
 
+video {
+  border-radius: var(--border-radius-standard);
+}
+
 /* To be moved to indivudal elements */
 .img-1 {
   width: 31%;
