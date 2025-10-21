@@ -97,3 +97,24 @@
     width: 5vw;
     height: auto;
 }
+
+/* START: Title Styling */
+:root {
+    --card-title-color: var(--fill-color);
+}
+
+.card-popup-window .card h2 {
+    color: var(--card-title-color);
+}
+
+.card-popup-window .card h3 {
+    color: var(--card-title-color);
+}
+
+.card-popup-window .card h4 {
+    color: var(--card-title-color);
+}
+
+.card-popup-window .card h5 {
+    color: var(--card-title-color);
+}
