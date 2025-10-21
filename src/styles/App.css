@@ -2,156 +2,156 @@
 
 :root {
   /* Font-Sizing */
-  --base-font-size: 1.2vw;
-  --font-scale: 1.25;
-  --p: var(--base-font-size);
-  --p1: calc(var(--p) / var(--font-scale));
-  --h5: calc(var(--p) * var(--font-scale));
-  --h4: calc(var(--h5) * var(--font-scale));
-  --h3: calc(var(--h4) * var(--font-scale));
-  --h2: calc(var(--h3) * var(--font-scale));
-  --h1: calc(var(--h2) * var(--font-scale));
+    --base-font-size: 1.2vw;
+    --font-scale: 1.25;
+    --p: var(--base-font-size);
+    --p1: calc(var(--p) / var(--font-scale));
+    --h5: calc(var(--p) * var(--font-scale));
+    --h4: calc(var(--h5) * var(--font-scale));
+    --h3: calc(var(--h4) * var(--font-scale));
+    --h2: calc(var(--h3) * var(--font-scale));
+    --h1: calc(var(--h2) * var(--font-scale));
 
-  /* Title Margins */
-  --bottom-margin-scale: 2;
-  --margin-h1: 4vw;
-  --margin-h2: 3vw;
-  --margin-h3: 2vw;
-  --margin-h4: 1vw;
-  --margin-h5: 0.5vw;
+    /* Title Margins */
+    --bottom-margin-scale: 2;
+    --margin-h1: 4vw;
+    --margin-h2: 3vw;
+    --margin-h3: 2vw;
+    --margin-h4: 1vw;
+    --margin-h5: 0.5vw;
 
-  /* Main Outline Values */
-  --outline-color: #40647c;
-  --outline-width: 0vw;
-  --outline-style: solid;
+    /* Main Outline Values */
+    --outline-color: #40647c;
+    --outline-width: 0vw;
+    --outline-style: solid;
 
-  /* Radius */
-  --base-radius-size: 0.5vw;
-  --border-radius-scale: 2;
-  --border-radius-standard: var(--base-radius-size);
-  --border-radius-small: calc(var(--border-radius-standard) / var(--border-radius-scale));
-  --border-radius-large: calc(var(--border-radius-standard) * var(--border-radius-scale));
+    /* Radius */
+    --base-radius-size: 0.5vw;
+    --border-radius-scale: 2;
+    --border-radius-standard: var(--base-radius-size);
+    --border-radius-small: calc(var(--border-radius-standard) / var(--border-radius-scale));
+    --border-radius-large: calc(var(--border-radius-standard) * var(--border-radius-scale));
 
-  /* Padding */
-  --base-padding-size: 0.4vw;
-  --padding-scale: 2;
-  --padding-standard: var(--base-padding-size);
-  --padding-small: calc(var(--padding-standard) / var(--padding-scale));
-  --padding-large: calc(var(--padding-standard) * var(--padding-scale));
+    /* Padding */
+    --base-padding-size: 0.4vw;
+    --padding-scale: 2;
+    --padding-standard: var(--base-padding-size);
+    --padding-small: calc(var(--padding-standard) / var(--padding-scale));
+    --padding-large: calc(var(--padding-standard) * var(--padding-scale));
 
-  /* Fill Color Values */
-  --fill-color: rgb(61, 66, 115);
-  --fill-color-semitransparent: rgba(61, 66, 115, 0.8);
-  --fill-color-background: rgba(255, 255, 255, 0.05);
-  --fill-color-background-inverted: rgba(0, 0, 0, 0.8);
+    /* Fill Color Values */
+    --fill-color: rgb(61, 66, 115);
+    --fill-color-semitransparent: rgba(61, 66, 115, 0.8);
+    --fill-color-background: rgba(255, 255, 255, 0.05);
+    --fill-color-background-inverted: rgba(0, 0, 0, 0.8);
 
-  /* Drop Shadow Values */
-  /* First part 0 0 0, because we don't want on the outside of the boxes*/
-  --box-shadow-default: 0 0 0 var(--hovered-color-links), inset 0 0 0 rgba(0, 0, 0, 0.5);
-  --box-shadow-hovered: 0 0 0 var(--hovered-color-links), inset 0 0 0 rgba(0, 0, 0, 0.5);
-  
-  /* Default Text Values */
-  --text-color:  #b8b1be;
-  --margin-text: 15vw;
+    /* Drop Shadow Values */
+    /* First part 0 0 0, because we don't want on the outside of the boxes*/
+    --box-shadow-default: 0 0 0 var(--hovered-color-links), inset 0 0 0 rgba(0, 0, 0, 0.5);
+    --box-shadow-hovered: 0 0 0 var(--hovered-color-links), inset 0 0 0 rgba(0, 0, 0, 0.5);
+    
+    /* Default Text Values */
+    --text-color:  #b8b1be;
+    --margin-text: 15vw;
 
-  /* Standard Backgound value for the page and when a card pops up */
-  --background-color:  #0c0c13;
+    /* Standard Backgound value for the page and when a card pops up */
+    --background-color:  #0c0c13;
 
-  /* Overlay Value for when a card pops up */
-  --description-overlay-color: rgba(0, 0, 0, 0.9);
+    /* Overlay Value for when a card pops up */
+    --description-overlay-color: rgba(0, 0, 0, 0.9);
 
-  /* Transition values used for hovering*/
-  --transition-time: 0.3s;
-  --hovered-color-links: #b270b6;
-  --transform-scale: 1.1;
+    /* Transition values used for hovering*/
+    --transition-time: 0.3s;
+    --hovered-color-links: #b270b6;
+    --transform-scale: 1.1;
 
-  /* Transition values used for opening a project card needs to match in Projects.jsx */
-  --time-project-card-transition: 0.5s;
+    /* Transition values used for opening a project card needs to match in Projects.jsx */
+    --time-project-card-transition: 0.5s;
 }
 
 /* Main Body */
 body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  font-family: suse;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  flex-direction: column;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: suse;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* Scrolling behaviour */
 body.no-scroll {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 #home, #projects, #about, #skills, #contact {
-  scroll-margin-top: 6vw; 
+    scroll-margin-top: 6vw; 
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 
 /* Text Elements */
 h1 {
-  margin-top: var(--margin-h1);
-  margin-bottom: calc(var(--margin-h1) / var(--bottom-margin-scale));
-  font-size: var(--h1);
+    margin-top: var(--margin-h1);
+    margin-bottom: calc(var(--margin-h1) / var(--bottom-margin-scale));
+    font-size: var(--h1);
 }
 
 h2 {
-  margin-top: var(--margin-h2);
-  margin-bottom: calc(var(--margin-h2) / var(--bottom-margin-scale));
-  font-size: var(--h2);
+    margin-top: var(--margin-h2);
+    margin-bottom: calc(var(--margin-h2) / var(--bottom-margin-scale));
+    font-size: var(--h2);
 }
 
 h3 {
-  margin-top: var(--margin-h3);
-  margin-bottom: calc(var(--margin-h3) / var(--bottom-margin-scale));
-  font-size: var(--h3);
+    margin-top: var(--margin-h3);
+    margin-bottom: calc(var(--margin-h3) / var(--bottom-margin-scale));
+    font-size: var(--h3);
 }
 
 h4 {
-  margin-top: var(--margin-h4);
-  margin-bottom: calc(var(--margin-h4) / var(--bottom-margin-scale));
-  font-size: var(--h4);
+    margin-top: var(--margin-h4);
+    margin-bottom: calc(var(--margin-h4) / var(--bottom-margin-scale));
+    font-size: var(--h4);
 }
 
 h5 {
-  margin-top: var(--margin-h5);
-  margin-bottom: calc(var(--margin-h5) / var(--bottom-margin-scale));
-  font-size: var(--h5);
-  font-weight: normal;
+    margin-top: var(--margin-h5);
+    margin-bottom: calc(var(--margin-h5) / var(--bottom-margin-scale));
+    font-size: var(--h5);
+    font-weight: normal;
 }
 
 p {
-  margin: 0;
-  font-size: var(--p);
+    margin: 0;
+    font-size: var(--p);
 }
 
 a {
-  color: var(--text-color);
-  font-size: var(--p);
-  font-weight: bold;
-  transition: color var(--transition-time) ease;
+    color: var(--text-color);
+    font-size: var(--p);
+    font-weight: bold;
+    transition: color var(--transition-time) ease;
 }
 
 a:hover {
-  color: var(--hovered-color-links);
-  cursor: pointer;
+    color: var(--hovered-color-links);
+    cursor: pointer;
 }
 
 svg {
-  color: var(--text-color);
-  transition: transform var(--transition-time) ease, color var(--transition-time) ease;
+    color: var(--text-color);
+    transition: transform var(--transition-time) ease, color var(--transition-time) ease;
 }
 
 svg:hover {
-  transform: scale(var(--transform-scale));
-  color: var(--hovered-color-links);
-  cursor: pointer;
+    transform: scale(var(--transform-scale));
+    color: var(--hovered-color-links);
+    cursor: pointer;
 }
 
 img {
@@ -168,34 +168,34 @@ video {
 
 /* To be moved to indivudal elements */
 .img-1 {
-  width: 31%;
-  margin-top: 3%;
-  
-  border-radius: var(--main-border-radius);
-  border-style: var(--main-border-style);
-  border-color: var(--main-border-color);
-  border-width: var(--main-border-width);
-  box-shadow: var(--box-shadow-default);
+    width: 31%;
+    margin-top: 3%;
+    
+    border-radius: var(--main-border-radius);
+    border-style: var(--main-border-style);
+    border-color: var(--main-border-color);
+    border-width: var(--main-border-width);
+    box-shadow: var(--box-shadow-default);
 }
 
 .img-2 {
-  width: 31%;
-  margin-left: 2.5%;
-  
-  border-radius: var(--main-border-radius);
-  border-style: var(--main-border-style);
-  border-color: var(--main-border-color);
-  border-width: var(--main-border-width);
-  box-shadow: var(--box-shadow-default);
+    width: 31%;
+    margin-left: 2.5%;
+    
+    border-radius: var(--main-border-radius);
+    border-style: var(--main-border-style);
+    border-color: var(--main-border-color);
+    border-width: var(--main-border-width);
+    box-shadow: var(--box-shadow-default);
 }
 
 .img-3 {
-  width: 31%;
-  margin-left: 2.5%;
-  
-  border-radius: var(--main-border-radius);
-  border-style: var(--main-border-style);
-  border-color: var(--main-border-color);
-  border-width: var(--main-border-width);
-  box-shadow: var(--box-shadow-default);
+    width: 31%;
+    margin-left: 2.5%;
+    
+    border-radius: var(--main-border-radius);
+    border-style: var(--main-border-style);
+    border-color: var(--main-border-color);
+    border-width: var(--main-border-width);
+    box-shadow: var(--box-shadow-default);
 }
