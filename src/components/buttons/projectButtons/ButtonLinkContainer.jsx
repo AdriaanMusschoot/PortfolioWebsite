@@ -4,7 +4,7 @@ import ItchioButton from '../../buttons/projectButtons/ItchioButton.jsx';
 import GithubTextButton from '../../buttons/projectButtons/GithubTextButton.jsx';
 
 /* Style Imports */
-import '../../../styles/buttons/ProjectLinks.css';
+import './ButtonLinkContainer.css';
 
 /* HTML */
 export default function ProjectButtons({ links }) {

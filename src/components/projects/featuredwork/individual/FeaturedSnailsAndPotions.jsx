@@ -1,5 +1,5 @@
 /* Style Imports */
-import '../../../../styles/projects/featuredwork/individual/FeaturedSnailsAndPotions.css';
+import './FeaturedSnailsAndPotions.css';
 
 /* HTML */
 export default function FeaturedSnailsAndPotions() {

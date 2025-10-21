@@ -1,5 +1,5 @@
 /* Style Imports */
-import '../../styles/projects/ProjectTags.css';
+import './ProjectTags.css';
 
 /* HTML */
 export default function ProjectTags({ tags }) {

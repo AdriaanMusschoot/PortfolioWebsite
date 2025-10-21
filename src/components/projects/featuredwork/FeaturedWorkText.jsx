@@ -5,7 +5,7 @@ import FeaturedBFG from './individual/FeaturedBFG.jsx';
 import FeaturedGetCooked from './individual/FeaturedGetCooked.jsx';
 
 /* Style Imports */
-import '../../../styles/projects/featuredwork/FeaturedWorkText.css';
+import './FeaturedWorkText.css';
 
 /* HTML */
 export default function FeaturedWorkText({ children, project }) {

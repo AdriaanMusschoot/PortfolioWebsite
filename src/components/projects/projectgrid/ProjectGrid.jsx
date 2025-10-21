@@ -3,7 +3,7 @@ import Projects from '../../../data/projects.json'
 import ProjectTags from '../ProjectTags'
 
 /* Style Imports */
-import '../../../styles/projects/projectgrid/ProjectGrid.css'
+import './ProjectGrid.css'
 
 /* HTIML */
 export default function ProjectGrid({ ActivateProjectCallback }) {

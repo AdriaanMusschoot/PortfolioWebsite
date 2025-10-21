@@ -6,7 +6,7 @@ import ProjectTags from '../ProjectTags.jsx';
 import Projects from '../../../data/projects.json';
 
 /* Style Imports */
-import '../../../styles/projects/featuredwork/FeaturedWork.css';
+import './FeaturedWork.css';
 
 /* HTML */
 export default function FeaturedWork({ ActivateProjectCallback }) {

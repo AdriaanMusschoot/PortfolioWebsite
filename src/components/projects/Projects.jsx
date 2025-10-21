@@ -19,7 +19,7 @@ import GetCooked from '../cards/GetCooked.jsx';
 import BFG from '../cards/BFG.jsx';
 
 /* Style Imports */
-import '../../styles/projects/ProjectInfo.css';
+import './ProjectInfo.css';
 
 export default function ProjectCard() {
   
