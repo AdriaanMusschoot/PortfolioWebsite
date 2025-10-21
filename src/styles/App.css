@@ -33,7 +33,7 @@
   --border-radius-large: calc(var(--border-radius-standard) * var(--border-radius-scale));
 
   /* Padding */
-  --base-padding-size: 0.8vw;
+  --base-padding-size: 0.4vw;
   --padding-scale: 2;
   --padding-standard: var(--base-padding-size);
   --padding-small: calc(var(--padding-standard) / var(--padding-scale));
