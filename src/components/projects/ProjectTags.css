@@ -1,7 +1,7 @@
 .project-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5vw;
+  gap: 0.2vw;
 }
 
 .project-tags p {
