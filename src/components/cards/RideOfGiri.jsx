@@ -1,23 +1,24 @@
 /* React Imports */
-import { ShortIntro, ShortIntroAlinea, ShortIntroTitle } from './shared/ShortIntro.js';
-import ShortIntroMedia from './shared/ShortIntroMedia.jsx';
+import { ShortIntro, ShortIntroTitle } from './shared/shortintro/ShortIntro.js';
+import ShortIntroMedia from './shared/shortintro/ShortIntroMedia.jsx';
 
 /* Style Imports */
 import '../../styles/cards/RideOfGiri.css';
 
 /* HTML */
-export default function RideOfGiri() {
+export default function RideOfGiri() 
+{
     return (
         <div className='RideOfGiri'>
             <ShortIntro>
-                <ShortIntroAlinea>
+                <div>
                     <ShortIntroTitle>
                         Quick Overview
                     </ShortIntroTitle>
                     <p>
                         Ride Of Giri Short Text
                     </p>
-                </ShortIntroAlinea>
+                </div>
                 <ShortIntroMedia MediaFilePath='./assets/ProjectImages/RideOfGiri/Trailer.webm' />
             </ShortIntro>
             <h2>The Game</h2>
@@ -46,4 +47,4 @@ export default function RideOfGiri() {
             </p>
         </div>
     )
-  };
+}

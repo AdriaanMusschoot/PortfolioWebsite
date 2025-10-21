@@ -7,9 +7,6 @@ export const ShortIntro = styled.div`
     margin-top: 1vw;
 `
 
-export const ShortIntroAlinea = styled.div`
-`
-
 export const ShortIntroTitle = styled.h3`
     margin: 0;
 `
