@@ -1,3 +1,4 @@
+/* Style Imports */
 import styled from 'styled-components';
 
 export const ShortIntro = styled.div`

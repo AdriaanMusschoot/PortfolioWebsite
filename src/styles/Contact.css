@@ -9,9 +9,14 @@
   & .contact-socials {
     display: flex;
     gap: 4vw;
+    margin-top: 1vw;
 
     & .svg {
       width: 3vw;
     }
   }
+}
+
+.contact h2 {
+    margin-bottom: 0;
 }

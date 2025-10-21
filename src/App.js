@@ -2,9 +2,9 @@
 import { Helmet } from 'react-helmet';
 
 /* Data Imports */
-import Home from './components/Home';
-import Contact from './components/Contact';
-import Header from './components/Header';
+import Home from './components/Home.jsx';
+import Contact from './components/Contact.jsx';
+import Header from './components/Header.jsx';
 import Projects from './components/projects/Projects.jsx';
 import Skills from './components/Skills';
 import About from './components/About.jsx';
