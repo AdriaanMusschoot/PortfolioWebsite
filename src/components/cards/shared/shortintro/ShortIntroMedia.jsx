@@ -1,5 +1,4 @@
 /* Style Imports */
-import { ShortIntroVideo, ShortIntroImage } from './ShortIntroMedia.js'
 
 /* HTML */
 export default function ShortIntroMedia( { MediaFilePath } )
@@ -9,15 +8,13 @@ export default function ShortIntroMedia( { MediaFilePath } )
     if (['mp4', 'webm'].includes(FileExtension))
     {
         return (
-            <ShortIntroVideo autoPlay controls>
-                <source src={ MediaFilePath }/>
-            </ShortIntroVideo>
+            <video autoPlay controls src={ MediaFilePath }/>
         );
     }
     else if (['png', 'jpg', 'jpeg', 'gif'].includes(FileExtension))
     {
         return (
-            <ShortIntroImage src={ MediaFilePath } />
+            <img src={ MediaFilePath } alt='loading'/>
         );
     }
     else

@@ -3,7 +3,7 @@ import { ShortIntro, ShortIntroTitle } from './shared/shortintro/ShortIntro.js';
 import ShortIntroMedia from './shared/shortintro/ShortIntroMedia.jsx';
 
 /* Style Imports */
-import '../../styles/cards/SnailsAndPotions.css'; 
+import './SnailsAndPotions.css'; 
 
 /* HTML */
 export default function SnailsAndPotions() 

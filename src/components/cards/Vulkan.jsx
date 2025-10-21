@@ -3,7 +3,7 @@ import { ShortIntro, ShortIntroTitle } from './shared/shortintro/ShortIntro.js';
 import ShortIntroMedia from './shared/shortintro/ShortIntroMedia.jsx';
 
 /* Style Imports */
-import '../../styles/cards/Vulkan.css'; // Import your CSS file
+import './Vulkan.css'; // Import your CSS file
 
 /* HTML */
 export default function Vulkan() 

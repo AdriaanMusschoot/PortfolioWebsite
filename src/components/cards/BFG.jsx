@@ -3,7 +3,7 @@ import { ShortIntro, ShortIntroTitle } from './shared/shortintro/ShortIntro.js';
 import ShortIntroMedia from './shared/shortintro/ShortIntroMedia.jsx';
 
 /* Style Imports */
-import '../../styles/cards/BFG.css';
+import './BFG.css';
 
 /* HTML */
 export default function BFG() 

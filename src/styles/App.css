@@ -155,11 +155,15 @@ svg:hover {
 }
 
 img {
-  border-radius: var(--border-radius-standard);
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-standard);
 }
 
 video {
-  border-radius: var(--border-radius-standard);
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-standard);
 }
 
 /* To be moved to indivudal elements */
