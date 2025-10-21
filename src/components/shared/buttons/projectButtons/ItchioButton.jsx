@@ -1,5 +1,5 @@
 /* Data Imports */
-import { ReactComponent as ItchioSVG } from '../../../assets/svg/itchio_icon.svg';
+import { ReactComponent as ItchioSVG } from '../../../../assets/svg/itchio_icon.svg';
 
 /* HTML */
 export default function ItchioButton({sourceLink}) {

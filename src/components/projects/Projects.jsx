@@ -4,7 +4,7 @@ import { ReactComponent as CrossButton } from '../../assets/svg/smallcross_icon.
 import FeaturedWork from './featuredwork/FeaturedWork.jsx';
 import ProjectGrid from './projectgrid/ProjectGrid.jsx';
 import ProjectTags from './ProjectTags.jsx';
-import ButtonLinkContainer from '../buttons/projectButtons/ButtonLinkContainer.jsx';
+import ButtonLinkContainer from '../shared/buttons/projectButtons/ButtonLinkContainer.jsx';
 
 /* Project Details */
 import SnailsAndPotions from '../cards/SnailsAndPotions.jsx';

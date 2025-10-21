@@ -1,5 +1,5 @@
 /* Data Imports */
-import { ReactComponent as GithubLogo } from '../../../assets/svg/github_text.svg';
+import { ReactComponent as GithubLogo } from '../../../../assets/svg/github_text.svg';
 
 /* HTML */
 export default function GithubTextButton({sourceLink}) {

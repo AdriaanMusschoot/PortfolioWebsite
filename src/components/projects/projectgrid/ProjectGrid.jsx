@@ -1,6 +1,6 @@
 /* Data Imports */
 import Projects from '../../../data/projects.json'
-import ProjectTags from '../ProjectTags'
+import ProjectTags from '../ProjectTags.jsx'
 
 /* Style Imports */
 import './ProjectGrid.css'

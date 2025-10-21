@@ -1,5 +1,5 @@
 /* Style Imports */
-import '../styles/Home.css';
+import './Home.css';
 
 /* HTML */
 export default function Home() {

@@ -1,14 +1,14 @@
 import { useEffect } from 'react';
 
 /* Data Imports */
-import { ReactComponent as Logo } from '../assets/svg/amulogo_icon.svg';
-import CVButton from './buttons/CVButton.jsx';
-import MailToButton from './buttons/MailToButton.jsx';
-import LinkedInButton from './buttons/LinkedInButton.jsx';
-import GithubButton from './buttons/GithubLogoButton.jsx';
+import { ReactComponent as Logo } from '../../assets/svg/amulogo_icon.svg';
+import CVButton from '../shared/buttons/CVButton.jsx';
+import MailToButton from '../shared/buttons/MailToButton.jsx';
+import LinkedInButton from '../shared/buttons/LinkedInButton.jsx';
+import GithubButton from '../shared/buttons/GithubLogoButton.jsx';
 
 /* Style Imports */
-import '../styles/Header.css';
+import './Header.css';
 
 /* HTML */
 export default function Header() {

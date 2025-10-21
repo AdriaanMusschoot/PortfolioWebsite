@@ -1,5 +1,5 @@
 /* Data Imports */
-import { ReactComponent as LinkedInLogo } from '../../assets/svg/linkedin_icon.svg';
+import { ReactComponent as LinkedInLogo } from '../../../assets/svg/linkedin_icon.svg';
 
 /* HTML */
 export default function LinkedInButton() {

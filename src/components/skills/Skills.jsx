@@ -1,10 +1,10 @@
 import React from 'react';
 
 /* Data Imports */
-import skills from '../data/skills.json';
+import skills from '../../data/skills.json';
 
 /* Style Imports */
-import '../styles/Skills.css';
+import './Skills.css';
 
 /* HTML */
 export default function Skills() {

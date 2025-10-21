@@ -1,5 +1,5 @@
 /* Data Imports */
-import { ReactComponent as SteamSVG } from '../../../assets/svg/steam_icon.svg';
+import { ReactComponent as SteamSVG } from '../../../../assets/svg/steam_icon.svg';
 
 /* HTML */
 export default function SteamButton({sourceLink}) {

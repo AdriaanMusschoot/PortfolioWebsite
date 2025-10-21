@@ -1,8 +1,8 @@
 /* Data Imports */
-import CVButton from './buttons/CVButton.jsx';
+import CVButton from '../shared/buttons/CVButton.jsx';
 
 /* Style Imports */
-import '../styles/About.css';
+import './About.css';
 
 /* HTML */
 export default function About() {

@@ -1,11 +1,11 @@
 /* React Imports */
-import CVButton from './buttons/CVButton.jsx';
-import MailToButton from './buttons/MailToButton.jsx';
-import LinkedInButton from './buttons/LinkedInButton.jsx';
-import GithubButton from './buttons/GithubLogoButton.jsx';
-import CopyableDiv from './shared/CopyableDiv.jsx';
+import CVButton from '../shared/buttons/CVButton.jsx';
+import MailToButton from '../shared/buttons/MailToButton.jsx';
+import LinkedInButton from '../shared/buttons/LinkedInButton.jsx';
+import GithubButton from '../shared/buttons/GithubLogoButton.jsx';
+import CopyableDiv from '../shared/CopyableDiv.jsx';
 /* Style Imports */
-import '../styles/Contact.css';
+import './Contact.css';
 
 /* HTML */
 export default function Contact() 

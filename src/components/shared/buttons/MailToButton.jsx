@@ -1,5 +1,5 @@
 /* Data Imports */
-import { ReactComponent as MailLogo } from '../../assets/svg/mail_icon.svg';
+import { ReactComponent as MailLogo } from '../../../assets/svg/mail_icon.svg';
 
 /* HTML */
 export default function MailToButton() {

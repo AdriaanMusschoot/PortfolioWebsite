@@ -1,7 +1,7 @@
 /* Data Imports */
 
 /* Style Imports */
-import '../styles/Epilogue.css';
+import './Epilogue.css';
 
 /* HTML */
 export default function Epilogue() {
