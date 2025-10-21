@@ -7,7 +7,7 @@ export default function ProjectTags({ tags }) {
     <div className="project-tags">
         {
           tags.map((tag) => (
-            <p key={tag}>
+            <p className='tag' key={tag}>
               {tag}
             </p>
           ))

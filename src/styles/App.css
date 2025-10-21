@@ -43,6 +43,7 @@
   --fill-color: rgb(61, 66, 115);
   --fill-color-semitransparent: rgba(61, 66, 115, 0.8);
   --fill-color-background: rgba(255, 255, 255, 0.05);
+  --fill-color-background-inverted: rgba(0, 0, 0, 0.8);
 
   /* Drop Shadow Values */
   /* First part 0 0 0, because we don't want on the outside of the boxes*/

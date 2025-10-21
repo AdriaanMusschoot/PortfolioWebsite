@@ -1,6 +1,7 @@
+/* START: Misc */
 :root {
-  --box-shadow-width-thumbnail: 0vw 0vw 10vw;
-  --box-shadow-opacity-thumbnail: 0.2;
+    --box-shadow-width-thumbnail: 0vw 0vw 10vw;
+    --box-shadow-opacity-thumbnail: 0.2;
 }
 
 .featured-work h2 {
@@ -11,19 +12,21 @@
     color: var(--hovered-color-links);
 }
 
-.featured-project {
-    display: grid;
-    margin-bottom: 2vw;
-    outline: var(--outline-width) var(--outline-style) var(--outline-color);
-    gap: 1vw;
-}
-
 .featured-project h3 {
     margin-bottom: 0;
 }
 
 .featured-project h4 {
     margin: 0;
+}
+/* END: Misc */
+
+/* START: FEATURED PROJECT */
+.featured-project {
+    display: grid;
+    margin-bottom: 2vw;
+    outline: var(--outline-width) var(--outline-style) var(--outline-color);
+    gap: 1vw;
 }
 
 .featured-project.even {
@@ -38,6 +41,7 @@
     position: relative;
 }
 
+/* START: thumbnail */
 .featured-project .thumbnail {
     width: 100%;
     height: auto;
@@ -45,7 +49,52 @@
     transition: filter var(--transition-time) ease;
 }
 
-.featured-project .explore-project-button {
+.featured-project:hover .thumbnail {
+    filter: brightness(80%);
+}
+/* END: thumbnail */
+
+/* START: project-tags */
+.featured-project .img-button-container .project-tags {
+    position: absolute;
+    margin: 1vw;
+    flex-direction: column;
+}
+
+.featured-project.odd .img-button-container .project-tags {
+    top: 0%;
+    left: 0%;
+}
+
+.featured-project.even .img-button-container .project-tags {
+    top: 0%;
+    right: 0%;
+    align-items: flex-end;
+}
+/* END: project-tags */
+
+/* START: date */
+.featured-project .img-button-container .date {
+    position: absolute;
+    background-color: var(--fill-color-background-inverted);
+    margin: 1vw;
+    padding: var(--padding-small);
+    border-radius: var(--border-radius-small);
+}
+
+.featured-project.odd .img-button-container .date {
+    bottom: 0%;
+    left: 0%;
+}
+
+.featured-project.even .img-button-container .date {
+    bottom: 0%;
+    right: 0%;
+}
+/* END: date */
+
+/* START: explore-project-button */
+.featured-project .img-button-container .explore-project-button {
     background-color: var(--fill-color);
     position: absolute;
     left: 50%;
@@ -57,12 +106,8 @@
     transition: opacity var(--transition-time) ease, transform var(--transition-time) ease, color var(--transition-time) ease;
 }
 
-.featured-project:hover .explore-project-button {
+.featured-project:hover .img-button-container .explore-project-button {
     opacity: 1;
-}
-
-.featured-project:hover .thumbnail {
-    filter: brightness(80%);
 }
 
 .featured-project .explore-project-button:hover {
@@ -70,3 +115,6 @@
     color: var(--hovered-color-links);
     transform: translate(-50%, -50%) scale(var(--transform-scale)); /* Matrix Operations Order First Scale On Origin Then Translate */
 }
+/* END:  explore-project-button */
+
+/* END: featured-project */

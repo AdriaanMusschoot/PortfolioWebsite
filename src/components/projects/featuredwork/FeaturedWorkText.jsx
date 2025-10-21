@@ -1,6 +1,5 @@
 /* React Imports */
-import ProjectTags from '../ProjectTags.jsx'
-
+import React from 'react';
 import FeaturedSnailsAndPotions from './individual/FeaturedSnailsAndPotions.jsx';
 import FeaturedBFG from './individual/FeaturedBFG.jsx';
 import FeaturedGetCooked from './individual/FeaturedGetCooked.jsx';
@@ -9,7 +8,7 @@ import FeaturedGetCooked from './individual/FeaturedGetCooked.jsx';
 import '../../../styles/projects/featuredwork/FeaturedWorkText.css';
 
 /* HTML */
-export default function FeaturedWorkText({ project }) {
+export default function FeaturedWorkText({ children, project }) {
   const highlightClassName = 'highlight';
 
   const FeaturedWorkMap = {
@@ -21,10 +20,10 @@ export default function FeaturedWorkText({ project }) {
   return (
     <div className='featured-work-text'>
         <h3>{project.title}</h3>
-        <ProjectTags tags={project.specifics} />
         {
-          FeaturedWorkMap[project.title]
+            FeaturedWorkMap[project.title]
         }
+        {children}
     </div>
   )
 };

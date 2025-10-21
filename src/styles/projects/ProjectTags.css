@@ -9,3 +9,7 @@
   padding: var(--padding-small);
   border-radius: var(--border-radius-small);
 }
+
+.project-tags .tag {
+    width: fit-content;
+}

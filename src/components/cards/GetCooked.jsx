@@ -13,7 +13,7 @@ export default function GetCooked()
             <ShortIntro>
                 <div>
                     <ShortIntroTitle>
-                        About The Project
+                        Quick Overview
                     </ShortIntroTitle>
                     <p>
                         Here Is Text

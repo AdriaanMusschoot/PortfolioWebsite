@@ -1,6 +1,7 @@
 .featured-work-text {
     align-content: center;
     padding-left: 1vw;
+    position: relative;
 }
 
 .featured-work-text h3{ 
