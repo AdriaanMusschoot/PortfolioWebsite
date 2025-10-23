@@ -52,7 +52,12 @@
     
     /* Default Text Values */
     --text-color:  #b8b1be;
+
     --margin-text: 15vw;
+    --width-project-card: 80%;
+    --left-header: 13vw;
+    --right-header: 13vw;
+    --padding-project-card-sides: 9%;
 
     /* Standard Backgound value for the page and when a card pops up */
     --background-color:  #0c0c13;
@@ -64,9 +69,18 @@
     --transition-time: 0.3s;
     --hovered-color-links: #b270b6;
     --transform-scale: 1.1;
-
     /* Transition values used for opening a project card needs to match in Projects.jsx */
     --time-project-card-transition: 0.5s;
+}
+
+@media (max-width: 600px) {
+    :root {
+        --width-project-card: 95%;
+        --margin-text: 2vw;
+        --left-header: 1vw;
+        --right-header: 1vw;
+        --padding-project-card-sides: 2%;
+    }
 }
 
 /* Main Body */

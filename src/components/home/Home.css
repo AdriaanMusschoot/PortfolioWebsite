@@ -1,3 +1,7 @@
+:root {
+    --home-height: 100vh;
+}
+
 .home-background {
   background-image: url('../../assets/bg/Background_Home.png');
   background-size: cover;
@@ -18,7 +22,7 @@
 }
 
 .home-text {
-  height: 100vh;
+  height: var(--home-height);
   align-content: center;
   text-align: center;
   position: relative;
@@ -58,4 +62,10 @@
 .home .Breaker { 
   margin-left: var(--margin-text);
   margin-right: var(--margin-text);
+}
+
+@media (max-width: 600px) {
+    :root {
+        --home-height: 50vh;
+    }
 }

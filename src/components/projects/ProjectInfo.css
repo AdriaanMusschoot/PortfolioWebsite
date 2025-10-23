@@ -1,5 +1,4 @@
 :root {
-  --padding-project-card-sides: 9%;
   --padding-project-card-top: 4%;
   --padding-project-card-bottom: 4%;
   --margin-project-card-top: 3.5%;
@@ -45,7 +44,7 @@
 }
 
 .card-popup-window .background .card {
-    width: 80%;
+    width: var(--width-project-card);
     border-radius: var(--border-radius-large);
     background-color: var(--background-color);
 

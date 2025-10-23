@@ -9,8 +9,8 @@ Header {
   z-index: 1;
   top: 0;
   position: fixed;
-  left: 13vw;
-  right: 13vw;
+  left: var(--left-header);
+  right: var(--right-header);
   display: flex;
   justify-content: center;
   background-color: var(--fill-color-semitransparent);
