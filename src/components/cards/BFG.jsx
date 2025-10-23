@@ -214,7 +214,6 @@ export default function BFG()
             <img className='Code-Snippet' src ='./assets/ProjectImages/BFG/ChainReaction_Code_Before.png' alt='Chain Reaction Code Before'></img>
             <p>After</p>
             <img className='Code-Snippet' src ='./assets/ProjectImages/BFG/ChainReaction_Code_After.png' alt='Chain Reaction Code After'></img>
-            <h2>Conclusion</h2>
         </div>
     )
 };
