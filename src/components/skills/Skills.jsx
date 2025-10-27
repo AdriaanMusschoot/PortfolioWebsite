@@ -4,7 +4,7 @@ import React from 'react';
 import skills from '../../data/skills.json';
 
 /* Style Imports */
-import './Skills.css';
+import './Skills.scss';
 
 /* HTML */
 export default function Skills() {
