@@ -11,7 +11,7 @@ import About from './components/about/About.jsx';
 import Epilogue from './components/epilogue/Epilogue.jsx';
 
 /* Style Imports */
-import './styles/App.css';
+import './styles/App.scss';
 
 function App() {
   return (

@@ -1,0 +1,97 @@
+@use '../../styles/Variables.scss' as *;
+
+:root {
+    --home-height: 100vh;
+}
+
+.home-background {
+    background-image: url('../../assets/bg/Background_Home.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.home-background::before {
+    content: ''; /* Otherwise Overlay Dissapears */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 0;
+}
+
+.home-text {
+    height: var(--home-height);
+    align-content: center;
+    text-align: center;
+    position: relative;
+    margin-left: var(--margin-text);
+    margin-right: var(--margin-text);
+}
+
+.home .Highlight {
+    color: var(--hovered-color-links);
+}
+
+.home .Emphasis {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.home h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.home h2 {
+    margin: 0;
+    margin-bottom: 0.5vw;
+    text-align: center;
+}
+
+.home p{
+    padding: var(--padding-small);
+    display: inline-block;
+    text-align: center;
+    outline: var(--outline-width) var(--outline-style) var(--outline-color);
+    background-color: var(--fill-color-background);
+    border-radius: var(--border-radius-small);
+}
+
+.home .Breaker { 
+    margin-left: var(--margin-text);
+    margin-right: var(--margin-text);
+}
+
+.home .home-background .down-arrow-icon{
+    width: 4rem;
+    height: auto;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0) translateX(-50%);
+    }
+    50% {
+        transform: translateY(1rem) translateX(-50%);
+    }
+}
+
+.home .home-background .down-arrow-icon:hover {
+    animation-play-state: paused;
+}
+
+@media (max-width: $mobile-phone-width) {
+    .home .home-background .down-arrow-icon {
+        width: 2rem;
+    }
+}
