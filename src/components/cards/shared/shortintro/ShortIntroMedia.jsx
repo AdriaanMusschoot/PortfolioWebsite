@@ -8,7 +8,7 @@ export default function ShortIntroMedia( { MediaFilePath } )
     if (['mp4', 'webm'].includes(FileExtension))
     {
         return (
-            <video autoPlay controls src={ MediaFilePath }/>
+            <video muted loop autoPlay controls src={ MediaFilePath }/>
         );
     }
     else if (['png', 'jpg', 'jpeg', 'gif'].includes(FileExtension))
