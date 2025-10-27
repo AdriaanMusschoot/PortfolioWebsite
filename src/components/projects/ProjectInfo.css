@@ -46,7 +46,7 @@
 .card-popup-window .background .card {
     width: var(--width-project-card);
     border-radius: var(--border-radius-large);
-    background-color: var(--background-color);
+    background-color: var(--body-background-color);
 
     /* Ensure Card Has Padding Without Extra Size */
     padding-left: var(--padding-project-card-sides);
@@ -83,8 +83,13 @@
 
 .card-popup-window .card .tags-links {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-top: 1vw;
+}
+
+.card-popup-window .card .tags-links .project-tags .tag {
+    background-color: var(--fill-color-grid-sections);
 }
 
 .card-popup-window .card .tags-links .button-link-container {

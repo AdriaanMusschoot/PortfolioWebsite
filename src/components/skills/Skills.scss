@@ -2,66 +2,58 @@
 
 /* == SKILLS SECTION == */
 .skills-section{ 
-  margin-left: var(--margin-text);
-  margin-right: var(--margin-text);
+    margin-left: var(--margin-text);
+    margin-right: var(--margin-text);
 }
 
 .skills-section .header{
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%; 
-  font-weight: semibold;
-  align-items: flex-end;
-  margin-bottom: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; 
+    font-weight: semibold;
+    align-items: flex-end;
+    margin-bottom: 2vw;
 }
 
 .skills-section .header h2 {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .skills-section .header .levels{
-  margin-left: auto;
-  text-align: right;
-  background-color: var(--fill-color-background);
-  padding: var(--padding-small);
-  border-radius: var(--border-radius-small);
+    margin-left: auto;
+    text-align: right;
+    background-color: var(--fill-color-grid-sections);
+    padding: var(--padding-small);
+    border-radius: var(--border-radius-small);
 }
 
 .skills-section .header .levels .primary-legend{
-  color: var(--hovered-color-links);
-}
-
-.skills-section .header .levels .secondary-legend{
-  color: var(--outline-color);
+        color: var(--highlight-color);
 }
 
 .skills {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  gap: 1vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 1vw;
 }
 
 .skills .section {
-  background-color: var(--fill-color-background);
-  border-radius: var(--border-radius-standard);
-  width: 100%;
-  color: var(--text-color);
-  box-shadow: var(--box-shadow-default);
-  padding: var(--padding-standard);
-  box-sizing: border-box; /* Need this to make padding not increase size */
+    background-color: var(--fill-color-grid-sections);
+    border-radius: var(--border-radius-standard);
+    width: 100%;
+    color: var(--text-color);
+    box-shadow: var(--box-shadow-default);
+    padding: var(--padding-standard);
+    box-sizing: border-box; /* Need this to make padding not increase size */
 }
 
 .skills .section .primary-elements{
-  color: var(--hovered-color-links);
-}
-
-.skills .section .secondary-elements{
-  color: var(--outline-color);
+    color: var(--highlight-color);
 }
 
 .skills h4{
-  margin-top: 0;
+    margin-top: 0;
 }
 
 @media (max-width:  $mobile-phone-width) {

@@ -17,7 +17,7 @@ export default function CopyableDiv({ children, TextToCopy })
     }
 
     return (
-        <Copyable isCopied={isCopied} onClick={() => HandleCopyMail(TextToCopy)} onMouseLeave={() => { setIsCopied(false) }}>
+        <Copyable iscopied={isCopied} onClick={() => HandleCopyMail(TextToCopy)} onMouseLeave={() => { setIsCopied(false) }}>
             {children}
         </Copyable>
     )

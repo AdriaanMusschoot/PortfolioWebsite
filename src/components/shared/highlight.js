@@ -1,6 +1,9 @@
 /* Style Imports */
 import styled from 'styled-components';
 
-export const DefaultHighlight = styled.span`
-    color: var(--hovered-color-links);
-`
+export const Highlight = styled.span`
+    color: var(--highlight-color);
+`;
+
+export const FWHighlight = styled(Highlight)`
+`;

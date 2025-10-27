@@ -9,7 +9,7 @@
 .project-grid .project {
     position: relative;
     width: 100%;
-    background-color: var(--fill-color-background);
+    background-color: var(--fill-color-grid-sections);
     border-radius: var(--border-radius-standard);
     overflow: hidden; /* Otherwise Image Border Will Overflow the card radius */
     transition: all var(--transition-time) ease;

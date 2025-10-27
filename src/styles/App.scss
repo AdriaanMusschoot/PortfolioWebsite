@@ -23,7 +23,6 @@
     --margin-h5: 0.5vw;
 
     /* Main Outline Values */
-    --outline-color: #40647c;
     --outline-width: 0vw;
     --outline-style: solid;
 
@@ -40,36 +39,34 @@
     --padding-standard: var(--base-padding-size);
     --padding-small: calc(var(--padding-standard) / var(--padding-scale));
     --padding-large: calc(var(--padding-standard) * var(--padding-scale));
-
-    /* Fill Color Values */
-    --fill-color: rgb(61, 66, 115);
-    --fill-color-semitransparent: rgba(61, 66, 115, 0.8);
-    --fill-color-background: rgba(255, 255, 255, 0.05);
-    --fill-color-background-inverted: rgba(0, 0, 0, 0.8);
-
-    /* Drop Shadow Values */
-    /* First part 0 0 0, because we don't want on the outside of the boxes*/
-    --box-shadow-default: 0 0 0 var(--hovered-color-links), inset 0 0 0 rgba(0, 0, 0, 0.5);
-    --box-shadow-hovered: 0 0 0 var(--hovered-color-links), inset 0 0 0 rgba(0, 0, 0, 0.5);
     
-    /* Default Text Values */
-    --text-color:  #b8b1be;
-
+    /* Default Body Padding Values */
     --margin-text: 15vw;
     --width-project-card: 80%;
     --left-header: 13vw;
     --right-header: 13vw;
     --padding-project-card-sides: 9%;
-
+    
     /* Standard Backgound value for the page and when a card pops up */
-    --background-color:  #0c0c13;
-
-    /* Overlay Value for when a card pops up */
+    --body-background-color:  rgba(12, 12, 19, 1);
+    
+    /* START: COLOR VALUES */
     --description-overlay-color: rgba(0, 0, 0, 0.9);
+    --hovered-color-links: #9694FF;
+    --text-color:  rgba(184, 177, 190, 1);
+    --outline-color: rgba(0, 0, 0, 1);
+    --highlight-color: #FF2929;
+    --button-fill-color: #4c4aa1;
+
+    
+    /* Header Fill Color */
+    --fill-color-header: rgba(0, 0, 0, 0.4);
+    --fill-color-grid-sections: rgba(255, 255, 255, 0.04);
+    /* END: COLOR VALUES
+
 
     /* Transition values used for hovering*/
     --transition-time: 0.3s;
-    --hovered-color-links: #b270b6;
     --transform-scale: 1.1;
     /* Transition values used for opening a project card needs to match in Projects.jsx */
     --time-project-card-transition: 0.5s;
@@ -91,7 +88,7 @@
 
 /* Main Body */
 body {
-    background-color: var(--background-color);
+    background-color: var(--body-background-color);
     color: var(--text-color);
     font-family: suse;
     display: flex;

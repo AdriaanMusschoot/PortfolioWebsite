@@ -1,6 +1,7 @@
 /* React Imports */
 import FeaturedWorkText from './FeaturedWorkText.jsx';
 import ProjectTags from '../ProjectTags.jsx';
+import { FWHighlight } from '../../shared/highlight.js';
 
 /* Data Imports */
 import Projects from '../../../data/projects.json';
@@ -16,7 +17,7 @@ export default function FeaturedWork({ ActivateProjectCallback }) {
     
     return (
         <div id='featured-work' className='featured-work'>
-            <h2><span className='highlight'>Featured</span> Work</h2>
+            <h2><FWHighlight>Featured</FWHighlight> Work</h2>
             {
                 FeaturedProjects.map((project, index) => (
                     <div key={project.id} className={`${FeaturedProjectName} ${index % 2 === 0 ? 'odd' : 'even'}`}>

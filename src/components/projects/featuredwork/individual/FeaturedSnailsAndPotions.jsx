@@ -1,3 +1,6 @@
+/* React Imports */
+import { FWHighlight } from '../../../shared/highlight.js';
+
 /* Style Imports */
 import './FeaturedSnailsAndPotions.css';
 
@@ -7,11 +10,11 @@ export default function FeaturedSnailsAndPotions() {
     <div className='featured-snails-and-potions'>
       <p>
         This amazing project was developed in a team of 5 (2 devs, 3 artists)
-         in <span className='highlight'>Unreal Engine 5</span> using <span className='highlight'>C++</span>.
+         in <FWHighlight>Unreal Engine 5</FWHighlight> using <FWHighlight>C++</FWHighlight>.
         <br /><br />
-        I was responsible for the <span className='highlight'>Crafting Mechanics</span>, <span className='highlight'>NPC Behaviour</span> and <span className='highlight'>UI</span>.
+        I was responsible for the <FWHighlight>Crafting Mechanics</FWHighlight>, <FWHighlight>NPC Behaviour</FWHighlight> and <FWHighlight>UI</FWHighlight>.
         <br />
-        After we finished it, I prepared the <span className='highlight'>Steam Release</span>.
+        After we finished it, I prepared the <FWHighlight>Steam Release</FWHighlight>.
         <br /><br />
         It is a local PvP game where the players fight over ingredients to craft potions, 
         which they have to feed to their snails to race to the finish line.

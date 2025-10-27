@@ -86,6 +86,7 @@ export default function ProjectCard() {
                   <div className='tags-links'>
                     <ProjectTags tags={activeProject.specifics} />
                     <ButtonLinkContainer links={activeProject.links}/>
+                    <p>{activeProject.date}</p>
                   </div>
                   <div className='description'>
                     {projectCardMap[activeProject.title]}

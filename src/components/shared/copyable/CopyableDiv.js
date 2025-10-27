@@ -6,7 +6,7 @@ export const Copyable = styled.div`
     position: relative;
     
     &::after {
-        content: '${props => props.isCopied ? 'Copied' : 'Copy'}';
+        content: '${props => props.iscopied ? 'Copied' : 'Copy'}';
         position: relative;
         position: absolute;
         left: 50%;
@@ -15,7 +15,7 @@ export const Copyable = styled.div`
         pointer-events: none;
         transform: translateX(-50%);
         font-size: var(--p);
-        background-color: var(--fill-color-background);
+        background-color: var(--fill-color-grid-sections);
         padding: var(--padding-small);
         border-radius: var(--border-radius-small);
         white-space: nowrap;
