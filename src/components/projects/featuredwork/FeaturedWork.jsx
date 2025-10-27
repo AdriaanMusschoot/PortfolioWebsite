@@ -6,7 +6,7 @@ import ProjectTags from '../ProjectTags.jsx';
 import Projects from '../../../data/projects.json';
 
 /* Style Imports */
-import './FeaturedWork.css';
+import './FeaturedWork.scss';
 
 /* HTML */
 export default function FeaturedWork({ ActivateProjectCallback }) {
@@ -19,32 +19,17 @@ export default function FeaturedWork({ ActivateProjectCallback }) {
             <h2><span className='highlight'>Featured</span> Work</h2>
             {
                 FeaturedProjects.map((project, index) => (
-                <div /* Div For the Whole Project Card */>
-                    { index % 2 === 0 ? ( /* If the projects index is even, put the image on one side else put it on the other side */
-                        <div className={`${FeaturedProjectName} odd`}>
-                            <FeaturedWorkText project={project}>
-                            </FeaturedWorkText>
-                            <div className='img-button-container'>
-                                <img className={`thumbnail ${project.id}`} src={project.image} alt={project.title} />
-                                <h4 className='explore-project-button' onClick={() => ActivateProjectCallback(project)}>Explore Project</h4>
-                                <ProjectTags tags={project.specifics} />
-                                <p className='date'>{project.date}</p>
-                            </div>
+                    <div key={project.id} className={`${FeaturedProjectName} ${index % 2 === 0 ? 'odd' : 'even'}`}>
+                        <FeaturedWorkText project={project}/>
+                        <div className='img-button-container'>
+                            <img className={`thumbnail ${project.id}`} src={project.image} alt={project.title} />
+                            <h4 className='explore-project-button' onClick={() => ActivateProjectCallback(project)}>
+                                Explore Project
+                            </h4>
+                            <ProjectTags tags={project.specifics} />
+                            <p className='date'>{project.date}</p>
                         </div>
-                    ) : (
-                        <div className={`${FeaturedProjectName} even`}>
-                            <div className='img-button-container'>
-                                <img className={`thumbnail ${project.id}`} src={project.image} alt={project.title} />
-                                <h4 className='explore-project-button' onClick={() => ActivateProjectCallback(project)}>Explore Project</h4>
-                                <ProjectTags tags={project.specifics} />
-                                <p className='date'>{project.date}</p>
-                            </div>
-                            <FeaturedWorkText project={project}>
-                            </FeaturedWorkText>
-                        </div>
-                    )
-                    }
-                </div>
+                    </div>
                 ))
             }
         </div>

@@ -1,3 +1,5 @@
+@use '../../../styles/Variables.scss' as *;
+
 /* START: Misc */
 :root {
     --box-shadow-width-thumbnail: 0vw 0vw 10vw;
@@ -27,18 +29,37 @@
     margin-bottom: 2vw;
     outline: var(--outline-width) var(--outline-style) var(--outline-color);
     gap: 1vw;
-}
 
-.featured-project.even {
-    grid-template-columns: 3fr 2fr;
-}
+    &.odd {
+        grid-template-columns: 2fr 3fr;
 
-.featured-project.odd {
-    grid-template-columns: 2fr 3fr;
+        .img-button-container{
+            order: 2;
+        }
+
+        .featured-work-text{
+            order: 1;
+        }
+    }
+
+    &.even {
+        grid-template-columns: 3fr 2fr;
+
+        .img-button-container{
+            order: 1;
+        }
+
+        .featured-work-text{
+            order: 2;
+        }
+    }
 }
 
 .featured-project .img-button-container {
     position: relative;
+    align-content: center;
+    width: 100%;
+    height: fit-content;
 }
 
 /* START: thumbnail */
@@ -47,6 +68,7 @@
     height: auto;
     border-radius: var(--border-radius-large);
     transition: filter var(--transition-time) ease;
+    align-content: center;
 }
 
 .featured-project:hover .thumbnail {
@@ -104,6 +126,10 @@
     border-radius: var(--border-radius-small);
     padding: var(--padding-small);
     transition: opacity var(--transition-time) ease, transform var(--transition-time) ease, color var(--transition-time) ease;
+    width: fit-content;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 1;
 }
 
 .featured-project:hover .img-button-container .explore-project-button {
@@ -118,3 +144,16 @@
 /* END:  explore-project-button */
 
 /* END: featured-project */
+
+/* START: Mobile Support */
+@media (max-width: $mobile-phone-width) {
+    .featured-project.odd, .featured-project.even {
+        grid-template-columns: 1fr;
+        .img-button-container{
+            order: unset;
+        }
+        .featured-work-text{
+            order: unset;
+        }
+    }
+}
