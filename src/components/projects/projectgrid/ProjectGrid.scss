@@ -1,3 +1,5 @@
+@use '../../../styles/Variables.scss' as *;
+
 .project-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -47,4 +49,10 @@
 
 .project-grid .project:hover .project-tags {
     opacity: 1;
+}
+
+@media (max-width: $mobile-phone-width) {
+    .project-grid{
+        grid-template-columns: 1fr 1fr;
+    }
 }
