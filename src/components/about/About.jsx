@@ -29,7 +29,7 @@ export default function About() {
                         I work <Highlight>cleanly</Highlight> and am not afraid to <b>(re)organize</b> and <b>refactor</b> to achieve that. 
                         I have a keen <Highlight>eye for detail</Highlight> and can really grit my teeth and <Highlight>persist</Highlight> until I find <b>effective</b> and <b>elegant</b> solutions.
                         <br/><br/>
-                        Currently, I am hunting for my first job in the industry! Please <a href='#contact'>reach out</a> if you know of any opportunies.
+                        Currently, I am hunting for my first job in the industry! Please<a href='#contact'>reach out</a>if you know of any opportunies.
                     </p>    
                     <p >
                     </p>

@@ -155,7 +155,7 @@ a {
     color: var(--text-color);
     font-size: var(--p);
     font-weight: bold;
-    transition: color var(--transition-time) ease, transform var(--transition-time) ease;
+    transition: color var(--transition-time) ease;
     text-decoration: none;
     display: inline-block;
 }
@@ -163,7 +163,6 @@ a {
 a:hover {
     color: var(--hovered-color-links);
     cursor: pointer;
-    transform: scale(var(--transform-scale));
 }
 
 svg {
