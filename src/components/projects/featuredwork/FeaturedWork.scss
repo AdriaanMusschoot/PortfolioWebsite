@@ -117,7 +117,7 @@
 
 /* START: explore-project-button */
 .featured-project .img-button-container .explore-project-button {
-    background-color: var(--button-fill-color);
+    background-color: var(--fill-color-header);
     position: absolute;
     left: 50%;
     top: 50%;
@@ -125,7 +125,7 @@
     opacity: 0;
     border-radius: var(--border-radius-small);
     padding: var(--padding-small);
-    transition: opacity var(--transition-time) ease, transform var(--transition-time) ease;
+    transition: opacity var(--transition-time) ease, transform var(--transition-time) ease, color var(--transition-time) ease;
     width: fit-content;
     text-align: center;
     white-space: nowrap;
@@ -138,6 +138,7 @@
 
 .featured-project .explore-project-button:hover {
     cursor: pointer;
+    color: var(--hovered-color-links);
     transform: translate(-50%, -50%) scale(var(--transform-scale)); /* Matrix Operations Order First Scale On Origin Then Translate */
 }
 /* END:  explore-project-button */

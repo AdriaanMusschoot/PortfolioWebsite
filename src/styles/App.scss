@@ -56,15 +56,17 @@
     --text-color:  rgba(184, 177, 190, 1);
     --outline-color: rgba(0, 0, 0, 1);
     --highlight-color: #FF2929;
-    --button-fill-color: #4c4aa1;
+    --fill-color-button: rgba(255, 255, 255, 0.2);
 
     
     --fill-color-grid-sections: rgba(255, 255, 255, 0.04);
     /* END: COLOR VALUES
     /* Clickable Buttons Values */
     --fill-color-header: rgba(0, 0, 0, 0.4);
-    --blur-header: blur(1rem);
 
+    /* Blur Button */
+    --blur-header: blur(1rem);
+    --blur-buttons: blur(2rem);
 
     /* Transition values used for hovering*/
     --transition-time: 0.3s;
