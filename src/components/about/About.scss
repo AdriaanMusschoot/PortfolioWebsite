@@ -1,0 +1,42 @@
+@use '../../styles/Variables.scss' as *;
+
+.about {
+    margin-left: var(--margin-text);
+    margin-right: var(--margin-text);
+    margin-bottom: 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-left {
+    width: 50%;
+    height: auto;
+    margin-right: 1vw;
+    display: flex;
+    flex-direction: column;
+    
+    box-shadow: var(--box-shadow-default);
+    align-items: center;
+}
+
+.about-left .svg {
+    width: 100%;
+}
+
+.about-left img {
+    margin-bottom: 1vw;
+    width: 100%;
+    height: auto;
+}
+
+.about-left a p {
+    text-align: center;
+}
+
+.about-text a{
+    margin-left: 0.3vw;
+    margin-right: 0.3vw;
+}

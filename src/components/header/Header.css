@@ -17,7 +17,7 @@ Header {
   align-items: center; 
   padding-top: 0.5vw;
   padding-bottom: 0.5vw;
-  backdrop-filter: blur(1rem);
+  backdrop-filter: var(--blur-header);
 }
 
 

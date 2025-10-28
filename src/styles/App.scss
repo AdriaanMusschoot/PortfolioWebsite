@@ -59,10 +59,11 @@
     --button-fill-color: #4c4aa1;
 
     
-    /* Header Fill Color */
-    --fill-color-header: rgba(0, 0, 0, 0.4);
     --fill-color-grid-sections: rgba(255, 255, 255, 0.04);
     /* END: COLOR VALUES
+    /* Clickable Buttons Values */
+    --fill-color-header: rgba(0, 0, 0, 0.4);
+    --blur-header: blur(1rem);
 
 
     /* Transition values used for hovering*/
@@ -152,12 +153,15 @@ a {
     color: var(--text-color);
     font-size: var(--p);
     font-weight: bold;
-    transition: color var(--transition-time) ease;
+    transition: color var(--transition-time) ease, transform var(--transition-time) ease;
+    text-decoration: none;
+    display: inline-block;
 }
 
 a:hover {
     color: var(--hovered-color-links);
     cursor: pointer;
+    transform: scale(var(--transform-scale));
 }
 
 svg {

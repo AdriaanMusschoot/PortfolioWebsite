@@ -1,0 +1,6 @@
+.download-resume-button {
+    background-color: var(--fill-color-grid-sections);
+    backdrop-filter: var(--blur-header);
+    padding: var(--padding-small);
+    border-radius: var(--border-radius-small);
+}
