@@ -1,0 +1,24 @@
+@use '../../../../styles/Variables.scss' as *; 
+
+.short-intro {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1vw;
+    margin-top: 1vh;
+}
+
+.short-intro .title {
+    margin: 0;
+}
+
+@media (max-width: $mobile-phone-width) {
+    .short-intro {
+        grid-template-columns: 1fr;
+        > div:first-child {
+            order: 1;
+        }
+        > div:last-child {
+            order: -1;
+        }
+    }
+}

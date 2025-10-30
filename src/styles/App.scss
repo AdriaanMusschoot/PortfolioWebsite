@@ -74,6 +74,7 @@
     /* Transition values used for opening a project card needs to match in Projects.jsx */
     --time-project-card-transition: 0.5s;
 
+    --mobile-phone-width: $mobile-phone-width;
 }
 
 @media (max-width:  $mobile-phone-width) {

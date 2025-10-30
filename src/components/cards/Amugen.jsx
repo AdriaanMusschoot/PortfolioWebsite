@@ -1,13 +1,14 @@
 /* React Imports */
-import { ShortIntro, ShortIntroTitle } from './shared/shortintro/ShortIntro.js';
+import ShortIntro from './shared/shortintro/ShortIntro.jsx';
 import ShortIntroMedia from './shared/shortintro/ShortIntroMedia.jsx';
+import ShortIntroTitle from './shared/shortintro/ShortIntroTitle.jsx';
 
 /* Style Imports */
 import './Amugen.css'; 
 import { CHighlight } from '../shared/highlight.js';
 
 /* HTML */
-export default function Amugen() 
+export default function Amugen()
 {
     return (
         <div className='Amugen'>

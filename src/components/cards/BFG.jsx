@@ -1,6 +1,7 @@
 /* React Imports */
-import { ShortIntro, ShortIntroTitle } from './shared/shortintro/ShortIntro.js';
+import ShortIntro from './shared/shortintro/ShortIntro.jsx';
 import ShortIntroMedia from './shared/shortintro/ShortIntroMedia.jsx';
+import ShortIntroTitle from './shared/shortintro/ShortIntroTitle.jsx';
 
 /* Style Imports */
 import './BFG.css';
