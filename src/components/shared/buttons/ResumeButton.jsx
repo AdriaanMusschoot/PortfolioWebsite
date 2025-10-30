@@ -1,6 +1,3 @@
-/* Data Imports */
-import { ReactComponent as CVLogo } from '../../../assets/svg/CV_icon.svg';
-
 /* Style Imports */
 import './ResumeButton.css';
 
