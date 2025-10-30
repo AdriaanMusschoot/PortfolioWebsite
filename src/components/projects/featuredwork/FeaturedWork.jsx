@@ -1,6 +1,7 @@
 /* React Imports */
 import FeaturedWorkText from './FeaturedWorkText.jsx';
 import ProjectTags from '../ProjectTags.jsx';
+import RewardsContainer from '../shared/rewards/RewardsContainer.jsx';
 import { FWHighlight } from '../../shared/highlight.js';
 
 /* Data Imports */
@@ -29,6 +30,7 @@ export default function FeaturedWork({ ActivateProjectCallback }) {
                             </h4>
                             <ProjectTags tags={project.specifics} />
                             <p className='date'>{project.date}</p>
+                            <RewardsContainer rewards={project.rewards}/>
                         </div>
                     </div>
                 ))

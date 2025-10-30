@@ -40,6 +40,14 @@
     --padding-small: calc(var(--padding-standard) / var(--padding-scale));
     --padding-large: calc(var(--padding-standard) * var(--padding-scale));
     
+    /* Margin */
+    --base-margin-size: 0.4vw;
+    --margin-scale: 2;
+    --margin-standard: var(--base-margin-size);
+    --margin-small: calc(var(--margin-standard) / var(--margin-scale));
+    --margin-large: calc(var(--margin-standard) * var(--margin-scale));
+    
+    
     /* Default Body Padding Values */
     --margin-text: 15vw;
     --width-project-card: 80%;

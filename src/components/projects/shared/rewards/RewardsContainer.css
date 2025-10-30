@@ -1,0 +1,30 @@
+.rewards-container {
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    gap: 3%;
+}
+
+.rewards-container .reward-img {
+    position: relative;
+    width: 13%;
+}
+
+.rewards-container .reward-img::before{ 
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    background: rgba(0, 0, 0, 0.683);
+    border-radius: 50%;
+    filter: blur(6px);
+} 
+
+.rewards-container img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+}
