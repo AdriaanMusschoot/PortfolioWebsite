@@ -19,7 +19,7 @@ export default function Raymarcher()
                         Ray marcher Short Text
                     </p>
                 </div>
-                <ShortIntroMedia MediaFilePath='./assets/ProjectImages/RayMarcher/Mandelbulb.webm' />
+                <ShortIntroMedia MediaFilePath='./assets/ProjectImages/RayMarcher/Trailer.webm' />
             </ShortIntro>
             <h2>The Project</h2>
             <p>
