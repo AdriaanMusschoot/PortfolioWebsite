@@ -7,3 +7,6 @@ export const Highlight = styled.span`
 
 export const FWHighlight = styled(Highlight)`
 `;
+
+export const CHighlight = styled(Highlight)`
+`;

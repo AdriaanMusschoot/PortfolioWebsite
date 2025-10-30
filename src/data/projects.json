@@ -57,7 +57,8 @@
         [
             "Solo",
             "C++",
-            "CMake"
+            "CMake",
+            "SDL2"
         ],
         "date" : "Feb - June 2024",
         "id": "Amugen",

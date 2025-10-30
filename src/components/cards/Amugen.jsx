@@ -4,6 +4,7 @@ import ShortIntroMedia from './shared/shortintro/ShortIntroMedia.jsx';
 
 /* Style Imports */
 import './Amugen.css'; 
+import { CHighlight } from '../shared/highlight.js';
 
 /* HTML */
 export default function Amugen() 
@@ -16,7 +17,12 @@ export default function Amugen()
                         Quick Overview
                     </ShortIntroTitle>
                     <p>
-                        BFG Short Text
+                        This 4 month <CHighlight>solo</CHighlight> project, developing a <CHighlight>custom 2D Engine</CHighlight>, was a technical deep dive into the behind the scenes of game engines.
+                        <br/><br/>
+                        I used <CHighlight>CMake</CHighlight> as build system for the first time.
+                        Everything was developed in <CHighlight>C++</CHighlight> using <CHighlight>SDL2</CHighlight> to handle the low-level.
+                        <br/><br/>
+                        It thaught me much about <CHighlight>game programming patterns</CHighlight> commonly used in game development.
                     </p>
                 </div>
                 <ShortIntroMedia MediaFilePath='./assets/ProjectImages/Amugen/Showcase.webm' />
