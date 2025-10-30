@@ -130,6 +130,7 @@
     text-align: center;
     white-space: nowrap;
     z-index: 1;
+    backdrop-filter: var(--blur-buttons);
 }
 
 .featured-project:hover .img-button-container .explore-project-button {
