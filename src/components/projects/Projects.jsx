@@ -7,16 +7,16 @@ import ProjectTags from './ProjectTags.jsx';
 import ButtonLinkContainer from '../shared/buttons/projectButtons/ButtonLinkContainer.jsx';
 
 /* Project Details */
-import SnailsAndPotions from '../cards/SnailsAndPotions.jsx';
-import Amugen from '../cards/Amugen.jsx';
-import Vulkan from '../cards/Vulkan.jsx';
-import Raymarcher from '../cards/Raymarcher.jsx';
-import PhysicsPrediction from '../cards/PhysicsPrediction.jsx';
-import SouperHero from '../cards/Souperhero.jsx';
-import Tectonic from '../cards/Tectonic.jsx';
-import RideOfGiri from '../cards/RideOfGiri.jsx';
-import GetCooked from '../cards/GetCooked.jsx';
-import BFG from '../cards/BFG.jsx';
+import SnailsAndPotions from './cards/SnailsAndPotions.jsx';
+import Amugen from './cards/Amugen.jsx';
+import Vulkan from './cards/Vulkan.jsx';
+import Raymarcher from './cards/Raymarcher.jsx';
+import PhysicsPrediction from './cards/PhysicsPrediction.jsx';
+import SouperHero from './cards/Souperhero.jsx';
+import Tectonic from './cards/Tectonic.jsx';
+import RideOfGiri from './cards/RideOfGiri.jsx';
+import GetCooked from './cards/GetCooked.jsx';
+import BFG from './cards/BFG.jsx';
 
 /* Style Imports */
 import './ProjectInfo.css';

@@ -5,7 +5,7 @@ import ShortIntroTitle from './shared/shortintro/ShortIntroTitle.jsx';
 
 /* Style Imports */
 import './Amugen.css'; 
-import { CHighlight } from '../shared/highlight.js';
+import { CHighlight } from '../../shared/highlight.js';
 
 /* HTML */
 export default function Amugen()

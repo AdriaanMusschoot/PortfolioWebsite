@@ -1,3 +1,4 @@
+/* HTML */
 export default function ShortIntroTitle( { children } )
 {
     return(
