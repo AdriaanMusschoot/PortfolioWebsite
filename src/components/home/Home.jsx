@@ -12,7 +12,7 @@ export default function Home() {
     <section className='home' id='home'>
       <div className='home-background'>
           <div className="home-text">
-            <h1><Highlight>C++</Highlight> & <Highlight>Unreal Engine</Highlight> Developer</h1>
+            <h1><Highlight>C++</Highlight> & <Highlight>Unreal Engine Developer</Highlight></h1>
             <h2>Welcome to my portfolio!</h2>
             <p>
             Looking for a<Highlight> junior games programmer position</Highlight>.

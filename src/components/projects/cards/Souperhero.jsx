@@ -1,7 +1,7 @@
 /* React Imports */
-import ShortIntro from './shared/shortintro/ShortIntro.jsx';
-import ShortIntroMedia from './shared/shortintro/ShortIntroMedia.jsx';
-import ShortIntroTitle from './shared/shortintro/ShortIntroTitle.jsx';
+import ShortIntro from './shortintro/ShortIntro.jsx';
+import ShortIntroMedia from './shortintro/ShortIntroMedia.jsx';
+import ShortIntroTitle from './shortintro/ShortIntroTitle.jsx';
 
 /* Style Imports */
 import './SouperHero.css'; 

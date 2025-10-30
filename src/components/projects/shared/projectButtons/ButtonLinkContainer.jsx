@@ -1,7 +1,7 @@
 /* Data Imports */
-import SteamButton from '../../buttons/projectButtons/SteamButton.jsx';
-import ItchioButton from '../../buttons/projectButtons/ItchioButton.jsx';
-import GithubTextButton from '../../buttons/projectButtons/GithubTextButton.jsx';
+import SteamButton from './SteamButton.jsx';
+import ItchioButton from './ItchioButton.jsx';
+import GithubTextButton from './GithubTextButton.jsx';
 
 /* Style Imports */
 import './ButtonLinkContainer.css';

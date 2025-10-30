@@ -20,3 +20,7 @@
 .contact h2 {
     margin-bottom: 0;
 }
+
+.contact h4 {
+    color: var(--hovered-color-links);
+}
