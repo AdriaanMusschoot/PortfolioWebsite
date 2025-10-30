@@ -6,8 +6,15 @@ export const ShortIntro = styled.div`
     grid-template-columns: 2fr 3fr;
     gap: 1vw;
     margin-top: 1vw;
+
 `
 
 export const ShortIntroTitle = styled.h3`
     margin: 0;
+`
+
+export const ShortIntroVideo = styled.video`
+`
+
+export const ShortIntroImage = styled.img`
 `
