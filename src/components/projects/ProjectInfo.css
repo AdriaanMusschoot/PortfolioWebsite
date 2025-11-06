@@ -92,16 +92,6 @@
     background-color: var(--fill-color-grid-sections);
 }
 
-.card-popup-window .card .tags-links .button-link-container {
-    margin-left: 5vw;
-    gap: 1vw;
-}
-
-.card-popup-window .card .tags-links .button-link-container svg {
-    width: 5vw;
-    height: auto;
-}
-
 /* START: Title Styling */
 :root {
     --card-title-color: var(--fill-color);

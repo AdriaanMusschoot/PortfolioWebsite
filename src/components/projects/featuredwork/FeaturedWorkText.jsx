@@ -19,11 +19,9 @@ export default function FeaturedWorkText({ children, project }) {
 
   return (
     <div className='featured-work-text'>
-        <h3>{project.title}</h3>
         {
             FeaturedWorkMap[project.title]
         }
-        {children}
     </div>
   )
 };

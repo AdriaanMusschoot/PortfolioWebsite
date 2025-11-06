@@ -1,5 +1,11 @@
 .button-link-container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
+    gap: 5%;
+}
+
+.button-link-container svg {
+    width: 5vw;
+    height: auto;
 }
