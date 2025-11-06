@@ -4,7 +4,6 @@
 }
 
 .project-tags .tag {
-    background-color: var(--outline-color);
     padding: var(--padding-small);
     border-radius: var(--border-radius-small);
     white-space: nowrap; /* Prevent text from breaking */

@@ -39,6 +39,7 @@
 }
 
 .project-grid .project .project-tags {
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -46,6 +47,11 @@
     opacity: 0;
     transition: opacity var(--transition-time) ease;
 }
+
+.project-grid .project .project-tags .tag {
+    background-color: var(--fill-color-project-tags-thumbnail);
+}
+
 
 .project-grid .project:hover .project-tags {
     opacity: 1;

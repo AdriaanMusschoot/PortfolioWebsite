@@ -100,12 +100,17 @@
     right: 0%;
     align-items: flex-end;
 }
+
+.featured-project .img-button-container .project-tags .tag {
+    background-color: var(--fill-color-project-tags-thumbnail);
+}
+
 /* END: project-tags */
 
 /* START: date */
 .featured-project .img-button-container .date {
     position: absolute;
-    background-color: var(--outline-color);
+    background-color: var(--fill-color-project-tags-thumbnail);
     margin: 1vw;
     padding: var(--padding-small);
     border-radius: var(--border-radius-small);

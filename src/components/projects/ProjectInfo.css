@@ -97,14 +97,14 @@
 }
 
 .card-popup-window .card .links-tags-date .tags-date .date {
-    background-color: var(--fill-color-grid-sections);
+    background-color: var(--fill-color-project-tags-card);
     padding: var(--padding-small);
     border-radius: var(--border-radius-small);
     white-space: nowrap;
 }
 
 .card-popup-window .card .links-tags-date .project-tags .tag {
-    background-color: var(--fill-color-grid-sections);
+    background-color: var(--fill-color-project-tags-card);
 }
 
 /* START: Title Styling */
