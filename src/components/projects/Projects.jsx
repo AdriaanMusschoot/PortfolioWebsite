@@ -71,30 +71,32 @@ export default function ProjectCard() {
     }, 0); // Set to 0 to allow the transition to take effect
   };
 
-  return (
-    <section id='projects' className='projects'>
-      <FeaturedWork ActivateProjectCallback={openClickedCard} />
-      <ProjectGrid ActivateProjectCallback={openClickedCard} />
-        {activeProject !== null && (
-          <div className={`card-popup-window ${transitioning ? 'transitioning' : 'active'}`}>
-            <div className='background' onClick={closeCard}>
-              <div className='card' onClick={(event) => event.stopPropagation()}>
-                  <div className='header'>
-                    <h1>{activeProject.title}</h1>
-                    <CrossButton className="cross-button" onClick={closeCard}/>
-                  </div>
-                  <div className='tags-links'>
-                    <ProjectTags tags={activeProject.specifics} />
-                    <ButtonLinkContainer links={activeProject.links}/>
-                    <p>{activeProject.date}</p>
-                  </div>
-                  <div className='description'>
-                    {projectCardMap[activeProject.title]}
-                  </div>
-              </div>
-            </div>
-          </div>
-        )}
-    </section>
-  );
+    return (
+        <section id='projects' className='projects'>
+            <FeaturedWork ActivateProjectCallback={openClickedCard} />
+            <ProjectGrid ActivateProjectCallback={openClickedCard} />
+                {activeProject !== null && (
+                    <div className={`card-popup-window ${transitioning ? 'transitioning' : 'active'}`}>
+                        <div className='background' onClick={closeCard}>
+                        <div className='card' onClick={(event) => event.stopPropagation()}>
+                            <div className='header'>
+                                <h1>{activeProject.title}</h1>
+                                <CrossButton className="cross-button" onClick={closeCard}/>
+                            </div>
+                            <div className='links-tags-date'>
+                                <ButtonLinkContainer links={activeProject.links}/>
+                                <div className='tags-date'>
+                                    <p className='date'>{activeProject.date}</p>
+                                    <ProjectTags tags={activeProject.specifics} />
+                                </div>
+                            </div>
+                            <div className='description'>
+                                {projectCardMap[activeProject.title]}
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                )}
+        </section>
+    );
 }

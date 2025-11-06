@@ -1,15 +1,12 @@
 .project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.2vw;
-}
-
-.project-tags p {
-  background-color: var(--outline-color);
-  padding: var(--padding-small);
-  border-radius: var(--border-radius-small);
+    display: flex;
+    gap: 0.2vw;
 }
 
 .project-tags .tag {
+    background-color: var(--outline-color);
+    padding: var(--padding-small);
+    border-radius: var(--border-radius-small);
+    white-space: nowrap; /* Prevent text from breaking */
     width: fit-content;
 }

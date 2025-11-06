@@ -48,11 +48,13 @@
     border-radius: var(--border-radius-large);
     background-color: var(--body-background-color);
 
-    /* Ensure Card Has Padding Without Extra Size */
+    position: relative;
+    
     padding-left: var(--padding-project-card-sides);
     padding-right: var(--padding-project-card-sides);
     padding-top: var(--padding-project-card-top);
     padding-bottom: var(--padding-project-card-bottom);
+    /* Ensure Card Has Padding Without Extra Size */
     box-sizing: border-box;
 
     margin-top: var(--margin-project-card-top);
@@ -66,29 +68,42 @@
     transform: scale(1);
 }
 
+.card-popup-window .card h1 {
+    margin: 0;
+}
+
 .card-popup-window .card .header {
     display: flex;
     align-items: center;
 }
 
-.card-popup-window .card .header h1 {
-    margin: 0;
-}
-
 .card-popup-window .card .header .cross-button{
-  width: 8%;
-  height: auto;
-  margin-left: auto;
+    width: 8%;
+    height: auto;
+    margin-left: auto;
 }
 
-.card-popup-window .card .tags-links {
+.card-popup-window .card .links-tags-date {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-top: 1vw;
 }
 
-.card-popup-window .card .tags-links .project-tags .tag {
+.card-popup-window .card .links-tags-date .tags-date {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: auto;
+    gap: 11%;
+}
+
+.card-popup-window .card .links-tags-date .tags-date .date {
+    background-color: var(--fill-color-grid-sections);
+    padding: var(--padding-small);
+    border-radius: var(--border-radius-small);
+    white-space: nowrap;
+}
+
+.card-popup-window .card .links-tags-date .project-tags .tag {
     background-color: var(--fill-color-grid-sections);
 }
 
