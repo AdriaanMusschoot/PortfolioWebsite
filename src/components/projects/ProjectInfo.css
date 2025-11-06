@@ -109,7 +109,11 @@
 
 /* START: Title Styling */
 :root {
-    --card-title-color: var(--fill-color);
+    --card-title-color: var(--titles-color);
+}
+
+.card-popup-window .card h1 {
+    color: var(--card-title-color);
 }
 
 .card-popup-window .card h2 {
