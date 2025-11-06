@@ -2,6 +2,7 @@
 import ShortIntro from './shortintro/ShortIntro.jsx';
 import ShortIntroMedia from './shortintro/ShortIntroMedia.jsx';
 import ShortIntroTitle from './shortintro/ShortIntroTitle.jsx';
+import FeaturedGetCooked from '../featuredwork/individual/FeaturedSnailsAndPotions.jsx';
 
 /* Style Imports */
 import './SnailsAndPotions.css'; 
@@ -16,9 +17,7 @@ export default function SnailsAndPotions()
                     <ShortIntroTitle>
                         Quick Overview
                     </ShortIntroTitle>
-                    <p>
-                        Snails And Potions Short Text
-                    </p>
+                    <FeaturedGetCooked />
                 </div>
                 <ShortIntroMedia MediaFilePath='./assets/ProjectImages/SnailsAndPotions/Snails&Potions_Trailer.webm' />
             </ShortIntro>

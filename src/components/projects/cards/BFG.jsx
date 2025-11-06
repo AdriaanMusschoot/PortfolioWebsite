@@ -2,6 +2,7 @@
 import ShortIntro from './shortintro/ShortIntro.jsx';
 import ShortIntroMedia from './shortintro/ShortIntroMedia.jsx';
 import ShortIntroTitle from './shortintro/ShortIntroTitle.jsx';
+import FeaturedBFG from '../featuredwork/individual/FeaturedBFG.jsx';
 
 /* Style Imports */
 import './BFG.css';
@@ -16,9 +17,7 @@ export default function BFG()
                     <ShortIntroTitle>
                         Quick Overview
                     </ShortIntroTitle>
-                    <p>
-                        BFG Short Text
-                    </p>
+                    <FeaturedBFG />
                 </div>
                 <ShortIntroMedia MediaFilePath='./assets/ProjectImages/BFG/Showcase_FullPerceptionSystem.mp4' />
             </ShortIntro>

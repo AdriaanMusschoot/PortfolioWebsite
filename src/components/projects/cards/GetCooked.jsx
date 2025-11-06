@@ -2,6 +2,7 @@
 import ShortIntro from './shortintro/ShortIntro.jsx';
 import ShortIntroMedia from './shortintro/ShortIntroMedia.jsx';
 import ShortIntroTitle from './shortintro/ShortIntroTitle.jsx';
+import FeaturedGetCooked from '../featuredwork/individual/FeaturedGetCooked.jsx';
 
 /* Style Imports */
 import './GetCooked.css';
@@ -16,9 +17,7 @@ export default function GetCooked()
                     <ShortIntroTitle>
                         Quick Overview
                     </ShortIntroTitle>
-                    <p>
-                        Here Is Text
-                    </p>
+                    <FeaturedGetCooked />
                 </div>
                 <ShortIntroMedia MediaFilePath="./assets/ProjectImages/GetCooked!/Trailer_GetCooked!.mp4" />
             </ShortIntro>
