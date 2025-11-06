@@ -7,7 +7,7 @@
 
 .rewards-container .reward-img {
     position: relative;
-    width: 13%;
+    width: 5vw;
 }
 
 .rewards-container .reward-img::before{ 
@@ -24,7 +24,4 @@
 
 .rewards-container img {
     position: relative;
-    width: 100%;
-    height: auto;
-    display: block;
 }
