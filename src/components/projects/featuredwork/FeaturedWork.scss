@@ -178,11 +178,21 @@
 @media (max-width: $mobile-phone-width) {
     .featured-project.odd, .featured-project.even {
         grid-template-columns: 1fr;
+    }
+    .featured-project.odd {
         .img-button-container{
-            order: unset;
+            order: 1;
         }
         .featured-work-text{
-            order: unset;
+            order: 2;
+        }
+    }
+    .featured-project.even {
+        .img-button-container{
+            order: 2;
+        }
+        .featured-work-text{
+            order: 1;
         }
     }
 }

@@ -25,8 +25,8 @@ export default function FeaturedWork({ ActivateProjectCallback }) {
                 FeaturedProjects.map((project, index) => (
                     <div key={project.id} className={`${FeaturedProjectName} ${index % 2 === 0 ? 'odd' : 'even'}`}>
                         <div className='text-container'>
+                            <h3 className='title'>{project.title}</h3>
                             <ButtonLinkContainer links={project.links} />
-                            <h3>{project.title}</h3>
                             <FeaturedWorkText project={project}/>
                         </div>
                         <div className='img-button-container' onClick={() => ActivateProjectCallback(project)}>

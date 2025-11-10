@@ -58,8 +58,6 @@
 }
 
 .project-grid .project .click-me-button {
-    opacity: 0;
-    
     width: 10%;
     height: auto;
     position: absolute;
@@ -73,14 +71,11 @@
 
 .project-grid .project:hover .click-me-button {
     color: var(--hovered-color-links);
+    transform: none;
 }
 
 @media (max-width: $mobile-phone-width) {
     .project-grid{
         grid-template-columns: 1fr 1fr;
-    }
-
-    .project-grid .project .click-me-button {
-        opacity: 1;
     }
 }
