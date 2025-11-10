@@ -57,8 +57,31 @@
     opacity: 1;
 }
 
+.project-grid .project .svg {
+    opacity: 0;
+    
+    width: 10%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+    margin: var(--margin-standard);
+    padding: var(--padding-small);
+    border-radius: var(--border-radius-small);
+}
+
+.project-grid .project:hover .svg {
+    color: var(--hovered-color-links);
+    transform: scale(--transform-scale);
+}
+
 @media (max-width: $mobile-phone-width) {
     .project-grid{
         grid-template-columns: 1fr 1fr;
+    }
+
+    .project-grid .project .svg {
+        opacity: 1;
     }
 }
