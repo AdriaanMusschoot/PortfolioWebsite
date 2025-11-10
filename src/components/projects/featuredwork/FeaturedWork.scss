@@ -72,7 +72,7 @@
     align-content: center;
 }
 
-.featured-project:hover .thumbnail {
+.featured-project .img-button-container:hover .thumbnail {
     filter: brightness(80%);
 }
 /* END: thumbnail */
@@ -127,35 +127,6 @@
 }
 /* END: date */
 
-/* START: explore-project-button */
-.featured-project .img-button-container .explore-project-button {
-    background-color: var(--fill-color-header);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    border-radius: var(--border-radius-small);
-    padding: var(--padding-small);
-    transition: opacity var(--transition-time) ease, transform var(--transition-time) ease, color var(--transition-time) ease;
-    width: fit-content;
-    text-align: center;
-    white-space: nowrap;
-    z-index: 1;
-    backdrop-filter: var(--blur-buttons);
-}
-
-.featured-project:hover .img-button-container .explore-project-button {
-    opacity: 1;
-}
-
-.featured-project .explore-project-button:hover {
-    cursor: pointer;
-    color: var(--hovered-color-links);
-    transform: translate(-50%, -50%) scale(var(--transform-scale)); /* Matrix Operations Order First Scale On Origin Then Translate */
-}
-/* END:  explore-project-button */
-
 // START: rewards
 
 .featured-project .rewards-container {
@@ -172,6 +143,34 @@
     height: auto;
 }
 // END: Button Links
+
+// START: Click Me Button 
+.featured-project .click-me-button {
+    position: absolute;
+    width: 7%;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    
+    background-color: var(--fill-color-header);
+    backdrop-filter: var(--blur-buttons);
+
+    border-radius: var(--border-radius-small);
+    padding: var(--padding-small);
+
+    z-index: 1;
+}
+
+.featured-project .img-button-container:hover {
+    cursor: pointer;
+}
+
+.featured-project .img-button-container:hover .click-me-button {
+    color: var(--hovered-color-links);
+    transform: translateX(-50%) translateY(-50%) scale(var(--transform-scale)); /* Matrix Operations Order First Scale On Origin Then Translate */
+}
+// END: Click Me Button
 
 /* END: featured-project */
 

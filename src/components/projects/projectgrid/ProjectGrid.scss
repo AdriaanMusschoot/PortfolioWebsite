@@ -57,7 +57,7 @@
     opacity: 1;
 }
 
-.project-grid .project .svg {
+.project-grid .project .click-me-button {
     opacity: 0;
     
     width: 10%;
@@ -71,9 +71,8 @@
     border-radius: var(--border-radius-small);
 }
 
-.project-grid .project:hover .svg {
+.project-grid .project:hover .click-me-button {
     color: var(--hovered-color-links);
-    transform: scale(--transform-scale);
 }
 
 @media (max-width: $mobile-phone-width) {
@@ -81,7 +80,7 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .project-grid .project .svg {
+    .project-grid .project .click-me-button {
         opacity: 1;
     }
 }

@@ -4,6 +4,7 @@ import ProjectTags from '../ProjectTags.jsx';
 import RewardsContainer from '../shared/rewards/RewardsContainer.jsx';
 import { FWHighlight } from '../../shared/highlight.js';
 import ButtonLinkContainer from '../shared/projectButtons/ButtonLinkContainer.jsx';
+import ClickMeButton from '../shared/projectButtons/ClickeMeButton.jsx';
 
 /* Data Imports */
 import Projects from '../../../data/projects.json';
@@ -28,11 +29,9 @@ export default function FeaturedWork({ ActivateProjectCallback }) {
                             <h3>{project.title}</h3>
                             <FeaturedWorkText project={project}/>
                         </div>
-                        <div className='img-button-container'>
+                        <div className='img-button-container' onClick={() => ActivateProjectCallback(project)}>
                             <img className={`thumbnail ${project.id}`} src={project.image} alt={project.title} />
-                            <h4 className='explore-project-button' onClick={() => ActivateProjectCallback(project)}>
-                                Explore Project
-                            </h4>
+                            <ClickMeButton />
                             <ProjectTags tags={project.specifics} />
                             <p className='date'>{project.date}</p>
                             <RewardsContainer rewards={project.rewards} />

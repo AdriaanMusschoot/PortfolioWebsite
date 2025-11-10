@@ -4,6 +4,6 @@ import { ReactComponent as ClickMeIcon } from '../../../../assets/svg/click_me_i
 /* HTML */
 export default function ClickMeButton() {
   return (
-    <ClickMeIcon className='svg' />
+    <ClickMeIcon className='click-me-button' />
   )
 };
