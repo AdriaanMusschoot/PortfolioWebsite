@@ -68,12 +68,12 @@
     width: 100%;
     height: auto;
     border-radius: var(--border-radius-large);
-    transition: filter var(--transition-time) ease;
+    transition: all var(--transition-time) ease;
     align-content: center;
 }
 
 .featured-project .img-button-container:hover .thumbnail {
-    filter: brightness(80%);
+    filter: var(--hovered-brightness-cards);
 }
 /* END: thumbnail */
 

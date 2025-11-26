@@ -77,6 +77,8 @@
     /* Blur Button */
     --blur-header: blur(1rem);
     --blur-buttons: var(--blur-header);
+    --hovered-brightness-cards: brightness(80%);
+
 
     /* Transition values used for hovering*/
     --transition-time: 0.3s;
