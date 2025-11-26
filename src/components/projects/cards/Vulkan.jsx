@@ -2,6 +2,7 @@
 import ShortIntro from './shortintro/ShortIntro.jsx';
 import ShortIntroMedia from './shortintro/ShortIntroMedia.jsx';
 import ShortIntroTitle from './shortintro/ShortIntroTitle.jsx';
+import { SIHighlight } from '../../shared/highlight.js';
 
 /* Style Imports */
 import './Vulkan.css'; // Import your CSS file
@@ -17,7 +18,17 @@ export default function Vulkan()
                         Quick Overview
                     </ShortIntroTitle>
                     <p>
-                        Tectonic Short Text
+                        This project is a technical showcase of <SIHighlight>instanced rendering</SIHighlight> using the <SIHighlight>C++</SIHighlight> version of the <SIHighlight>Vulkan API</SIHighlight>.
+                        <br/><br/>
+                        Aside from the obvious instanced rendering functionality,
+                        the following <SIHighlight>Features</SIHighlight> are also implemented: 
+                        a <b>custom camera system</b>, 
+                        <b>normals</b>, 
+                        <b>directional and ambient lighting</b>, 
+                        <b>diffuse textures</b>.
+                        <br/><br/>
+                        Check out these 10'000 ferrari's (created by me) at 90 FPS. 
+
                     </p>
                 </div>
                 <ShortIntroMedia MediaFilePath='./assets/ProjectImages/Vulkan/Trailer.webm' />
@@ -52,9 +63,6 @@ export default function Vulkan()
                 I decided to use the C++ version of the Vulkan API, so that I could stick to my roots as much as possible. 
                 All the dependencies and libraries are imported using CMAKE.
                 There is a release version available on github showcasing 2D and 3D instanced rendering and a crazy amount of frames per second.
-            </p>
-            <p>
-                Check out this beautiful display of 10'000 ferrari's (modeled by me) consisting of 2008 vertices running at an average 90 frames per second. 
             </p>
         </div>
     )

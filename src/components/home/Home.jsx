@@ -15,7 +15,7 @@ export default function Home() {
             <h1><Highlight>C++</Highlight> & <Highlight>Gameplay Developer</Highlight></h1>
             <h2>Welcome to my portfolio!</h2>
             <p>
-            Looking for a<Highlight> junior games programmer position</Highlight>.
+            Looking for a<Highlight> junior programmer position</Highlight>.
             </p>
             <a href="#projects">
                 <DownArrowSVG className="down-arrow-icon"/>
