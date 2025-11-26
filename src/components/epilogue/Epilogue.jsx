@@ -5,7 +5,7 @@ import './Epilogue.css';
 
 /* HTML */
 export default function Epilogue() {
-  const LaisLink = 'https://portfolio-25ma.onrender.com/';
+  const LaisLink = 'https://www.linkedin.com/in/lais-ben-belgacem-0672b72b3/';
   const SenneLink = 'https://www.linkedin.com/in/senne-bovee/';
   return (
     <div className='epilogue'>
